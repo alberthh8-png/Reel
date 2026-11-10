@@ -256,7 +256,14 @@ def persona(lz, x, pies, alto, mira=1, pose="pistola", mujer=False, gorra=False,
     d.ellipse(lz.pts([(x - ancho_h - 14, hombro_y - 10), (x - ancho_h + 26, hombro_y + 30)]), fill=color)
     d.ellipse(lz.pts([(x + ancho_h - 26, hombro_y - 10), (x + ancho_h + 14, hombro_y + 30)]), fill=color)
     gp = h * 0.055
-    for lado in (-1, 1):
+    if pose == "corre":  # piernas en zancada
+        for lado, ang in ((1, 0.55), (-1, -0.45)):
+            rod = (x + mira * lado * h * 0.13, cadera_y + h * 0.22)
+            pie = (rod[0] - mira * lado * h * 0.02 + (mira * h * 0.06 if lado < 0 else 0), pies - (0 if lado > 0 else h * 0.08))
+            d.line(lz.pts([(x, cadera_y), rod]), fill=color, width=int(gp * 1.5))
+            d.line(lz.pts([rod, pie]), fill=color, width=int(gp * 1.2))
+            d.ellipse(lz.pts([(pie[0] - gp, pie[1] - gp * 0.5), (pie[0] + gp * 1.2, pie[1] + gp * 0.4)]), fill=color)
+    for lado in ((-1, 1) if pose != "corre" else ()):
         px = x + lado * h * 0.11
         d.polygon(lz.pts([(x + lado * 4, cadera_y - 6), (x + lado * ancho_c + lado * 4, cadera_y - 6),
                           (px + lado * gp * 0.6, pies - 10), (px - lado * gp * 0.6, pies - 10)]), fill=color)
@@ -272,6 +279,22 @@ def persona(lz, x, pies, alto, mira=1, pose="pistola", mujer=False, gorra=False,
                           (px + mira * 14, py - 2), (px + mira * 10, py + 30), (px - mira * 8, py + 30)]), fill=color)
         otro = x - mira * ancho_h * 0.8
         d.line(lz.pts([(otro, hombro_y + ga), (otro - mira * h * 0.02, cadera_y + h * 0.05)]),
+               fill=color, width=int(ga * 1.3))
+    elif pose == "corre":
+        for lado in (1, -1):
+            sx = x + lado * ancho_h * 0.6
+            codo = (sx + mira * lado * h * 0.12, hombro_y + h * 0.13)
+            mano = (codo[0] + mira * lado * h * 0.06, codo[1] - lado * h * 0.07)
+            d.line(lz.pts([(sx, hombro_y + ga), codo, mano]), fill=color, width=int(ga * 1.3), joint="curve")
+    elif pose == "telefono":
+        sx = x + mira * ancho_h * 0.85
+        codo = (sx + mira * h * 0.1, hombro_y + h * 0.12)
+        mano = (x + mira * rc * 1.1, cab[1] + rc * 0.3)
+        d.line(lz.pts([(sx, hombro_y + ga), codo, mano]), fill=color, width=int(ga * 1.3), joint="curve")
+        d.rounded_rectangle(lz.pts([(mano[0] - 8, mano[1] - 34), (mano[0] + 14, mano[1] + 20)]), radius=5,
+                            fill=(120, 220, 255, 255))
+        otro = x - mira * ancho_h * 0.85
+        d.line(lz.pts([(otro, hombro_y + ga), (otro - mira * h * 0.03, cadera_y + h * 0.04)]),
                fill=color, width=int(ga * 1.3))
     else:
         for lado in (-1, 1):
@@ -528,7 +551,141 @@ def ilus_yate(rnd):
     return lz.img
 
 
-ILUSTRACIONES = {"ciudad_heli": ilus_ciudad_heli, "poli": ilus_poli, "traicion": ilus_traicion,
+def silla_oficina(d, lz, x, suelo, s=1.0, color=(30, 24, 48, 255)):
+    d.rounded_rectangle(lz.pts([(x - 40 * s, suelo - 190 * s), (x + 40 * s, suelo - 95 * s)]), radius=int(14 * s), fill=color)
+    d.rectangle(lz.pts([(x - 46 * s, suelo - 95 * s), (x + 46 * s, suelo - 78 * s)]), fill=color)
+    d.rectangle(lz.pts([(x - 5 * s, suelo - 78 * s), (x + 5 * s, suelo - 20 * s)]), fill=color)
+    d.line(lz.pts([(x - 45 * s, suelo - 6 * s), (x + 45 * s, suelo - 6 * s)]), fill=color, width=int(8 * s))
+
+
+def ilus_oficina(rnd):
+    lz = Lienzo(degradado([(0, (16, 14, 40)), (0.6, (28, 22, 60)), (0.61, (20, 16, 34)), (1, (12, 10, 22))]))
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    # ventanal con la ciudad de noche
+    d.rectangle(lz.pts([(60, 180), (1020, 760)]), fill=(30, 16, 70, 255))
+    lz.img.alpha_composite(c)
+    cielo = Lienzo(degradado(NOCHE))
+    estrellas(cielo, rnd, 60, 500)
+    skyline(cielo, rnd, 760, 150, 480, (40, 16, 70))
+    ventana = cielo.img.crop(lz.pts([(60, 180), (1020, 760)])[0] + lz.pts([(60, 180), (1020, 760)])[1])
+    lz.img.alpha_composite(ventana, lz.p(60, 180))
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    for xv in (60, 380, 700, 1020):
+        d.rectangle(lz.pts([(xv - 8, 180), (xv + 8, 760)]), fill=(10, 8, 20, 255))
+    d.rectangle(lz.pts([(52, 172), (1028, 190)]), fill=(10, 8, 20, 255))
+    d.rectangle(lz.pts([(52, 752), (1028, 772)]), fill=(10, 8, 20, 255))
+    # reloj de pared
+    d.ellipse(lz.pts([(860, 60), (980, 180)]), fill=(240, 240, 250, 255), outline=(10, 8, 20, 255), width=8)
+    d.line(lz.pts([(920, 120), (920, 82)]), fill=(10, 8, 20, 255), width=6)
+    d.line(lz.pts([(920, 120), (950, 132)]), fill=(10, 8, 20, 255), width=6)
+    # calendario con el 19 marcado
+    d.rectangle(lz.pts([(600, 40), (790, 170)]), fill=(250, 250, 255, 255))
+    d.rectangle(lz.pts([(600, 40), (790, 78)]), fill=(255, 61, 90, 255))
+    d.text(lz.p(695, 59), "NOV", font=fuente(30), fill=(255, 255, 255, 255), anchor="mm")
+    d.text(lz.p(695, 124), "19", font=fuente(64), fill=(20, 16, 34, 255), anchor="mm")
+    d.ellipse(lz.pts([(640, 86), (750, 162)]), outline=(255, 61, 90, 255), width=6)
+    lz.img.alpha_composite(c)
+    # filas de mesas vacías con monitores apagados
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    for fila, (y, esc) in enumerate(((900, 0.75), (1080, 0.9), (1300, 1.1))):
+        for k in range(3):
+            x = 180 + k * 360 + (fila % 2) * 30
+            w = 300 * esc
+            d.polygon(lz.pts([(x - w / 2, y), (x + w / 2, y), (x + w / 2 + 20 * esc, y + 30 * esc),
+                              (x - w / 2 - 20 * esc, y + 30 * esc)]), fill=(70, 60, 100, 255))
+            d.rectangle(lz.pts([(x - w / 2 - 10 * esc, y + 30 * esc), (x - w / 2, y + 150 * esc)]), fill=(40, 34, 64, 255))
+            d.rectangle(lz.pts([(x + w / 2, y + 30 * esc), (x + w / 2 + 10 * esc, y + 150 * esc)]), fill=(40, 34, 64, 255))
+            d.rectangle(lz.pts([(x - 70 * esc, y - 110 * esc), (x + 70 * esc, y - 15 * esc)]), fill=(14, 12, 24, 255),
+                        outline=(90, 80, 130, 255), width=4)
+            d.rectangle(lz.pts([(x - 8 * esc, y - 15 * esc), (x + 8 * esc, y)]), fill=(14, 12, 24, 255))
+            silla_oficina(d, lz, x + 20, y + 175 * esc, esc * 0.9)
+    lz.img.alpha_composite(c)
+    # cartel en la puerta
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    d.rounded_rectangle(lz.pts([(330, 470), (750, 600)]), radius=20, fill=(255, 61, 90, 235))
+    d.text(lz.p(540, 535), "CERRADO", font=fuente(84), fill=(255, 255, 255, 255), anchor="mm")
+    lz.img.alpha_composite(c.filter(ImageFilter.GaussianBlur(14)))
+    lz.img.alpha_composite(c)
+    return lz.img
+
+
+def ilus_persecucion(rnd):
+    lz = Lienzo(degradado(NOCHE))
+    estrellas(lz, rnd, 90)
+    skyline(lz, rnd, 1060, 260, 720, (32, 12, 58))
+    calle(lz, 1060)
+    reflejos(lz, 1060, rnd, 30)
+    helicoptero(lz, 760, 300, 0.9, foco=(380, 1260))
+    coche(lz, 990, 1250, 500, (235, 235, 240), mira=-1, policia=True, brillo=(255, 50, 70))
+    coche(lz, 120, 1330, 520, (235, 235, 240), mira=1, policia=True, brillo=(60, 100, 255))
+    persona(lz, 400, 1260, 640, mira=1, pose="corre", borde=(255, 210, 63), brillo=(255, 210, 63))
+    persona(lz, 650, 1075, 400, mira=-1, pose="telefono", borde=(45, 226, 230), color=(14, 8, 26, 255))
+    return lz.img
+
+
+def ilus_calendario(rnd):
+    lz = Lienzo(degradado([(0, (24, 10, 50)), (0.5, (60, 20, 90)), (1, (20, 8, 40))]))
+    estrellas(lz, rnd, 60, 300)
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    d.rounded_rectangle(lz.pts([(90, 330), (990, 1030)]), radius=36, fill=(248, 246, 252, 255))
+    d.rounded_rectangle(lz.pts([(90, 330), (990, 470)]), radius=36, fill=(255, 61, 90, 255))
+    d.rectangle(lz.pts([(90, 420), (990, 470)]), fill=(255, 61, 90, 255))
+    d.text(lz.p(540, 400), "NOVIEMBRE 2026", font=fuente(70), fill=(255, 255, 255, 255), anchor="mm")
+    for k, dia in enumerate("LMXJVSD"):
+        d.text(lz.p(150 + k * 130, 510), dia, font=fuente(40), fill=(120, 110, 140, 255), anchor="mm")
+    # el 1 de noviembre de 2026 es domingo
+    for n in range(1, 31):
+        pos = n + 5
+        fila, col = divmod(pos, 7)
+        x, y = 150 + col * 130, 565 + fila * 88
+        d.text(lz.p(x, y), str(n), font=fuente(50 if n != 19 else 58),
+               fill=(255, 61, 90, 255) if n == 19 else (40, 30, 60, 255), anchor="mm")
+    lz.img.alpha_composite(c)
+    for k in range(5):  # anillas
+        d = ImageDraw.Draw(lz.img)
+        x = 200 + k * 170
+        d.rounded_rectangle(lz.pts([(x - 12, 300), (x + 12, 370)]), radius=10, fill=(200, 200, 215, 255))
+    return lz.img
+
+
+def ilus_huracan(rnd):
+    lz = Lienzo(degradado([(0, (8, 10, 22)), (0.35, (30, 36, 60)), (0.55, (60, 70, 90)), (0.56, (20, 26, 40)),
+                           (1, (10, 14, 24))]))
+    # espiral del huracán
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    cx, cy = 560, 420
+    for k in range(70):
+        ang0 = k * 0.42
+        r = 20 + k * 7.5
+        d.arc(lz.pts([(cx - r, cy - r * 0.55), (cx + r, cy + r * 0.55)]), math.degrees(ang0),
+              math.degrees(ang0) + 110, fill=(170, 180, 200, max(30, 200 - k * 2)), width=int(10 + k * 0.25))
+    d.ellipse(lz.pts([(cx - 26, cy - 15), (cx + 26, cy + 15)]), fill=(8, 10, 22, 255))
+    lz.img.alpha_composite(c.filter(ImageFilter.GaussianBlur(6)))
+    skyline(lz, rnd, 1000, 150, 420, (16, 18, 30), ventanas=True, neon=False)
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    d.rectangle(lz.pts([(-60, 1000), (W + 60, H + 100)]), fill=(18, 30, 50, 255))
+    for i in range(14):  # olas
+        y = 1030 + i * i * 4
+        for k in range(-1, 9):
+            x = k * 160 + (i % 2) * 80
+            d.arc(lz.pts([(x, y - 30 - i * 2), (x + 160, y + 30 + i * 2)]), 200, 340,
+                  fill=(150, 190, 220, max(40, 200 - i * 10)), width=4 + i // 3)
+    lz.img.alpha_composite(c)
+    palmera(lz, 160, 1500, 1000, rnd, inclinacion=0.5)
+    palmera(lz, 900, 1450, 820, rnd, inclinacion=0.45)
+    return lz.img
+
+
+ILUSTRACIONES = {"oficina": ilus_oficina, "persecucion": ilus_persecucion, "calendario": ilus_calendario,
+                 "huracan": ilus_huracan,
+                 "ciudad_heli": ilus_ciudad_heli, "poli": ilus_poli, "traicion": ilus_traicion,
                  "tercero": ilus_tercero, "online": ilus_online, "yate": ilus_yate}
 
 
@@ -797,7 +954,137 @@ class Revelar(Efecto):
         pegar_centrado(frame, texto_comic("?", 300), sx, sy - 330, escala=ease_out_back(a / 0.3) * pulso, angulo=-6)
 
 
-FX = {"explosion": Explosion, "disparo": Disparo, "dinero": Dinero, "sirena": Sirena, "revelar": Revelar}
+class Pausa(Efecto):
+    """El mundo se congela: desatura la imagen y aparece un icono de pausa gigante."""
+
+    def __init__(self, ev, semilla):
+        self.t0 = ev["t"]
+        self.dur = ev.get("dur", 0.9)
+
+    def dibujar(self, frame, t, mapa):
+        a = t - self.t0
+        if a < 0 or a > self.dur:
+            return
+        k = clamp(a / 0.08) * clamp((self.dur - a) / 0.15)
+        gris = frame.convert("L").convert("RGBA")
+        gris.putalpha(int(210 * k))
+        frame.alpha_composite(gris)
+        d = ImageDraw.Draw(frame)
+        p = ease_out_back(a / 0.2, 2.5)
+        w, h = 90 * p, 300 * p
+        for dx in (-85, 85):
+            d.rounded_rectangle((W / 2 + dx - w / 2, 640 - h / 2, W / 2 + dx + w / 2, 640 + h / 2), radius=22,
+                                fill=(255, 255, 255, int(235 * k)))
+
+
+class Escaneo(Efecto):
+    """Retícula de la policía fijando un objetivo."""
+
+    def __init__(self, ev, semilla):
+        self.t0, self.x, self.y = ev["t"], ev["x"], ev["y"]
+        self.texto = ev.get("texto", "OBJETIVO LOCALIZADO")
+
+    def dibujar(self, frame, t, mapa):
+        a = t - self.t0
+        if a < 0:
+            return
+        sx, sy = mapa(self.x, self.y)
+        fijado = a > 0.55
+        r = 230 - 120 * ease_out_cubic(a / 0.55)
+        col = (255, 50, 70) if fijado else (45, 226, 230)
+        al = 255 if (not fijado or int(a * 8) % 2 == 0) else 170
+        d = ImageDraw.Draw(frame)
+        L = r * 0.45
+        for sx2, sy2 in ((-1, -1), (1, -1), (-1, 1), (1, 1)):
+            x0, y0 = sx + sx2 * r, sy + sy2 * r
+            d.line((x0, y0, x0 - sx2 * L, y0), fill=col + (al,), width=9)
+            d.line((x0, y0, x0, y0 - sy2 * L), fill=col + (al,), width=9)
+        d.line((sx - 30, sy, sx + 30, sy), fill=col + (al,), width=4)
+        d.line((sx, sy - 30, sx, sy + 30), fill=col + (al,), width=4)
+        if fijado:
+            f = fuente(40)
+            bb = f.getbbox(self.texto)
+            x0, y0 = sx - bb[2] / 2 - 20, sy - r - 90
+            d.rounded_rectangle((x0, y0, x0 + bb[2] + 40, y0 + 64), radius=10, fill=(255, 50, 70, 230))
+            d.text((x0 + 20, y0 + 32), self.texto, font=f, fill=(255, 255, 255, 255), anchor="lm")
+
+
+class Lluvia(Efecto):
+    def __init__(self, ev, semilla):
+        rnd = random.Random(semilla)
+        self.gotas = [(rnd.uniform(-300, W), rnd.uniform(0, H), rnd.uniform(1400, 2200), rnd.uniform(40, 90))
+                      for _ in range(220)]
+
+    def dibujar(self, frame, t, mapa):
+        d = ImageDraw.Draw(frame)
+        for x, y, v, largo in self.gotas:
+            py = (y + v * t) % (H + 200) - 100
+            px = x + (py * 0.35)
+            d.line((px, py, px - largo * 0.35, py - largo), fill=(200, 215, 240, 120), width=2)
+
+
+class Rayo(Efecto):
+    def __init__(self, ev, semilla):
+        rnd = random.Random(semilla)
+        self.t0, self.x = ev["t"], ev.get("x", 700)
+        self.pts = [(self.x, -20)]
+        y = -20
+        while y < ev.get("hasta", 1000):
+            y += rnd.uniform(60, 120)
+            self.pts.append((self.pts[-1][0] + rnd.uniform(-70, 70), y))
+
+    def destello(self, t):
+        a = t - self.t0
+        return 0 if a < 0 else 0.7 * max(0, 1 - a / 0.12)
+
+    def sacudida(self, t):
+        a = t - self.t0
+        return 0 if a < 0 else 18 * max(0, 1 - a / 0.3)
+
+    def dibujar(self, frame, t, mapa):
+        a = t - self.t0
+        if a < 0 or a > 0.25:
+            return
+        capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(capa)
+        d.line(self.pts, fill=(170, 200, 255, 200), width=26, joint="curve")
+        capa = capa.filter(ImageFilter.GaussianBlur(14))
+        d = ImageDraw.Draw(capa)
+        d.line(self.pts, fill=(255, 255, 255, 255), width=7, joint="curve")
+        frame.alpha_composite(capa)
+
+
+class TacharDias(Efecto):
+    """Va tachando días del calendario menos el 19, que late."""
+
+    def __init__(self, ev, semilla):
+        self.t0 = ev.get("t", 0.3)
+        rnd = random.Random(semilla)
+        dias = [n for n in range(1, 31) if n != 19]
+        rnd.shuffle(dias)
+        self.dias = dias
+
+    def _pos(self, n):
+        fila, col = divmod(n + 5, 7)
+        return 150 + col * 130, 565 + fila * 88
+
+    def dibujar(self, frame, t, mapa):
+        a = t - self.t0
+        if a < 0:
+            return
+        d = ImageDraw.Draw(frame)
+        cuantos = int(a / 0.07)
+        for n in self.dias[:cuantos]:
+            x, y = mapa(*self._pos(n))
+            d.line((x - 32, y - 28, x + 32, y + 28), fill=(255, 61, 90, 230), width=8)
+            d.line((x - 32, y + 28, x + 32, y - 28), fill=(255, 61, 90, 230), width=8)
+        x, y = mapa(*self._pos(19))
+        r = 52 + 8 * math.sin(a * 9)
+        d.ellipse((x - r, y - r, x + r, y + r), outline=(255, 210, 63, 255), width=10)
+
+
+FX = {"explosion": Explosion, "disparo": Disparo, "dinero": Dinero, "sirena": Sirena, "revelar": Revelar,
+      "pausa": Pausa, "escaneo": Escaneo, "lluvia": Lluvia, "rayo": Rayo, "tachar_dias": TacharDias}
 
 
 # --------------------------------------------------------------------------
@@ -890,6 +1177,15 @@ class Render:
                 palabras.extend(tiempos_palabras(e["voz"], e["inicio"], e["duracion"]))
         self.bloques = bloques_subtitulo(palabras)
         self.grano = [self._grano(k) for k in range(3)]
+        self.capa_serie = None
+        if guion.get("serie"):
+            fs = fuente(44)
+            bb = fs.getbbox(guion["serie"])
+            img = Image.new("RGBA", (bb[2] + 60, 78), (0, 0, 0, 0))
+            d = ImageDraw.Draw(img)
+            d.rounded_rectangle((0, 0, img.width - 1, 77), radius=14, fill=(255, 210, 63, 245))
+            d.text((30, 39), guion["serie"], font=fs, fill=(20, 10, 30, 255), anchor="lm")
+            self.capa_serie = img
         self.vineta = self._vineta()
         self.degradado_inf = self._degradado_inferior()
 
@@ -936,6 +1232,26 @@ class Render:
             d.text((35, 42 - (bb[3] + bb[1]) / 2), etiqueta, font=fe, fill=(255, 255, 255, 255))
             e["capa_eti"] = img
         e["capa_preg"] = self._sticker(e["pregunta"]) if e.get("pregunta") else None
+        if e.get("compartir"):
+            e["capa_preg"] = self._sticker_compartir(e["compartir"])
+
+    def _sticker_compartir(self, texto):
+        f = ajustar_fuente(texto, 640, 66)
+        bb = f.getbbox(texto)
+        ancho = max(bb[2] + 210, 700)
+        alto = 170
+        img = Image.new("RGBA", (ancho + 40, alto + 50), (0, 0, 0, 0))
+        sombra = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(sombra).rounded_rectangle((26, 30, ancho + 26, alto + 30), radius=44, fill=(0, 0, 0, 150))
+        img.alpha_composite(sombra.filter(ImageFilter.GaussianBlur(10)))
+        d = ImageDraw.Draw(img)
+        d.rounded_rectangle((20, 20, ancho + 20, alto + 20), radius=44, fill=(255, 255, 255, 255))
+        # icono de avión de papel (enviar)
+        cx, cy = 100, 20 + alto / 2
+        d.polygon([(cx - 46, cy + 4), (cx + 50, cy - 42), (cx + 18, cy + 46), (cx + 2, cy + 14)], fill=(45, 120, 255, 255))
+        d.polygon([(cx + 2, cy + 14), (cx + 50, cy - 42), (cx - 4, cy + 34)], fill=(20, 80, 200, 255))
+        d.text((160, cy), texto, font=f, fill=(15, 10, 25, 255), anchor="lm")
+        return img
 
     def _sticker(self, pregunta):
         f = ajustar_fuente(pregunta, 700, 76)
@@ -994,6 +1310,8 @@ class Render:
         self._sticker_preg(frame, e, lt)
         self._subtitulos(frame, t)
         d = ImageDraw.Draw(frame)
+        if self.capa_serie is not None:
+            frame.alpha_composite(self.capa_serie, (40, 140))
         d.rectangle((0, 0, W, 12), fill=(0, 0, 0, 140))
         d.rectangle((0, 0, int(W * t / self.total), 12), fill=self.acento + (255,))
         frame.alpha_composite(self.grano[n % 3])
@@ -1021,7 +1339,7 @@ class Render:
         a = lt - 0.12 if e["idx"] > 0 else lt
         if a >= 0:  # titular: golpe desde grande
             p = ease_out_cubic(a / 0.22)
-            esc = 1.25 - 0.25 * p if e["idx"] == 0 else 1.7 - 0.7 * p
+            esc = (1.08 - 0.08 * p) if e["idx"] == 0 else 1.7 - 0.7 * p
             pulso = 1 + 0.03 * max(0, math.cos(2 * math.pi * lt * self.g["bpm"] / 60)) ** 10
             alfa = 1.0 if e["idx"] == 0 else clamp(a / 0.08)
             pegar_centrado(frame, e["capa_tit"], W / 2, 1220, escala=esc * pulso, alfa=alfa * sal, angulo=-2)
@@ -1271,15 +1589,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--guion", default=os.path.join(RAIZ, "guion.json"))
     ap.add_argument("--preview", type=int, default=0)
+    ap.add_argument("--salida", default=SALIDA, help="carpeta de salida")
     ap.add_argument("--procesos", type=int, default=os.cpu_count() or 2)
     args = ap.parse_args()
     with open(args.guion, encoding="utf-8") as f:
         guion = json.load(f)
-    os.makedirs(SALIDA, exist_ok=True)
+    salida_dir = args.salida
+    os.makedirs(salida_dir, exist_ok=True)
     r = Render(guion)
     print(f"Duración: {r.total:.1f} s · {len(r.escenas)} escenas")
     if args.preview:
-        carpeta = os.path.join(SALIDA, "preview")
+        carpeta = os.path.join(salida_dir, "preview")
         os.makedirs(carpeta, exist_ok=True)
         for e in r.escenas:
             for k in range(args.preview):
@@ -1288,11 +1608,11 @@ def main():
                     os.path.join(carpeta, f"{e['idx']:02d}_{e['id']}_{k}.jpg"), quality=88)
         print("Previews en", carpeta)
         return
-    audio = os.path.join(SALIDA, "audio.wav")
+    audio = os.path.join(salida_dir, "audio.wav")
     escribir_audio(r, audio)
-    escribir_srt(r, os.path.join(SALIDA, "subtitulos.srt"))
-    escribir_locucion(r, os.path.join(SALIDA, "locucion.md"))
-    salida = os.path.join(SALIDA, "reel.mp4")
+    escribir_srt(r, os.path.join(salida_dir, "subtitulos.srt"))
+    escribir_locucion(r, os.path.join(salida_dir, "locucion.md"))
+    salida = os.path.join(salida_dir, "reel.mp4")
     n_frames = int(round(r.total * r.fps))
     cmd = ["ffmpeg", "-y", "-loglevel", "error",
            "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(r.fps), "-i", "-",
@@ -1310,7 +1630,7 @@ def main():
     ff.wait()
     if ff.returncode:
         sys.exit(f"ffmpeg falló con código {ff.returncode}")
-    Image.frombytes("RGB", (W, H), r.frame(int(0.5 * r.fps))).save(os.path.join(SALIDA, "portada.jpg"), quality=92)
+    Image.frombytes("RGB", (W, H), r.frame(int(0.5 * r.fps))).save(os.path.join(salida_dir, "portada.jpg"), quality=92)
     print(f"\nListo: {salida}")
     if ff.returncode:
         sys.exit(ff.returncode)

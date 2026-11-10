@@ -115,3 +115,59 @@ Son puntos de partida: a las 2-3 semanas mira tus propias estadísticas (Instagr
 - Fecha de lanzamiento: [Gulf News](https://gulfnews.com/technology/gaming/gta-6-drops-nov-19-as-preloads-open-nov-10-five-things-to-know-about-grand-theft-auto-1.500740670)
 
 > Nota: casi todas las recomendaciones sobre algoritmos vienen de blogs de marketing, no de documentación oficial de Meta o YouTube. Tómalas como consenso de la industria y compruébalas con tus estadísticas.
+
+---
+
+# PARTE 2: "El mundo se para"
+
+Vídeo: `salida/parte2/reel.mp4` (24,9 s) · Portada: `salida/parte2/portada.jpg`
+
+## Qué cambia respecto a la Parte 1 (aprendido de las estadísticas)
+
+| Problema en la Parte 1 | Cambio en la Parte 2 |
+|---|---|
+| 39,5 % de omisión y un primer fotograma lavado por el destello | Primer fotograma nítido, con el titular entero y sin destello. El gancho es una afirmación que choca ("EL MUNDO SE PARA"), no una lista. |
+| 0 compartidos | Sticker y voz con **"Pásaselo a tu jefe"** en el segundo 6-10. |
+| 0 seguidores nuevos | Cierre con **"Sígueme: el 19 vemos qué era verdad"**, que da un motivo para volver, y etiqueta **PARTE 2** visible todo el rato. |
+| La pregunta solo llegaba al final | Preguntas a los 3-5 s ("¿Y TÚ?") y en la teoría 5, más la pregunta final. |
+| Voz larga | Frases cortas sin numerar en voz (el número ya sale en pantalla): 7 cortes en 25 s. |
+
+## Instagram
+
+```
+GTA 6 va a parar el mundo el 19 de noviembre 😳 1 de cada 5 trabajadores no piensa ir a trabajar…
+
+¿Tú vas a faltar? Comenta SÍ o NO 👇 y pásaselo a tu jefe 😂
+
+#GTA6 #GTAVI #RockstarGames #Videojuegos #Gaming
+```
+
+**Texto en la portada:** `EL MUNDO SE PARA`
+
+**Comentario fijado:** `Parte 1 en mi perfil 👆 ¿Cuál de las 5 te parece más loca?`
+
+**Ajustes:**
+- Publícalo como reel normal. Si prefieres probar antes, súbelo como **Reel de prueba**.
+- **Antes de publicar este, fija la Parte 1 en tu perfil**, para que quien llegue por la Parte 2 la vea.
+- Compártelo en **Historias** con una encuesta: "¿Vas a faltar al trabajo el 19? SÍ / NO".
+
+## YouTube Shorts
+
+**Título:** `GTA 6 va a PARAR EL MUNDO 😳 (Parte 2)`
+
+**Descripción:**
+```
+El 19 de noviembre sale GTA 6 y el mundo se va a parar: 1 de cada 5 trabajadores no irá a trabajar, una empresa ha dado el día libre a 7.000 empleados, la policía con IA, la industria que huyó y los huracanes que esperan los fans. ¿Vas a faltar? 👇
+
+#GTA6 #GTAVI #Shorts
+```
+
+## Cuándo publicarla
+Lo ideal es dejar **unas 24 h desde la Parte 1**. Mejor a las **20:00-22:00** (hora de España).
+
+## Fuentes de los datos
+- 1 de cada 5 trabajadores (18 %) y 1 de cada 3 en la Gen Z (32 %): [BambooHR](https://www.bamboohr.com/resources/data-at-work/data-stories/gta-pto), [Yahoo Finance](https://finance.yahoo.com/media-advertising/articles/nearly-20-workers-plan-nov-103000741.html)
+- Empresa que da el día libre a 7.000 empleados: [Fortune](https://fortune.com/2026/11/10/logitech-gaming-day-off-ahead-of-grand-theft-auto-six-release-ceo-hanneke-faber-boost-productivity/)
+- Policía con IA (rumor de filtraciones, **no confirmado** por Rockstar): [Dexerto](https://www.dexerto.com/gta/gta-6-leak-reveals-wanted-system-overhaul-and-realistic-police-ai-2302426/), [GTA 6 News](https://www.gta6-news.net/ga6-gameplay-features/gta-6-police-ai-may-be-more-modern-but-nothing-is-confirmed-yet/)
+- La industria evita las fechas de GTA 6: [PC Gamer](https://www.pcgamer.com/games/grand-theft-auto/get-ready-to-do-the-silksong-release-date-shuffle-all-over-again-gta-6s-delay-just-blew-up-the-whole-game-industrys-holiday-2026-plans), [GTA Boom](https://www.gtaboom.com/gta-6-scared-every-major-game-out-of-releasing-this-holiday-2026)
+- Huracanes (teoría de fans): [ADN40](https://www.adn40.mx/es-tendencia/2026-07-10/modo-cooperativo-huracanes-y-mas-de-700-interiores-las-teorias-de-los-fans-sobre-lo-que-traera-gta-6/)
