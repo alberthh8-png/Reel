@@ -18,7 +18,7 @@
       "etiqueta": "GTA VI",
       "titular": "EL MUNDO SE PARA",
       "detalle": "el 19 de noviembre, por GTA 6",
-      "voz": "El 19, el mundo se para... por GTA 6.",
+      "voz": "El 19, el mundo se para por GTA 6.",
       "fx": [
         {
           "tipo": "disparo",
@@ -33,12 +33,12 @@
         },
         {
           "tipo": "pausa",
-          "t": 1.55,
-          "dur": 1.2
+          "t": 1.25,
+          "dur": 1.0
         }
       ],
       "audio_voz": "voz/parte2/escena_0.wav",
-      "duracion": 2.88
+      "duracion": 2.46
     },
     {
       "id": "dato1",

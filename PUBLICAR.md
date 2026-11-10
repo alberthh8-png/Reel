@@ -120,7 +120,7 @@ Son puntos de partida: a las 2-3 semanas mira tus propias estadísticas (Instagr
 
 # PARTE 2: "El mundo se para"
 
-Vídeo: `salida/parte2/reel.mp4` (24,9 s) · Portada: `salida/parte2/portada.jpg`
+Vídeo: `salida/parte2/reel.mp4` (24,4 s) · Portada: `salida/parte2/portada.jpg`
 
 ## Qué cambia respecto a la Parte 1 (aprendido de las estadísticas)
 
