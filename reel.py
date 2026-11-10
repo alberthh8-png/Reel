@@ -1167,6 +1167,9 @@ class Render:
             self.escenas.append(e)
             t += e["duracion"]
         self.total = t
+        self.bucle = bool(guion.get("bucle"))
+        if self.bucle and self.escenas[-1].get("ilustracion") == self.escenas[0].get("ilustracion"):
+            self.escenas[-1]["fondo"] = self.escenas[0]["fondo"]
         palabras = []
         for e in self.escenas:
             dv = duracion_voz(e)
@@ -1293,6 +1296,12 @@ class Render:
         s = 1.1 - 0.075 * k
         cx = WC / 2 + (1 if e["idx"] % 2 else -1) * 30 * (k - 0.5)
         cy = HC / 2 - 20 * k
+        ultima = e["idx"] == len(self.escenas) - 1
+        if self.bucle and ultima:
+            m = ease_in_out((lt - (e["duracion"] - 0.6)) / 0.6)
+            s = s * (1 - m) + 1.1 * m
+            cx = cx * (1 - m) + (WC / 2 + 15) * m
+            cy = cy * (1 - m) + (HC / 2) * m
         ox = clamp(cx - W * s / 2 + math.sin(t * 73) * sac, 0, WC - W * s)
         oy = clamp(cy - H * s / 2 + math.cos(t * 61) * sac, 0, HC - H * s)
         frame = e["fondo"].crop((int(ox), int(oy), int(ox + W * s), int(oy + H * s))).resize((W, H), Image.BILINEAR)
@@ -1321,6 +1330,8 @@ class Render:
         if e["idx"] > 0 and lt < TRANS:
             glitch = 1 - lt / TRANS
             flash += 0.7 * glitch ** 2
+        if self.bucle and ultima and lt > e["duracion"] - 0.12:
+            glitch = max(glitch, 0.8 * (lt - (e["duracion"] - 0.12)) / 0.12)
         if flash > 0.01 or glitch > 0:
             arr = np.asarray(rgb).astype(np.int16)
             if glitch > 0:
@@ -1535,8 +1546,14 @@ def escribir_audio(render, ruta):
     sfx = sfx * (1 - 0.35 * env_voz)
     mezcla = mus + sfx + voz * 1.35
     mezcla = mezcla[:int(total * SR)]
-    fade = int(0.3 * SR)
-    mezcla[-fade:] *= np.linspace(1, 0, fade)
+    if render.bucle:
+        pegar(mezcla, (total - 0.32) * SR, sfx_whoosh(rng) * 0.5, 1.0)
+        clic = int(0.004 * SR)  # sólo quitar el chasquido, sin fundido
+        mezcla[:clic] *= np.linspace(0, 1, clic)
+        mezcla[-clic:] *= np.linspace(1, 0, clic)
+    else:
+        fade = int(0.3 * SR)
+        mezcla[-fade:] *= np.linspace(1, 0, fade)
     mezcla = np.tanh(mezcla * 1.3)
     mezcla = mezcla / (np.max(np.abs(mezcla)) + 1e-9) * 0.89
     pcm = (mezcla * 32767).astype(np.int16)

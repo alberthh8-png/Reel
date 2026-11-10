@@ -186,5 +186,6 @@
       "audio_voz": "voz/parte2/escena_6.wav",
       "duracion": 5.12
     }
-  ]
+  ],
+  "bucle": true
 }

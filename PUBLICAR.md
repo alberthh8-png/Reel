@@ -131,6 +131,7 @@ Vídeo: `salida/parte2/reel.mp4` (24,9 s) · Portada: `salida/parte2/portada.jpg
 | 0 seguidores nuevos | Cierre con **"Sígueme: el 19 vemos qué era verdad"**, que da un motivo para volver, y etiqueta **PARTE 2** visible todo el rato. |
 | La pregunta solo llegaba al final | Preguntas a los 3-5 s ("¿Y TÚ?") y en la teoría 5, más la pregunta final. |
 | Voz larga | Frases cortas sin numerar en voz (el número ya sale en pantalla): 7 cortes en 25 s. |
+| Pocas repeticiones | **Bucle continuo**: el final ("el 19 vemos qué era verdad") enlaza con el principio ("El 19, el mundo se para") con el mismo plano, sin fundido. Más gente lo ve dos veces y las repeticiones cuentan para el alcance. |
 
 ## Instagram
 
