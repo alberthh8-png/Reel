@@ -14,13 +14,13 @@ Vídeo vertical de **25 s** (1080×1920, 30 fps) para **Instagram Reels** y **Yo
 
 | Tiempo | Escena | Acción |
 |---|---|---|
-| 0–2,4 s | **Gancho:** "5 TEORÍAS que los fans juran que son reales" | Explosión con "BOOM!" en el primer fotograma, helicóptero y disparos |
-| 2,4–6,2 s | **#1 Jason es poli** (infiltrado) | Tiroteo junto a un coche patrulla con luces de sirena → "¿Tú qué crees?" |
-| 6,2–10 s | **#2 Uno mata al otro** (en el final) | Duelo en una azotea al atardecer → "¿Te lo crees?" |
-| 10–13,8 s | **#3 Hay un tercer protagonista** (un poli veterano) | Aparece un "?" sobre una tercera silueta → "¿Real o fake?" |
-| 13,8–17,6 s | **#4 Online de pago** (un juego aparte) | Lluvia de billetes y un coche que explota → "¿Lo pagarías?" |
-| 17,6–21,4 s | **#5 El yate de Michael** (aparece en Leonida) | Puerto con un yate, disparos y explosión → "¿Tú qué opinas?" |
-| 21,4–24 s | **Cierre:** "¿Cuál es real? Comenta el número" | Explosión final |
+| 0–3,1 s | **Gancho:** "5 TEORÍAS que los fans juran que son reales" | Explosión con "BOOM!" en el primer fotograma, helicóptero y disparos |
+| 3,1–7,1 s | **#1 Jason es poli** (infiltrado) | Tiroteo junto a un coche patrulla con luces de sirena → "¿Tú qué crees?" |
+| 7,1–11 s | **#2 Uno mata al otro** (en el final) | Duelo en una azotea al atardecer → "¿Te lo crees?" |
+| 11–14,3 s | **#3 Hay un tercer protagonista** (un poli veterano) | Aparece un "?" sobre una tercera silueta → "¿Real o fake?" |
+| 14,3–18,9 s | **#4 Online de pago** (un juego aparte) | Lluvia de billetes y un coche que explota → "¿Lo pagarías?" |
+| 18,9–22,6 s | **#5 El yate de Michael** (aparece en Leonida) | Puerto con un yate, disparos y explosión → "¿Tú qué opinas?" |
+| 22,6–25,1 s | **Cierre:** "¿Cuál es real? Comenta el número" | Explosión final |
 
 Por qué engancha:
 - La acción arranca en el primer fotograma y hay un golpe visual cada 1–2 s.
