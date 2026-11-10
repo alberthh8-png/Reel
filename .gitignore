@@ -3,3 +3,5 @@ salida/preview/
 __pycache__/
 # Local secrets written by `elevenlabs onboard`
 /.env.local
+salida/**/*.wav
+salida/**/preview/
