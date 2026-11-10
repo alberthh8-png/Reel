@@ -1,10 +1,9 @@
 {
-  "titulo": "GTA 6: 5 secretos y teorías que casi nadie conoce",
+  "titulo": "GTA 6: 5 teorías que los fans juran que son reales",
   "fps": 30,
   "ancho": 1080,
   "alto": 1920,
-  "bpm": 118,
-  "etiqueta": "GTA VI · SECRETOS Y TEORÍAS",
+  "bpm": 140,
   "colores": {
     "acento": "#ffd23f",
     "rosa": "#ff3d8b",
@@ -14,102 +13,217 @@
   "escenas": [
     {
       "id": "gancho",
-      "tipo": "gancho",
-      "duracion": 3.6,
-      "antetitulo": "GTA VI llega sin",
-      "titular": "ONLINE",
-      "detalle": "y no es lo único que no te han contado",
-      "voz": "GTA 6 llega en 9 días... y sin lo que todos esperaban."
+      "ilustracion": "ciudad_heli",
+      "duracion": 2.4,
+      "etiqueta": "GTA VI",
+      "titular": "5 TEORÍAS",
+      "detalle": "que los fans juran que son reales",
+      "voz": "5 teorías de GTA 6 que los fans juran que son reales.",
+      "fx": [
+        {
+          "tipo": "explosion",
+          "t": 0.0,
+          "x": 800,
+          "y": 860,
+          "escala": 1.3,
+          "texto": "BOOM!"
+        },
+        {
+          "tipo": "disparo",
+          "t": 0.9,
+          "x": 140,
+          "y": 1010,
+          "ang": -18,
+          "agujero": [
+            760,
+            520
+          ]
+        },
+        {
+          "tipo": "disparo",
+          "t": 1.15,
+          "x": 140,
+          "y": 1010,
+          "ang": -24,
+          "agujero": [
+            880,
+            380
+          ]
+        }
+      ]
     },
     {
-      "id": "promesa",
-      "tipo": "promesa",
-      "duracion": 3.2,
-      "antetitulo": "5 secretos y",
-      "titular": "TEORÍAS",
-      "detalle": "la última te va a volar la cabeza",
-      "voz": "5 secretos y teorías que casi nadie conoce. La última te vuela la cabeza."
-    },
-    {
-      "id": "dato1",
-      "tipo": "dato",
+      "id": "teoria1",
+      "ilustracion": "poli",
       "numero": 1,
-      "sello": "CONFIRMADO",
-      "duracion": 5.4,
-      "titular": "SIN ONLINE",
-      "detalle": "Take-Two lo lanza como juego para un jugador · el GTA Online de GTA V sigue",
-      "icono": "sin_red",
-      "voz": "Uno: el 19 de noviembre no habrá GTA 6 Online. Take-Two lo lanza como juego para un jugador... y seguirá actualizando el Online de GTA 5."
+      "duracion": 3.8,
+      "titular": "JASON ES POLI",
+      "voz": "Uno: Jason sería un poli infiltrado. ¿Tú qué crees?",
+      "pregunta": "¿TÚ QUÉ CREES?",
+      "fx": [
+        {
+          "tipo": "disparo",
+          "t": 0.35,
+          "x": 690,
+          "y": 684,
+          "ang": 4,
+          "agujero": [
+            880,
+            690
+          ],
+          "texto": "BANG!"
+        },
+        {
+          "tipo": "disparo",
+          "t": 0.62,
+          "x": 690,
+          "y": 684,
+          "ang": -3,
+          "agujero": [
+            960,
+            560
+          ]
+        },
+        {
+          "tipo": "sirena"
+        }
+      ]
     },
     {
-      "id": "dato2",
-      "tipo": "linea_tiempo",
+      "id": "teoria2",
+      "ilustracion": "traicion",
       "numero": 2,
-      "sello": "RUMOR",
-      "duracion": 5.6,
-      "titular": "¿ONLINE EN 2027?",
-      "hitos": [
-        "19 NOV: solo historia",
-        "Código filtrado: multijugador",
-        "2027: nuevo Online"
-      ],
-      "voz": "Dos: en código filtrado del juego aparecen textos de multijugador... pero varias fuentes apuntan a que el nuevo Online no llegaría hasta 2027.",
-      "tachar": false
+      "duracion": 3.8,
+      "titular": "UNO MATA AL OTRO",
+      "voz": "Dos: en el final, uno de los dos mata al otro. ¿Te lo crees?",
+      "pregunta": "¿TE LO CREES?",
+      "fx": [
+        {
+          "tipo": "disparo",
+          "t": 0.4,
+          "x": 585,
+          "y": 743,
+          "ang": 180,
+          "texto": "BANG!"
+        },
+        {
+          "tipo": "disparo",
+          "t": 0.55,
+          "x": 520,
+          "y": 720,
+          "ang": 0
+        },
+        {
+          "tipo": "disparo",
+          "t": 0.75,
+          "x": 585,
+          "y": 743,
+          "ang": 182,
+          "agujero": [
+            200,
+            560
+          ]
+        }
+      ]
     },
     {
-      "id": "dato3",
-      "tipo": "dato",
+      "id": "teoria3",
+      "ilustracion": "tercero",
       "numero": 3,
-      "sello": "TEORÍA",
-      "duracion": 5.0,
-      "titular": "EL YATE DE GTA V",
-      "detalle": "el barco junto a la casa de Jason podría ser el de Michael",
-      "icono": "yate",
-      "voz": "Tres: el yate que se ve junto a la casa de Jason... podría ser el de Michael, de GTA 5."
+      "duracion": 3.8,
+      "titular": "HAY UN 3.er PROTA",
+      "voz": "Tres: hay un tercer protagonista secreto... un poli veterano. ¿Real o fake?",
+      "pregunta": "¿REAL O FAKE?",
+      "fx": [
+        {
+          "tipo": "revelar",
+          "t": 0.5,
+          "x": 830,
+          "y": 760
+        },
+        {
+          "tipo": "disparo",
+          "t": 0.3,
+          "x": 120,
+          "y": 640,
+          "ang": -12,
+          "agujero": [
+            520,
+            420
+          ]
+        }
+      ]
     },
     {
-      "id": "dato4",
-      "tipo": "dato",
+      "id": "teoria4",
+      "ilustracion": "online",
       "numero": 4,
-      "sello": "ANALISTAS",
-      "duracion": 5.2,
-      "titular": "3.200 MILLONES",
-      "detalle": "de dólares en su primer año, el doble que GTA V (DFC Intelligence)",
-      "icono": "dinero",
-      "voz": "Cuatro: los analistas de DFC calculan 3.200 millones de dólares en su primer año. El doble que GTA 5."
+      "duracion": 3.8,
+      "titular": "ONLINE DE PAGO",
+      "voz": "Cuatro: el nuevo Online será un juego aparte... y de pago. ¿Lo pagarías?",
+      "pregunta": "¿LO PAGARÍAS?",
+      "fx": [
+        {
+          "tipo": "dinero",
+          "t": 0.0
+        },
+        {
+          "tipo": "explosion",
+          "t": 0.45,
+          "x": 790,
+          "y": 1010,
+          "escala": 1.0,
+          "texto": "BOOM!"
+        }
+      ]
     },
     {
-      "id": "dato5",
-      "tipo": "dato",
+      "id": "teoria5",
+      "ilustracion": "yate",
       "numero": 5,
-      "sello": "TEORÍA",
-      "duracion": 5.6,
-      "titular": "¿JASON ES POLI?",
-      "detalle": "un guardia le dice que ya le ha visto antes... y Jason no lo niega",
-      "icono": "placa",
-      "voz": "Y cinco: muchos creen que Jason es un policía infiltrado. En el tráiler, un guardia le dice que ya le ha visto antes... y él no lo niega."
-    },
-    {
-      "id": "bonus",
-      "tipo": "dato",
-      "numero": 0,
-      "sello": "TEORÍA",
-      "duracion": 3.4,
-      "antetitulo": "BONUS",
-      "titular": "¿UN 3.er PROTA?",
-      "detalle": "hay fans que creen que hay un personaje jugable oculto",
-      "icono": "interrogante",
-      "voz": "Bonus: hay fans convencidos de que hay un tercer personaje jugable oculto."
+      "duracion": 3.8,
+      "titular": "EL YATE DE MICHAEL",
+      "voz": "Cinco: el yate de Michael, de GTA 5, aparece en Leonida. ¿Tú qué opinas?",
+      "pregunta": "¿TÚ QUÉ OPINAS?",
+      "fx": [
+        {
+          "tipo": "disparo",
+          "t": 0.3,
+          "x": 60,
+          "y": 520,
+          "ang": 22,
+          "agujero": [
+            430,
+            700
+          ]
+        },
+        {
+          "tipo": "explosion",
+          "t": 0.55,
+          "x": 900,
+          "y": 1060,
+          "escala": 0.8
+        }
+      ]
     },
     {
       "id": "cierre",
-      "tipo": "cierre",
-      "duracion": 4.0,
-      "antetitulo": "¿Jason es poli?",
-      "titular": "SÍ o NO",
-      "detalle": "Te leo en comentarios · sígueme para más",
-      "icono": "comentario",
-      "voz": "¿Jason es poli? Comenta SÍ o NO... y sígueme para más."
+      "ilustracion": "ciudad_heli",
+      "duracion": 2.6,
+      "etiqueta": "COMENTA",
+      "titular": "¿CUÁL ES REAL?",
+      "detalle": "Comenta el número",
+      "voz": "¿Cuál crees que es real? Comenta el número.",
+      "fx": [
+        {
+          "tipo": "explosion",
+          "t": 0.05,
+          "x": 540,
+          "y": 820,
+          "escala": 1.6,
+          "texto": "BOOM!"
+        }
+      ]
     }
   ]
 }

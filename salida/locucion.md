@@ -1,31 +1,25 @@
-# Guion de locución — GTA 6: 5 secretos y teorías que casi nadie conoce
+# Guion de locución — GTA 6: 5 teorías que los fans juran que son reales
 
-Duración total: 41.0 s
+Duración total: 24.0 s
 
-**[00.00s – 03.60s] gancho**  
-GTA 6 llega en 9 días... y sin lo que todos esperaban.
+**[00.00s – 02.40s] gancho**  
+5 teorías de GTA 6 que los fans juran que son reales.
 
-**[03.60s – 06.80s] promesa**  
-5 secretos y teorías que casi nadie conoce. La última te vuela la cabeza.
+**[02.40s – 06.20s] teoria1**  
+Uno: Jason sería un poli infiltrado. ¿Tú qué crees?
 
-**[06.80s – 12.20s] dato1**  
-Uno: el 19 de noviembre no habrá GTA 6 Online. Take-Two lo lanza como juego para un jugador... y seguirá actualizando el Online de GTA 5.
+**[06.20s – 10.00s] teoria2**  
+Dos: en el final, uno de los dos mata al otro. ¿Te lo crees?
 
-**[12.20s – 17.80s] dato2**  
-Dos: en código filtrado del juego aparecen textos de multijugador... pero varias fuentes apuntan a que el nuevo Online no llegaría hasta 2027.
+**[10.00s – 13.80s] teoria3**  
+Tres: hay un tercer protagonista secreto... un poli veterano. ¿Real o fake?
 
-**[17.80s – 22.80s] dato3**  
-Tres: el yate que se ve junto a la casa de Jason... podría ser el de Michael, de GTA 5.
+**[13.80s – 17.60s] teoria4**  
+Cuatro: el nuevo Online será un juego aparte... y de pago. ¿Lo pagarías?
 
-**[22.80s – 28.00s] dato4**  
-Cuatro: los analistas de DFC calculan 3.200 millones de dólares en su primer año. El doble que GTA 5.
+**[17.60s – 21.40s] teoria5**  
+Cinco: el yate de Michael, de GTA 5, aparece en Leonida. ¿Tú qué opinas?
 
-**[28.00s – 33.60s] dato5**  
-Y cinco: muchos creen que Jason es un policía infiltrado. En el tráiler, un guardia le dice que ya le ha visto antes... y él no lo niega.
-
-**[33.60s – 37.00s] bonus**  
-Bonus: hay fans convencidos de que hay un tercer personaje jugable oculto.
-
-**[37.00s – 41.00s] cierre**  
-¿Jason es poli? Comenta SÍ o NO... y sígueme para más.
+**[21.40s – 24.00s] cierre**  
+¿Cuál crees que es real? Comenta el número.
 
