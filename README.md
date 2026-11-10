@@ -1,13 +1,14 @@
 # Reel: GTA 6, 5 teorías que los fans juran que son reales
 
-Vídeo vertical de **24 s** (1080×1920, 30 fps) para **Instagram Reels** y **YouTube Shorts**. Es de acción: disparos, fogonazos, agujeros de bala en la pantalla, explosiones con onda expansiva y sacudida de cámara, lluvia de billetes, subtítulos tipo karaoke y una encuesta "¿Tú qué crees?" en cada teoría.
+Vídeo vertical de **25 s** (1080×1920, 30 fps) para **Instagram Reels** y **YouTube Shorts**. Es de acción: disparos, fogonazos, agujeros de bala en la pantalla, explosiones con onda expansiva y sacudida de cámara, lluvia de billetes, subtítulos tipo karaoke y una encuesta "¿Tú qué crees?" en cada teoría.
 
 | Archivo | Qué es |
 |---|---|
 | `salida/reel.mp4` | Vídeo final, listo para subir |
 | `salida/portada.jpg` | Portada o miniatura |
 | `salida/subtitulos.srt` | Subtítulos, por si quieres subirlos aparte |
-| `salida/locucion.md` | Guion con tiempos, por si quieres poner tu voz encima |
+| `salida/locucion.md` | Guion de la locución con tiempos |
+| `voz/` | Locución de narrador: una frase por escena (`voz/original/` son los archivos tal cual salen de Higgsfield) |
 
 ## Estructura
 
@@ -26,6 +27,17 @@ Por qué engancha:
 - La encuesta SÍ/NO invita a comentar.
 - El cierre pide comentar un número, que es una respuesta fácil y empuja el vídeo en el algoritmo.
 - Las 5 teorías son de la comunidad, no son datos oficiales. Salen de foros y medios como [Yahoo Tech](https://tech.yahoo.com/gaming/articles/gta-6-trailer-2-wild-112932290.html), [Esquire SG](https://esquiresg.com/we-read-all-the-gta-6-fan-theories-so-you-dont-have-to/) y [Game Rant](https://gamerant.com/gta-6-online-just-got-a-disappointing-update/).
+
+## Voz
+
+La narración es la voz **"Orion"** de Higgsfield con el motor **ElevenLabs**: masculina, grave y con mucha entonación, el estilo de narrador de los vídeos virales. Hay una frase por escena. Cada frase:
+- se recorta de silencios,
+- se acelera un 15 % para que tenga ritmo de short,
+- y se comprime y normaliza a -16 LUFS.
+
+El motor la coloca al inicio de cada escena y baja la música y los efectos mientras habla. Los subtítulos siguen la duración real de cada frase.
+
+Para cambiar la voz, sustituye `voz/escena_N.wav` y ajusta `duracion` en `guion.json`.
 
 ## Imágenes
 

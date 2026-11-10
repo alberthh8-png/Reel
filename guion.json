@@ -14,11 +14,11 @@
     {
       "id": "gancho",
       "ilustracion": "ciudad_heli",
-      "duracion": 2.4,
+      "duracion": 3.13,
       "etiqueta": "GTA VI",
       "titular": "5 TEORÍAS",
       "detalle": "que los fans juran que son reales",
-      "voz": "5 teorías de GTA 6 que los fans juran que son reales.",
+      "voz": "5 teorías de GTA 6 que los fans juran que son reales!",
       "fx": [
         {
           "tipo": "explosion",
@@ -50,13 +50,14 @@
             380
           ]
         }
-      ]
+      ],
+      "audio_voz": "voz/escena_0.wav"
     },
     {
       "id": "teoria1",
       "ilustracion": "poli",
       "numero": 1,
-      "duracion": 3.8,
+      "duracion": 3.94,
       "titular": "JASON ES POLI",
       "voz": "Uno: Jason sería un poli infiltrado. ¿Tú qué crees?",
       "pregunta": "¿TÚ QUÉ CREES?",
@@ -87,15 +88,16 @@
         {
           "tipo": "sirena"
         }
-      ]
+      ],
+      "audio_voz": "voz/escena_1.wav"
     },
     {
       "id": "teoria2",
       "ilustracion": "traicion",
       "numero": 2,
-      "duracion": 3.8,
+      "duracion": 3.91,
       "titular": "UNO MATA AL OTRO",
-      "voz": "Dos: en el final, uno de los dos mata al otro. ¿Te lo crees?",
+      "voz": "Dos: al final, uno de los dos mata al otro. ¿Te lo crees?",
       "pregunta": "¿TE LO CREES?",
       "fx": [
         {
@@ -124,15 +126,16 @@
             560
           ]
         }
-      ]
+      ],
+      "audio_voz": "voz/escena_2.wav"
     },
     {
       "id": "teoria3",
       "ilustracion": "tercero",
       "numero": 3,
-      "duracion": 3.8,
+      "duracion": 3.34,
       "titular": "HAY UN 3.er PROTA",
-      "voz": "Tres: hay un tercer protagonista secreto... un poli veterano. ¿Real o fake?",
+      "voz": "Tres: hay un tercer protagonista secreto. ¿Real o fake?",
       "pregunta": "¿REAL O FAKE?",
       "fx": [
         {
@@ -152,15 +155,16 @@
             420
           ]
         }
-      ]
+      ],
+      "audio_voz": "voz/escena_3.wav"
     },
     {
       "id": "teoria4",
       "ilustracion": "online",
       "numero": 4,
-      "duracion": 3.8,
+      "duracion": 4.55,
       "titular": "ONLINE DE PAGO",
-      "voz": "Cuatro: el nuevo Online será un juego aparte... y de pago. ¿Lo pagarías?",
+      "voz": "Cuatro: el nuevo Online será aparte, y de pago. ¿Lo pagarías?",
       "pregunta": "¿LO PAGARÍAS?",
       "fx": [
         {
@@ -175,15 +179,16 @@
           "escala": 1.0,
           "texto": "BOOM!"
         }
-      ]
+      ],
+      "audio_voz": "voz/escena_4.wav"
     },
     {
       "id": "teoria5",
       "ilustracion": "yate",
       "numero": 5,
-      "duracion": 3.8,
+      "duracion": 3.69,
       "titular": "EL YATE DE MICHAEL",
-      "voz": "Cinco: el yate de Michael, de GTA 5, aparece en Leonida. ¿Tú qué opinas?",
+      "voz": "Cinco: el yate de Michael aparece en Leonida. ¿Tú qué opinas?",
       "pregunta": "¿TÚ QUÉ OPINAS?",
       "fx": [
         {
@@ -204,16 +209,17 @@
           "y": 1060,
           "escala": 0.8
         }
-      ]
+      ],
+      "audio_voz": "voz/escena_5.wav"
     },
     {
       "id": "cierre",
       "ilustracion": "ciudad_heli",
-      "duracion": 2.6,
+      "duracion": 2.5,
       "etiqueta": "COMENTA",
       "titular": "¿CUÁL ES REAL?",
       "detalle": "Comenta el número",
-      "voz": "¿Cuál crees que es real? Comenta el número.",
+      "voz": "¿Cuál crees que es real? ¡Comenta el número!",
       "fx": [
         {
           "tipo": "explosion",
@@ -223,7 +229,8 @@
           "escala": 1.6,
           "texto": "BOOM!"
         }
-      ]
+      ],
+      "audio_voz": "voz/escena_6.wav"
     }
   ]
 }

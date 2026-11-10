@@ -804,11 +804,36 @@ FX = {"explosion": Explosion, "disparo": Disparo, "dinero": Dinero, "sirena": Si
 # subtítulos
 # --------------------------------------------------------------------------
 
-def tiempos_palabras(voz, inicio, dur):
+VOZ_RETARDO = 0.06  # la voz entra justo después del corte
+
+
+def leer_wav(ruta):
+    with wave.open(ruta, "rb") as w:
+        n, canales, sr = w.getnframes(), w.getnchannels(), w.getframerate()
+        datos = np.frombuffer(w.readframes(n), dtype=np.int16).astype(np.float64) / 32768
+    if canales > 1:
+        datos = datos.reshape(-1, canales).mean(axis=1)
+    if sr != 44100:
+        datos = np.interp(np.arange(0, len(datos), sr / 44100), np.arange(len(datos)), datos)
+    return datos
+
+
+def duracion_voz(e):
+    ruta = e.get("audio_voz")
+    if not ruta:
+        return None
+    ruta = os.path.join(RAIZ, ruta)
+    if not os.path.exists(ruta):
+        return None
+    with wave.open(ruta, "rb") as w:
+        return w.getnframes() / w.getframerate()
+
+
+def tiempos_palabras(voz, inicio, dur, desde_inicio=False):
     palabras = voz.split()
-    pesos = [len(p) + 2 + (5 if p.endswith(("...", ".", "?", ":")) else 0) for p in palabras]
+    pesos = [len(p) + 2 + (5 if p.endswith(("...", ".", "?", ":", "!")) else 0) for p in palabras]
     total = sum(pesos)
-    arranque = 0.0 if inicio == 0 else 0.12
+    arranque = 0.0 if (inicio == 0 or desde_inicio) else 0.12
     t, salida = inicio + arranque, []
     util = dur - 0.15 - arranque
     for p, w in zip(palabras, pesos):
@@ -857,7 +882,12 @@ class Render:
         self.total = t
         palabras = []
         for e in self.escenas:
-            palabras.extend(tiempos_palabras(e["voz"], e["inicio"], e["duracion"]))
+            dv = duracion_voz(e)
+            if dv:
+                ini = e["inicio"] + (0 if e["idx"] == 0 else VOZ_RETARDO)
+                palabras.extend(tiempos_palabras(e["voz"], ini, dv + 0.15, desde_inicio=True))
+            else:
+                palabras.extend(tiempos_palabras(e["voz"], e["inicio"], e["duracion"]))
         self.bloques = bloques_subtitulo(palabras)
         self.grano = [self._grano(k) for k in range(3)]
         self.vineta = self._vineta()
@@ -1175,8 +1205,17 @@ def escribir_audio(render, ruta):
                 pegar(sfx, (b + f["t"]) * SR, sfx_explosion(rng, 0.9), 0.4)
         if e.get("pregunta"):
             pegar(sfx, (b + e["duracion"] - 1.45) * SR, sfx_pop(), 1.0)
+    voz = np.zeros(N)
+    for e in render.escenas:
+        archivo_voz = e.get("audio_voz")
+        if archivo_voz and os.path.exists(os.path.join(RAIZ, archivo_voz)):
+            retardo = 0 if e["idx"] == 0 else VOZ_RETARDO
+            pegar(voz, (e["inicio"] + retardo) * SR, leer_wav(os.path.join(RAIZ, archivo_voz)), 1.0)
     env = filtro_lp(np.abs(sfx), 20)  # ducking: la música baja con los golpes
-    mezcla = mus / (1 + 2.5 * env) + sfx
+    env_voz = np.clip(filtro_lp(np.abs(voz), 8) * 12, 0, 1)  # y bastante más cuando habla la voz
+    mus = mus / (1 + 2.5 * env) * (1 - 0.6 * env_voz)
+    sfx = sfx * (1 - 0.35 * env_voz)
+    mezcla = mus + sfx + voz * 1.35
     mezcla = mezcla[:int(total * SR)]
     fade = int(0.3 * SR)
     mezcla[-fade:] *= np.linspace(1, 0, fade)
@@ -1269,6 +1308,8 @@ def main():
                 print(f"\r  fotograma {i}/{n_frames}", end="", flush=True)
     ff.stdin.close()
     ff.wait()
+    if ff.returncode:
+        sys.exit(f"ffmpeg falló con código {ff.returncode}")
     Image.frombytes("RGB", (W, H), r.frame(int(0.5 * r.fps))).save(os.path.join(SALIDA, "portada.jpg"), quality=92)
     print(f"\nListo: {salida}")
     if ff.returncode:
