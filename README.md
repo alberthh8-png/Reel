@@ -56,10 +56,7 @@ imagenes/gancho.jpg   imagenes/teoria1.jpg   imagenes/teoria4.png  ...
 
 ## Texto para publicar
 
-> 5 teorías de GTA 6 que los fans juran que son reales 🤯 ¿Cuál crees que es real? Comenta el número 👇
-> #GTA6 #GTAVI #GTAOnline #teorias #videojuegos #gaming #shorts
-
-**Título para YouTube Shorts:** `5 TEORÍAS de GTA 6 que los fans juran que son REALES 🤯 #shorts`
+Textos, hashtags, horarios y estrategia para Instagram, YouTube Shorts y TikTok en **[PUBLICAR.md](PUBLICAR.md)**.
 
 ## Cómo regenerarlo
 
