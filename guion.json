@@ -1,0 +1,115 @@
+{
+  "titulo": "GTA 6: 5 secretos y teorías que casi nadie conoce",
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1920,
+  "bpm": 118,
+  "etiqueta": "GTA VI · SECRETOS Y TEORÍAS",
+  "colores": {
+    "acento": "#ffd23f",
+    "rosa": "#ff3d8b",
+    "cian": "#2de2e6",
+    "texto": "#ffffff"
+  },
+  "escenas": [
+    {
+      "id": "gancho",
+      "tipo": "gancho",
+      "duracion": 3.6,
+      "antetitulo": "GTA VI llega sin",
+      "titular": "ONLINE",
+      "detalle": "y no es lo único que no te han contado",
+      "voz": "GTA 6 llega en 9 días... y sin lo que todos esperaban."
+    },
+    {
+      "id": "promesa",
+      "tipo": "promesa",
+      "duracion": 3.2,
+      "antetitulo": "5 secretos y",
+      "titular": "TEORÍAS",
+      "detalle": "la última te va a volar la cabeza",
+      "voz": "5 secretos y teorías que casi nadie conoce. La última te vuela la cabeza."
+    },
+    {
+      "id": "dato1",
+      "tipo": "dato",
+      "numero": 1,
+      "sello": "CONFIRMADO",
+      "duracion": 5.4,
+      "titular": "SIN ONLINE",
+      "detalle": "Take-Two lo lanza como juego para un jugador · el GTA Online de GTA V sigue",
+      "icono": "sin_red",
+      "voz": "Uno: el 19 de noviembre no habrá GTA 6 Online. Take-Two lo lanza como juego para un jugador... y seguirá actualizando el Online de GTA 5."
+    },
+    {
+      "id": "dato2",
+      "tipo": "linea_tiempo",
+      "numero": 2,
+      "sello": "RUMOR",
+      "duracion": 5.6,
+      "titular": "¿ONLINE EN 2027?",
+      "hitos": [
+        "19 NOV: solo historia",
+        "Código filtrado: multijugador",
+        "2027: nuevo Online"
+      ],
+      "voz": "Dos: en código filtrado del juego aparecen textos de multijugador... pero varias fuentes apuntan a que el nuevo Online no llegaría hasta 2027.",
+      "tachar": false
+    },
+    {
+      "id": "dato3",
+      "tipo": "dato",
+      "numero": 3,
+      "sello": "TEORÍA",
+      "duracion": 5.0,
+      "titular": "EL YATE DE GTA V",
+      "detalle": "el barco junto a la casa de Jason podría ser el de Michael",
+      "icono": "yate",
+      "voz": "Tres: el yate que se ve junto a la casa de Jason... podría ser el de Michael, de GTA 5."
+    },
+    {
+      "id": "dato4",
+      "tipo": "dato",
+      "numero": 4,
+      "sello": "ANALISTAS",
+      "duracion": 5.2,
+      "titular": "3.200 MILLONES",
+      "detalle": "de dólares en su primer año, el doble que GTA V (DFC Intelligence)",
+      "icono": "dinero",
+      "voz": "Cuatro: los analistas de DFC calculan 3.200 millones de dólares en su primer año. El doble que GTA 5."
+    },
+    {
+      "id": "dato5",
+      "tipo": "dato",
+      "numero": 5,
+      "sello": "TEORÍA",
+      "duracion": 5.6,
+      "titular": "¿JASON ES POLI?",
+      "detalle": "un guardia le dice que ya le ha visto antes... y Jason no lo niega",
+      "icono": "placa",
+      "voz": "Y cinco: muchos creen que Jason es un policía infiltrado. En el tráiler, un guardia le dice que ya le ha visto antes... y él no lo niega."
+    },
+    {
+      "id": "bonus",
+      "tipo": "dato",
+      "numero": 0,
+      "sello": "TEORÍA",
+      "duracion": 3.4,
+      "antetitulo": "BONUS",
+      "titular": "¿UN 3.er PROTA?",
+      "detalle": "hay fans que creen que hay un personaje jugable oculto",
+      "icono": "interrogante",
+      "voz": "Bonus: hay fans convencidos de que hay un tercer personaje jugable oculto."
+    },
+    {
+      "id": "cierre",
+      "tipo": "cierre",
+      "duracion": 4.0,
+      "antetitulo": "¿Jason es poli?",
+      "titular": "SÍ o NO",
+      "detalle": "Te leo en comentarios · sígueme para más",
+      "icono": "comentario",
+      "voz": "¿Jason es poli? Comenta SÍ o NO... y sígueme para más."
+    }
+  ]
+}
