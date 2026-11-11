@@ -1217,7 +1217,7 @@ class Render:
 
     def _preparar(self, e):
         tit = e["titular"]
-        f = ajustar_fuente(tit, W - 110, 150, borde=12)
+        f = ajustar_fuente(tit, W - 220, 150, borde=12)  # margen de seguridad: no se corta en ninguna app
         e["capa_tit"] = texto_con_estilo(tit, f, self.acento + (255,), borde=12, color_borde=(16, 4, 24),
                                          brillo=self.rosa)
         e["capa_det"] = None
@@ -1350,7 +1350,7 @@ class Render:
         a = lt - 0.12 if e["idx"] > 0 else lt
         if a >= 0:  # titular: golpe desde grande
             p = ease_out_cubic(a / 0.22)
-            esc = (1.08 - 0.08 * p) if e["idx"] == 0 else 1.7 - 0.7 * p
+            esc = (1.03 - 0.03 * p) if e["idx"] == 0 else 1.7 - 0.7 * p
             pulso = 1 + 0.03 * max(0, math.cos(2 * math.pi * lt * self.g["bpm"] / 60)) ** 10
             alfa = 1.0 if e["idx"] == 0 else clamp(a / 0.08)
             pegar_centrado(frame, e["capa_tit"], W / 2, 1220, escala=esc * pulso, alfa=alfa * sal, angulo=-2)

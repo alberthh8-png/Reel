@@ -16,8 +16,10 @@ Este archivo recoge las métricas reales de cada reel y las reglas que salen de 
 8. **Sellos de credibilidad** (REAL / RUMOR / TEORÍA) y datos con fuente: los guardados y republicaciones suben.
 9. **Voz**: Dan (ElevenLabs), frases cortas, sin puntos suspensivos (estiran las vocales), acelerada un 8-15 % y revisando que ninguna vocal sostenida pase de 0,13 s.
 10. **YouTube retiene mejor que Instagram** con este contenido: hay que cuidar siempre el título de YouTube.
-11. **TikTok necesita calentar la cuenta** y publicar en hora punta: de madrugada y con la cuenta nueva solo llegó a 6 personas.
-12. **La hora de subida importa poco** (en Instagram y YouTube) comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
+11. **Titular siempre con margen de seguridad** (máximo ~880 px de ancho): las apps recortan los bordes y la animación lo agranda. Comprobado por código antes de exportar.
+12. **Llamada a compartir con un destinatario concreto** ("pásaselo a tu jefe") en la mitad del vídeo: dio los primeros compartidos. Mantenerla y probarla otra vez (a la segunda, pasa a regla fija).
+13. **TikTok necesita calentar la cuenta** y publicar en hora punta: de madrugada y con la cuenta nueva solo llegó a 6 personas.
+14. **La hora de subida importa poco en Instagram y YouTube, pero mucho en TikTok** (03:47 → 6 vistas; 21:12 → 92) comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
 
 ---
 
@@ -41,6 +43,7 @@ Este archivo recoge las métricas reales de cada reel y las reglas que salen de 
 | GTA P1 | YouTube | 1,2 K | 50,5 % | 18 s (75 %) | — | — | — | Igual |
 | GTA P1 | TikTok | **6** | (muestra pequeña) | 8,9 s (36 %) · 20 % completo | 1 | 1 | 0 | Publicado a las **03:47**; cuenta nueva |
 | GTA P2 | Instagram | 148 | 47,6 % | 7 s (29 %) | 0 % | 1,6 % | 0 | Titular abstracto, "PARTE 2" en pantalla y pausa gris |
+| GTA P2 | TikTok | 92 | (cae en 1-2 s) | 5,9 s (24 %) · 3 % completo | **2 (2,2 %)** | 2 | **1** | Publicado a las **21:12**; llamada a compartir ("pásaselo a tu jefe") |
 | Drift R1 | YouTube | 542 (6 h) | 69,5 % | pendiente | — | — | — | Fotos realistas y zoom lento; texto que engancha abajo |
 | Drift R1 | Instagram | pendiente | | | | | | |
 | Drift R1 | TikTok | pendiente | | | | | | |
@@ -62,6 +65,11 @@ Este archivo recoge las métricas reales de cada reel y las reglas que salen de 
 ### GTA 6 Parte 2: "El mundo se para" (24,4 s)
 **Instagram** (~10 h): 148 reproducciones · 124 espectadores · tiempo medio 7 s (29 %) · **omisión 47,6 %** · me gusta 4,8 % · guardados 1,6 % · republicaciones 0,8 % · compartidos 0 · comentarios 0 · 0 seguidores.
 - El contenido gustó más (me gusta y guardados por encima de la Parte 1), pero el arranque falló. Causas probables: "PARTE 2" en pantalla, la pausa gris en el segundo 1,2 y un titular abstracto.
+**TikTok** (publicado el 10 nov a las 21:12): 92 visualizaciones · tiempo medio 5,9 s (24 %) · 3 % lo vio completo · 4 me gusta · 0 comentarios · **2 compartidos** · 2 guardados · **1 seguidor nuevo**.
+- **15 veces más vistas que la Parte 1 en TikTok** (92 frente a 6) solo por publicar a las 21:12 en vez de a las 03:47: en TikTok la hora sí importa mucho.
+- El arranque falla igual que en Instagram (la mayoría se va en 1-2 s), pero aparecen los **primeros compartidos (2) y el primer seguidor**: la llamada "pásaselo a tu jefe" funciona con quien se queda.
+- **Fallo detectado:** en el fotograma 0 el titular salía cortado por los lados ("L MUNDO SE PAR"). Corregido en el motor: margen de seguridad de 110 px por lado.
+
 - Se hizo una versión independiente (`salida/parte2_prueba/`) para subirla como Reel de prueba. **Pendiente: sus métricas.**
 
 ### Drift Reel 1: "¿Por qué tu mando hace drift?" (27,0 s, fotos realistas)
