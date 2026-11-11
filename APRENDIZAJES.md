@@ -18,8 +18,9 @@ Este archivo recoge las métricas reales de cada reel y las reglas que salen de 
 10. **YouTube retiene mejor que Instagram** con este contenido: hay que cuidar siempre el título de YouTube.
 11. **Titular siempre con margen de seguridad** (máximo ~880 px de ancho): las apps recortan los bordes y la animación lo agranda. Comprobado por código antes de exportar.
 12. **Llamada a compartir con un destinatario concreto** ("pásaselo a tu jefe") en la mitad del vídeo: dio los primeros compartidos. Mantenerla y probarla otra vez (a la segunda, pasa a regla fija).
-13. **TikTok necesita calentar la cuenta** y publicar en hora punta: de madrugada y con la cuenta nueva solo llegó a 6 personas.
-14. **La hora de subida importa poco en Instagram y YouTube, pero mucho en TikTok** (03:47 → 6 vistas; 21:12 → 92) comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
+13. **Cada vídeo con un primer plano propio**, distinto de los anteriores, y **sin "Parte X" en el título de YouTube** (la Parte 2 en YouTube: 8 vistas).
+14. **TikTok necesita calentar la cuenta** y publicar en hora punta: de madrugada y con la cuenta nueva solo llegó a 6 personas.
+15. **La hora de subida importa poco en Instagram y YouTube, pero mucho en TikTok** (03:47 → 6 vistas; 21:12 → 92) comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
 
 ---
 
@@ -44,6 +45,7 @@ Este archivo recoge las métricas reales de cada reel y las reglas que salen de 
 | GTA P1 | TikTok | **6** | (muestra pequeña) | 8,9 s (36 %) · 20 % completo | 1 | 1 | 0 | Publicado a las **03:47**; cuenta nueva |
 | GTA P2 | Instagram | 148 | 47,6 % | 7 s (29 %) | 0 % | 1,6 % | 0 | Titular abstracto, "PARTE 2" en pantalla y pausa gris |
 | GTA P2 | TikTok | 92 | (cae en 1-2 s) | 5,9 s (24 %) · 3 % completo | **2 (2,2 %)** | 2 | **1** | Publicado a las **21:12**; llamada a compartir ("pásaselo a tu jefe") |
+| GTA P2 | YouTube | **8** (22 h) | (4 personas) | sin datos | — | — | — | YouTube casi no lo enseñó en el feed de Shorts |
 | Drift R1 | YouTube | 542 (6 h) | 69,5 % | pendiente | — | — | — | Fotos realistas y zoom lento; texto que engancha abajo |
 | Drift R1 | Instagram | pendiente | | | | | | |
 | Drift R1 | TikTok | pendiente | | | | | | |
@@ -69,6 +71,12 @@ Este archivo recoge las métricas reales de cada reel y las reglas que salen de 
 - **15 veces más vistas que la Parte 1 en TikTok** (92 frente a 6) solo por publicar a las 21:12 en vez de a las 03:47: en TikTok la hora sí importa mucho.
 - El arranque falla igual que en Instagram (la mayoría se va en 1-2 s), pero aparecen los **primeros compartidos (2) y el primer seguidor**: la llamada "pásaselo a tu jefe" funciona con quien se queda.
 - **Fallo detectado:** en el fotograma 0 el titular salía cortado por los lados ("L MUNDO SE PAR"). Corregido en el motor: margen de seguridad de 110 px por lado.
+
+**YouTube** (22 h): **8 visualizaciones** · 4 "interesadas" · fuentes: exploración 3, página del canal 2, notificaciones 2, externas 1 · retención todavía sin datos.
+- YouTube prácticamente **no lo enseñó en el feed de Shorts**. Las pocas vistas vienen del canal y de las notificaciones. El canal no está penalizado: el drift sacó 542 vistas en 6 h.
+- Hipótesis, sin confirmar: el arranque es casi igual que el de la Parte 1 (la misma ciudad con el helicóptero), y el título lleva "(Parte 2)". Para la próxima: **cada vídeo con su propio primer plano** y sin "Parte X" en el título.
+
+**Conclusión de la Parte 2:** falló en las 3 plataformas por el arranque (Instagram 47,6 % de omisión, TikTok cae en 1-2 s, YouTube casi no lo distribuyó). Lo que sí funcionó con quien se quedó: más me gusta y guardados, y los primeros compartidos.
 
 - Se hizo una versión independiente (`salida/parte2_prueba/`) para subirla como Reel de prueba. **Pendiente: sus métricas.**
 
