@@ -133,7 +133,9 @@ class Ventana(reel.Efecto):
     def vis(self, t):
         if t < self.t0 or t > self.t1:
             return 0.0
-        return clamp((t - self.t0) / 0.25) * clamp((self.t1 - t) / 0.15)
+        fundido = self.ev.get("fundido", 0.25)
+        entrada = 1.0 if fundido <= 0 else clamp((t - self.t0) / fundido)
+        return entrada * clamp((self.t1 - t) / 0.15)
 
 
 class Marca(Ventana):
@@ -245,7 +247,8 @@ class Probador(Ventana):
         d.line((x - r, y, x + r, y), fill=(70, 90, 130, al), width=2)
         d.line((x, y - r, x, y + r), fill=(70, 90, 130, al), width=2)
         deriva = (0.32 + 0.04 * math.sin(a * 17), -0.12 + 0.03 * math.cos(a * 13))
-        col, dx, dy, txt = ROJO, deriva[0] * ease_out_cubic(a / 0.6), deriva[1] * ease_out_cubic(a / 0.6), "DRIFT"
+        llegada = 1.0 if self.ev.get("fundido", 0.25) <= 0 else ease_out_cubic(a / 0.6)  # ya desviado en el fotograma 0
+        col, dx, dy, txt = ROJO, deriva[0] * llegada, deriva[1] * llegada, "DRIFT"
         f = fuente(max(26, int(r * 0.26)))
         if modo == "calibrar":
             prog = clamp((a - 0.5) / 1.4)
@@ -258,6 +261,14 @@ class Probador(Ventana):
                 k = ease_out_cubic((a - 1.9) / 0.3)
                 dx, dy = deriva[0] * (1 - k), deriva[1] * (1 - k)
                 col, txt = VERDE, "CENTRO = 0.00"
+        elif modo == "arregla":  # drift y, de golpe, vuelve al centro en verde
+            k = ease_out_back((a - self.ev.get("arregla_en", 0.8)) / 0.25, 2.2)
+            if k > 0:
+                dx, dy = deriva[0] * (1 - min(k, 1)), deriva[1] * (1 - min(k, 1))
+                col, txt = VERDE, "ARREGLADO"
+                anillo = r * 0.25 + r * 0.9 * clamp((a - self.ev.get("arregla_en", 0.8)) / 0.4)
+                d.ellipse((x - anillo, y - anillo, x + anillo, y + anillo), outline=VERDE + (int(al * (1 - anillo / (r * 1.15))),),
+                          width=6)
         elif modo == "zona_muerta":
             k = ease_out_back((a - 0.6) / 0.6)
             rz = r * (0.08 + 0.32 * clamp(k, 0, 1.2))
@@ -373,7 +384,21 @@ class Flechas(Ventana):
             d.polygon([(bx + lado * 34, y), (bx, y - 26), (bx, y + 26)], fill=col)
 
 
-reel.FX.update({"camara": Camara, "marca": Marca, "particulas": Particulas, "carbono": Carbono,
+class VeloSuperior(reel.Efecto):
+    """Degradado oscuro arriba para que el titular se lea sobre cualquier foto."""
+
+    def __init__(self, ev, semilla):
+        import numpy as np
+        alto = ev.get("alto", 720)
+        a = (np.clip(1 - np.arange(alto) / alto, 0, 1) ** 1.4 * ev.get("fuerza", 190)).astype("uint8")
+        self.capa = Image.new("RGBA", (W, alto), (6, 4, 16, 0))
+        self.capa.putalpha(Image.fromarray(np.repeat(a[:, None], W, 1), "L"))
+
+    def dibujar(self, frame, t, mapa):
+        frame.alpha_composite(self.capa, (0, 0))
+
+
+reel.FX.update({"velo_superior": VeloSuperior, "camara": Camara, "marca": Marca, "particulas": Particulas, "carbono": Carbono,
                 "lectura": Lectura, "probador": Probador, "spray": Spray, "garantia": Garantia,
                 "campo": Campo, "flechas": Flechas})
 

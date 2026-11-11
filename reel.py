@@ -1344,19 +1344,20 @@ class Render:
 
     def _textos(self, frame, e, lt):
         sal = clamp((e["duracion"] - lt) / 0.15)
+        dy = e.get("y_titular", 1220) - 1220  # permite colocar el bloque de titular arriba
         if e["capa_eti"] is not None:
             p = 1.0 if e["idx"] == 0 else ease_out_back((lt - 0.05) / 0.3)
-            pegar_centrado(frame, e["capa_eti"], W / 2, 1090, escala=p, alfa=sal, angulo=3)
+            pegar_centrado(frame, e["capa_eti"], W / 2, 1090 + dy, escala=p, alfa=sal, angulo=3)
         a = lt - 0.12 if e["idx"] > 0 else lt
         if a >= 0:  # titular: golpe desde grande
             p = ease_out_cubic(a / 0.22)
             esc = (1.03 - 0.03 * p) if e["idx"] == 0 else 1.7 - 0.7 * p
             pulso = 1 + 0.03 * max(0, math.cos(2 * math.pi * lt * self.g["bpm"] / 60)) ** 10
             alfa = 1.0 if e["idx"] == 0 else clamp(a / 0.08)
-            pegar_centrado(frame, e["capa_tit"], W / 2, 1220, escala=esc * pulso, alfa=alfa * sal, angulo=-2)
+            pegar_centrado(frame, e["capa_tit"], W / 2, 1220 + dy, escala=esc * pulso, alfa=alfa * sal, angulo=-2)
         if e["capa_det"] is not None:
             p = 1.0 if e["idx"] == 0 else ease_out_cubic((lt - 0.35) / 0.3)
-            pegar_centrado(frame, e["capa_det"], W / 2, 1345 + (1 - p) * 60, alfa=p * sal)
+            pegar_centrado(frame, e["capa_det"], W / 2, 1345 + dy + (1 - p) * 60, alfa=p * sal)
 
     def _sticker_preg(self, frame, e, lt):
         if e["capa_preg"] is None:

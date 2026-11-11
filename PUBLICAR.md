@@ -299,11 +299,11 @@ Vídeo: `salida/drift_soluciones/reel.mp4` (27,4 s)
 
 | Tiempo | Escena |
 |---|---|
-| 0-2,5 s | **5 formas de arreglarlo**: manos jugando y probador con drift |
-| 2,5-7,3 s | **Solución #1, recalíbralo**: el probador calibra y el punto vuelve al centro (0.00). Encuesta "¿LO SABÍAS?" |
+| 0-2,5 s | **ARREGLA EL DRIFT** (titular arriba): probador grande con el punto rojo desviado desde el fotograma 0; en el segundo 0,9 vuelve al centro: "ARREGLADO" |
+| 2,5-7,3 s | **Solución #1, recalíbralo**: el probador calibra y el punto vuelve al centro (0.00) |
 | 7,3-11,6 s | **Solución #2, sube la zona muerta**: la zona amarilla crece hasta "ignorar" el drift |
-| 11,6-14,9 s | **Solución #3, límpialo**: chorro de aire comprimido, alcohol de 90 % y el aviso "NUNCA AGUA". Sticker "PÁSASELO A QUIEN TENGA DRIFT" |
-| 14,9-19,2 s | **Solución #4, 3 años de garantía**: ticket con sello "3 AÑOS" (España, desde 2022, se reclama a la tienda) |
+| 11,6-14,9 s | **Solución #3, límpialo**: chorro de aire comprimido, alcohol de 90 % y el aviso "NUNCA AGUA". Sticker "PÁSASELO A TU AMIGO CON DRIFT" |
+| 14,9-19,2 s | **Solución #4, 3 años de garantía**: ticket con sello "3 AÑOS" (España, desde 2022, se reclama a la tienda). Encuesta "¿LO SABÍAS?" |
 | 19,2-24,3 s | **La definitiva, joysticks Hall o TMR**: imán, sensor, líneas de campo y lectura 0.00 |
 | 24,3-27,4 s | **¿Cuál vas a probar? Guárdalo para cuando te pase** (bucle) |
 
@@ -315,7 +315,7 @@ Guárdalo para cuando te pase 📌 ¿Cuál vas a probar? 👇
 
 #drift #mando #gaming #videojuegos #gamer
 ```
-**Portada:** `5 FORMAS DE ARREGLAR EL DRIFT`
+**Portada:** el primer fotograma ("ARREGLA EL DRIFT" con el probador en rojo); no hace falta añadir texto
 **YouTube:** `Cómo ARREGLAR el DRIFT de tu mando: 5 soluciones 🔧 #shorts`
 **TikTok:** `¿Tu mando hace drift? 🎮 5 formas de arreglarlo 🔧 #drift #mando #gaming #videojuegos #fyp`
 

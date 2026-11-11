@@ -17,8 +17,8 @@
     {
       "id": "gancho",
       "etiqueta": "DRIFT",
-      "titular": "5 FORMAS DE ARREGLARLO",
-      "detalle": "¿tu mando hace drift?",
+      "titular": "ARREGLA EL DRIFT",
+      "detalle": "5 formas, de la más fácil a la definitiva",
       "voz": "¿Tu mando hace drift? 5 formas de arreglarlo.",
       "fx": [
         {
@@ -28,11 +28,11 @@
               "foto": "imagenes/drift/08_manos.png",
               "foco": [
                 0.45,
-                0.5
+                0.55
               ],
               "z": [
                 1.0,
-                1.15
+                1.18
               ]
             }
           ],
@@ -40,33 +40,25 @@
           "dur": 2.54
         },
         {
-          "tipo": "marca",
-          "punto": [
-            0.38,
-            0.53
-          ],
-          "radio": 75,
-          "color": [
-            255,
-            60,
-            70
-          ],
-          "t": 0.0
+          "tipo": "velo_superior"
         },
         {
           "tipo": "probador",
           "pos": [
-            800,
-            260
+            540,
+            880
           ],
-          "radio": 110,
-          "modo": "drift",
-          "t": 0.0
+          "radio": 230,
+          "modo": "arregla",
+          "arregla_en": 0.9,
+          "t": 0.0,
+          "fundido": 0
         }
       ],
       "ilustracion": "taller",
       "audio_voz": "voz/drift_soluciones/escena_0.wav",
-      "duracion": 2.54
+      "duracion": 2.54,
+      "y_titular": 340
     },
     {
       "id": "sol1",
@@ -74,7 +66,6 @@
       "titular": "RECALÍBRALO",
       "detalle": "si el muelle movió el centro",
       "voz": "1: recalíbralo. Si el muelle movió el centro, vuelve a ponerlo a cero.",
-      "pregunta": "¿LO SABÍAS?",
       "fx": [
         {
           "tipo": "camara",
@@ -101,8 +92,7 @@
           ],
           "radio": 180,
           "modo": "calibrar",
-          "t": 0.1,
-          "hasta": 3.29
+          "t": 0.1
         }
       ],
       "ilustracion": "taller",
@@ -154,7 +144,7 @@
       "titular": "LÍMPIALO",
       "detalle": "aire comprimido + alcohol de 90 %. Nunca agua",
       "voz": "3: aire comprimido y alcohol isopropílico. Nunca agua.",
-      "compartir": "PÁSASELO A QUIEN TENGA DRIFT",
+      "compartir": "PÁSASELO A TU AMIGO CON DRIFT",
       "fx": [
         {
           "tipo": "camara",
@@ -263,7 +253,8 @@
       ],
       "ilustracion": "taller",
       "audio_voz": "voz/drift_soluciones/escena_4.wav",
-      "duracion": 4.25
+      "duracion": 4.25,
+      "pregunta": "¿LO SABÍAS?"
     },
     {
       "id": "sol5",
@@ -367,7 +358,7 @@
               "foto": "imagenes/drift/08_manos.png",
               "foco": [
                 0.45,
-                0.5
+                0.55
               ],
               "z": [
                 1.15,
@@ -379,33 +370,23 @@
           "dur": 3.099
         },
         {
-          "tipo": "marca",
-          "punto": [
-            0.38,
-            0.53
-          ],
-          "radio": 75,
-          "color": [
-            255,
-            60,
-            70
-          ],
-          "t": 0.5
+          "tipo": "velo_superior"
         },
         {
           "tipo": "probador",
           "pos": [
-            800,
-            260
+            540,
+            880
           ],
-          "radio": 110,
+          "radio": 230,
           "modo": "drift",
-          "t": 0.6
+          "t": 0.3
         }
       ],
       "ilustracion": "taller",
       "audio_voz": "voz/drift_soluciones/escena_6.wav",
-      "duracion": 3.099
+      "duracion": 3.099,
+      "y_titular": 340
     }
   ]
 }

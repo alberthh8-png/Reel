@@ -87,11 +87,15 @@ Publicado a las 13:00.
 - **Pendiente:** métricas de Instagram y TikTok, y la gráfica de retención de YouTube (tarda hasta 2 días).
 
 ### Drift Reel 2: "Cómo arreglar el drift" (27,4 s)
-Sin publicar. Cambios propuestos antes de subirlo:
-- Probador grande arriba con el punto rojo desviándose, y una cámara rápida desde el fotograma 0.
-- "ASÍ SE ARREGLA EL DRIFT" arriba y grande desde el segundo 0.
-- Lo más satisfactorio al principio: el punto rojo que vuelve al centro y se pone verde.
-- Mover el sticker "¿LO SABÍAS?" de la solución 1 a la 3.
+Sin publicar. **Qué probamos** (todo lo aprendido hasta ahora, en un solo vídeo):
+- **Titular arriba y grande** ("ARREGLA EL DRIFT"), no abajo.
+- **Movimiento desde el fotograma 0**: probador grande con el punto rojo ya desviado.
+- **Lo satisfactorio en el segundo 0,9**: el punto vuelve al centro en verde, "ARREGLADO".
+- **Primera pregunta a mitad del vídeo** (solución 4, "¿LO SABÍAS?"); la solución 1 va sin sticker.
+- **Llamada a compartir con destinatario**: "PÁSASELO A TU AMIGO CON DRIFT" (solución 3).
+- **Primer plano propio** (manos jugando), distinto del Reel 1; titulares con margen de seguridad.
+- **Bucle**: el final vuelve al probador en drift en el mismo sitio que en el fotograma 0.
+- **Publicar a las 20:00-22:00** (sobre todo por TikTok).
 
 ---
 
