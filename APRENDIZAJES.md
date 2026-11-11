@@ -16,7 +16,8 @@ Este archivo recoge las métricas reales de cada reel y las reglas que salen de 
 8. **Sellos de credibilidad** (REAL / RUMOR / TEORÍA) y datos con fuente: los guardados y republicaciones suben.
 9. **Voz**: Dan (ElevenLabs), frases cortas, sin puntos suspensivos (estiran las vocales), acelerada un 8-15 % y revisando que ninguna vocal sostenida pase de 0,13 s.
 10. **YouTube retiene mejor que Instagram** con este contenido: hay que cuidar siempre el título de YouTube.
-11. **La hora de subida importa poco** comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
+11. **TikTok necesita calentar la cuenta** y publicar en hora punta: de madrugada y con la cuenta nueva solo llegó a 6 personas.
+12. **La hora de subida importa poco** (en Instagram y YouTube) comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
 
 ---
 
@@ -38,6 +39,7 @@ Este archivo recoge las métricas reales de cada reel y las reglas que salen de 
 |---|---|---|---|---|---|---|---|---|
 | GTA P1 | Instagram | 1.585 | 39,5 % | 13 s (52 %) | 0 % | 0,6 % | 0 | Primer vídeo: explosión de entrada y lista de 5 teorías |
 | GTA P1 | YouTube | 1,2 K | 50,5 % | 18 s (75 %) | — | — | — | Igual |
+| GTA P1 | TikTok | **6** | (muestra pequeña) | 8,9 s (36 %) · 20 % completo | 1 | 1 | 0 | Publicado a las **03:47**; cuenta nueva |
 | GTA P2 | Instagram | 148 | 47,6 % | 7 s (29 %) | 0 % | 1,6 % | 0 | Titular abstracto, "PARTE 2" en pantalla y pausa gris |
 | Drift R1 | YouTube | 542 (6 h) | 69,5 % | pendiente | — | — | — | Fotos realistas y zoom lento; texto que engancha abajo |
 | Drift R1 | Instagram | pendiente | | | | | | |
@@ -49,6 +51,10 @@ Este archivo recoge las métricas reales de cada reel y las reglas que salen de 
 **Instagram** (16 h): 1.585 reproducciones · 1.211 espectadores · tiempo medio 13 s (52 %) · **omisión 39,5 %** · me gusta 3,5 % · guardados 0,6 % · compartidos 0 · comentarios 0,2 % · 0 seguidores · 94 % desde la pestaña Reels.
 - Picos de "me gusta": segundos 0-3 (arranque), segundo 10 (teoría 2, "Uno mata al otro") y el final.
 - Fallo detectado: el primer fotograma salía blanco por el destello de la explosión.
+
+**TikTok** (publicado el 10 nov a las 03:47): **6 visualizaciones** · tiempo medio 8,9 s (36 %) · 20 % lo vio completo · 1 me gusta, 1 comentario, 1 compartido, 1 guardado · 0 seguidores.
+- Muestra demasiado pequeña para juzgar el vídeo. El problema es de **distribución**: publicado de madrugada y cuenta de TikTok nueva, con difusión limitada al principio.
+- Acciones: comprobar que la cuenta sea pública y que no aparezca "No apto para Para ti"; subir desde la app a las 20:00-22:00; calentar la cuenta usando TikTok a diario unos días.
 
 **YouTube** (39 h): 1,2 K visualizaciones (casi todas en las primeras 6 h, después se estancó) · **se quedaron 49,5 % / saltaron 50,5 %** · duración media **18 s (75,1 %)** · ~38 % llega al final · la retención empieza por encima del 100 % (repeticiones).
 - Caída fuerte entre los segundos 5 y 9: el final de la teoría 1 y la pregunta "¿Tú qué crees?".
