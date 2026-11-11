@@ -1,6 +1,33 @@
-# Aprendizajes de la cuenta (se actualiza con cada vídeo)
+# Aprendizajes de la cuenta GNews (se actualiza con cada vídeo)
 
-Este archivo recoge las métricas reales de cada reel y las reglas que salen de ellas. **Antes de hacer un vídeo nuevo, se lee esto.**
+Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias de Albert, las métricas reales de cada reel, las reglas que salen de ellas, cómo se produce cada vídeo y lo pendiente. **Antes de hacer un vídeo nuevo, se lee entero.**
+
+> **Para retomar en una sesión nueva:** Albert dirá "Soy Albert, lee `APRENDIZAJES.md`". Lee este archivo, después `PUBLICAR.md`, y continúa desde "Pendiente" (al final).
+
+---
+
+## Quién y qué
+
+- **Creador:** Albert (llamarle así; trato cercano, en español).
+- **Cuenta:** **GNews**, en YouTube, Instagram y TikTok. Las tres cuentas son nuevas (creadas el 9-10 nov 2026).
+- **Temas (pilares):**
+  1. **Noticias y teorías gaming** (GTA 6 y grandes lanzamientos).
+  2. **Gaming por dentro / trucos**: cómo funcionan mandos y consolas, problemas y soluciones (serie del drift).
+- **Formato:** vídeos cortos verticales 1080×1920 de 22-27 s, con voz de narrador, subtítulos, animaciones y bucle.
+- **Momento clave:** GTA 6 sale el **19 nov 2026** (PS5 y Xbox Series). Esa semana, contenido diario de GTA.
+
+## Preferencias y decisiones de Albert
+
+- **No quiere** "un top con solo texto y fondo": quiere **acción y animación** (disparos, explosiones, cámara que se mueve, imágenes).
+- Para GTA: **teorías de la comunidad e hipótesis**, con un par sobre el **Online**, y datos "locos" (la policía con IA, el mundo que se para).
+- Duración: entre 15 y 25 s si es posible (aceptó ~27 s en el drift). Preguntas tipo **"¿Tú qué crees?"** intercaladas.
+- Para temas técnicos: **lo más realista posible**, "como si la cámara se metiera dentro". Eligió **fotos IA de Higgsfield con la cámara hecha por código** (y no vídeo IA, más caro e impredecible).
+- Prefiere **dos reels cortos** a uno largo (drift: causas + soluciones).
+- **Voz:** quiere una voz "de las virales que narran muy bien". La definitiva es **Dan (ElevenLabs, de su cuenta)**; antes se probaron Juan y Orion de Higgsfield.
+- Le gustó la idea del **bucle continuo** y pidió aplicarlo.
+- Revisa los vídeos con atención (detectó la "aaaa" alargada en la voz): **su revisión final es imprescindible**.
+- Pide los textos de publicación **por plataforma y listos para copiar**.
+- Quiere que **todo lo aprendido se guarde** para ir afinando vídeo a vídeo.
 
 ---
 
@@ -104,3 +131,92 @@ Sin publicar. **Qué probamos** (todo lo aprendido hasta ahora, en un solo víde
 - YouTube: título de 5-10 palabras con la palabra clave delante; 3 hashtags.
 - TikTok: la primera frase hace de título; 4-5 hashtags.
 - Kit de textos de cada vídeo: `PUBLICAR.md`.
+
+---
+
+## Cómo se produce un vídeo (receta técnica)
+
+**Archivos del motor**
+- `reel.py`: motor principal. Ilustraciones neón originales, efectos (disparos, explosiones, dinero, pausa, retícula, lluvia, rayos…), subtítulos karaoke, música y efectos de sonido generados, stickers de pregunta y de compartir, y bucle.
+- `drift.py`: animaciones técnicas dibujadas (mando genérico, despiece, potenciómetro, efecto Hall).
+- `drift2.py`: **cámara sobre fotos realistas** (zoom que atraviesa de una foto a la siguiente) y capas (marcas con etiqueta, partículas, carbono, lectura, probador de joystick, spray, garantía, campo magnético, flechas, velo superior).
+- `logo.py`: identidad visual de GNews (carpeta `marca/`).
+- Cada vídeo tiene su guion JSON: `guion.json` (GTA P1), `guion_parte2.json`, `guion_parte2_prueba.json`, `guion_drift.json` (versión dibujada, descartada), `guion_drift_causas.json` y `guion_drift_soluciones.json`.
+
+**Renderizar**
+```
+python3 reel.py   --guion guion_X.json --salida salida/X [--preview 2]
+python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con fotos
+```
+
+**Opciones útiles del guion:** `"bucle": true`, `"transicion": "zoom"` (sin glitch ni destello), `"sfx": "suave"` (sin disparos), `"serie"` (etiqueta fija: **no usar**, ahuyenta), y por escena `"y_titular"` (titular arriba), `"pregunta"`, `"compartir"`, `"etiqueta"`, `"audio_voz"` y `"fx"`.
+
+**Voz (ElevenLabs, voz Dan)**
+- Voz `9F4C8ztpNUmXkdDDbz3J` ("Dan – Upbeat, Dynamic and Friendly", español nativo), modelo `eleven_multilingual_v2`, `language_code: es`, estabilidad 0,36-0,5, similitud 0,8, estilo 0,45-0,6 y realce del hablante activado.
+- La API key está guardada **como secreto del entorno cloud "Reel"** (el proxy la inyecta). En curl se usa `-H "xi-api-key: proxy-injected"`. **Nunca** en el código, en el chat ni en el repositorio. Ojo: la key empieza por `sk_`; el ID de 64 caracteres no sirve.
+- Texto: frases cortas, **sin puntos suspensivos**, números escritos en letra para la voz ("GTA seis") y en cifra en los subtítulos.
+- Procesado: recortar silencios → `atempo` 1,08-1,15 → paso alto 70 Hz + compresor → `loudnorm` -16 LUFS.
+- **Control de calidad:** medir la vocal sostenida más larga (debe ser < 0,13 s). Si una frase falla, generar 2-3 tomas y quedarse con la más limpia.
+- Duración de cada escena = voz + 0,15-0,2 s (gancho + 0,12 s); mínimo 2,8-3 s si lleva sticker. **Total cuadrado al compás** (140 bpm) para que el bucle no se descuadre.
+
+**Imágenes realistas (Higgsfield)**
+- Modelo `gpt_image_2_6`, 9:16, **0,25 créditos por imagen**. En los prompts siempre "generic unbranded… no logos, no text".
+- **Límite de peticiones (429):** mandar de 2 en 2 o de 3 en 3 y esperar.
+- Los resultados se descargan de `d8j0ntlcm91z4.cloudfront.net` (permitido en el entorno "Reel").
+- Créditos restantes a 11 nov: unos **57**. Vídeo IA (Kling 5 s ≈ 7,5 créditos; Seedance ≈ 35): solo si de verdad aporta.
+
+**Comprobaciones antes de entregar** (todas por código)
+1. Brillo del fotograma 0 (que no salga blanco; normal ~30-50).
+2. Ancho del titular ≤ ~900 px (margen de seguridad).
+3. Correlación de cada voz con la mezcla (≥ 0,7 = sincronizada y audible).
+4. Bucle: sin silencio entre el final y el principio.
+5. Hoja de fotogramas de muestra revisada a ojo (etiquetas que no se salgan, nada tapado).
+
+**Fallos que ya tuvimos (no repetir)**
+- Destello de explosión en t=0 → primer fotograma blanco (GTA P1).
+- Pausa gris y "PARTE 2" en el arranque (GTA P2).
+- Titular cortado por los lados en el fotograma 0 (GTA P2, prueba y drift R1). Corregido en el motor.
+- Puntos suspensivos → la voz alarga la vocal ("se paraaa").
+- La mezcla de audio sobrescribió un archivo de voz (variable reutilizada). Corregido.
+- Temblor de cámara fuera de la foto → error de recorte. Corregido.
+- Etiquetas que se salían de la pantalla. Corregido (se limitan al borde).
+
+**Derechos de autor (siempre)**
+- Nada de capturas, personajes, logos ni música de juegos o marcas. Mandos y personajes **genéricos y originales**.
+- En el logo se quitaron los logos de Switch, PlayStation y Xbox: **iconos genéricos** en su lugar. Nombrar las plataformas en el texto sí está bien.
+- La música y los efectos se generan por código (son originales).
+
+---
+
+## Marca GNews
+
+- **Archivos** (`marca/`): `gnews_perfil_1080.png` (foto de perfil apta para recorte circular), `gnews_banner_youtube_2560x1440.jpg` (todo dentro de la zona segura de 1546×423) y `gnews_logo_transparente.png`.
+- **Estilo:** "G" morada metálica + "News" cromo plateado, neón de magenta a cian, fondo oscuro con rejilla retro. Tipografía Inter Display Black Itálica (OFL).
+- **Bio de TikTok** (elegida la opción 1): "🎮 Noticias, teorías y trucos gaming / 🔧 Arregla tu mando · GTA 6 cada semana".
+- **Descripción de YouTube:** empieza con "🎮 GNews: noticias, teorías y trucos gaming en español, en vídeos cortos." + pilares + "Nuevos Shorts cada semana" + suscríbete + invitación a comentar + correo de contacto (pendiente que Albert ponga uno solo para el canal).
+- **Palabras clave del canal:** gaming, videojuegos, GTA 6, noticias gaming, teorías GTA 6, drift mando, trucos consola, PlayStation, Xbox, Nintendo, PC gaming, shorts gaming.
+- El mismo usuario, foto y estilo en las tres redes.
+
+## Consejos de crecimiento ya dados a Albert
+- Constancia: 1 vídeo al día (o 4-5 por semana), en las 3 plataformas, **siempre desde el archivo original** (sin marcas de agua de otra red).
+- **No borrar** vídeos que van lentos. **No comprar** seguidores.
+- TikTok: calentar la cuenta 10-15 min al día; responder a comentarios con vídeo; descripciones con lo que la gente busca.
+- YouTube: títulos con palabra clave; listas de reproducción; más adelante, un vídeo largo.
+- Instagram: Historias con encuesta al subir cada reel; Reels de prueba para probar ganchos; fijar los 3 mejores reels.
+- Comunidad: responder a todo en la primera hora, comentario fijado, comentar en cuentas grandes de gaming, colaboraciones más adelante.
+- Aprovechar momentos (el 19 nov con GTA 6) y noticias de la semana.
+- Los primeros ~30 vídeos son de aprendizaje.
+
+---
+
+## Pendiente (actualizar al retomar)
+
+1. **12 nov, 20:00-22:00:** Albert sube el **Drift Reel 2** (soluciones) en las 3 plataformas, con los textos de `PUBLICAR.md`, y responde a los comentarios del Reel 1 con "Ya está la solución en mi perfil 👆".
+2. **Métricas pendientes:**
+   - Drift R1: Instagram, TikTok y la retención de YouTube.
+   - Drift R2: a las 24 h y a los 3 días, en las 3 plataformas.
+   - Versión de prueba de la Parte 2 de GTA, si se subió.
+   - Instagram de GTA P1 y P2 a los 3 días.
+3. **19 nov:** **GTA Parte 3, "¿Se cumplieron las teorías?"**, con todas las reglas (sin "Parte 3" en pantalla ni en el título de YouTube).
+4. Albert cambia la foto de perfil, el banner y las biografías en las 3 redes; falta la **bio de Instagram** (≤150 caracteres).
+5. Ofrecido y aún sin respuesta: calendario de contenido de 2 semanas, firma o animación del logo en los reels y plantilla de miniatura de YouTube.
