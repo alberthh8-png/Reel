@@ -172,3 +172,43 @@ Lo ideal es dejar **unas 24 h desde la Parte 1**. Mejor a las **20:00-22:00** (h
 - Policía con IA (rumor de filtraciones, **no confirmado** por Rockstar): [Dexerto](https://www.dexerto.com/gta/gta-6-leak-reveals-wanted-system-overhaul-and-realistic-police-ai-2302426/), [GTA 6 News](https://www.gta6-news.net/ga6-gameplay-features/gta-6-police-ai-may-be-more-modern-but-nothing-is-confirmed-yet/)
 - La industria evita las fechas de GTA 6: [PC Gamer](https://www.pcgamer.com/games/grand-theft-auto/get-ready-to-do-the-silksong-release-date-shuffle-all-over-again-gta-6s-delay-just-blew-up-the-whole-game-industrys-holiday-2026-plans), [GTA Boom](https://www.gtaboom.com/gta-6-scared-every-major-game-out-of-releasing-this-holiday-2026)
 - Huracanes (teoría de fans): [ADN40](https://www.adn40.mx/es-tendencia/2026-07-10/modo-cooperativo-huracanes-y-mas-de-700-interiores-las-teorias-de-los-fans-sobre-lo-que-traera-gta-6/)
+
+---
+
+# PARTE 2 · VERSIÓN DE PRUEBA (independiente)
+
+Vídeo: `salida/parte2_prueba/reel.mp4` (22,7 s) · Portada: `salida/parte2_prueba/portada.jpg`
+
+## Por qué existe
+La Parte 2 se quedó en 148 reproducciones con un **47,6 % de omisión**, frente al 39,5 % de la Parte 1. En cambio, quien la vio entera dio más "me gusta", más guardados y más republicaciones. **El contenido gustaba; fallaba el arranque.** Hay tres causas probables:
+1. La etiqueta **"PARTE 2"** en el primer fotograma ahuyenta a quien no te sigue, que es el 94 % de las visitas.
+2. El **efecto de pausa gris** en el segundo 1,2 parece que el vídeo se ha parado o está cargando.
+3. **"EL MUNDO SE PARA"** es abstracto; no dice de qué va el vídeo.
+
+## Qué cambia
+- **Fotograma 0:** "1 DE CADA 5 NO IRÁ a trabajar el 19 por GTA 6", con el sello "ENCUESTA REAL" sobre la oficina cerrada y un disparo en la primera décima de segundo.
+- Sin "PARTE 2" y sin pausa.
+- Los otros 4 datos se quedan igual, con sellos sin número para que no parezca una serie.
+- El bucle continuo se mantiene: termina en la misma oficina en la que empieza.
+
+## Cómo publicarlo
+- **Súbelo como "Reel de prueba"** (en la pantalla de compartir: *Reel de prueba* / *Trial*). Solo lo ven personas que no te siguen, no aparece en tu perfil y no "quema" a tus seguidores con contenido repetido.
+- Si a las 24 h la **tasa de omisión baja del 40 %**, Instagram ofrece compartirlo con todos: acéptalo.
+
+**Descripción:**
+```
+1 de cada 5 trabajadores no irá a trabajar el 19 por GTA 6 😳 y una empresa ya ha dado el día libre a 7.000 empleados para jugar…
+
+¿Tú vas a faltar? Comenta SÍ o NO 👇
+
+#GTA6 #GTAVI #RockstarGames #Videojuegos #Gaming
+```
+
+**Texto en la portada:** `1 DE CADA 5 NO IRÁ A TRABAJAR`
+
+## Qué mirar a las 24 h (comparado con la Parte 2 original)
+| Métrica | Parte 2 original | Objetivo de la prueba |
+|---|---|---|
+| Tasa de omisión | 47,6 % | menos del 40 % |
+| Tiempo medio | 7 s | más de 10 s |
+| Reproducciones | 148 | más de 500 |

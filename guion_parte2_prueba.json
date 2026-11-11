@@ -1,0 +1,162 @@
+{
+  "titulo": "GTA 6: 1 de cada 5 no irá a trabajar (versión de prueba)",
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1920,
+  "bpm": 140,
+  "colores": {
+    "acento": "#ffd23f",
+    "rosa": "#ff3d8b",
+    "cian": "#2de2e6",
+    "texto": "#ffffff"
+  },
+  "escenas": [
+    {
+      "id": "gancho",
+      "ilustracion": "oficina",
+      "etiqueta": "ENCUESTA REAL",
+      "titular": "1 DE CADA 5 NO IRÁ",
+      "detalle": "a trabajar el 19 por GTA 6",
+      "voz": "¡1 de cada 5 trabajadores no irá a trabajar por GTA 6!",
+      "audio_voz": "voz/parte2_prueba/gancho.wav",
+      "pregunta": "¿Y TÚ?",
+      "duracion": 3.41,
+      "fx": [
+        {
+          "tipo": "disparo",
+          "t": 0.1,
+          "x": -20,
+          "y": 420,
+          "ang": 8,
+          "agujero": [
+            760,
+            470
+          ],
+          "texto": "BANG!"
+        }
+      ]
+    },
+    {
+      "id": "dato2",
+      "ilustracion": "ciudad_heli",
+      "etiqueta": "DATO REAL",
+      "titular": "7.000 CON DÍA LIBRE",
+      "detalle": "una empresa se lo da para jugar",
+      "voz": "Una empresa ya ha dado el día libre a 7.000 empleados. ¡Pásaselo a tu jefe!",
+      "compartir": "PÁSASELO A TU JEFE",
+      "fx": [
+        {
+          "tipo": "dinero",
+          "t": 0.0
+        },
+        {
+          "tipo": "explosion",
+          "t": 0.35,
+          "x": 540,
+          "y": 560,
+          "escala": 0.9,
+          "texto": "BOOM!"
+        }
+      ],
+      "audio_voz": "voz/parte2/escena_2.wav",
+      "duracion": 4.23
+    },
+    {
+      "id": "dato3",
+      "ilustracion": "persecucion",
+      "etiqueta": "RUMOR",
+      "titular": "LA POLI TE CAZA",
+      "detalle": "te buscará de verdad y los testigos te delatarán",
+      "voz": "Se filtra que la policía te buscará de verdad... y los testigos te delatarán.",
+      "fx": [
+        {
+          "tipo": "sirena"
+        },
+        {
+          "tipo": "escaneo",
+          "t": 0.35,
+          "x": 400,
+          "y": 880
+        },
+        {
+          "tipo": "disparo",
+          "t": 1.3,
+          "x": 650,
+          "y": 1180,
+          "ang": 188,
+          "agujero": [
+            230,
+            640
+          ]
+        }
+      ],
+      "audio_voz": "voz/parte2/escena_3.wav",
+      "duracion": 4.15
+    },
+    {
+      "id": "dato4",
+      "ilustracion": "calendario",
+      "etiqueta": "DATO REAL",
+      "titular": "TODOS HUYERON",
+      "detalle": "casi ningún juego grande sale estas fechas",
+      "voz": "Casi ningún juego grande se atreve a salir en estas fechas.",
+      "fx": [
+        {
+          "tipo": "tachar_dias",
+          "t": 0.25
+        }
+      ],
+      "audio_voz": "voz/parte2/escena_4.wav",
+      "duracion": 2.88
+    },
+    {
+      "id": "dato5",
+      "ilustracion": "huracan",
+      "etiqueta": "TEORÍA",
+      "titular": "HURACANES REALES",
+      "detalle": "que arrasarían la ciudad",
+      "voz": "Y hay fans que esperan huracanes que arrasan la ciudad.",
+      "pregunta": "¿TE LO CREES?",
+      "fx": [
+        {
+          "tipo": "lluvia"
+        },
+        {
+          "tipo": "rayo",
+          "t": 0.3,
+          "x": 760,
+          "hasta": 980
+        },
+        {
+          "tipo": "rayo",
+          "t": 1.2,
+          "x": 260,
+          "hasta": 900
+        }
+      ],
+      "audio_voz": "voz/parte2/escena_5.wav",
+      "duracion": 2.8
+    },
+    {
+      "id": "cierre",
+      "ilustracion": "oficina",
+      "etiqueta": "COMENTA",
+      "titular": "¿VAS A FALTAR?",
+      "detalle": "Sígueme: el 19 vemos qué era verdad",
+      "voz": "¿Vas a faltar? Comenta y sígueme: el 19 vemos qué era verdad.",
+      "fx": [
+        {
+          "tipo": "explosion",
+          "t": 0.25,
+          "x": 540,
+          "y": 820,
+          "escala": 1.4,
+          "texto": "BOOM!"
+        }
+      ],
+      "audio_voz": "voz/parte2/escena_6.wav",
+      "duracion": 5.244
+    }
+  ],
+  "bucle": true
+}
