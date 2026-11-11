@@ -1,0 +1,57 @@
+# Aprendizajes de la cuenta (se actualiza con cada vídeo)
+
+Este archivo recoge las métricas reales de cada reel y las reglas que salen de ellas. **Antes de hacer un vídeo nuevo, se lee esto.**
+
+---
+
+## Reglas actuales (de más a menos importante)
+
+1. **El primer segundo lo decide todo.** En todos los vídeos se pierde entre el 40 % y el 70 % en el arranque. Cuando un vídeo no crece, el problema casi siempre está ahí, no en el contenido.
+2. **Fotograma 0: el texto que engancha, arriba y grande, con movimiento real.** El titular abajo y una foto quieta parecen un anuncio (drift en YouTube: 69,5 % lo pasa).
+3. **Afirmación concreta, no abstracta.** "5 TEORÍAS" funcionó mejor que "EL MUNDO SE PARA".
+4. **Nada en el vídeo que parezca un fallo o "parte de algo"**: ni "PARTE 2" en pantalla (ahuyenta a quien no te sigue, que es más del 90 %), ni pausas o pantallas grises, ni destellos blancos en el primer fotograma.
+5. **La primera pregunta, a mitad del vídeo, y que no suene a final.** En GTA Parte 1 (YouTube) hay una caída clara entre los segundos 5 y 9, justo en el primer "¿Tú qué crees?".
+6. **Duración de 22 a 27 s.** Cuando el arranque funciona, la retención es buena (75 % de media en YouTube).
+7. **Bucle continuo**: en YouTube la retención empieza por encima del 100 %, así que la gente repite.
+8. **Sellos de credibilidad** (REAL / RUMOR / TEORÍA) y datos con fuente: los guardados y republicaciones suben.
+9. **Voz**: Dan (ElevenLabs), frases cortas, sin puntos suspensivos (estiran las vocales), acelerada un 8-15 % y revisando que ninguna vocal sostenida pase de 0,13 s.
+10. **YouTube retiene mejor que Instagram** con este contenido: hay que cuidar siempre el título de YouTube.
+11. **La hora de subida importa poco** comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
+
+---
+
+## Registro de vídeos
+
+### GTA 6 Parte 1: "5 teorías que los fans juran que son reales" (24,9 s)
+**Instagram** (16 h): 1.585 reproducciones · 1.211 espectadores · tiempo medio 13 s (52 %) · **omisión 39,5 %** · me gusta 3,5 % · guardados 0,6 % · compartidos 0 · comentarios 0,2 % · 0 seguidores · 94 % desde la pestaña Reels.
+- Picos de "me gusta": segundos 0-3 (arranque), segundo 10 (teoría 2, "Uno mata al otro") y el final.
+- Fallo detectado: el primer fotograma salía blanco por el destello de la explosión.
+
+**YouTube** (39 h): 1,2 K visualizaciones (casi todas en las primeras 6 h, después se estancó) · **se quedaron 49,5 % / saltaron 50,5 %** · duración media **18 s (75,1 %)** · ~38 % llega al final · la retención empieza por encima del 100 % (repeticiones).
+- Caída fuerte entre los segundos 5 y 9: el final de la teoría 1 y la pregunta "¿Tú qué crees?".
+
+### GTA 6 Parte 2: "El mundo se para" (24,4 s)
+**Instagram** (~10 h): 148 reproducciones · 124 espectadores · tiempo medio 7 s (29 %) · **omisión 47,6 %** · me gusta 4,8 % · guardados 1,6 % · republicaciones 0,8 % · compartidos 0 · comentarios 0 · 0 seguidores.
+- El contenido gustó más (me gusta y guardados por encima de la Parte 1), pero el arranque falló. Causas probables: "PARTE 2" en pantalla, la pausa gris en el segundo 1,2 y un titular abstracto.
+- Se hizo una versión independiente (`salida/parte2_prueba/`) para subirla como Reel de prueba. **Pendiente: sus métricas.**
+
+### Drift Reel 1: "¿Por qué tu mando hace drift?" (27,0 s, fotos realistas)
+Publicado a las 13:00.
+**YouTube** (~6 h): 542 visualizaciones **y subiendo a escalones** (YouTube le sigue dando empujones) · 172 visualizaciones interesadas · **se quedaron 30,5 % / saltaron 69,5 %** · retención todavía sin datos.
+- Lectura: arranque con una foto quieta y oscura, el texto que engancha abajo y un zoom lento. Parece un anuncio. Aun así crece, porque quien se queda lo ve.
+- **Pendiente:** métricas de Instagram y TikTok, y la gráfica de retención de YouTube (tarda hasta 2 días).
+
+### Drift Reel 2: "Cómo arreglar el drift" (27,4 s)
+Sin publicar. Cambios propuestos antes de subirlo:
+- Probador grande arriba con el punto rojo desviándose, y una cámara rápida desde el fotograma 0.
+- "ASÍ SE ARREGLA EL DRIFT" arriba y grande desde el segundo 0.
+- Lo más satisfactorio al principio: el punto rojo que vuelve al centro y se pone verde.
+- Mover el sticker "¿LO SABÍAS?" de la solución 1 a la 3.
+
+---
+
+## Referencias rápidas
+- Instagram: máximo 5 hashtags; la palabra clave en la primera frase del texto.
+- YouTube: título de 5-10 palabras con la palabra clave delante; 3 hashtags.
+- TikTok: la primera frase hace de título; 4-5 hashtags.
+- Kit de textos de cada vídeo: `PUBLICAR.md`.
