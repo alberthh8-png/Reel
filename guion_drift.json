@@ -1,0 +1,125 @@
+{
+  "titulo": "¿Tu mando se mueve solo? El drift por dentro",
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1920,
+  "bpm": 140,
+  "bucle": true,
+  "colores": {
+    "acento": "#ffd23f",
+    "rosa": "#ff3d8b",
+    "cian": "#2de2e6",
+    "texto": "#ffffff"
+  },
+  "escenas": [
+    {
+      "id": "gancho",
+      "etiqueta": "DRIFT",
+      "titular": "¿TU MANDO SE MUEVE SOLO?",
+      "detalle": "mira lo que pasa por dentro",
+      "voz": "¿Tu mando se mueve solo? Mira lo que pasa por dentro.",
+      "fx": [
+        {
+          "tipo": "mando_drift"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift/escena_0.wav",
+      "duracion": 2.63
+    },
+    {
+      "id": "despiece",
+      "etiqueta": "POR DENTRO",
+      "titular": "ASÍ ES POR DENTRO",
+      "detalle": "placa, batería, motores y joysticks",
+      "voz": "Por dentro: placa, batería, motores... y los joysticks.",
+      "fx": [
+        {
+          "tipo": "despiece",
+          "t": 0.1
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift/escena_1.wav",
+      "duracion": 3.24
+    },
+    {
+      "id": "funciona",
+      "etiqueta": "CÓMO FUNCIONA",
+      "titular": "PISTA DE CARBONO",
+      "detalle": "una lámina de metal la roza al moverte",
+      "voz": "Una lámina de metal roza una pista de carbono para saber dónde está la palanca.",
+      "fx": [
+        {
+          "tipo": "potenciometro"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift/escena_2.wav",
+      "duracion": 4.32
+    },
+    {
+      "id": "falla",
+      "etiqueta": "POR QUÉ FALLA",
+      "titular": "SE DESGASTA",
+      "detalle": "al soltar ya no marca cero",
+      "voz": "El roce desgasta el carbono y entra polvo. Sueltas el mando... y no marca cero.",
+      "pregunta": "¿TE HA PASADO?",
+      "fx": [
+        {
+          "tipo": "desgaste"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift/escena_3.wav",
+      "duracion": 4.61
+    },
+    {
+      "id": "quejas",
+      "etiqueta": "DATO REAL",
+      "titular": "25.000 QUEJAS",
+      "detalle": "de consumidores en Europa por el drift",
+      "voz": "En Europa hubo casi 25.000 quejas. Pásaselo a quien culpa al mando.",
+      "compartir": "PÁSASELO A QUIEN CULPA AL MANDO",
+      "fx": [
+        {
+          "tipo": "quejas",
+          "total": 25000
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift/escena_4.wav",
+      "duracion": 4.28
+    },
+    {
+      "id": "hall",
+      "etiqueta": "LA SOLUCIÓN",
+      "titular": "EFECTO HALL",
+      "detalle": "imanes que miden sin tocarse: sin desgaste",
+      "voz": "La solución: efecto Hall. Imanes que miden sin tocarse, sin desgaste.",
+      "fx": [
+        {
+          "tipo": "hall"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift/escena_5.wav",
+      "duracion": 4.51
+    },
+    {
+      "id": "cierre",
+      "etiqueta": "COMENTA",
+      "titular": "¿TU MANDO TIENE DRIFT?",
+      "detalle": "comenta qué mando tienes",
+      "voz": "¿Tu mando tiene drift? Comenta cuál tienes.",
+      "fx": [
+        {
+          "tipo": "mando_drift"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift/escena_6.wav",
+      "duracion": 2.981
+    }
+  ]
+}

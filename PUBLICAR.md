@@ -212,3 +212,52 @@ La Parte 2 se quedó en 148 reproducciones con un **47,6 % de omisión**, frente
 | Tasa de omisión | 47,6 % | menos del 40 % |
 | Tiempo medio | 7 s | más de 10 s |
 | Reproducciones | 148 | más de 500 |
+
+---
+
+# REEL: "¿Tu mando se mueve solo?" (drift)
+
+Vídeo: `salida/drift/reel.mp4` (26,6 s) · Portada: `salida/drift/portada.jpg`
+
+## Estructura
+| Tiempo | Escena | Animación |
+|---|---|---|
+| 0-2,6 s | **¿Tu mando se mueve solo?** | El personaje del juego camina solo mientras el mando está quieto y el joystick tiembla con un aro rojo |
+| 2,6-5,9 s | **Así es por dentro** | Despiece del mando: carcasa, placa, batería, motores de vibración girando y los dos módulos de joystick |
+| 5,9-10,2 s | **Pista de carbono** | Corte del potenciómetro: la lámina de cobre recorre la pista y la consola lee el valor X en directo |
+| 10,2-14,8 s | **Se desgasta** | El roce arranca partículas, aparecen surcos y entra polvo. Al soltar, la lectura se queda en +0.13 en rojo. Encuesta "¿TE HA PASADO?" |
+| 14,8-19,1 s | **25.000 quejas** | Sobres volando y contador. Sticker "PÁSASELO A QUIEN CULPA AL MANDO" |
+| 19,1-23,6 s | **Efecto Hall** | Imán N/S, sensor, líneas de campo y "SIN CONTACTO". En reposo marca 0.00 ✓ |
+| 23,6-26,6 s | **¿Tu mando tiene drift?** | Vuelve el mando del inicio y el vídeo enlaza en bucle |
+
+El mando y el personaje son diseños **originales y genéricos**: no reproducen ningún mando ni personaje de marca.
+
+## Instagram
+```
+¿Tu mando se mueve solo? 🎮 Esto es el DRIFT y así pasa por dentro 👇
+
+Comenta qué mando tienes y si te ha pasado 👇 Pásaselo a quien siempre culpa al mando 😂
+
+#drift #mando #gaming #videojuegos #gamer
+```
+**Texto en la portada:** `¿TU MANDO SE MUEVE SOLO?`
+
+## YouTube Shorts
+**Título:** `¿Por qué tu MANDO se mueve SOLO? 🎮 (Drift explicado) #shorts`
+
+**Descripción:**
+```
+El drift del mando explicado por dentro: el joystick usa potenciómetros, una lámina de metal que roza una pista de carbono. Con el uso se desgasta y entra polvo, así que al soltarlo ya no marca cero y tu personaje se mueve solo. La solución: joysticks de efecto Hall, que miden con imanes sin contacto. ¿A tu mando le pasa? 👇
+
+#drift #gaming #Shorts
+```
+
+## TikTok
+```
+¿Tu mando se mueve solo? 🎮 Así funciona el drift por dentro 👇 #drift #mando #gaming #videojuegos #fyp
+```
+
+## Fuentes
+- Causa del drift (desgaste del potenciómetro, pista de carbono y lámina): [iFixit](https://www.ifixit.com/News/48944/heres-why-ps5-joysticks-drift-and-why-its-only-getting-worse), [BGR](https://www.bgr.com/2210194/why-do-playstation-controllers-get-stick-drift-easily/), [SCUF](https://www.scufgaming.com/gaming/products/scuf-products/what-are-stick-drift-and-stick-jitter)
+- Efecto Hall (sin contacto, sin desgaste): [iFixit Wiki](https://ts.ifixit.com/Wiki/Hall-Effect_Joysticks), [Joltfly](https://joltfly.com/hall-effect-joystick-vs-potentiometer-stop-stick-drift)
+- Casi 25.000 quejas en Europa (BEUC, 2021): [BEUC](https://www.beuc.eu/press-releases/beuc-launches-europe-wide-complaint-against-nintendo-premature-obsolescence), [VGC](https://videogameschronicle.com/news/eu-commission-asked-to-investigate-joy-con-drift-after-25000-complaints)
