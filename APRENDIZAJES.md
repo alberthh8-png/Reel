@@ -20,6 +20,29 @@ Este archivo recoge las métricas reales de cada reel y las reglas que salen de 
 
 ---
 
+## Método para afinar el tiro
+
+1. **Cambiar 1 o 2 cosas por vídeo, no todo a la vez.** Así sabemos qué mejoró. Cada vídeo apunta en "Qué probamos" lo que cambia respecto al anterior.
+2. **Medir siempre en los mismos momentos:** a las **24 h** (arranque) y a los **3 días** (recorrido completo).
+3. **Métricas que miramos, por orden:**
+   - **Omisión** (Instagram) / **% que se queda** (YouTube): mide si el gancho funciona. Objetivo: **< 35 % de omisión / > 60 % se quedan**.
+   - **Tiempo medio y retención:** si el contenido engancha. Objetivo: **> 60 % del vídeo**.
+   - **Compartidos y guardados:** lo que más empuja a no seguidores. Objetivo: **> 1 %**.
+   - **Seguidores nuevos:** si la cuenta crece.
+4. **Comparar por plataforma**, porque cada una reacciona distinto (YouTube retiene mejor que Instagram).
+5. **Cuando algo funcione dos veces seguidas, pasa a ser una regla.** Cuando falle dos veces, se descarta.
+
+## Tabla comparativa (24 h)
+
+| Vídeo | Plataforma | Vistas | Omisión / saltan | Tiempo medio | Compart. | Guard. | Seguid. | Qué probamos |
+|---|---|---|---|---|---|---|---|---|
+| GTA P1 | Instagram | 1.585 | 39,5 % | 13 s (52 %) | 0 % | 0,6 % | 0 | Primer vídeo: explosión de entrada y lista de 5 teorías |
+| GTA P1 | YouTube | 1,2 K | 50,5 % | 18 s (75 %) | — | — | — | Igual |
+| GTA P2 | Instagram | 148 | 47,6 % | 7 s (29 %) | 0 % | 1,6 % | 0 | Titular abstracto, "PARTE 2" en pantalla y pausa gris |
+| Drift R1 | YouTube | 542 (6 h) | 69,5 % | pendiente | — | — | — | Fotos realistas y zoom lento; texto que engancha abajo |
+| Drift R1 | Instagram | pendiente | | | | | | |
+| Drift R1 | TikTok | pendiente | | | | | | |
+
 ## Registro de vídeos
 
 ### GTA 6 Parte 1: "5 teorías que los fans juran que son reales" (24,9 s)
