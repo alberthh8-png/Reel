@@ -1,0 +1,641 @@
+{
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1920,
+  "bpm": 140,
+  "bucle": true,
+  "transicion": "zoom",
+  "sfx": "suave",
+  "colores": {
+    "acento": "#ffd23f",
+    "rosa": "#ff3d8b",
+    "cian": "#2de2e6",
+    "texto": "#ffffff"
+  },
+  "titulo": "¿Por qué tu mando hace drift? 5 causas",
+  "escenas": [
+    {
+      "id": "gancho",
+      "etiqueta": "DRIFT",
+      "titular": "¿TU MANDO SE MUEVE SOLO?",
+      "detalle": "entramos dentro para ver por qué",
+      "voz": "¿Tu mando se mueve solo?",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/00_mando.png",
+              "foco": [
+                0.3,
+                0.42
+              ],
+              "z": [
+                1.0,
+                1.15
+              ]
+            }
+          ],
+          "sale": [
+            0.24,
+            0.37
+          ],
+          "entra": false,
+          "dur": 2.2
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.24,
+            0.37
+          ],
+          "radio": 80,
+          "color": [
+            255,
+            60,
+            70
+          ],
+          "t": 0.0
+        },
+        {
+          "tipo": "probador",
+          "pos": [
+            800,
+            250
+          ],
+          "radio": 110,
+          "modo": "drift",
+          "t": 0.0
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_causas/escena_0.wav",
+      "duracion": 2.2
+    },
+    {
+      "id": "viaje",
+      "etiqueta": "POR DENTRO",
+      "titular": "ENTRAMOS DENTRO",
+      "detalle": "placa, batería, motores y joysticks",
+      "voz": "Vamos a entrar dentro del joystick para ver por qué.",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/01_abierto.png",
+              "foco": [
+                0.45,
+                0.45
+              ],
+              "z": [
+                1.0,
+                1.2
+              ],
+              "sale": [
+                0.33,
+                0.5
+              ],
+              "desde": 0
+            },
+            {
+              "foto": "imagenes/drift/02_modulo.png",
+              "foco": [
+                0.5,
+                0.5
+              ],
+              "z": [
+                1.0,
+                1.25
+              ],
+              "desde": 1.25
+            }
+          ],
+          "sale": [
+            0.81,
+            0.55
+          ],
+          "dur": 2.71
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.5,
+            0.3
+          ],
+          "texto": "BATERÍA",
+          "etiqueta": [
+            230,
+            190
+          ],
+          "color": [
+            255,
+            210,
+            63
+          ],
+          "t": 0.15,
+          "hasta": 1.1,
+          "radio": 55
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.33,
+            0.5
+          ],
+          "texto": "JOYSTICK",
+          "etiqueta": [
+            250,
+            930
+          ],
+          "color": [
+            45,
+            226,
+            230
+          ],
+          "t": 0.35,
+          "hasta": 1.1,
+          "radio": 60
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.81,
+            0.55
+          ],
+          "texto": "POTENCIÓMETRO",
+          "etiqueta": [
+            600,
+            250
+          ],
+          "color": [
+            255,
+            210,
+            63
+          ],
+          "t": 1.6,
+          "radio": 70
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_causas/escena_1.wav",
+      "duracion": 2.71
+    },
+    {
+      "id": "causa1",
+      "etiqueta": "CAUSA #1",
+      "titular": "PISTA DE CARBONO",
+      "detalle": "cada movimiento la raspa y la desgasta",
+      "voz": "1: la pista de carbono. Cada movimiento la raspa hasta desgastarla.",
+      "pregunta": "¿TE HA PASADO?",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/03_potenciometro.png",
+              "foco": [
+                0.45,
+                0.58
+              ],
+              "z": [
+                1.0,
+                1.2
+              ],
+              "sale": [
+                0.3,
+                0.62
+              ],
+              "desde": 0
+            },
+            {
+              "foto": "imagenes/drift/04_desgaste.png",
+              "foco": [
+                0.4,
+                0.5
+              ],
+              "z": [
+                1.0,
+                1.3
+              ],
+              "desde": 1.5
+            }
+          ],
+          "dur": 4.31
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.45,
+            0.63
+          ],
+          "texto": "LÁMINA DE METAL",
+          "etiqueta": [
+            640,
+            240
+          ],
+          "color": [
+            255,
+            210,
+            63
+          ],
+          "t": 0.2,
+          "hasta": 1.4,
+          "radio": 60
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.22,
+            0.66
+          ],
+          "texto": "PISTA DE CARBONO",
+          "etiqueta": [
+            420,
+            930
+          ],
+          "color": [
+            45,
+            226,
+            230
+          ],
+          "t": 0.5,
+          "hasta": 1.4,
+          "radio": 55
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.3,
+            0.65
+          ],
+          "texto": "DESGASTE",
+          "etiqueta": [
+            560,
+            930
+          ],
+          "color": [
+            255,
+            60,
+            70
+          ],
+          "t": 1.7,
+          "radio": 75
+        },
+        {
+          "tipo": "carbono",
+          "punto": [
+            0.38,
+            0.47
+          ],
+          "t": 1.6
+        },
+        {
+          "tipo": "lectura",
+          "modo": "drift",
+          "pos": [
+            800,
+            240
+          ],
+          "valor": 0.14,
+          "t": 2.0
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_causas/escena_2.wav",
+      "duracion": 4.31
+    },
+    {
+      "id": "causa2",
+      "etiqueta": "CAUSA #2",
+      "titular": "POLVO Y SUCIEDAD",
+      "detalle": "se cuela por la base del joystick",
+      "voz": "2: el polvo y la suciedad que se cuelan dentro.",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/05_polvo.png",
+              "foco": [
+                0.3,
+                0.5
+              ],
+              "foco_fin": [
+                0.22,
+                0.58
+              ],
+              "z": [
+                1.0,
+                1.3
+              ]
+            }
+          ],
+          "dur": 2.83
+        },
+        {
+          "tipo": "particulas",
+          "n": 90,
+          "tam": 10,
+          "color": [
+            235,
+            215,
+            170
+          ],
+          "t": 0.0
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.22,
+            0.6
+          ],
+          "texto": "POLVO",
+          "etiqueta": [
+            700,
+            260
+          ],
+          "color": [
+            255,
+            210,
+            63
+          ],
+          "t": 0.4,
+          "radio": 90
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_causas/escena_3.wav",
+      "duracion": 2.83
+    },
+    {
+      "id": "causa3",
+      "etiqueta": "CAUSA #3",
+      "titular": "HUMEDAD Y GRASA",
+      "detalle": "ensucian y oxidan los contactos",
+      "voz": "3: la humedad y la grasa de las manos, que ensucian los contactos.",
+      "compartir": "PÁSASELO A QUIEN CULPA AL MANDO",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/06_humedad.png",
+              "foco": [
+                0.45,
+                0.45
+              ],
+              "foco_fin": [
+                0.45,
+                0.65
+              ],
+              "z": [
+                1.0,
+                1.25
+              ]
+            }
+          ],
+          "dur": 4.23
+        },
+        {
+          "tipo": "particulas",
+          "n": 50,
+          "tam": 7,
+          "color": [
+            170,
+            220,
+            255
+          ],
+          "t": 0.0
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.42,
+            0.25
+          ],
+          "texto": "GRASA",
+          "etiqueta": [
+            780,
+            200
+          ],
+          "color": [
+            255,
+            210,
+            63
+          ],
+          "t": 0.3,
+          "hasta": 1.6,
+          "radio": 70
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.2,
+            0.75
+          ],
+          "texto": "ÓXIDO",
+          "etiqueta": [
+            560,
+            930
+          ],
+          "color": [
+            255,
+            60,
+            70
+          ],
+          "t": 0.9,
+          "radio": 60
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_causas/escena_4.wav",
+      "duracion": 4.23
+    },
+    {
+      "id": "causa4",
+      "etiqueta": "CAUSA #4",
+      "titular": "MUELLE CANSADO",
+      "detalle": "el centro ya no está en cero",
+      "voz": "4: el muelle se cansa y el centro se mueve de sitio.",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/07_muelle.png",
+              "foco": [
+                0.45,
+                0.47
+              ],
+              "z": [
+                1.0,
+                1.3
+              ]
+            }
+          ],
+          "dur": 3.22
+        },
+        {
+          "tipo": "flechas",
+          "punto": [
+            0.45,
+            0.47
+          ],
+          "sep": 170,
+          "t": 0.3
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.45,
+            0.47
+          ],
+          "texto": "MUELLE",
+          "etiqueta": [
+            760,
+            230
+          ],
+          "color": [
+            45,
+            226,
+            230
+          ],
+          "t": 0.15,
+          "radio": 95
+        },
+        {
+          "tipo": "lectura",
+          "modo": "drift",
+          "pos": [
+            260,
+            960
+          ],
+          "valor": 0.09,
+          "t": 0.9
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_causas/escena_5.wav",
+      "duracion": 3.22
+    },
+    {
+      "id": "causa5",
+      "etiqueta": "CAUSA #5",
+      "titular": "HOLGURA",
+      "detalle": "el plástico se da de sí con el uso",
+      "voz": "5: el plástico se da de sí y aparece holgura.",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/02_modulo.png",
+              "foco": [
+                0.5,
+                0.32
+              ],
+              "z": [
+                1.15,
+                1.35
+              ],
+              "temblor": 14
+            }
+          ],
+          "dur": 3.0
+        },
+        {
+          "tipo": "flechas",
+          "punto": [
+            0.5,
+            0.18
+          ],
+          "sep": 200,
+          "modo": "holgura",
+          "color": [
+            255,
+            60,
+            70
+          ],
+          "t": 0.3
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.5,
+            0.42
+          ],
+          "texto": "SE MUEVE SIN TOCARLO",
+          "etiqueta": [
+            540,
+            930
+          ],
+          "color": [
+            255,
+            60,
+            70
+          ],
+          "t": 0.5,
+          "radio": 90
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_causas/escena_6.wav",
+      "duracion": 3.0
+    },
+    {
+      "id": "cierre",
+      "etiqueta": "COMENTA",
+      "titular": "¿CUÁL LE PASA AL TUYO?",
+      "detalle": "sígueme: en el próximo, cómo arreglarlo",
+      "voz": "¿Cuál le pasa al tuyo? Sígueme: en el próximo vídeo, cómo arreglarlo.",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/00_mando.png",
+              "foco": [
+                0.3,
+                0.42
+              ],
+              "z": [
+                1.18,
+                1.0
+              ]
+            }
+          ],
+          "entra": true,
+          "dur": 4.5
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.24,
+            0.37
+          ],
+          "radio": 80,
+          "color": [
+            255,
+            60,
+            70
+          ],
+          "t": 0.4
+        },
+        {
+          "tipo": "probador",
+          "pos": [
+            800,
+            250
+          ],
+          "radio": 110,
+          "modo": "drift",
+          "t": 0.6
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_causas/escena_7.wav",
+      "duracion": 4.5
+    }
+  ]
+}

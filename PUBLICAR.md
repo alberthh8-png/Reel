@@ -261,3 +261,70 @@ El drift del mando explicado por dentro: el joystick usa potenciómetros, una l�
 - Causa del drift (desgaste del potenciómetro, pista de carbono y lámina): [iFixit](https://www.ifixit.com/News/48944/heres-why-ps5-joysticks-drift-and-why-its-only-getting-worse), [BGR](https://www.bgr.com/2210194/why-do-playstation-controllers-get-stick-drift-easily/), [SCUF](https://www.scufgaming.com/gaming/products/scuf-products/what-are-stick-drift-and-stick-jitter)
 - Efecto Hall (sin contacto, sin desgaste): [iFixit Wiki](https://ts.ifixit.com/Wiki/Hall-Effect_Joysticks), [Joltfly](https://joltfly.com/hall-effect-joystick-vs-potentiometer-stop-stick-drift)
 - Casi 25.000 quejas en Europa (BEUC, 2021): [BEUC](https://www.beuc.eu/press-releases/beuc-launches-europe-wide-complaint-against-nintendo-premature-obsolescence), [VGC](https://videogameschronicle.com/news/eu-commission-asked-to-investigate-joy-con-drift-after-25000-complaints)
+
+---
+
+# SERIE DRIFT (versión realista): 2 reels
+
+Imágenes macro fotorrealistas generadas con IA en Higgsfield (mando **genérico sin marca**, 11 fotos en `imagenes/drift/`). Encima van las animaciones técnicas, y una cámara que "entra" atravesando de un plano al siguiente.
+
+## Reel 1: "¿Por qué tu mando hace drift?" (5 causas)
+Vídeo: `salida/drift_causas/reel.mp4` (27,0 s)
+
+| Tiempo | Escena |
+|---|---|
+| 0-2,2 s | **¿Tu mando se mueve solo?**: el mando, con el joystick marcado en rojo y un probador que muestra el drift |
+| 2,2-4,9 s | **Entramos dentro**: la cámara atraviesa el joystick, cae en la placa (batería, joystick) y entra en el módulo hasta el potenciómetro |
+| 4,9-9,2 s | **Causa #1, pista de carbono**: lámina de metal sobre la pista, que se desgasta; saltan escamas de carbono y la lectura se queda en X +0,14. Encuesta "¿TE HA PASADO?" |
+| 9,2-12 s | **Causa #2, polvo y suciedad** |
+| 12-16,3 s | **Causa #3, humedad y grasa** (grasa y óxido en los contactos). Sticker "PÁSASELO A QUIEN CULPA AL MANDO" |
+| 16,3-19,5 s | **Causa #4, muelle cansado**: flechas de estiramiento y el centro que ya no marca 0 |
+| 19,5-22,5 s | **Causa #5, holgura**: la palanca tiembla sola |
+| 22,5-27 s | **¿Cuál le pasa al tuyo? Sígueme: en el próximo, cómo arreglarlo** (bucle) |
+
+**Instagram:**
+```
+¿Por qué tu mando se mueve solo? 🎮 Entramos DENTRO del joystick: estas son las 5 causas del drift 👇
+
+¿Cuál le pasa al tuyo? Comenta 👇 Mañana: cómo arreglarlo 🔧
+
+#drift #mando #gaming #videojuegos #gamer
+```
+**Portada:** `¿TU MANDO SE MUEVE SOLO?`
+**YouTube:** `¿Por qué tu MANDO se mueve SOLO? 5 causas del DRIFT 🎮 #shorts`
+**TikTok:** `¿Tu mando se mueve solo? 🎮 Entramos dentro: 5 causas del drift 👇 #drift #mando #gaming #videojuegos #fyp`
+
+## Reel 2: "Cómo arreglar el drift" (5 soluciones)
+Vídeo: `salida/drift_soluciones/reel.mp4` (27,4 s)
+
+| Tiempo | Escena |
+|---|---|
+| 0-2,5 s | **5 formas de arreglarlo**: manos jugando y probador con drift |
+| 2,5-7,3 s | **Solución #1, recalíbralo**: el probador calibra y el punto vuelve al centro (0.00). Encuesta "¿LO SABÍAS?" |
+| 7,3-11,6 s | **Solución #2, sube la zona muerta**: la zona amarilla crece hasta "ignorar" el drift |
+| 11,6-14,9 s | **Solución #3, límpialo**: chorro de aire comprimido, alcohol de 90 % y el aviso "NUNCA AGUA". Sticker "PÁSASELO A QUIEN TENGA DRIFT" |
+| 14,9-19,2 s | **Solución #4, 3 años de garantía**: ticket con sello "3 AÑOS" (España, desde 2022, se reclama a la tienda) |
+| 19,2-24,3 s | **La definitiva, joysticks Hall o TMR**: imán, sensor, líneas de campo y lectura 0.00 |
+| 24,3-27,4 s | **¿Cuál vas a probar? Guárdalo para cuando te pase** (bucle) |
+
+**Instagram:**
+```
+¿Tu mando hace drift? 🎮 5 formas de arreglarlo, de la más fácil a la definitiva 🔧
+
+Guárdalo para cuando te pase 📌 ¿Cuál vas a probar? 👇
+
+#drift #mando #gaming #videojuegos #gamer
+```
+**Portada:** `5 FORMAS DE ARREGLAR EL DRIFT`
+**YouTube:** `Cómo ARREGLAR el DRIFT de tu mando: 5 soluciones 🔧 #shorts`
+**TikTok:** `¿Tu mando hace drift? 🎮 5 formas de arreglarlo 🔧 #drift #mando #gaming #videojuegos #fyp`
+
+## Orden de publicación
+1. **Día 1:** Reel 1 (causas), a las 20:00-22:00.
+2. **Día 2:** Reel 2 (soluciones), a la misma hora. Cuando esté subido, responde a los comentarios del Reel 1 con "Ya está la solución en mi perfil 👆".
+
+## Fuentes
+- Causas (desgaste del sensor, muelle cansado, plástico que se estira, polvo y humedad): [iFixit](https://www.ifixit.com/News/48944/heres-why-ps5-joysticks-drift-and-why-its-only-getting-worse), [TechRadar](https://www.techradar.com/news/ps5-stick-drift-might-be-inevitable-according-to-this-comprehensive-teardown)
+- Calibración, zona muerta y limpieza con alcohol isopropílico de 90 % o más: [reWASD](https://www.rewasd.com/blog/post/how-to-fix-stick-drift-without-replacing-controller), [How-To Geek](https://www.howtogeek.com/849851/7-common-gamepad-problems-and-how-to-fix-them/), [SlashGear](https://www.slashgear.com/888211/how-to-fix-drift-on-your-xbox-one-and-series-xs-controllers)
+- Garantía legal de 3 años en España (desde el 1 de enero de 2022, la responde el vendedor): [Comunidad de Madrid](https://www.comunidad.madrid/consumo/garantia-proteccion-compras), [Geeknetic](https://www.geeknetic.es/Noticia/21782/El-Ministerio-de-Consumo-amplia-la-garantia-de-los-productos-a-3-anos-en-Espana.html)
+- Hall y TMR (sin contacto): [iFixit Wiki](https://ts.ifixit.com/Wiki/Hall-Effect_Joysticks), [Joltfly](https://joltfly.com/hall-effect-joystick-vs-potentiometer-stop-stick-drift)

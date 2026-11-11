@@ -1,0 +1,411 @@
+{
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1920,
+  "bpm": 140,
+  "bucle": true,
+  "transicion": "zoom",
+  "sfx": "suave",
+  "colores": {
+    "acento": "#ffd23f",
+    "rosa": "#ff3d8b",
+    "cian": "#2de2e6",
+    "texto": "#ffffff"
+  },
+  "titulo": "Cómo arreglar el drift: 5 soluciones",
+  "escenas": [
+    {
+      "id": "gancho",
+      "etiqueta": "DRIFT",
+      "titular": "5 FORMAS DE ARREGLARLO",
+      "detalle": "¿tu mando hace drift?",
+      "voz": "¿Tu mando hace drift? 5 formas de arreglarlo.",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/08_manos.png",
+              "foco": [
+                0.45,
+                0.5
+              ],
+              "z": [
+                1.0,
+                1.15
+              ]
+            }
+          ],
+          "entra": false,
+          "dur": 2.54
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.38,
+            0.53
+          ],
+          "radio": 75,
+          "color": [
+            255,
+            60,
+            70
+          ],
+          "t": 0.0
+        },
+        {
+          "tipo": "probador",
+          "pos": [
+            800,
+            260
+          ],
+          "radio": 110,
+          "modo": "drift",
+          "t": 0.0
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_soluciones/escena_0.wav",
+      "duracion": 2.54
+    },
+    {
+      "id": "sol1",
+      "etiqueta": "SOLUCIÓN #1",
+      "titular": "RECALÍBRALO",
+      "detalle": "si el muelle movió el centro",
+      "voz": "1: recalíbralo. Si el muelle movió el centro, vuelve a ponerlo a cero.",
+      "pregunta": "¿LO SABÍAS?",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/00_mando.png",
+              "foco": [
+                0.45,
+                0.5
+              ],
+              "z": [
+                1.05,
+                1.2
+              ]
+            }
+          ],
+          "dur": 4.79
+        },
+        {
+          "tipo": "probador",
+          "pos": [
+            540,
+            430
+          ],
+          "radio": 180,
+          "modo": "calibrar",
+          "t": 0.1,
+          "hasta": 3.29
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_soluciones/escena_1.wav",
+      "duracion": 4.79
+    },
+    {
+      "id": "sol2",
+      "etiqueta": "SOLUCIÓN #2",
+      "titular": "SUBE LA ZONA MUERTA",
+      "detalle": "en los ajustes del juego: un parche que funciona",
+      "voz": "2: sube la zona muerta en los ajustes del juego. Es un parche, pero funciona.",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/08_manos.png",
+              "foco": [
+                0.55,
+                0.4
+              ],
+              "z": [
+                1.1,
+                1.25
+              ]
+            }
+          ],
+          "dur": 4.22
+        },
+        {
+          "tipo": "probador",
+          "pos": [
+            540,
+            470
+          ],
+          "radio": 190,
+          "modo": "zona_muerta",
+          "t": 0.1
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_soluciones/escena_2.wav",
+      "duracion": 4.22
+    },
+    {
+      "id": "sol3",
+      "etiqueta": "SOLUCIÓN #3",
+      "titular": "LÍMPIALO",
+      "detalle": "aire comprimido + alcohol de 90 %. Nunca agua",
+      "voz": "3: aire comprimido y alcohol isopropílico. Nunca agua.",
+      "compartir": "PÁSASELO A QUIEN TENGA DRIFT",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/09_limpieza.png",
+              "foco": [
+                0.5,
+                0.45
+              ],
+              "foco_fin": [
+                0.42,
+                0.52
+              ],
+              "z": [
+                1.0,
+                1.2
+              ]
+            }
+          ],
+          "dur": 3.38
+        },
+        {
+          "tipo": "spray",
+          "desde": [
+            0.72,
+            0.35
+          ],
+          "hacia": [
+            0.4,
+            0.53
+          ],
+          "t": 0.2
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.25,
+            0.18
+          ],
+          "texto": "ALCOHOL 90 %",
+          "etiqueta": [
+            640,
+            190
+          ],
+          "color": [
+            45,
+            226,
+            230
+          ],
+          "t": 0.4,
+          "radio": 70
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.4,
+            0.53
+          ],
+          "texto": "NUNCA AGUA",
+          "etiqueta": [
+            250,
+            930
+          ],
+          "color": [
+            255,
+            60,
+            70
+          ],
+          "t": 1.2,
+          "radio": 60
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_soluciones/escena_3.wav",
+      "duracion": 3.38
+    },
+    {
+      "id": "sol4",
+      "etiqueta": "SOLUCIÓN #4",
+      "titular": "3 AÑOS DE GARANTÍA",
+      "detalle": "en España desde 2022: se reclama a la tienda",
+      "voz": "4: en España tienes 3 años de garantía. Reclama a la tienda.",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/00_mando.png",
+              "foco": [
+                0.5,
+                0.55
+              ],
+              "z": [
+                1.2,
+                1.35
+              ]
+            }
+          ],
+          "dur": 4.25
+        },
+        {
+          "tipo": "garantia",
+          "t": 0.15
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_soluciones/escena_4.wav",
+      "duracion": 4.25
+    },
+    {
+      "id": "sol5",
+      "etiqueta": "LA DEFINITIVA",
+      "titular": "JOYSTICKS HALL O TMR",
+      "detalle": "imanes sin contacto: no se desgastan",
+      "voz": "5, la definitiva: joysticks Hall o TMR. Miden con imanes y no se desgastan.",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/10_hall.png",
+              "foco": [
+                0.5,
+                0.45
+              ],
+              "foco_fin": [
+                0.5,
+                0.6
+              ],
+              "z": [
+                1.0,
+                1.35
+              ]
+            }
+          ],
+          "dur": 5.15
+        },
+        {
+          "tipo": "campo",
+          "punto": [
+            0.5,
+            0.6
+          ],
+          "t": 0.5
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.5,
+            0.585
+          ],
+          "texto": "IMÁN",
+          "etiqueta": [
+            210,
+            640
+          ],
+          "color": [
+            240,
+            120,
+            130
+          ],
+          "t": 0.8,
+          "radio": 55
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.5,
+            0.67
+          ],
+          "texto": "SENSOR",
+          "etiqueta": [
+            860,
+            930
+          ],
+          "color": [
+            45,
+            226,
+            230
+          ],
+          "t": 1.2,
+          "radio": 55
+        },
+        {
+          "tipo": "lectura",
+          "modo": "ok",
+          "pos": [
+            820,
+            240
+          ],
+          "t": 1.8
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_soluciones/escena_5.wav",
+      "duracion": 5.15
+    },
+    {
+      "id": "cierre",
+      "etiqueta": "GUÁRDALO",
+      "titular": "¿CUÁL VAS A PROBAR?",
+      "detalle": "guárdalo para cuando te pase",
+      "voz": "¿Cuál vas a probar? Guárdalo para cuando te pase.",
+      "fx": [
+        {
+          "tipo": "camara",
+          "planos": [
+            {
+              "foto": "imagenes/drift/08_manos.png",
+              "foco": [
+                0.45,
+                0.5
+              ],
+              "z": [
+                1.15,
+                1.0
+              ]
+            }
+          ],
+          "entra": true,
+          "dur": 3.099
+        },
+        {
+          "tipo": "marca",
+          "punto": [
+            0.38,
+            0.53
+          ],
+          "radio": 75,
+          "color": [
+            255,
+            60,
+            70
+          ],
+          "t": 0.5
+        },
+        {
+          "tipo": "probador",
+          "pos": [
+            800,
+            260
+          ],
+          "radio": 110,
+          "modo": "drift",
+          "t": 0.6
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/drift_soluciones/escena_6.wav",
+      "duracion": 3.099
+    }
+  ]
+}

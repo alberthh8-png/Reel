@@ -1290,7 +1290,7 @@ class Render:
         fx = e["fx_obj"]
         # cámara: zoom lento + paneo + sacudida
         sac = sum(f.sacudida(lt) for f in fx)
-        if lt < TRANS and e["idx"] > 0:
+        if lt < TRANS and e["idx"] > 0 and self.g.get("transicion") != "zoom":
             sac += 30 * (1 - lt / TRANS)
         k = ease_in_out(lt / e["duracion"])
         s = 1.1 - 0.075 * k
@@ -1327,10 +1327,10 @@ class Render:
         rgb = frame.convert("RGB")
         flash = sum(f.destello(lt) for f in fx)
         glitch = 0.0
-        if e["idx"] > 0 and lt < TRANS:
+        if e["idx"] > 0 and lt < TRANS and self.g.get("transicion") != "zoom":
             glitch = 1 - lt / TRANS
             flash += 0.7 * glitch ** 2
-        if self.bucle and ultima and lt > e["duracion"] - 0.12:
+        if self.bucle and ultima and lt > e["duracion"] - 0.12 and self.g.get("transicion") != "zoom":
             glitch = max(glitch, 0.8 * (lt - (e["duracion"] - 0.12)) / 0.12)
         if flash > 0.01 or glitch > 0:
             arr = np.asarray(rgb).astype(np.int16)
@@ -1516,12 +1516,17 @@ def escribir_audio(render, ruta):
     rng = np.random.default_rng(11)
     mus = musica(total, render.g.get("bpm", 140))[:N] * 0.5
     sfx = np.zeros(N)
+    suave = render.g.get("sfx") == "suave"
     for e in render.escenas:
         b = e["inicio"]
         if e["idx"] > 0:
             pegar(sfx, (b - 0.3) * SR, sfx_whoosh(rng), 0.8)
-            pegar(sfx, b * SR, sfx_explosion(rng, 0.8), 0.35)
-        pegar(sfx, (b + (0.12 if e["idx"] else 0)) * SR, sfx_disparo(rng), 0.25)
+            if not suave:
+                pegar(sfx, b * SR, sfx_explosion(rng, 0.8), 0.35)
+        if not suave:
+            pegar(sfx, (b + (0.12 if e["idx"] else 0)) * SR, sfx_disparo(rng), 0.25)
+        else:
+            pegar(sfx, b * SR, sfx_pop() * 0.6, 1.0)
         for f in e.get("fx", []):
             if f["tipo"] == "explosion":
                 pegar(sfx, (b + f["t"]) * SR, sfx_explosion(rng), 0.9 * min(1.2, f.get("escala", 1)))
