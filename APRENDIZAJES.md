@@ -39,7 +39,12 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 4. **Nada en el vídeo que parezca un fallo o "parte de algo"**: ni "PARTE 2" en pantalla (ahuyenta a quien no te sigue, que es más del 90 %), ni pausas o pantallas grises, ni destellos blancos en el primer fotograma.
 5. **La primera pregunta, a mitad del vídeo, y que no suene a final.** En GTA Parte 1 (YouTube) hay una caída clara entre los segundos 5 y 9, justo en el primer "¿Tú qué crees?".
 6. **Duración de 22 a 27 s.** Cuando el arranque funciona, la retención es buena (75 % de media en YouTube).
-7. **Bucle continuo**: en YouTube la retención empieza por encima del 100 %, así que la gente repite.
+7. ✅ **REGLA FIJA (pedida por Albert): todos los reels en bucle continuo.** Datos que la respaldan: en YouTube la retención de GTA P1 empieza por encima del 100 % (la gente repite) y en Instagram el pico de "me gusta" del Drift R1 (50 %) está en el cierre. Cómo se hace, siempre:
+   - **Imagen:** la última escena termina en el mismo plano que el fotograma 0 (mismo fondo y mismo encuadre: la cámara vuelve sola en los últimos 0,6 s). Si el gancho tiene un elemento clave (por ejemplo, el probador), el cierre lo repite en el mismo sitio.
+   - **Voz:** la última frase enlaza con la primera. Ejemplo: "…el 19 vemos qué era verdad" → "El 19, el mundo se para…".
+   - **Audio:** sin fundido final; *whoosh* antes del salto; duración total cuadrada al compás (140 bpm) para que la música no se descuadre.
+   - **Guion:** `"bucle": true`.
+   - **Comprobación:** sin silencio entre los últimos y los primeros 150 ms, y el último fotograma parecido al primero (revisado a ojo).
 8. **Sellos de credibilidad** (REAL / RUMOR / TEORÍA) y datos con fuente: los guardados y republicaciones suben.
 9. **Voz**: Dan (ElevenLabs), frases cortas, sin puntos suspensivos (estiran las vocales), acelerada un 8-15 % y revisando que ninguna vocal sostenida pase de 0,13 s.
 10. **YouTube retiene mejor que Instagram** con este contenido: hay que cuidar siempre el título de YouTube.
