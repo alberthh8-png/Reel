@@ -27,6 +27,8 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 - Le gustó la idea del **bucle continuo** y pidió aplicarlo.
 - Revisa los vídeos con atención (detectó la "aaaa" alargada en la voz): **su revisión final es imprescindible**.
 - Pide los textos de publicación **por plataforma y listos para copiar**.
+- **Créditos de Higgsfield:** a Albert no le preocupa gastarlos si mejora el vídeo (12 nov: "no te preocupes por los créditos"). Priorizar la calidad (vídeo IA con movimiento real), aunque informándole del gasto.
+- Prefiere **productos reales** (consolas reales) antes que diseños inventados.
 - Quiere que **todo lo aprendido se guarde** para ir afinando vídeo a vídeo.
 
 ---
