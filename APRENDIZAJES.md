@@ -211,11 +211,11 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 
 ## Pendiente (actualizar al retomar)
 
-1. **12 nov, 20:00-22:00:** Albert sube el **Drift Reel 2** (soluciones) en las 3 plataformas, con los textos de `PUBLICAR.md`, y responde a los comentarios del Reel 1 con "Ya está la solución en mi perfil 👆".
+1. ✅ **12 nov:** Albert subió el **Drift Reel 2** (soluciones). Falta: sus métricas a las 24 h y a los 3 días, y responder a los comentarios del Reel 1 con "Ya está la solución en mi perfil 👆".
 2. **Métricas pendientes:**
    - Drift R1: Instagram, TikTok y la retención de YouTube.
    - Drift R2: a las 24 h y a los 3 días, en las 3 plataformas.
-   - Versión de prueba de la Parte 2 de GTA, si se subió.
+   - ~~Versión de prueba de la Parte 2 de GTA~~: **no se subió**. A Albert no le aparece la opción de Reel de prueba en Instagram (requiere cuenta profesional de creador, y se activa poco a poco). Decisión: no subirla como reel normal (duplicaría la Parte 2); su aprendizaje se aplica en la Parte 3.
    - Instagram de GTA P1 y P2 a los 3 días.
 3. **19 nov:** **GTA Parte 3, "¿Se cumplieron las teorías?"**, con todas las reglas (sin "Parte 3" en pantalla ni en el título de YouTube).
 4. Albert cambia la foto de perfil, el banner y las biografías en las 3 redes; falta la **bio de Instagram** (≤150 caracteres).
