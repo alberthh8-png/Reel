@@ -44,10 +44,12 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 9. **Voz**: Dan (ElevenLabs), frases cortas, sin puntos suspensivos (estiran las vocales), acelerada un 8-15 % y revisando que ninguna vocal sostenida pase de 0,13 s.
 10. **YouTube retiene mejor que Instagram** con este contenido: hay que cuidar siempre el título de YouTube.
 11. **Titular siempre con margen de seguridad** (máximo ~880 px de ancho): las apps recortan los bordes y la animación lo agranda. Comprobado por código antes de exportar.
-12. **Llamada a compartir con un destinatario concreto** ("pásaselo a tu jefe") en la mitad del vídeo: dio los primeros compartidos. Mantenerla y probarla otra vez (a la segunda, pasa a regla fija).
-13. **Cada vídeo con un primer plano propio**, distinto de los anteriores, y **sin "Parte X" en el título de YouTube** (la Parte 2 en YouTube: 8 vistas).
-14. **TikTok necesita calentar la cuenta** y publicar en hora punta: de madrugada y con la cuenta nueva solo llegó a 6 personas.
-15. **La hora de subida importa poco en Instagram y YouTube, pero mucho en TikTok** (03:47 → 6 vistas; 21:12 → 92) comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
+12. ✅ **REGLA FIJA: llamada a compartir con un destinatario concreto** ("pásaselo a tu jefe", "pásaselo a quien culpa al mando") en la mitad del vídeo. Funcionó dos veces: 2 compartidos en TikTok (GTA P2) y **2,4 % en Instagram** (Drift R1, el mejor dato).
+13. **Nada de escenas de introducción**: el primer dato o la primera solución tiene que llegar **antes del segundo 3**. En el Drift R1, la escena "Entramos dentro" (2,2-4,9 s) coincidió con la caída fuerte del 100 % al ~38 %.
+14. **YouTube es la plataforma principal** (la mejor en vistas, duración media y suscriptores): título siempre cuidado y es donde primero miramos las métricas.
+15. **Cada vídeo con un primer plano propio**, distinto de los anteriores, y **sin "Parte X" en el título de YouTube** (la Parte 2 en YouTube: 8 vistas).
+16. **TikTok necesita calentar la cuenta** y publicar en hora punta: de madrugada y con la cuenta nueva solo llegó a 6 personas.
+17. **La hora de subida importa poco en Instagram y YouTube, pero mucho en TikTok** (03:47 → 6 vistas; 21:12 → 92) comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
 
 ---
 
@@ -73,9 +75,9 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 | GTA P2 | Instagram | 148 | 47,6 % | 7 s (29 %) | 0 % | 1,6 % | 0 | Titular abstracto, "PARTE 2" en pantalla y pausa gris |
 | GTA P2 | TikTok | 92 | (cae en 1-2 s) | 5,9 s (24 %) · 3 % completo | **2 (2,2 %)** | 2 | **1** | Publicado a las **21:12**; llamada a compartir ("pásaselo a tu jefe") |
 | GTA P2 | YouTube | **8** (22 h) | (4 personas) | sin datos | — | — | — | YouTube casi no lo enseñó en el feed de Shorts |
-| Drift R1 | YouTube | 542 (6 h) | 69,5 % | pendiente | — | — | — | Fotos realistas y zoom lento; texto que engancha abajo |
-| Drift R1 | Instagram | pendiente | | | | | | |
-| Drift R1 | TikTok | pendiente | | | | | | |
+| Drift R1 | YouTube | **1.051** (33 h) | 63 % (antes 69,5 %) | **16 s (59 %)** | — | — | **+1 suscriptor** | Fotos realistas y zoom lento; texto que engancha abajo; publicado a las 13:00 |
+| Drift R1 | Instagram | 149 | 41,9 % | 9 s (33 %) | **2,4 %** ✅ | 0,8 % | **1** | Igual; llamada "pásaselo a quien culpa al mando" |
+| Drift R1 | TikTok | 92 | (se van en 2 s) | 5,7 s (21 %) · 2 % completo | 1 | 0 | 0 | Igual |
 
 ## Registro de vídeos
 
@@ -111,7 +113,20 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 Publicado a las 13:00.
 **YouTube** (~6 h): 542 visualizaciones **y subiendo a escalones** (YouTube le sigue dando empujones) · 172 visualizaciones interesadas · **se quedaron 30,5 % / saltaron 69,5 %** · retención todavía sin datos.
 - Lectura: arranque con una foto quieta y oscura, el texto que engancha abajo y un zoom lento. Parece un anuncio. Aun así crece, porque quien se queda lo ve.
-- **Pendiente:** métricas de Instagram y TikTok, y la gráfica de retención de YouTube (tarda hasta 2 días).
+
+**YouTube** (33 h): **1.051 visualizaciones** (subió a escalones hasta ~10 h y luego se estabilizó) · **+1 suscriptor** · duración media **16 s (59 %)** · se quedaron 37 % / saltaron 63 % · gráfica de retención todavía sin datos.
+
+**Instagram** (~34 h): 149 reproducciones · 122 espectadores · tiempo medio 9 s (33 %) · **1 seguidor nuevo** · omisión 41,9 % · **compartidos 2,4 % (el mejor dato hasta ahora)** · me gusta 3,2 % · guardados 0,8 % · **comentarios 0,8 % (el mejor)** · 87 % desde la pestaña Reels.
+- Retención: **cae del 100 % a ~38 % en los primeros ~4 s** y después baja suave hasta ~8 % al final. La caída fuerte abarca el gancho (0-2,2 s) **y la escena de "Entramos dentro"** (2,2-4,9 s), que no da ningún dato: es una introducción.
+- Picos de me gusta: el segundo 0, ~11 s (causa 2, polvo) y **el final (50 %)**, con el cierre y el bucle.
+
+**TikTok** (~34 h): 92 visualizaciones (todas en las primeras ~6 h) · tiempo medio 5,7 s (21 %) · 2 % completo · 0 me gusta · 1 compartido · 0 seguidores · la mayoría se va a los 2 s.
+- TikTok sigue con muy poca difusión en general (92 vistas, igual que la Parte 2): **la cuenta todavía necesita calentarse**.
+
+**Conclusiones del Reel 1 del drift:**
+1. **YouTube vuelve a ser la mejor plataforma**: 1 K vistas, 59 % de duración media y el primer suscriptor.
+2. **La llamada a compartir con destinatario funciona por segunda vez** (2,4 % de compartidos en Instagram) → **pasa a regla fija**.
+3. **Las escenas de introducción cuestan espectadores**: "Entramos dentro" retrasó el primer dato hasta el segundo 4,9, y ahí se fue gran parte del público. El Reel 2 ya va directo a la solución 1 (segundo 2,5).
 
 ### Drift Reel 2: "Cómo arreglar el drift" (27,4 s)
 Sin publicar. **Qué probamos** (todo lo aprendido hasta ahora, en un solo vídeo):
@@ -213,7 +228,7 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 
 1. ✅ **12 nov:** Albert subió el **Drift Reel 2** (soluciones). Falta: sus métricas a las 24 h y a los 3 días, y responder a los comentarios del Reel 1 con "Ya está la solución en mi perfil 👆".
 2. **Métricas pendientes:**
-   - Drift R1: Instagram, TikTok y la retención de YouTube.
+   - ✅ Drift R1: Instagram y TikTok recibidas. Falta solo la gráfica de retención de YouTube.
    - Drift R2: a las 24 h y a los 3 días, en las 3 plataformas.
    - ~~Versión de prueba de la Parte 2 de GTA~~: **no se subió**. A Albert no le aparece la opción de Reel de prueba en Instagram (requiere cuenta profesional de creador, y se activa poco a poco). Decisión: no subirla como reel normal (duplicaría la Parte 2); su aprendizaje se aplica en la Parte 3.
    - Instagram de GTA P1 y P2 a los 3 días.
