@@ -5,3 +5,4 @@ __pycache__/
 /.env.local
 salida/**/*.wav
 salida/**/preview/
+salida/_fotogramas/

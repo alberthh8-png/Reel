@@ -328,3 +328,47 @@ Guárdalo para cuando te pase 📌 ¿Cuál vas a probar? 👇
 - Calibración, zona muerta y limpieza con alcohol isopropílico de 90 % o más: [reWASD](https://www.rewasd.com/blog/post/how-to-fix-stick-drift-without-replacing-controller), [How-To Geek](https://www.howtogeek.com/849851/7-common-gamepad-problems-and-how-to-fix-them/), [SlashGear](https://www.slashgear.com/888211/how-to-fix-drift-on-your-xbox-one-and-series-xs-controllers)
 - Garantía legal de 3 años en España (desde el 1 de enero de 2022, la responde el vendedor): [Comunidad de Madrid](https://www.comunidad.madrid/consumo/garantia-proteccion-compras), [Geeknetic](https://www.geeknetic.es/Noticia/21782/El-Ministerio-de-Consumo-amplia-la-garantia-de-los-productos-a-3-anos-en-Espana.html)
 - Hall y TMR (sin contacto): [iFixit Wiki](https://ts.ifixit.com/Wiki/Hall-Effect_Joysticks), [Joltfly](https://joltfly.com/hall-effect-joystick-vs-potentiometer-stop-stick-drift)
+
+---
+
+# REEL: "Adiós, GTA 5" (nostalgia, 27 s)
+
+Vídeo: `salida/gta5_adios/reel.mp4` · Portada: el primer fotograma ("ADIÓS, GTA 5" sobre el atardecer, con el contador 2013).
+
+| Tiempo | Escena | Sello |
+|---|---|---|
+| 0-2,7 s | **ADIÓS, GTA 5**: atardecer en movimiento (el sol baja, los coches circulan) y contador 2013 → 2026 | 13 AÑOS |
+| 2,7-7,2 s | **3 GENERACIONES**: las consolas de tres generaciones se encienden una tras otra | DATO REAL |
+| 7,2-12,1 s | **¿EL ÚLTIMO GOLPE?**: museo de noche, láseres y marco vacío | RUMOR |
+| 12,1-19,9 s | **LA ÚLTIMA VUELTA**: caravana de coches de noche. Sticker "PÁSASELO A QUIEN JUGÓ DESDE 2013" | DATO REAL |
+| 19,9-23,3 s | **¿Y DESPUÉS?**: la ciudad al amanecer. Encuesta "¿SEGUIRÁS JUGANDO?" | CONFIRMADO |
+| 23,3-27 s | **¿CUÁNTAS HORAS LE ECHASTE?**: vuelve el atardecer (clip al revés) y enlaza en bucle | COMENTA |
+
+**Cuándo:** el **17 o el 18 de noviembre, a las 20:00-22:00**, justo antes de "la última vuelta" de la comunidad (la noche del 18).
+
+## Instagram
+```
+Después de 13 años, GTA 5 se despide 🥲 3 generaciones de consolas, el que puede ser su último golpe y una última vuelta de toda la comunidad la noche del 18…
+
+¿Cuántas horas le echaste tú? 👇 Pásaselo a quien jugó desde 2013 🎮
+
+#GTA5 #GTAV #GTA6 #GTAOnline #Gaming
+```
+## YouTube Shorts
+**Título:** `ADIÓS, GTA 5 🥲 13 años después llega el final #shorts`
+**Descripción:**
+```
+Después de 13 años y 3 generaciones de consolas, GTA 5 se despide antes de la llegada de GTA 6. Su primer gran golpe en casi 6 años puede ser el último, y la comunidad prepara una última vuelta juntos la noche del 18 de noviembre. ¿Cuántas horas le echaste tú? 👇
+
+#GTA5 #GTA6 #Shorts
+```
+## TikTok
+```
+Adiós, GTA 5 🥲 13 años después llega el final. ¿Cuántas horas le echaste tú? 👇 #GTA5 #GTA6 #GTAOnline #gaming #fyp
+```
+
+## Fuentes
+- 13 años y 3 generaciones (septiembre de 2013): [Vandal](https://vandal.elespanol.com/noticia/1350792507/gta-v-vende-mas-copias-al-ano-que-otros-exitos-en-toda-su-vida-suma-230-millones-desde-2013/)
+- Golpe del Kortz Center (14 jul 2026, el primero desde Cayo Perico en 2020; que sea el último es **rumor**): [Shacknews](https://www.shacknews.com/article/149946/gta-online-kortz-center-heist-release-date), [GamesRadar](https://www.gamesradar.com/games/grand-theft-auto/gta-online-is-getting-its-first-big-heist-update-in-6-years-next-week-with-the-kortz-center-heist/), [Beebom](https://beebom.com/the-kortz-center-heist-is-gta-onlines-final-big-update-before-gta-6-and-it-has-a-release-date/amp/)
+- La última vuelta de la comunidad (18 nov): [Presse-Citron](https://presse-citron.net/la-communaute-gta-prepare-un-important-rassemblement-le-18-novembre-la-veille-de-la-sortie-de-gta-6), [ScalaCube](https://scalacube.com/blog/news/gta-5-players-are-planning-one-last-drive-before-the-release-of-gta-6)
+- GTA Online seguirá con soporte: [TechRadar](https://www.techradar.com/gaming/gta-6-online-might-not-be-coming-anytime-soon-as-take-two-confirms-gta-online-support-will-continue-after-gta-6-launches-and-beyond)

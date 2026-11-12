@@ -384,6 +384,79 @@ class Flechas(Ventana):
             d.polygon([(bx + lado * 34, y), (bx, y - 26), (bx, y + 26)], fill=col)
 
 
+CLIPS_DIR = reel.os.path.join(reel.RAIZ, "salida", "_fotogramas")
+
+
+def fotogramas_clip(ruta):
+    """Extrae (una sola vez) los fotogramas del clip a JPG y devuelve la lista ordenada."""
+    import glob
+    import subprocess
+    nombre = reel.os.path.splitext(reel.os.path.basename(ruta))[0]
+    carpeta = reel.os.path.join(CLIPS_DIR, nombre)
+    if not glob.glob(reel.os.path.join(carpeta, "*.jpg")):
+        reel.os.makedirs(carpeta, exist_ok=True)
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", reel.os.path.join(reel.RAIZ, ruta), "-q:v", "2",
+                        reel.os.path.join(carpeta, "f_%04d.jpg")], check=True)
+    return sorted(glob.glob(reel.os.path.join(carpeta, "*.jpg")))
+
+
+@lru_cache(maxsize=48)
+def fotograma_base(ruta_jpg):
+    img = Image.open(ruta_jpg).convert("RGB")
+    e = max(BW / img.width, BH / img.height)
+    img = img.resize((int(img.width * e) + 1, int(img.height * e) + 1), Image.BICUBIC)
+    x, y = (img.width - BW) // 2, (img.height - BH) // 2
+    return img.crop((x, y, x + BW, y + BH))
+
+
+class Clip(reel.Efecto):
+    """Clip de vídeo como fondo: se estira a lo que dura la escena (con fundido entre fotogramas),
+    con zoom suave encima. reverso=True lo reproduce hacia atrás (para cerrar el bucle)."""
+
+    def __init__(self, ev, semilla):
+        self.ev = ev
+        self.frames = fotogramas_clip(ev["video"])
+        self.dur = ev["dur"]
+
+    def dibujar(self, frame, t, mapa):
+        n = len(self.frames)
+        u = clamp(t / self.dur)
+        if self.ev.get("reverso"):
+            u = 1 - u
+        pos = u * (n - 1)
+        i0 = int(pos)
+        i1 = min(n - 1, i0 + 1)
+        k = pos - i0
+        z0, z1 = self.ev.get("z", [1.0, 1.08])
+        uz = clamp(t / self.dur)
+        z = z0 + (z1 - z0) * ease_in_out(uz)
+        foco = tuple(self.ev.get("foco", [0.5, 0.5]))
+        x, y, w, h = recorte(z, foco)
+        a = fotograma_base(self.frames[i0]).resize((W, H), Image.BILINEAR, box=(x, y, x + w, y + h))
+        if k > 0.02 and i1 != i0:
+            b = fotograma_base(self.frames[i1]).resize((W, H), Image.BILINEAR, box=(x, y, x + w, y + h))
+            a = Image.blend(a, b, k)
+        ESTADO["crop"] = (x, y, w, h)
+        frame.alpha_composite(a.convert("RGBA"))
+
+
+class ContadorAnios(Ventana):
+    """Contador grande que pasa de un año a otro (2013 -> 2026)."""
+
+    def dibujar(self, frame, t, mapa):
+        v = self.vis(t)
+        if v <= 0:
+            return
+        a = t - self.t0
+        ini, fin = self.ev.get("desde", 2013), self.ev.get("hasta_anio", 2026)
+        p = ease_in_out(a / self.ev.get("tarda", 1.6))
+        anio = int(round(ini + (fin - ini) * p))
+        capa = reel.texto_con_estilo(str(anio), reel.fuente(170), (255, 255, 255, 255), borde=10,
+                                     color_borde=(16, 6, 30), brillo=(255, 140, 80))
+        x, y = self.ev.get("pos", (540, 980))
+        reel.pegar_centrado(frame, capa, x, y, escala=1 + 0.06 * (anio == fin) * math.sin(a * 6), alfa=v)
+
+
 class VeloSuperior(reel.Efecto):
     """Degradado oscuro arriba para que el titular se lea sobre cualquier foto."""
 
@@ -398,7 +471,7 @@ class VeloSuperior(reel.Efecto):
         frame.alpha_composite(self.capa, (0, 0))
 
 
-reel.FX.update({"velo_superior": VeloSuperior, "camara": Camara, "marca": Marca, "particulas": Particulas, "carbono": Carbono,
+reel.FX.update({"clip": Clip, "contador_anios": ContadorAnios, "velo_superior": VeloSuperior, "camara": Camara, "marca": Marca, "particulas": Particulas, "carbono": Carbono,
                 "lectura": Lectura, "probador": Probador, "spray": Spray, "garantia": Garantia,
                 "campo": Campo, "flechas": Flechas})
 

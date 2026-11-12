@@ -1367,12 +1367,13 @@ class Render:
             return
         p = ease_out_back(a / 0.3, 2.6)
         bamboleo = math.sin(a * 7) * 3 * clamp(1 - a)
-        pegar_centrado(frame, e["capa_preg"], W / 2, 640, escala=p, angulo=-4 + bamboleo)
+        ys = 900 if e.get("y_titular", 1220) < 800 else 640  # con el titular arriba, el sticker baja
+        pegar_centrado(frame, e["capa_preg"], W / 2, ys, escala=p, angulo=-4 + bamboleo)
         if a > 0.55:  # "toque" sobre el botón SÍ
             b = (a - 0.55) % 0.9
             r = 30 + 120 * ease_out_cubic(b / 0.5)
             al = int(200 * clamp(1 - b / 0.5))
-            x, y = W / 2 - e["capa_preg"].width / 4 + 10, 640 + 95
+            x, y = W / 2 - e["capa_preg"].width / 4 + 10, ys + 95
             ImageDraw.Draw(frame).ellipse((x - r, y - r, x + r, y + r), outline=(255, 255, 255, al), width=8)
 
     def _subtitulos(self, frame, t):
@@ -1511,11 +1512,59 @@ def musica(total, bpm):
     return out
 
 
+def musica_nostalgia(total, bpm=80):
+    """Música original nostálgica: acordes suaves, arpegio tipo piano eléctrico, batería ligera y vinilo."""
+    N = int(total * SR) + SR
+    out = np.zeros(N)
+    beat = 60 / bpm
+    compas = beat * 4
+    rng = np.random.default_rng(21)
+    # Fa maj7 - Sol - Mi m7 - La m (melancólico)
+    acordes = [[53, 57, 60, 64], [55, 59, 62, 67], [52, 55, 59, 62], [57, 60, 64, 69]]
+    n_comp = int(total / compas) + 2
+    for c in range(n_comp):
+        a = int(c * compas * SR)
+        L = int(compas * SR * 1.05)
+        tt = np.arange(L) / SR
+        env = np.minimum(1, tt / 0.6) * np.exp(-tt * 0.35)
+        pad = np.zeros(L)
+        for n in acordes[c % 4]:
+            f = nota(n)
+            pad += np.sin(2 * math.pi * f * tt) + 0.3 * np.sin(2 * math.pi * f * 2 * tt + 0.3)
+        pegar(out, a, filtro_lp(pad * env, 2500), 0.05)
+        bajo = np.sin(2 * math.pi * nota(acordes[c % 4][0] - 24) * tt) * np.exp(-tt * 0.8)
+        pegar(out, a, bajo, 0.22)
+        for k in range(8):  # arpegio en corcheas
+            nn = acordes[c % 4][[0, 1, 2, 3, 2, 1, 2, 3][k]] + 12
+            La = int(beat * 1.5 * SR)
+            ta = np.arange(La) / SR
+            f = nota(nn)
+            tono = (np.sin(2 * math.pi * f * ta) + 0.5 * np.sin(2 * math.pi * f * 2 * ta) * np.exp(-ta * 6))
+            pegar(out, a + int(k * beat / 2 * SR), tono * np.exp(-ta * 3.2), 0.045)
+    for b in range(n_comp * 4):  # batería muy suave
+        a = int(b * beat * SR)
+        if b % 4 == 0:
+            L = int(0.35 * SR)
+            tt = np.arange(L) / SR
+            pegar(out, a, np.sin(2 * math.pi * (48 * tt + 3 * (1 - np.exp(-tt * 25)))) * np.exp(-tt * 9), 0.35)
+        if b % 4 == 2:
+            L = int(0.2 * SR)
+            tt = np.arange(L) / SR
+            r_ = rng.standard_normal(L)
+            pegar(out, a, filtro_lp(r_, 3000) * np.exp(-tt * 22), 0.12)
+    crepitar = (rng.random(N) > 0.9993) * rng.uniform(-1, 1, N)  # vinilo
+    out += filtro_lp(crepitar, 4000) * 0.08 + filtro_lp(rng.standard_normal(N), 800) * 0.004
+    return out
+
+
 def escribir_audio(render, ruta):
     total = render.total
     N = int(total * SR) + SR
     rng = np.random.default_rng(11)
-    mus = musica(total, render.g.get("bpm", 140))[:N] * 0.5
+    if render.g.get("musica") == "nostalgia":
+        mus = musica_nostalgia(total, render.g.get("bpm", 80))[:N] * 0.6
+    else:
+        mus = musica(total, render.g.get("bpm", 140))[:N] * 0.5
     sfx = np.zeros(N)
     suave = render.g.get("sfx") == "suave"
     for e in render.escenas:

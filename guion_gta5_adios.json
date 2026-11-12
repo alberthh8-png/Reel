@@ -1,0 +1,206 @@
+{
+  "titulo": "Adiós, GTA 5",
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1920,
+  "bpm": 80,
+  "musica": "nostalgia",
+  "bucle": true,
+  "transicion": "zoom",
+  "sfx": "suave",
+  "colores": {
+    "acento": "#ffd23f",
+    "rosa": "#ff3d8b",
+    "cian": "#2de2e6",
+    "texto": "#ffffff"
+  },
+  "escenas": [
+    {
+      "id": "gancho",
+      "etiqueta": "13 AÑOS",
+      "titular": "ADIÓS, GTA 5",
+      "detalle": "después de 13 años, se despide",
+      "voz": "Después de 13 años, GTA 5 se despide.",
+      "fx": [
+        {
+          "tipo": "clip",
+          "video": "videos/gta5/00_atardecer.mp4",
+          "z": [
+            1.0,
+            1.08
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 2.72
+        },
+        {
+          "tipo": "velo_superior"
+        },
+        {
+          "tipo": "contador_anios",
+          "t": 0.0,
+          "fundido": 0,
+          "tarda": 1.8,
+          "pos": [
+            540,
+            960
+          ]
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/gta5/escena_0.wav",
+      "y_titular": 340,
+      "duracion": 2.72
+    },
+    {
+      "id": "generaciones",
+      "etiqueta": "DATO REAL",
+      "titular": "3 GENERACIONES",
+      "detalle": "salió en 2013 y sigue vivo",
+      "voz": "Salió en 2013, y ha sobrevivido a 3 generaciones de consolas.",
+      "fx": [
+        {
+          "tipo": "clip",
+          "video": "videos/gta5/01_consolas.mp4",
+          "z": [
+            1.0,
+            1.1
+          ],
+          "foco": [
+            0.5,
+            0.45
+          ],
+          "dur": 4.43
+        },
+        {
+          "tipo": "velo_superior"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/gta5/escena_1.wav",
+      "y_titular": 340,
+      "duracion": 4.43
+    },
+    {
+      "id": "golpe",
+      "etiqueta": "RUMOR",
+      "titular": "¿EL ÚLTIMO GOLPE?",
+      "detalle": "su primer gran golpe en casi 6 años",
+      "voz": "En julio llegó su primer gran golpe en casi 6 años. Y puede que sea el último.",
+      "fx": [
+        {
+          "tipo": "clip",
+          "video": "videos/gta5/02_museo.mp4",
+          "z": [
+            1.0,
+            1.12
+          ],
+          "foco": [
+            0.6,
+            0.5
+          ],
+          "dur": 4.96
+        },
+        {
+          "tipo": "velo_superior"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/gta5/escena_2.wav",
+      "y_titular": 340,
+      "duracion": 4.96
+    },
+    {
+      "id": "vuelta",
+      "etiqueta": "DATO REAL",
+      "titular": "LA ÚLTIMA VUELTA",
+      "detalle": "la noche del 18 de noviembre",
+      "voz": "La noche del 18, miles de jugadores darán una última vuelta juntos por la ciudad. Pásaselo a quien jugó desde el principio.",
+      "compartir": "PÁSASELO A QUIEN JUGÓ DESDE 2013",
+      "fx": [
+        {
+          "tipo": "clip",
+          "video": "videos/gta5/03_caravana.mp4",
+          "z": [
+            1.0,
+            1.1
+          ],
+          "foco": [
+            0.55,
+            0.6
+          ],
+          "dur": 7.8
+        },
+        {
+          "tipo": "velo_superior"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/gta5/escena_3.wav",
+      "y_titular": 340,
+      "duracion": 7.8
+    },
+    {
+      "id": "despues",
+      "etiqueta": "CONFIRMADO",
+      "titular": "¿Y DESPUÉS?",
+      "detalle": "el Online seguirá funcionando",
+      "voz": "El Online seguirá funcionando, pero ya nada será igual.",
+      "pregunta": "¿SEGUIRÁS JUGANDO?",
+      "fx": [
+        {
+          "tipo": "clip",
+          "video": "videos/gta5/04_amanecer.mp4",
+          "z": [
+            1.0,
+            1.1
+          ],
+          "foco": [
+            0.5,
+            0.6
+          ],
+          "dur": 3.4
+        },
+        {
+          "tipo": "velo_superior"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/gta5/escena_4.wav",
+      "y_titular": 340,
+      "duracion": 3.4
+    },
+    {
+      "id": "cierre",
+      "etiqueta": "COMENTA",
+      "titular": "¿CUÁNTAS HORAS LE ECHASTE?",
+      "detalle": "cuéntamelo en comentarios",
+      "voz": "¿Cuántas horas le echaste tú? Cuéntamelo en comentarios.",
+      "fx": [
+        {
+          "tipo": "clip",
+          "video": "videos/gta5/00_atardecer.mp4",
+          "z": [
+            1.08,
+            1.0
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "reverso": true,
+          "dur": 3.69
+        },
+        {
+          "tipo": "velo_superior"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/gta5/escena_5.wav",
+      "y_titular": 340,
+      "duracion": 3.69
+    }
+  ]
+}

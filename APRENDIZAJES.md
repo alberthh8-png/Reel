@@ -144,6 +144,16 @@ Sin publicar. **Qué probamos** (todo lo aprendido hasta ahora, en un solo víde
 - **Bucle**: el final vuelve al probador en drift en el mismo sitio que en el fotograma 0.
 - **Publicar a las 20:00-22:00** (sobre todo por TikTok).
 
+### "Adiós, GTA 5" (27 s, nostalgia)
+Sin publicar (plan: 17-18 nov, 20:00-22:00). **Qué probamos:**
+- **Vídeo IA con movimiento real** en todas las escenas (Kling 3.0, clips de 3 s a partir de fotos generadas antes), en lugar de fotos fijas. Petición de Albert: "le falta más movimiento".
+- **Titular arriba en todas las escenas** (no solo en el gancho), con velo oscuro superior.
+- **Música nostálgica original** (80 bpm), en vez del trap.
+- **Voz de Dan más pausada** (estabilidad 0,55, estilo 0,35, atempo 1,04).
+- **Bucle perfecto**: el cierre reproduce el clip del gancho al revés.
+- Encuesta "¿SEGUIRÁS JUGANDO?" a mitad-final, compartir "PÁSASELO A QUIEN JUGÓ DESDE 2013" a mitad.
+- Coste: 6 fotos (1,5 créditos) + 6 clips de Kling (27 créditos; uno no se usó: el de consolas inventadas). Saldo restante ~33 créditos.
+
 ---
 
 ## Referencias rápidas
@@ -178,6 +188,12 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 - Procesado: recortar silencios → `atempo` 1,08-1,15 → paso alto 70 Hz + compresor → `loudnorm` -16 LUFS.
 - **Control de calidad:** medir la vocal sostenida más larga (debe ser < 0,13 s). Si una frase falla, generar 2-3 tomas y quedarse con la más limpia.
 - Duración de cada escena = voz + 0,15-0,2 s (gancho + 0,12 s); mínimo 2,8-3 s si lleva sticker. **Total cuadrado al compás** (140 bpm) para que el bucle no se descuadre.
+
+**Vídeo IA (Higgsfield + Kling 3.0)**
+- Kling 3.0 `std`, 3 s, sin sonido: **4,5 créditos por clip** (5 s: ~7,5). Salida de 716×1280 a 24 fps (73 fotogramas).
+- Método: primero la foto (0,25 créditos), se revisa, y se anima con `medias: [{role: "start_image", value: <job_id de la foto>}]` y un prompt de movimiento suave.
+- En el motor: efecto `"clip"` de `drift2.py` (extrae los fotogramas a `salida/_fotogramas/`, los estira a lo que dure la escena con fundido entre fotogramas y añade zoom). `"reverso": true` para el cierre del bucle.
+- **Ojo:** si una tanda se interrumpe, puede haberse enviado igual. Comprobar con el saldo y con `show_generations` antes de repetir.
 
 **Imágenes realistas (Higgsfield)**
 - Modelo `gpt_image_2_6`, 9:16, **0,25 créditos por imagen**. En los prompts siempre "generic unbranded… no logos, no text".
