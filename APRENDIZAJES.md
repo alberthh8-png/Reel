@@ -201,9 +201,11 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 - Temblor de cámara fuera de la foto → error de recorte. Corregido.
 - Etiquetas que se salían de la pantalla. Corregido (se limitan al borde).
 
-**Derechos de autor (siempre)**
-- Nada de capturas, personajes, logos ni música de juegos o marcas. Mandos y personajes **genéricos y originales**.
-- En el logo se quitaron los logos de Switch, PlayStation y Xbox: **iconos genéricos** en su lugar. Nombrar las plataformas en el texto sí está bien.
+**Derechos de autor (criterio ajustado por Albert el 12 nov)**
+- Albert prefiere **no ser excesivamente estricto**: solo evitar lo que sea claramente ilegal o arriesgado.
+- ✅ **Sí:** mostrar **productos reales** (consolas, mandos, móviles…) en fotos generadas, nombrar juegos, marcas y plataformas.
+- ❌ **No:** recrear **personajes** de juegos (por ejemplo, los protagonistas de GTA), usar **capturas o vídeos oficiales** del juego y usar **música con derechos**. Esto sí puede provocar reclamaciones o bloqueos.
+- En el logo de GNews se usan iconos genéricos (decisión ya tomada, se mantiene).
 - La música y los efectos se generan por código (son originales).
 
 ---
