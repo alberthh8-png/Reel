@@ -147,7 +147,7 @@ Sin publicar. **Qué probamos** (todo lo aprendido hasta ahora, en un solo víde
 - **Publicar a las 20:00-22:00** (sobre todo por TikTok).
 
 ### "Adiós, GTA 5" (27 s, nostalgia)
-Sin publicar (plan: 17-18 nov, 20:00-22:00). **Qué probamos:**
+Se publica el **13 nov a las 20:00-22:00** (Albert adelanta la fecha para hacer un vídeo al día). **Qué probamos:**
 - **Vídeo IA con movimiento real** en todas las escenas (Kling 3.0, clips de 3 s a partir de fotos generadas antes), en lugar de fotos fijas. Petición de Albert: "le falta más movimiento".
 - **Titular arriba en todas las escenas** (no solo en el gancho), con velo oscuro superior.
 - **Música nostálgica original** (80 bpm), en vez del trap.
@@ -257,6 +257,14 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
    - Drift R2: a las 24 h y a los 3 días, en las 3 plataformas.
    - ~~Versión de prueba de la Parte 2 de GTA~~: **no se subió**. A Albert no le aparece la opción de Reel de prueba en Instagram (requiere cuenta profesional de creador, y se activa poco a poco). Decisión: no subirla como reel normal (duplicaría la Parte 2); su aprendizaje se aplica en la Parte 3.
    - Instagram de GTA P1 y P2 a los 3 días.
+- **Ritmo nuevo: un vídeo al día** (decisión de Albert, 13 nov). Calendario propuesto hasta el lanzamiento:
+  - 13 nov: "Adiós, GTA 5" ✅ listo
+  - 14 nov: "GTA 6 está saturando internet" (boceto hecho: 212 GB, redes saturadas, operadoras regalando velocidad, cuánto tardas tú)
+  - 15 nov: "5 cosas que hacer antes del 19" (precargar, liberar espacio, ajustes de la consola…)
+  - 16 nov: por decidir (idea de la semana o una noticia de última hora)
+  - 17 nov: por decidir
+  - 18 nov: "Mañana sale GTA 6" (cuenta atrás / lo que sabemos)
+  - 19 nov: "¿Se cumplieron las teorías?"
 3. **19 nov:** **GTA Parte 3, "¿Se cumplieron las teorías?"**, con todas las reglas (sin "Parte 3" en pantalla ni en el título de YouTube).
 4. Albert cambia la foto de perfil, el banner y las biografías en las 3 redes; falta la **bio de Instagram** (≤150 caracteres).
 5. Ofrecido y aún sin respuesta: calendario de contenido de 2 semanas, firma o animación del logo en los reels y plantilla de miniatura de YouTube.
