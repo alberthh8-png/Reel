@@ -1202,14 +1202,15 @@ class Render:
     def _vineta(self):
         yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
         dist = np.sqrt(((xx - W / 2) / (W * 0.72)) ** 2 + ((yy - H / 2) / (H * 0.6)) ** 2)
-        a = np.clip((dist - 0.6) * 320, 0, 210).astype(np.uint8)
+        a = np.clip((dist - 0.6) * 320, 0, 210 * self.g.get("vineta", 1.0)).astype(np.uint8)
         img = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         img.putalpha(Image.fromarray(a, "L"))
         return img
 
     def _degradado_inferior(self):
         y = np.linspace(0, 1, H)
-        a = np.clip((y - 0.55) / 0.25, 0, 1) * 200
+        ini, fuerza = self.g.get("oscurecer_inferior", [0.55, 200])
+        a = np.clip((y - ini) / 0.25, 0, 1) * fuerza
         a = np.repeat(a[:, None], W, 1).astype(np.uint8)
         img = Image.new("RGBA", (W, H), (6, 2, 14, 0))
         img.putalpha(Image.fromarray(a, "L"))

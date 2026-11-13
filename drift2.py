@@ -401,8 +401,15 @@ def fotogramas_clip(ruta):
 
 
 @lru_cache(maxsize=48)
-def fotograma_base(ruta_jpg):
+def fotograma_base(ruta_jpg, gamma=1.0, color=1.0):
     img = Image.open(ruta_jpg).convert("RGB")
+    if gamma != 1.0:  # levanta las sombras sin quemar las luces
+        import numpy as np
+        lut = [int(255 * (i / 255) ** gamma) for i in range(256)] * 3
+        img = img.point(lut)
+    if color != 1.0:
+        from PIL import ImageEnhance
+        img = ImageEnhance.Color(img).enhance(color)
     e = max(BW / img.width, BH / img.height)
     img = img.resize((int(img.width * e) + 1, int(img.height * e) + 1), Image.BICUBIC)
     x, y = (img.width - BW) // 2, (img.height - BH) // 2
@@ -432,9 +439,10 @@ class Clip(reel.Efecto):
         z = z0 + (z1 - z0) * ease_in_out(uz)
         foco = tuple(self.ev.get("foco", [0.5, 0.5]))
         x, y, w, h = recorte(z, foco)
-        a = fotograma_base(self.frames[i0]).resize((W, H), Image.BILINEAR, box=(x, y, x + w, y + h))
+        gm, cl = self.ev.get("gamma", 1.0), self.ev.get("color", 1.0)
+        a = fotograma_base(self.frames[i0], gm, cl).resize((W, H), Image.BILINEAR, box=(x, y, x + w, y + h))
         if k > 0.02 and i1 != i0:
-            b = fotograma_base(self.frames[i1]).resize((W, H), Image.BILINEAR, box=(x, y, x + w, y + h))
+            b = fotograma_base(self.frames[i1], gm, cl).resize((W, H), Image.BILINEAR, box=(x, y, x + w, y + h))
             a = Image.blend(a, b, k)
         ESTADO["crop"] = (x, y, w, h)
         frame.alpha_composite(a.convert("RGBA"))

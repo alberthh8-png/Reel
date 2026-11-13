@@ -33,10 +33,14 @@
             0.5,
             0.5
           ],
-          "dur": 2.72
+          "dur": 2.72,
+          "gamma": 0.85,
+          "color": 1.08
         },
         {
-          "tipo": "velo_superior"
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 620
         },
         {
           "tipo": "contador_anios",
@@ -72,10 +76,14 @@
             0.5,
             0.45
           ],
-          "dur": 4.43
+          "dur": 4.43,
+          "gamma": 0.62,
+          "color": 1.12
         },
         {
-          "tipo": "velo_superior"
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 620
         }
       ],
       "ilustracion": "taller",
@@ -101,10 +109,14 @@
             0.6,
             0.5
           ],
-          "dur": 4.96
+          "dur": 4.96,
+          "gamma": 0.55,
+          "color": 1.15
         },
         {
-          "tipo": "velo_superior"
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 620
         }
       ],
       "ilustracion": "taller",
@@ -131,10 +143,14 @@
             0.55,
             0.6
           ],
-          "dur": 7.8
+          "dur": 7.8,
+          "gamma": 0.65,
+          "color": 1.12
         },
         {
-          "tipo": "velo_superior"
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 620
         }
       ],
       "ilustracion": "taller",
@@ -161,10 +177,14 @@
             0.5,
             0.6
           ],
-          "dur": 3.4
+          "dur": 3.4,
+          "gamma": 0.8,
+          "color": 1.08
         },
         {
-          "tipo": "velo_superior"
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 620
         }
       ],
       "ilustracion": "taller",
@@ -191,10 +211,14 @@
             0.5
           ],
           "reverso": true,
-          "dur": 3.69
+          "dur": 3.69,
+          "gamma": 0.85,
+          "color": 1.08
         },
         {
-          "tipo": "velo_superior"
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 620
         }
       ],
       "ilustracion": "taller",
@@ -202,5 +226,10 @@
       "y_titular": 340,
       "duracion": 3.69
     }
+  ],
+  "vineta": 0.45,
+  "oscurecer_inferior": [
+    0.66,
+    150
   ]
 }

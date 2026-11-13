@@ -204,7 +204,7 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 - Créditos restantes a 11 nov: unos **57**. Vídeo IA (Kling 5 s ≈ 7,5 créditos; Seedance ≈ 35): solo si de verdad aporta.
 
 **Comprobaciones antes de entregar** (todas por código)
-1. Brillo del fotograma 0 (que no salga blanco; normal ~30-50).
+1. **Brillo de cada escena**: ni blanco en el fotograma 0 ni demasiado oscuro. En vídeos con fotos o clips, **brillo medio ≥ 60** (Albert notó "Adiós, GTA 5" oscuro con 32-43). Si hace falta: `"gamma"` 0,55-0,85 y `"color"` ~1,1 en el clip, velo superior con `fuerza` ~125, `"oscurecer_inferior": [0.66, 150]` y `"vineta": 0.45`.
 2. Ancho del titular ≤ ~900 px (margen de seguridad).
 3. Correlación de cada voz con la mezcla (≥ 0,7 = sincronizada y audible).
 4. Bucle: sin silencio entre el final y el principio.
