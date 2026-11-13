@@ -58,6 +58,12 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 16. **TikTok necesita calentar la cuenta** y publicar en hora punta: de madrugada y con la cuenta nueva solo llegó a 6 personas.
 17. **La hora de subida importa poco en Instagram y YouTube, pero mucho en TikTok** (03:47 → 6 vistas; 21:12 → 92) comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
 
+18. ✅ **REGLA FIJA: control de calidad de imagen ANTES de entregar, y "versión final" clara antes de publicar** (13 nov: Albert subió "Adiós, GTA 5" con grano y clips ralentizados, y la versión corregida llegó tarde).
+   - **Yo, antes de entregar:** amplío al 200 % un trozo de un fotograma de **cada escena** y lo comparo con el clip o la foto original. Si se ve peor (grano, borroso, efecto fantasma, bloques), lo corrijo antes de enviarlo. En vídeos con imagen real: `"grano": false`, cada clip con la duración de su escena (máximo ~1,2× más lento), enfoque suave y crf 18. Además: brillo de cada escena ≥ 60, titulares ≤ ~900 px, voz sincronizada y bucle sin silencio.
+   - **Al enviar:** lo marco como **"✅ VERSIÓN FINAL, lista para publicar"**. Cualquier otra entrega es un borrador.
+   - **Albert:** antes de subirlo, lo ve una vez **en el móvil, a pantalla completa**. Si nota algo raro, me lo dice **antes** de publicar.
+   - **Si ya está publicado y se encuentra un fallo menor:** **no borrar ni volver a subir** (se pierden vistas y las plataformas penalizan el contenido repetido). La corrección se aplica al vídeo siguiente. Solo se reemplaza si el fallo es grave (texto cortado, imagen en blanco, audio roto) **y** lleva menos de 30 min con menos de 50 vistas.
+
 ---
 
 ## Método para afinar el tiro
