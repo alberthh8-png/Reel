@@ -231,5 +231,6 @@
   "oscurecer_inferior": [
     0.66,
     150
-  ]
+  ],
+  "grano": false
 }

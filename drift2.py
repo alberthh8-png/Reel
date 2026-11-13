@@ -411,7 +411,7 @@ def fotograma_base(ruta_jpg, gamma=1.0, color=1.0):
         from PIL import ImageEnhance
         img = ImageEnhance.Color(img).enhance(color)
     e = max(BW / img.width, BH / img.height)
-    img = img.resize((int(img.width * e) + 1, int(img.height * e) + 1), Image.BICUBIC)
+    img = img.resize((int(img.width * e) + 1, int(img.height * e) + 1), Image.LANCZOS)
     x, y = (img.width - BW) // 2, (img.height - BH) // 2
     return img.crop((x, y, x + BW, y + BH))
 
@@ -427,13 +427,25 @@ class Clip(reel.Efecto):
 
     def dibujar(self, frame, t, mapa):
         n = len(self.frames)
-        u = clamp(t / self.dur)
-        if self.ev.get("reverso"):
-            u = 1 - u
-        pos = u * (n - 1)
-        i0 = int(pos)
-        i1 = min(n - 1, i0 + 1)
-        k = pos - i0
+        fps_clip = self.ev.get("fps_clip", 24)
+        largo = n / fps_clip
+        if largo >= self.dur:
+            # el clip dura lo suficiente: velocidad real, sin ralentizar ni mezclar fotogramas
+            ct = clamp(t, 0, largo - 1 / fps_clip)
+            if self.ev.get("reverso"):
+                ct = (self.dur - t) * (largo / self.dur) if largo > self.dur * 1.4 else max(0.0, self.dur - t)
+                ct = clamp(ct, 0, largo - 1 / fps_clip)
+            pos = ct * fps_clip
+            i0 = min(n - 1, int(round(pos)))
+            i1, k = i0, 0.0
+        else:
+            u = clamp(t / self.dur)
+            if self.ev.get("reverso"):
+                u = 1 - u
+            pos = u * (n - 1)
+            i0 = int(pos)
+            i1 = min(n - 1, i0 + 1)
+            k = pos - i0
         z0, z1 = self.ev.get("z", [1.0, 1.08])
         uz = clamp(t / self.dur)
         z = z0 + (z1 - z0) * ease_in_out(uz)
@@ -445,6 +457,8 @@ class Clip(reel.Efecto):
             b = fotograma_base(self.frames[i1], gm, cl).resize((W, H), Image.BILINEAR, box=(x, y, x + w, y + h))
             a = Image.blend(a, b, k)
         ESTADO["crop"] = (x, y, w, h)
+        if self.ev.get("nitidez", True):  # enfoque suave tras ampliar el clip
+            a = a.filter(ImageFilter.UnsharpMask(radius=1.6, percent=60, threshold=2))
         frame.alpha_composite(a.convert("RGBA"))
 
 

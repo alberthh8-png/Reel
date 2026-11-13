@@ -211,6 +211,10 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 5. Hoja de fotogramas de muestra revisada a ojo (etiquetas que no se salgan, nada tapado).
 
 **Fallos que ya tuvimos (no repetir)**
+- **Vídeo con imagen real con aspecto "raro" o poco nítido** (Albert, "Adiós, GTA 5"). Tenía tres causas:
+  1. El grano de película del motor parece suciedad sobre vídeo real → `"grano": false` en estos vídeos.
+  2. Clips de 3 s estirados hasta 2,6 veces (mezcla de fotogramas = efecto fantasma) → **generar cada clip con la duración de su escena** (Kling admite de 3 a 15 s; 1,5 créditos por segundo). Ralentizar como máximo ~1,2 veces.
+  3. Ampliación de 716×1280 → LANCZOS + enfoque suave (UnsharpMask) y exportación con crf 18.
 - Destello de explosión en t=0 → primer fotograma blanco (GTA P1).
 - Pausa gris y "PARTE 2" en el arranque (GTA P2).
 - Titular cortado por los lados en el fotograma 0 (GTA P2, prueba y drift R1). Corregido en el motor.

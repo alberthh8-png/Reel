@@ -1324,7 +1324,8 @@ class Render:
             frame.alpha_composite(self.capa_serie, (40, 140))
         d.rectangle((0, 0, W, 12), fill=(0, 0, 0, 140))
         d.rectangle((0, 0, int(W * t / self.total), 12), fill=self.acento + (255,))
-        frame.alpha_composite(self.grano[n % 3])
+        if self.g.get("grano", True):  # en vídeos con imagen real se desactiva (parece suciedad)
+            frame.alpha_composite(self.grano[n % 3])
         rgb = frame.convert("RGB")
         flash = sum(f.destello(lt) for f in fx)
         glitch = 0.0
@@ -1690,7 +1691,7 @@ def main():
     cmd = ["ffmpeg", "-y", "-loglevel", "error",
            "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(r.fps), "-i", "-",
            "-i", audio,
-           "-c:v", "libx264", "-preset", "medium", "-crf", "21", "-maxrate", "10M", "-bufsize", "20M",
+           "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-maxrate", "14M", "-bufsize", "28M",
            "-pix_fmt", "yuv420p", "-profile:v", "high", "-movflags", "+faststart",
            "-c:a", "aac", "-b:a", "192k", "-shortest", salida]
     ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
