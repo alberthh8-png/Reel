@@ -36,7 +36,7 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 ## Reglas actuales (de más a menos importante)
 
 1. **El primer segundo lo decide todo.** En todos los vídeos se pierde entre el 40 % y el 70 % en el arranque. Cuando un vídeo no crece, el problema casi siempre está ahí, no en el contenido.
-2. **Fotograma 0: el texto que engancha, arriba y grande, con movimiento real.** El titular abajo y una foto quieta parecen un anuncio (drift en YouTube: 69,5 % lo pasa).
+2. ✅ **REGLA FIJA, confirmada con el Drift R2: fotograma 0 con el texto que engancha arriba y grande, movimiento real desde el primer instante y algo satisfactorio en el primer segundo.** Resultado: en YouTube se quedan el 79 % (antes 37 %) y en Instagram 1.458 reproducciones (antes 149). El titular abajo y una foto quieta parecen un anuncio (Drift R1 en YouTube: 63-69,5 % lo pasa).
 3. **Afirmación concreta, no abstracta.** "5 TEORÍAS" funcionó mejor que "EL MUNDO SE PARA".
 4. **Nada en el vídeo que parezca un fallo o "parte de algo"**: ni "PARTE 2" en pantalla (ahuyenta a quien no te sigue, que es más del 90 %), ni pausas o pantallas grises, ni destellos blancos en el primer fotograma.
 5. **La primera pregunta, a mitad del vídeo, y que no suene a final.** En GTA Parte 1 (YouTube) hay una caída clara entre los segundos 5 y 9, justo en el primer "¿Tú qué crees?".
@@ -53,7 +53,8 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 11. **Titular siempre con margen de seguridad** (máximo ~880 px de ancho): las apps recortan los bordes y la animación lo agranda. Comprobado por código antes de exportar.
 12. ✅ **REGLA FIJA: llamada a compartir con un destinatario concreto** ("pásaselo a tu jefe", "pásaselo a quien culpa al mando") en la mitad del vídeo. Funcionó dos veces: 2 compartidos en TikTok (GTA P2) y **2,4 % en Instagram** (Drift R1, el mejor dato).
 13. **Nada de escenas de introducción**: el primer dato o la primera solución tiene que llegar **antes del segundo 3**. En el Drift R1, la escena "Entramos dentro" (2,2-4,9 s) coincidió con la caída fuerte del 100 % al ~38 %.
-14. **YouTube es la plataforma principal** (la mejor en vistas, duración media y suscriptores): título siempre cuidado y es donde primero miramos las métricas.
+14. **El contenido útil o práctico ("cómo arreglar…", "qué hacer si…") + "guárdalo para cuando te pase" dispara los guardados** (Drift R2: 12 guardados, 1,0 %). Alternar vídeos de curiosidad con vídeos útiles.
+14b. **YouTube es la plataforma principal** (la mejor en vistas, duración media y suscriptores): título siempre cuidado y es donde primero miramos las métricas.
 15. **Cada vídeo con un primer plano propio**, distinto de los anteriores, y **sin "Parte X" en el título de YouTube** (la Parte 2 en YouTube: 8 vistas).
 16. **TikTok necesita calentar la cuenta** y publicar en hora punta: de madrugada y con la cuenta nueva solo llegó a 6 personas.
 17. **La hora de subida importa poco en Instagram y YouTube, pero mucho en TikTok** (03:47 → 6 vistas; 21:12 → 92) comparada con el gancho. Franja de referencia: 20:00-22:00 (España), y también funciona a mediodía.
@@ -91,6 +92,9 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 | Drift R1 | YouTube | **1.051** (33 h) | 63 % (antes 69,5 %) | **16 s (59 %)** | — | — | **+1 suscriptor** | Fotos realistas y zoom lento; texto que engancha abajo; publicado a las 13:00 |
 | Drift R1 | Instagram | 149 | 41,9 % | 9 s (33 %) | **2,4 %** ✅ | 0,8 % | **1** | Igual; llamada "pásaselo a quien culpa al mando" |
 | Drift R1 | TikTok | 92 | (se van en 2 s) | 5,7 s (21 %) · 2 % completo | 1 | 0 | 0 | Igual |
+| **Drift R2** | **YouTube** | (sin dato) | **21,1 % saltan** 🏆 (R1: 63 %) | **20 s (73 %)** 🏆 | — | — | — | Titular arriba, probador con movimiento desde el fotograma 0, "ARREGLADO" en el s 0,9, sin introducción |
+| **Drift R2** | **Instagram** | **1.458** 🏆 (R1: 149) | 39,8 % | 12 s (44 %) | 0,2 % | **1,0 % (12)** ✅ | 0 | Igual |
+| Drift R2 | TikTok | 85 | (se van en 1 s) | 6 s (22 %) · 4,6 % completo | 1 | 0 | 0 | Igual |
 
 ## Registro de vídeos
 
@@ -142,7 +146,7 @@ Publicado a las 13:00.
 3. **Las escenas de introducción cuestan espectadores**: "Entramos dentro" retrasó el primer dato hasta el segundo 4,9, y ahí se fue gran parte del público. El Reel 2 ya va directo a la solución 1 (segundo 2,5).
 
 ### Drift Reel 2: "Cómo arreglar el drift" (27,4 s)
-Sin publicar. **Qué probamos** (todo lo aprendido hasta ahora, en un solo vídeo):
+Publicado el 12 nov a las 22:26. **Qué probamos** (todo lo aprendido hasta ahora, en un solo vídeo):
 - **Titular arriba y grande** ("ARREGLA EL DRIFT"), no abajo.
 - **Movimiento desde el fotograma 0**: probador grande con el punto rojo ya desviado.
 - **Lo satisfactorio en el segundo 0,9**: el punto vuelve al centro en verde, "ARREGLADO".
@@ -151,6 +155,15 @@ Sin publicar. **Qué probamos** (todo lo aprendido hasta ahora, en un solo víde
 - **Primer plano propio** (manos jugando), distinto del Reel 1; titulares con margen de seguridad.
 - **Bucle**: el final vuelve al probador en drift en el mismo sitio que en el fotograma 0.
 - **Publicar a las 20:00-22:00** (sobre todo por TikTok).
+
+**Resultados del Drift R2 (~25 h):**
+- **YouTube:** **79 % se quedaron / 21,1 % saltaron** (R1: 37 / 63). Duración media **20 s de 27,4 (73 %)**. **El mejor gancho hasta ahora, con diferencia.**
+- **Instagram:** **1.458 reproducciones** (R1: 149, casi 10 veces más) · 1.227 espectadores · tiempo medio 12 s (44 %) · omisión 39,8 % · **12 guardados (1,0 %, "superior")** · me gusta 1,5 % · compartidos 0,2 % · comentarios 0 · 0 seguidores. Retención: tras el arranque se queda **~65 % a los 3 s** (R1: ~38 % a los 4 s) y baja suave hasta ~10 %. Picos de me gusta: el arranque, el s 2 ("ARREGLADO"), ~16-20 s (garantía y Hall) y el final.
+- **TikTok:** 85 visualizaciones · 6 s (22 %) · 4,6 % completo · 1 me gusta · 1 compartido. Pico de me gusta en el s 10 (zona muerta). Sigue con poca difusión: es la cuenta.
+- **Conclusiones:**
+  1. **El gancho nuevo funciona** (titular arriba + movimiento real desde el fotograma 0 + algo satisfactorio en el primer segundo + sin introducción) → **pasa a regla fija**.
+  2. **El contenido práctico ("cómo arreglarlo") se guarda**: 12 guardados con la llamada "guárdalo para cuando te pase".
+  3. **Comentarios = 0** con "¿LO SABÍAS?" y "¿Cuál vas a probar?": las preguntas abiertas o de sí/no no bastan. Probar preguntas más personales y fáciles ("¿qué mando tienes?", "¿cuántas horas…?").
 
 ### "Adiós, GTA 5" (27 s, nostalgia)
 Se publica el **13 nov a las 20:00-22:00** (Albert adelanta la fecha para hacer un vídeo al día). **Qué probamos:**
