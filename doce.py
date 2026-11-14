@@ -230,10 +230,94 @@ class ClipTramo(drift2.Clip):
     def dibujar(self, frame, t, mapa):
         desde, hasta = self.ev.get("desde", 0), self.ev.get("hasta", 1e9)
         if desde <= t < hasta:
-            super().dibujar(frame, t - desde, mapa)
+            super().dibujar(frame, t - desde + self.ev.get("offset", 0.0), mapa)
 
 
-reel.FX.update({"relojes": Relojes, "espera": Espera, "lobby": Lobby, "fps": Fps, "modo_juego": ModoJuego,
+class Paises(reel.Efecto):
+    """Tabla de horas: qué hora es en cada país cuando en Nueva Zelanda ya se juega."""
+
+    FILAS = [("NUEVA ZELANDA", "00:00", "19 NOV", None), ("ESPAÑA", "12:00", "18 NOV", "+12 H"),
+             ("ARGENTINA · CHILE", "08:00", "18 NOV", "+16 H"), ("COLOMBIA · PERÚ", "06:00", "18 NOV", "+18 H"),
+             ("MÉXICO", "05:00", "18 NOV", "+19 H")]
+
+    def __init__(self, ev, semilla):
+        self.t0, self.y = ev.get("t", 0.15), ev.get("y", 900)
+        self.tiempos = ev.get("filas", [0.4, 3.2, 4.0, 4.6, 5.3])
+        self.base = tarjeta(940, 560)
+
+    def encima(self, frame, t):
+        a = t - self.t0
+        if a < 0:
+            return
+        top = self.y - 280
+        pegar_centrado(frame, self.base, W / 2, self.y, escala=entrada(a))
+        if a < 0.3:
+            return
+        d = ImageDraw.Draw(frame)
+        for k, ((pais, hora, dia, dif), tk) in enumerate(zip(self.FILAS, self.tiempos)):
+            b = t - tk
+            if b < 0:
+                continue
+            p = ease_out_cubic(clamp(b / 0.25))
+            yy = top + 70 + k * 105
+            dx = (1 - p) * 120
+            if k == 0:
+                d.rounded_rectangle((90, yy - 44, 990, yy + 44), radius=22, fill=(40, 120, 70, int(200 * p)))
+            col_p = VERDE if k == 0 else (255, 255, 255)
+            d.text((115 + dx, yy), pais, font=fuente(38), fill=col_p + (int(255 * p),), anchor="lm")
+            d.text((770 + dx, yy), hora, font=fuente(58), fill=AMARILLO + (int(255 * p),), anchor="rm")
+            if dif:
+                d.text((975, yy), dif, font=fuente(40), fill=ROSA + (int(255 * p),), anchor="rm")
+            elif b > 0.25:
+                chip = texto_con_estilo("¡YA!", fuente(44), (255, 255, 255, 255), borde=6, color_borde=OSCURO)
+                pegar_centrado(frame, chip, 900, yy, escala=1 + 0.08 * math.sin(b * 8))
+
+
+class MenuXbox(reel.Efecto):
+    """Menú de ajustes genérico: el cursor baja paso a paso hasta 'NUEVA ZELANDA' y aparece el aviso."""
+
+    PASOS = ["CONFIGURACIÓN", "SISTEMA", "IDIOMA Y UBICACIÓN", "UBICACIÓN: NUEVA ZELANDA"]
+
+    def __init__(self, ev, semilla):
+        self.t0, self.y = ev.get("t", 0.15), ev.get("y", 880)
+        self.pasos_t = ev.get("pasos", [1.4, 2.2, 3.0, 3.8])
+        self.t_aviso = ev.get("aviso", 5.2)
+        self.base = tarjeta(900, 520)
+        self.aviso = texto_con_estilo("NO GARANTIZADO", fuente(64), (255, 150, 40, 255), borde=8,
+                                      color_borde=(40, 10, 0))
+
+    def encima(self, frame, t):
+        a = t - self.t0
+        if a < 0:
+            return
+        pegar_centrado(frame, self.base, W / 2, self.y, escala=entrada(a))
+        if a < 0.3:
+            return
+        d = ImageDraw.Draw(frame)
+        top = self.y - 260
+        d.text((W / 2, top + 50), "AJUSTES DE LA CONSOLA", font=fuente(40), fill=(200, 190, 220, 255), anchor="mm")
+        activo = sum(1 for tp in self.pasos_t if t >= tp) - 1
+        for k, paso in enumerate(self.PASOS):
+            yy = top + 140 + k * 95
+            if k == activo:
+                d.rounded_rectangle((110, yy - 38, 970, yy + 38), radius=20, fill=(255, 255, 255, 235))
+                col = (20, 12, 30)
+            else:
+                col = (255, 255, 255) if k < max(activo, 0) else (150, 140, 170)
+            final = k == 3 and activo == 3
+            d.text((150, yy), paso, font=fuente(42), fill=(VERDE if final else col) + (255,) if not k == activo
+                   else col + (255,), anchor="lm")
+            if k < 3:
+                d.text((930, yy), "›", font=fuente(50), fill=col + (255,), anchor="mm")
+            elif final:  # tick dibujado
+                d.line([(905, yy), (922, yy + 17), (950, yy - 18)], fill=(40, 170, 90, 255), width=9,
+                       joint="curve")
+        b = t - self.t_aviso
+        if b >= 0:
+            pegar_centrado(frame, self.aviso, W / 2, self.y + 300, escala=ease_out_back(b / 0.3), angulo=-4)
+
+
+reel.FX.update({"paises": Paises, "menu_xbox": MenuXbox, "relojes": Relojes, "espera": Espera, "lobby": Lobby, "fps": Fps, "modo_juego": ModoJuego,
                 "clip_tramo": ClipTramo})
 
 if __name__ == "__main__":
