@@ -375,7 +375,7 @@ Adiós, GTA 5 🥲 13 años después llega el final. ¿Cuántas horas le echaste
 
 ---
 
-# REEL: "¡Corre! GTA 6 gratis" (sorteo de Kick, 28 s)
+# REEL: "¡Corre! GTA 6 gratis" (sorteo de Kick, 27 s)
 
 Vídeo: `salida/kick_sorteo/reel.mp4` · Portada: `salida/kick_sorteo/portada.jpg` (la caja abriéndose bajo "¡CORRE! GTA 6 GRATIS").
 
@@ -383,30 +383,31 @@ Vídeo: `salida/kick_sorteo/reel.mp4` · Portada: `salida/kick_sorteo/portada.jp
 
 ## Instagram
 ```
-¡Corre! 🏃‍♂️ Kick sortea 10.000 copias de GTA 6 Ultimate Edition 🎁
+¡Corre! 🏃‍♂️ Imagínate tener GTA 6 gratis mientras todos pagan 100 $ 🤑 Kick sortea 10.000 copias de la Ultimate Edition 🎁
 
 ✅ Ve 3 horas de directos en Kick con tu cuenta iniciada
 ✅ Se desbloquea 1 caja al día (puede tocarte o no)
 ✅ Hasta el 7 de diciembre
 ⚠️ Xbox: todo el mundo · PS5: solo algunos países (mira las bases en kick.com)
 
-Guárdalo para no olvidarte 📌 y pásaselo a quien quiera GTA 6 gratis 👇
+Por intentarlo no pierdes nada 😏 Guárdalo 📌 y pásaselo a ese amigo que siempre te pide juegos 👇
 
 #GTA6 #GTAVI #Kick #Sorteo #Gaming
 ```
 ## YouTube Shorts
-**Título:** `¡CORRE! GTA 6 GRATIS para 10.000 personas 🎁 #shorts`
+**Título:** `¡CORRE! GTA 6 GRATIS mientras todos pagan 100 $ 🎁 #shorts`
 **Descripción:**
 ```
-Kick sortea 10.000 copias de GTA 6 Ultimate Edition. Cómo participar: ve 3 horas de directos en Kick con tu cuenta iniciada y se desbloquea una caja al día, hasta el 7 de diciembre. Es un sorteo: puede tocarte o no. Xbox vale en todo el mundo; PS5 solo en algunos países (mira las bases completas en kick.com). ¿Te tocará a ti? 👇
+Kick sortea 10.000 copias de GTA 6 Ultimate Edition (99,99 $). Cómo participar: ve 3 horas de directos en Kick con tu cuenta iniciada y se desbloquea una caja al día, hasta el 7 de diciembre. Es un sorteo: puede tocarte o no. Xbox vale en todo el mundo; PS5 solo en algunos países (mira las bases completas en kick.com). Por intentarlo no pierdes nada 👇
 
 #GTA6 #Kick #Shorts
 ```
 ## TikTok
 ```
-¡Corre! Kick sortea 10.000 copias de GTA 6 🎁 Así puedes participar 👇 ¿Te tocará a ti? #GTA6 #kick #sorteo #gaming #fyp
+¡Corre! GTA 6 gratis mientras todos pagan 100 $ 🎁 Kick sortea 10.000 copias. Pásaselo a ese amigo que siempre te pide juegos 👇 #GTA6 #kick #sorteo #gaming #fyp
 ```
 **Comentario fijado (las 3 redes):** `Bases completas en kick.com 👉 Xbox: todo el mundo · PS5: solo algunos países. ¿Lo vas a probar? 🎁`
 
 ## Fuentes
 - Sorteo "Sunset Reward Case" (12 nov – 7 dic, 3 h de visionado = 1 caja al día, 10.000 Ultimate Edition, PS5 con restricción por región): [Streams Charts](https://streamscharts.com/news/kick-giving-away-10000-gta-vi-copies), [TweakTown](https://www.tweaktown.com/news/114652/kick-viewers-can-win-one-of-10000-free-gta-6-ultimate-edition-copies-by-watching-3-hours/index.html), [iGeeksBlog](https://www.igeeksblog.com/kick-gta-6-ultimate-edition-giveaway/), [TechWiser](https://techwiser.com/kick-giving-away-free-gta-6-ultimate-edition/)
+- Precio de la Ultimate Edition (99,99 $; estándar 79,99 $): [TechRadar](https://www.techradar.com/gaming/we-finally-know-the-official-gta-6-price-its-expensive-but-not-too-bad), [Windows Central](https://windowscentral.com/gaming/grand-theft-auto-vi-price-confirmed-at-usd79-99-with-a-feature-locking-ultimate-edition-at-usd99-99-and-the-physical-edition-is-just-a-code-in-a-box)

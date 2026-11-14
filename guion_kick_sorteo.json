@@ -6,78 +6,151 @@
   "bpm": 140,
   "bucle": true,
   "sfx": "suave",
-  "colores": {"acento": "#ffd23f", "rosa": "#ff3d8b", "cian": "#2de2e6", "texto": "#ffffff"},
+  "grano": false,
+  "nitido": true,
+  "y_subtitulos": 1390,
+  "margen_subtitulos": 240,
+  "subtitulos_continuos": true,
+  "colores": {
+    "acento": "#ffd23f",
+    "rosa": "#ff3d8b",
+    "cian": "#2de2e6",
+    "texto": "#ffffff"
+  },
   "escenas": [
     {
-      "id": "gancho", "ilustracion": "sunset", "y_titular": 340,
+      "id": "gancho",
+      "ilustracion": "sunset",
+      "y_titular": 340,
       "etiqueta": "SORTEO REAL",
       "titular": "¡CORRE! GTA 6 GRATIS",
       "detalle": "pero solo para unos pocos",
-      "voz": "¡Corre! GTA 6 está gratis, pero solo para unos pocos.",
+      "voz": "Corre, GTA 6 está gratis, pero solo para unos pocos.",
       "audio_voz": "voz/kick/escena_0.wav",
-      "fx": [{"tipo": "caja_premio", "t": 0.35, "x": 540, "y": 930, "escala": 1.1}],
-      "duracion": 3.4
+      "fx": [
+        {
+          "tipo": "caja_premio",
+          "t": 0.35,
+          "x": 540,
+          "y": 900,
+          "escala": 1.1
+        }
+      ],
+      "duracion": 3.6
     },
     {
-      "id": "copias", "ilustracion": "sunset", "y_titular": 340,
+      "id": "precio",
+      "ilustracion": "sala_stream",
+      "y_titular": 340,
+      "etiqueta": "ULTIMATE EDITION",
+      "titular": "¿100 $ O GRATIS?",
+      "voz": "Imagínate tener GTA 6 gratis, mientras todo el mundo paga 100 dólares.",
+      "audio_voz": "voz/kick/escena_1.wav",
+      "fx": [
+        {
+          "tipo": "precio",
+          "t": 0.1,
+          "tacha": 1.0,
+          "x": 540,
+          "y": 820
+        }
+      ],
+      "duracion": 4.65
+    },
+    {
+      "id": "copias",
+      "ilustracion": "sunset",
+      "y_titular": 340,
       "etiqueta": "DATO REAL",
       "titular": "KICK LAS SORTEA",
       "voz": "Kick va a sortear 10.000 copias de la Ultimate Edition.",
-      "audio_voz": "voz/kick/escena_1.wav",
-      "fx": [{"tipo": "lluvia_copias", "t": 0},
-             {"tipo": "contador", "t": 0.15, "dur": 1.5, "hasta": 10000, "y": 880, "tam": 240, "texto": "COPIAS · ULTIMATE EDITION"}],
-      "duracion": 2.9
+      "audio_voz": "voz/kick/escena_2.wav",
+      "fx": [
+        {
+          "tipo": "lluvia_copias",
+          "t": 0
+        },
+        {
+          "tipo": "contador",
+          "t": 0.15,
+          "dur": 1.5,
+          "hasta": 10000,
+          "y": 860,
+          "tam": 240,
+          "texto": "COPIAS · ULTIMATE EDITION"
+        }
+      ],
+      "duracion": 3.2
     },
     {
-      "id": "tres_horas", "ilustracion": "sala_stream", "y_titular": 340,
+      "id": "tres_horas",
+      "ilustracion": "sala_stream",
+      "y_titular": 340,
       "etiqueta": "GRATIS",
       "titular": "VE 3 HORAS DE DIRECTOS",
-      "detalle": "en Kick, con tu cuenta iniciada",
-      "voz": "Es gratis. Solo tienes que ver 3 horas de directos en Kick con tu cuenta iniciada.",
-      "audio_voz": "voz/kick/escena_2.wav",
-      "fx": [{"tipo": "progreso", "t": 0.3, "dur": 2.7, "x": 540, "y": 900, "r": 230}],
-      "duracion": 4.35
-    },
-    {
-      "id": "caja_dia", "ilustracion": "sala_stream", "y_titular": 340,
-      "etiqueta": "CADA DÍA",
-      "titular": "1 CAJA AL DÍA",
-      "detalle": "puede tocarte o no: es un sorteo",
-      "voz": "Y se te desbloquea una caja al día. Ábrela, y cruza los dedos.",
+      "detalle": "1 caja al día · hasta el 7 de diciembre",
+      "voz": "Solo tienes que ver 3 horas de directos en Kick. ¡Y cada día, una caja nueva!",
       "audio_voz": "voz/kick/escena_3.wav",
       "pregunta": "¿LO VAS A PROBAR?",
-      "fx": [{"tipo": "caja_premio", "t": 1.6, "x": 540, "y": 900, "escala": 1.0, "candado": true, "n_copias": 3}],
-      "duracion": 4.4
+      "fx": [
+        {
+          "tipo": "progreso",
+          "t": 0.2,
+          "dur": 2.2,
+          "x": 540,
+          "y": 860,
+          "r": 220
+        }
+      ],
+      "duracion": 5.1
     },
     {
-      "id": "plazo", "ilustracion": "calendario_dic", "y_titular": 340,
-      "etiqueta": "SE ACABA",
-      "titular": "HASTA EL 7 DE DICIEMBRE",
-      "detalle": "más días = más cajas",
-      "voz": "Tienes hasta el 7 de diciembre. Cuantos más días entres, más cajas abres.",
-      "audio_voz": "voz/kick/escena_4.wav",
-      "fx": [{"tipo": "calendario_dic", "t": 0.3}],
-      "duracion": 4.3
-    },
-    {
-      "id": "ojo_ps5", "ilustracion": "sala_stream", "y_titular": 340,
+      "id": "ojo_ps5",
+      "ilustracion": "sala_stream",
+      "y_titular": 340,
       "etiqueta": "IMPORTANTE",
       "titular": "OJO CON LA PS5",
       "detalle": "mira las bases en kick.com",
-      "voz": "Ojo: en Xbox vale en todo el mundo, pero en PS5, solo en algunos países.",
-      "audio_voz": "voz/kick/escena_5.wav",
-      "fx": [{"tipo": "plataformas", "t1": 0.35, "t2": 2.6, "y1": 760, "y2": 1070}],
-      "duracion": 5.05
+      "voz": "Ojo: en Xbox vale en todo el mundo, pero en la PS5, solo en algunos países.",
+      "audio_voz": "voz/kick/escena_4.wav",
+      "fx": [
+        {
+          "tipo": "plataformas",
+          "t1": 0.35,
+          "t2": 2.4,
+          "y1": 740,
+          "y2": 1050
+        }
+      ],
+      "duracion": 5.25
     },
     {
-      "id": "cierre", "ilustracion": "sunset", "y_titular": 340,
+      "id": "cierre",
+      "ilustracion": "sunset",
+      "y_titular": 340,
       "etiqueta": "SORTEO REAL",
-      "titular": "¿TE TOCARÁ A TI?",
-      "voz": "Pásaselo a quien quiera GTA 6 gratis. ¿Te tocará a ti?",
-      "audio_voz": "voz/kick/escena_6.wav",
-      "compartir": "PÁSASELO A QUIEN QUIERA GTA 6",
-      "fx": [{"tipo": "caja_premio", "t": null, "x": 540, "y": 930, "escala": 1.1, "temblor_final": true, "dur": 3.457}],
-      "duracion": 3.457
+      "titular": "NO PIERDES NADA",
+      "detalle": "por intentarlo",
+      "voz": "Por intentarlo no pierdes nada. Pásaselo a ese amigo que siempre te pide juegos.",
+      "audio_voz": "voz/kick/escena_5.wav",
+      "compartir": "PÁSASELO AL AMIGO QUE TE PIDE JUEGOS",
+      "fx": [
+        {
+          "tipo": "caja_premio",
+          "t": null,
+          "x": 540,
+          "y": 900,
+          "escala": 1.1,
+          "temblor_final": true,
+          "dur": 5.2
+        }
+      ],
+      "duracion": 5.2
     }
-  ]
+  ],
+  "oscurecer_inferior": [
+    0.62,
+    150
+  ],
+  "duck_voz": 0.75
 }

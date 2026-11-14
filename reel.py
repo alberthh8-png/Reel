@@ -1129,9 +1129,9 @@ def ilus_sala_stream(rnd):
     lz.img.alpha_composite(c.filter(ImageFilter.GaussianBlur(40)))
     lz.img.alpha_composite(c.filter(ImageFilter.GaussianBlur(6)))
     # monitor con un atardecer en pantalla
-    pant = ilus_sunset(random.Random(rnd.random())).resize((360 * 2, 640 * 2)).crop((0, 300, 720, 1060))
-    pant = pant.resize((860, int(860 * pant.height / pant.width)))
-    pant = pant.crop((0, 0, 860, 600))
+    sun = ilus_sunset(random.Random(rnd.random()))
+    alto = int(sun.width * 600 / 860)
+    pant = sun.crop((0, 980, sun.width, 980 + alto)).resize((860, 600), Image.LANCZOS)
     c = lz.capa()
     d = ImageDraw.Draw(c)
     d.rounded_rectangle(lz.pts([(96, 556), (984, 1186)]), radius=26, fill=(14, 10, 20, 255))
@@ -1146,7 +1146,7 @@ def ilus_sala_stream(rnd):
     c = lz.capa()
     d = ImageDraw.Draw(c)
     d.rectangle(lz.pts([(-60, 1280), (W + 60, 1330)]), fill=(28, 16, 44, 255))
-    d.rectangle(lz.pts([(-60, 1330), (W + 60, H + 100)]), fill=(16, 8, 28, 255))
+    d.rectangle(lz.pts([(-60, 1330), (W + 60, H + 100)]), fill=(44, 22, 70, 255))
     d.rounded_rectangle(lz.pts([(250, 1240), (830, 1292)]), radius=12, fill=(30, 20, 44, 255))
     for k in range(14):
         col = mezclar(VERDE, (255, 61, 139), k / 13)
@@ -1424,7 +1424,7 @@ class Progreso(Efecto):
         x, y, r = self.x, self.y, self.r
         capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(capa)
-        d.ellipse((x - r - 40, y - r - 40, x + r + 40, y + r + 40), fill=(30, 14, 54, 120))
+        d.ellipse((x - r - 40, y - r - 40, x + r + 40, y + r + 40), fill=(70, 36, 120, 110))
         d.ellipse((x - r, y - r, x + r, y + r), outline=(120, 105, 150, 255), width=34)
         p = ease_in_out(clamp(a / self.dur))
         if p > 0:
@@ -1520,6 +1520,55 @@ class Plataformas(Efecto):
                 continue
             p = ease_out_back(a / 0.35, 1.4)
             pegar_centrado(frame, img, W / 2 + lado * (1 - p) * 900, y, angulo=lado * -2)
+
+
+class Precio(Efecto):
+    """Etiqueta "99,99 $" que se tacha de golpe y recibe un sello de GRATIS."""
+
+    def __init__(self, ev, semilla):
+        self.t0, self.t_tacha = ev.get("t", 0.1), ev.get("tacha", 1.1)
+        self.x, self.y = ev.get("x", 540), ev.get("y", 880)
+        w, h = 760, 380
+        img = Image.new("RGBA", (w + 40, h + 50), (0, 0, 0, 0))
+        sombra = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(sombra).rounded_rectangle((26, 30, w + 26, h + 30), radius=40, fill=(0, 0, 0, 160))
+        img.alpha_composite(sombra.filter(ImageFilter.GaussianBlur(12)))
+        d = ImageDraw.Draw(img)
+        d.polygon([(20, 20 + h / 2), (130, 20), (w + 20, 20), (w + 20, h + 20), (130, h + 20)], fill=(255, 255, 255, 255))
+        d.ellipse((70, 20 + h / 2 - 26, 122, 20 + h / 2 + 26), fill=(60, 30, 90, 255))
+        d.text((w / 2 + 70, 120), "PRECIO NORMAL", font=fuente(46), fill=(120, 110, 140, 255), anchor="mm")
+        d.text((w / 2 + 70, 250), "99,99 $", font=fuente(170), fill=(20, 12, 30, 255), anchor="mm")
+        self.tag = img
+        self.sello = texto_con_estilo("GRATIS", fuente(210), VERDE + (255,), borde=16, color_borde=(10, 30, 6),
+                                      brillo=(120, 255, 80))
+
+    def destello(self, t):
+        b = t - self.t_tacha - 0.2
+        return 0.3 * (1 - b / 0.25) ** 2 if 0 <= b < 0.25 else 0
+
+    def sacudida(self, t):
+        b = t - self.t_tacha - 0.2
+        return 18 * (1 - b / 0.3) if 0 <= b < 0.3 else 0
+
+    def encima(self, frame, t):
+        a = t - self.t0
+        if a < 0:
+            return
+        bal = math.sin(a * 4) * 3 * math.exp(-a * 1.5)
+        pegar_centrado(frame, self.tag, self.x, self.y, escala=ease_out_back(a / 0.3), angulo=-4 + bal)
+        b = t - self.t_tacha
+        if b >= 0:
+            p = ease_out_cubic(b / 0.18)
+            d = ImageDraw.Draw(frame)
+            x0, y0, x1, y1 = self.x - 330, self.y + 110, self.x + 360, self.y - 60
+            d.line((x0, y0, x0 + (x1 - x0) * p, y0 + (y1 - y0) * p), fill=(255, 40, 70, 255), width=26)
+        c = b - 0.2
+        if c >= 0:
+            esc = 2.2 - 1.2 * ease_out_cubic(c / 0.18)
+            pegar_centrado(frame, self.sello, self.x, self.y + 250, escala=esc, alfa=clamp(c / 0.08), angulo=-8)
+
+
+FX["precio"] = Precio
 
 
 ILUSTRACIONES.update({"sunset": ilus_sunset, "sala_stream": ilus_sala_stream, "calendario_dic": ilus_calendario_dic})
@@ -1745,7 +1794,8 @@ class Render:
             cy = cy * (1 - m) + (HC / 2) * m
         ox = clamp(cx - W * s / 2 + math.sin(t * 73) * sac, 0, WC - W * s)
         oy = clamp(cy - H * s / 2 + math.cos(t * 61) * sac, 0, HC - H * s)
-        frame = e["fondo"].crop((int(ox), int(oy), int(ox + W * s), int(oy + H * s))).resize((W, H), Image.BILINEAR)
+        frame = e["fondo"].crop((int(ox), int(oy), int(ox + W * s), int(oy + H * s))).resize(
+            (W, H), Image.LANCZOS if self.g.get("nitido") else Image.BILINEAR)
 
         def mapa(x, y):
             return ((x + MARGEN[0] - ox) / s, (y + MARGEN[1] - oy) / s)
@@ -1820,9 +1870,13 @@ class Render:
 
     def _subtitulos(self, frame, t):
         bloque = None
-        for b in self.bloques:
+        for k, b in enumerate(self.bloques):
             if b[0][1] - 0.03 <= t < b[-1][2] + 0.05:
                 bloque = b
+            elif self.g.get("subtitulos_continuos") and b[0][1] - 0.03 <= t:
+                sig = self.bloques[k + 1][0][1] if k + 1 < len(self.bloques) else self.total + 1
+                if t < sig - 0.03 and sig - b[-1][2] < 0.9:  # mantener hasta que entre la siguiente frase
+                    bloque = b
         if bloque is None:
             return
         f = fuente(70)
@@ -1830,7 +1884,7 @@ class Render:
         espacio = 20
         anchos = [f.getbbox(p, stroke_width=8)[2] for p in palabras]
         total = sum(anchos) * 1.12 + espacio * (len(palabras) - 1)
-        escala = min(1.0, (W - 120) / total)
+        escala = min(1.0, (W - self.g.get("margen_subtitulos", 120)) / total)
         aparicion = 1.0 if bloque[0][1] == 0 else 0.85 + 0.15 * ease_out_back((t - bloque[0][1]) / 0.15, 2.5)
         activas = [a <= t < b + 0.04 for _, a, b in bloque]
         escalas = [escala * aparicion * (1.12 if ac else 1.0) for ac in activas]
@@ -1839,7 +1893,7 @@ class Render:
         for (p, a, b), txt, w, ac, es in zip(bloque, palabras, anchos, activas, escalas):
             col = self.acento if ac else self.blanco
             capa = texto_con_estilo(txt, f, col + (255,), borde=8, color_borde=(0, 0, 0))
-            pegar_centrado(frame, capa, x + w * es / 2, 1500 - (6 if ac else 0), escala=es)
+            pegar_centrado(frame, capa, x + w * es / 2, self.g.get("y_subtitulos", 1500) - (6 if ac else 0), escala=es)
             x += w * es + espacio * escala
 
 
@@ -2054,12 +2108,16 @@ def escribir_audio(render, ruta):
                 n_tic = 10
                 for k in range(n_tic):  # ticks que se van espaciando como el número
                     tk = f.get("dur", 1.4) * (1 - (1 - (k + 1) / n_tic) ** (1 / 3))
-                    pegar(sfx, (b + f.get("t", 0.1) + tk) * SR, sfx_tic(), 0.5)
-                pegar(sfx, (b + f.get("t", 0.1) + f.get("dur", 1.4)) * SR, sfx_brillo(), 0.8)
+                    pegar(sfx, (b + f.get("t", 0.1) + tk) * SR, sfx_tic(), 0.25)
+                pegar(sfx, (b + f.get("t", 0.1) + f.get("dur", 1.4)) * SR, sfx_brillo(), 0.35)
             elif f["tipo"] == "progreso":
                 for k in range(12):
                     pegar(sfx, (b + f.get("t", 0.2) + k * f.get("dur", 2.4) / 12) * SR, sfx_tic(), 0.35)
                 pegar(sfx, (b + f.get("t", 0.2) + f.get("dur", 2.4)) * SR, sfx_brillo(), 1.0)
+            elif f["tipo"] == "precio":
+                pegar(sfx, (b + f.get("tacha", 1.1) - 0.1) * SR, sfx_whoosh(rng, 0.25), 0.6)
+                pegar(sfx, (b + f.get("tacha", 1.1) + 0.2) * SR, sfx_explosion(rng, 0.5), 0.15)
+                pegar(sfx, (b + f.get("tacha", 1.1) + 0.2) * SR, sfx_brillo(), 0.5)
             elif f["tipo"] == "plataformas":
                 for tt in (f.get("t1", 0.4), f.get("t2", 2.2)):
                     pegar(sfx, (b + tt - 0.15) * SR, sfx_whoosh(rng, 0.3), 0.6)
@@ -2074,7 +2132,7 @@ def escribir_audio(render, ruta):
             pegar(voz, (e["inicio"] + retardo) * SR, leer_wav(os.path.join(RAIZ, archivo_voz)), 1.0)
     env = filtro_lp(np.abs(sfx), 20)  # ducking: la música baja con los golpes
     env_voz = np.clip(filtro_lp(np.abs(voz), 8) * 12, 0, 1)  # y bastante más cuando habla la voz
-    mus = mus / (1 + 2.5 * env) * (1 - 0.6 * env_voz)
+    mus = mus / (1 + 2.5 * env) * (1 - render.g.get("duck_voz", 0.6) * env_voz)
     sfx = sfx * (1 - 0.35 * env_voz)
     mezcla = mus + sfx + voz * 1.35
     mezcla = mezcla[:int(total * SR)]

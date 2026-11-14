@@ -178,15 +178,29 @@ Se publica el **13 nov a las 20:00-22:00** (Albert adelanta la fecha para hacer 
 - Encuesta "¿SEGUIRÁS JUGANDO?" a mitad-final, compartir "PÁSASELO A QUIEN JUGÓ DESDE 2013" a mitad.
 - Coste: 6 fotos (1,5 créditos) + 6 clips de Kling (27 créditos; uno no se usó: el de consolas inventadas). Saldo restante ~33 créditos.
 
-### "¡Corre! GTA 6 gratis" (sorteo de Kick, 27,9 s)
-Para el **14 nov a las 20:00-22:00**. Idea y gancho de Albert: "¡Corre! GTA 6 está gratis, pero solo para unos pocos". Primero iba a ser sobre el streaming que resucita con GTA 6, pero Albert lo cambió a **solo el sorteo** porque se puede explicar bien. **Qué probamos:**
-- **Contenido útil con fecha de caducidad**: cómo participar (ver 3 h de directos con la sesión iniciada → 1 caja al día, hasta el 7 dic). Esperamos muchos guardados y compartidos.
-- **Gancho de promesa + urgencia** ("¡CORRE!") y una caja de premio que **se abre en el segundo 0,35** con destello y copias saliendo: momento satisfactorio en el primer segundo.
-- **Honestidad**: decimos "sortea", "puede tocarte o no" y "ojo con la PS5" (Xbox vale en todo el mundo, PS5 solo en algunos países). Que nadie se sienta engañado.
-- **Todo animado por código, 0 créditos**: caja de premio, lluvia de copias, contador hasta 10.000, anillo de 0:00 a 3:00 h, calendario de diciembre tachándose, tarjetas Xbox/PS5. Sin logos de Kick ni de GTA ni portada oficial (los nombres solo en texto y voz).
-- Música trap de 140 bpm con `sfx: suave` (sin disparos) más SFX nuevos: tics de contador y campanilla de premio.
-- Sticker "¿LO VAS A PROBAR?" (escena 4) y compartir "PÁSASELO A QUIEN QUIERA GTA 6" en el cierre. Bucle: el cierre vuelve a la caja cerrada temblando, y el gancho la abre.
-- **Control de calidad:** brillo de 58 a 90 (la escena del anillo da 58 a propósito, porque el disco oscuro hace que se lean las horas), titulares de 914 a 947 px de capa, voz con correlación de 0,76 a 0,91. **Bug evitado:** el golpe de la caja tapaba la voz del gancho (0,59), así que se bajó la explosión, el whoosh y la campanilla.
+### "¡Corre! GTA 6 gratis" (sorteo de Kick, 27 s)
+Para el **14 nov a las 20:00-22:00**. Gancho de Albert: "Corre, GTA 6 está gratis, pero solo para unos pocos". Al principio iba sobre el streaming que resucita con GTA 6; Albert lo cambió a **solo el sorteo**, porque se puede explicar bien.
+
+**Proceso (lo que salió mal y cómo se corrigió):**
+- La 1.ª versión se produjo **sin enseñar el boceto**. Además llevaba **grano** y la voz **acelerada al 1,15×**, que sonaba robótica. Albert lo notó todo, y de ahí salen las reglas nuevas de la regla 18 y de las preferencias.
+- Rehecho así: voces primero (Albert las escucha), boceto, montaje y revisión ampliada.
+- **Voz con "vidilla":** estabilidad 0,28-0,35, estilo 0,6 y velocidad de ElevenLabs 1,1 (no atempo). De 3 tomas por frase, la más limpia.
+- **"PS5" suena raro con Dan:** se escribe "la Play cinco" en la voz; en pantalla sigue "PS5". "¡Corre!" con exclamaciones sonaba raro: mejor "Corre," sin exclamación.
+
+**Qué probamos:**
+- **Contenido útil con caducidad**: cómo participar (3 h de directos → 1 caja al día, hasta el 7 dic). Esperamos guardados y compartidos.
+- **Gancho de promesa y urgencia**, con una caja que se abre en el segundo 0,35 (momento satisfactorio).
+- **Contraste de precio** (frase de Albert): "Imagínate tener GTA 6 gratis mientras todo el mundo paga 100 dólares". Etiqueta "99,99 $" tachada con un sello de GRATIS.
+- **Cierre de Albert:** "Por intentarlo no pierdes nada. Pásaselo a ese amigo que siempre te pide juegos". Compartir dirigido a un tipo de amigo muy concreto.
+- **Honestidad:** "sortea", "puede tocarte o no" y "ojo con la PS5".
+- **Todo animado por código, 0 créditos**: caja de premio, precio tachado, lluvia de copias, contador hasta 10.000, anillo de 3 h y tarjetas Xbox/PS5.
+- **Subtítulos en zona segura:** y = 1390 (antes 1500, tapados por la descripción de Instagram y TikTok), ancho máximo 840 px (lejos de los botones de la derecha) y `subtitulos_continuos` (no se apagan entre frases). Albert dijo que antes "no se veían en algunas partes".
+
+**Control de calidad:**
+- Sin grano y escalado LANCZOS (`"nitido": true`). La pantalla del monitor se recorta a resolución completa.
+- Brillo entre 63 y 87.
+- Voz con correlación de 0,71 a 0,97: en la escena del contador, el trap tapaba la voz, así que el ducking subió de 0,6 a 0,75 (`duck_voz`).
+- Bucle sin salto.
 
 ---
 
