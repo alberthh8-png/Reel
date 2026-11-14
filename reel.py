@@ -1088,6 +1088,446 @@ FX = {"explosion": Explosion, "disparo": Disparo, "dinero": Dinero, "sirena": Si
 
 
 # --------------------------------------------------------------------------
+# reel "sorteo de Kick": caja de premio, contadores, anillo de 3 h, calendario
+# (todo dibujado por código; sin logos ni portadas oficiales)
+# --------------------------------------------------------------------------
+
+VERDE = (83, 252, 24)
+NARANJA = (255, 140, 40)
+
+
+def ilus_sunset(rnd):
+    lz = Lienzo(degradado([(0, (52, 14, 92)), (0.22, (150, 36, 130)), (0.42, (255, 96, 110)),
+                           (0.6, (255, 176, 96)), (0.61, (70, 30, 110)), (1, (30, 12, 60))]))
+    estrellas(lz, rnd, 70, 380)
+    sol(lz, 540, 1130, 330)
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    d.rectangle(lz.pts([(-60, 1172), (W + 60, H + 100)]), fill=(58, 24, 100, 255))
+    for i in range(40):
+        y = 1180 + i * i * 0.55
+        if y > H:
+            break
+        a = max(25, 210 - i * 5)
+        d.rectangle(lz.pts([(250 + i * 3 + rnd.randrange(-20, 20), y), (830 - i * 3 + rnd.randrange(-20, 20), y + 3 + i // 6)]),
+                    fill=(255, 190, 120, a))
+    lz.img.alpha_composite(c)
+    skyline(lz, rnd, 1175, 60, 230, (40, 14, 70), ventanas=True, neon=True)
+    palmera(lz, 990, 1640, 1150, rnd, inclinacion=-0.16)
+    palmera(lz, 70, 1700, 1250, rnd, inclinacion=0.14)
+    palmera(lz, 860, 1300, 620, rnd, inclinacion=-0.1)
+    return lz.img
+
+
+def ilus_sala_stream(rnd):
+    lz = Lienzo(degradado([(0, (70, 26, 110)), (0.5, (110, 40, 140)), (0.7, (60, 24, 96)), (1, (34, 14, 60))]))
+    # tiras de luz en la pared
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    for x, col in ((70, VERDE), (1010, (255, 61, 139)), (250, (255, 61, 139)), (830, VERDE)):
+        d.rounded_rectangle(lz.pts([(x - 9, 120), (x + 9, 1060)]), radius=9, fill=col + (255,))
+    lz.img.alpha_composite(c.filter(ImageFilter.GaussianBlur(40)))
+    lz.img.alpha_composite(c.filter(ImageFilter.GaussianBlur(6)))
+    # monitor con un atardecer en pantalla
+    pant = ilus_sunset(random.Random(rnd.random())).resize((360 * 2, 640 * 2)).crop((0, 300, 720, 1060))
+    pant = pant.resize((860, int(860 * pant.height / pant.width)))
+    pant = pant.crop((0, 0, 860, 600))
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    d.rounded_rectangle(lz.pts([(96, 556), (984, 1186)]), radius=26, fill=(14, 10, 20, 255))
+    c.alpha_composite(pant, lz.p(110, 570))
+    d = ImageDraw.Draw(c)
+    d.rounded_rectangle(lz.pts([(140, 600), (400, 660)]), radius=12, fill=(235, 30, 50, 255))
+    d.ellipse(lz.pts([(158, 618), (182, 642)]), fill=(255, 255, 255, 255))
+    d.text(lz.p(290, 630), "EN DIRECTO", font=fuente(30), fill=(255, 255, 255, 255), anchor="mm")
+    d.rectangle(lz.pts([(500, 1186), (580, 1290)]), fill=(20, 14, 30, 255))
+    lz.poner(c, brillo=(150, 90, 255))
+    # mesa, teclado y cascos
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    d.rectangle(lz.pts([(-60, 1280), (W + 60, 1330)]), fill=(28, 16, 44, 255))
+    d.rectangle(lz.pts([(-60, 1330), (W + 60, H + 100)]), fill=(16, 8, 28, 255))
+    d.rounded_rectangle(lz.pts([(250, 1240), (830, 1292)]), radius=12, fill=(30, 20, 44, 255))
+    for k in range(14):
+        col = mezclar(VERDE, (255, 61, 139), k / 13)
+        d.rounded_rectangle(lz.pts([(268 + k * 40, 1252), (298 + k * 40, 1280)]), radius=5, fill=col + (255,))
+    d.arc(lz.pts([(850, 1150), (1010, 1300)]), 180, 360, fill=(20, 12, 30, 255), width=22)
+    d.ellipse(lz.pts([(840, 1220), (890, 1300)]), fill=(20, 12, 30, 255))
+    d.ellipse(lz.pts([(970, 1220), (1020, 1300)]), fill=(20, 12, 30, 255))
+    lz.poner(c, borde=((255, 61, 139), (0, -1)))
+    neblina(lz, 1240, 120, (150, 90, 255), 60)
+    return lz.img
+
+
+def ilus_calendario_dic(rnd):
+    lz = Lienzo(degradado([(0, (40, 14, 80)), (0.5, (110, 30, 120)), (1, (36, 12, 60))]))
+    estrellas(lz, rnd, 60, 500)
+    c = lz.capa()
+    d = ImageDraw.Draw(c)
+    y0 = 600
+    d.rounded_rectangle(lz.pts([(90, y0), (990, y0 + 720)]), radius=36, fill=(248, 246, 252, 255))
+    d.rounded_rectangle(lz.pts([(90, y0), (990, y0 + 140)]), radius=36, fill=(255, 61, 90, 255))
+    d.rectangle(lz.pts([(90, y0 + 90), (990, y0 + 140)]), fill=(255, 61, 90, 255))
+    d.text(lz.p(540, y0 + 70), "DICIEMBRE 2026", font=fuente(70), fill=(255, 255, 255, 255), anchor="mm")
+    for k, dia in enumerate("LMXJVSD"):
+        d.text(lz.p(150 + k * 130, y0 + 180), dia, font=fuente(40), fill=(120, 110, 140, 255), anchor="mm")
+    for n in range(1, 32):  # el 1 de diciembre de 2026 es martes
+        x, y = CalendarioDic.pos(n)
+        col = (255, 61, 90, 255) if n == 7 else ((40, 30, 60, 255) if n < 7 else (190, 185, 200, 255))
+        d.text(lz.p(x, y), str(n), font=fuente(58 if n == 7 else 50), fill=col, anchor="mm")
+    lz.img.alpha_composite(c)
+    d = ImageDraw.Draw(lz.img)
+    for k in range(5):
+        x = 200 + k * 170
+        d.rounded_rectangle(lz.pts([(x - 12, y0 - 30), (x + 12, y0 + 40)]), radius=10, fill=(200, 200, 215, 255))
+    return lz.img
+
+
+def _caja_img(s):
+    """Caja de premio con degradado de atardecer y ribetes dorados (cuerpo, tapa)."""
+    w, h = int(440 * s), int(270 * s)
+    grad = degradado([(0, (255, 170, 70)), (0.5, (255, 80, 120)), (1, (120, 30, 140))], w, h)
+    cuerpo = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    m = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(m).rounded_rectangle((0, 0, w - 1, h - 1), radius=int(28 * s), fill=255)
+    cuerpo.paste(grad, (0, 0), m)
+    d = ImageDraw.Draw(cuerpo)
+    oro = (255, 214, 90, 255)
+    d.rounded_rectangle((0, 0, w - 1, h - 1), radius=int(28 * s), outline=oro, width=int(10 * s))
+    d.rectangle((w // 2 - int(26 * s), 0, w // 2 + int(26 * s), h), fill=oro)
+    r = int(62 * s)  # sol del emblema
+    cx, cy = w // 2, h // 2 + int(8 * s)
+    d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=(255, 236, 160, 255), outline=(120, 30, 120, 255), width=int(6 * s))
+    for i in range(3):
+        fy = cy + int((10 + i * 16) * s)
+        d.rectangle((cx - r + 6, fy, cx + r - 6, fy + int((4 + i * 2) * s)), fill=(255, 110, 120, 255))
+    tw, th = int(470 * s), int(110 * s)
+    tapa = Image.new("RGBA", (tw, th), (0, 0, 0, 0))
+    m = Image.new("L", (tw, th), 0)
+    ImageDraw.Draw(m).rounded_rectangle((0, 0, tw - 1, th - 1), radius=int(26 * s), fill=255)
+    tapa.paste(degradado([(0, (255, 200, 110)), (1, (255, 100, 110))], tw, th), (0, 0), m)
+    d = ImageDraw.Draw(tapa)
+    d.rounded_rectangle((0, 0, tw - 1, th - 1), radius=int(26 * s), outline=oro, width=int(10 * s))
+    d.rectangle((tw // 2 - int(26 * s), 0, tw // 2 + int(26 * s), th), fill=oro)
+    return cuerpo, tapa
+
+
+def _copia_img(s=1.0):
+    """Caja de juego genérica (sin portada oficial)."""
+    w, h = int(150 * s), int(200 * s)
+    img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    m = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(m).rounded_rectangle((0, 0, w - 1, h - 1), radius=int(12 * s), fill=255)
+    img.paste(degradado([(0, (30, 20, 60)), (0.55, (200, 50, 120)), (1, (255, 160, 80))], w, h), (0, 0), m)
+    d = ImageDraw.Draw(img)
+    d.rounded_rectangle((0, 0, w - 1, h - 1), radius=int(12 * s), outline=(255, 255, 255, 255), width=int(5 * s))
+    d.text((w / 2, h * 0.36), "GTA 6", font=fuente(int(40 * s)), fill=(255, 255, 255, 255), anchor="mm")
+    d.text((w / 2, h * 0.56), "ULTIMATE", font=fuente(int(19 * s)), fill=(255, 230, 150, 255), anchor="mm")
+    return img
+
+
+def _rayos(r, n=14, col=(255, 230, 140)):
+    img = Image.new("RGBA", (2 * r, 2 * r), (0, 0, 0, 0))
+    d = ImageDraw.Draw(img)
+    for k in range(n):
+        a0 = 2 * math.pi * k / n
+        a1 = a0 + math.pi / n * 0.8
+        d.polygon([(r, r), (r + r * math.cos(a0), r + r * math.sin(a0)), (r + r * math.cos(a1), r + r * math.sin(a1))],
+                  fill=col + (120,))
+    m = Image.new("L", img.size, 0)
+    md = ImageDraw.Draw(m)
+    for i in range(20):  # se desvanece hacia fuera
+        rr = r * (1 - i / 20)
+        md.ellipse((r - rr, r - rr, r + rr, r + rr), fill=int(255 * (i + 1) / 20))
+    img.putalpha(Image.fromarray(np.minimum(np.asarray(img.getchannel("A")), np.asarray(m)), "L"))
+    return img.filter(ImageFilter.GaussianBlur(4))
+
+
+def _halo(r, col):
+    img = Image.new("RGBA", (2 * r, 2 * r), col + (0,))
+    a = Image.new("L", img.size, 0)
+    ImageDraw.Draw(a).ellipse((r * 0.35, r * 0.35, r * 1.65, r * 1.65), fill=200)
+    img.putalpha(a.filter(ImageFilter.GaussianBlur(r * 0.3)))
+    return img
+
+
+class CajaPremio(Efecto):
+    """Caja de premio que tiembla, se abre con destello y suelta copias del juego."""
+
+    def __init__(self, ev, semilla):
+        self.t0 = ev.get("t", 0.3)              # momento de abrir (None = no se abre)
+        self.x, self.y, self.s = ev.get("x", 540), ev.get("y", 860), ev.get("escala", 1.0)
+        self.dur = ev.get("dur", 99)             # duración de la escena (para el temblor final)
+        self.temblor_final = ev.get("temblor_final", False)
+        self.candado = ev.get("candado", False)
+        self.cuerpo, self.tapa = _caja_img(self.s)
+        self.rayos = _rayos(int(520 * self.s))
+        self.halo = _halo(int(420 * self.s), (255, 180, 90))
+        self.copia = _copia_img(0.9 * self.s)
+        rnd = random.Random(semilla)
+        self.copias = [(rnd.uniform(-1, 1), rnd.uniform(1500, 2300), rnd.uniform(-200, 200), rnd.uniform(0, 0.25))
+                       for _ in range(ev.get("n_copias", 9))]
+        self.chispas = [(rnd.uniform(0, 6.28), rnd.uniform(300, 1100), rnd.uniform(4, 11),
+                         rnd.choice([(255, 240, 160), (255, 120, 160), VERDE])) for _ in range(70)]
+
+    def _abierta(self, t):
+        return self.t0 is not None and t >= self.t0
+
+    def sacudida(self, t):
+        if self.t0 is not None and 0 <= t - self.t0 < 0.35:
+            return 22 * (1 - (t - self.t0) / 0.35)
+        return 0
+
+    def destello(self, t):
+        if self.t0 is not None and 0 <= t - self.t0 < 0.3:
+            return 0.45 * (1 - (t - self.t0) / 0.3) ** 2
+        return 0
+
+    def dibujar(self, frame, t, mapa):
+        x, y, s = self.x, self.y, self.s
+        abierta = self._abierta(t)
+        a = t - self.t0 if abierta else 0
+        latido = 1 + 0.05 * math.sin(t * 6)
+        pegar_centrado(frame, self.halo, x, y, escala=(1.3 if abierta else 1.0) * latido,
+                       alfa=1.0 if abierta else 0.75)
+        if abierta:
+            pegar_centrado(frame, self.rayos, x, y - 60 * s, escala=ease_out_cubic(a / 0.4),
+                           angulo=a * 25, alfa=min(1, a / 0.15))
+        # temblor de anticipación
+        tem = 0.0
+        if not abierta:
+            if self.t0 is not None:
+                tem = clamp(1 - (self.t0 - t) / 0.5) * 9
+            elif self.temblor_final:
+                tem = 3 + clamp((t - (self.dur - 1.6)) / 1.6) * 10
+            else:
+                tem = 2
+        dx = math.sin(t * 55) * tem
+        ang = math.sin(t * 47) * tem * 0.5
+        rebote = 1.0
+        if abierta:
+            rebote = 1 + 0.12 * math.sin(min(a / 0.35, 1) * math.pi) * (1 - min(a, 1))
+        pegar_centrado(frame, self.cuerpo, x + dx, y + 60 * s, escala=rebote, angulo=ang)
+        if abierta:  # copias saliendo en abanico
+            for vx, v0, giro, dly in self.copias:
+                b = a - dly
+                if b < 0:
+                    continue
+                px = x + vx * 520 * s * b
+                py = y - 40 * s - v0 * s * b + 1600 * s * b * b
+                if py > H + 200:
+                    continue
+                esc = min(1, 0.3 + b * 3)
+                pegar_centrado(frame, self.copia, px, py, escala=esc, angulo=giro * b * 0.6)
+        # tapa
+        if abierta:
+            p = ease_out_cubic(a / 0.45)
+            pegar_centrado(frame, self.tapa, x - 120 * s * p, y - 85 * s - 260 * s * p, angulo=28 * p,
+                           alfa=1 - 0.4 * p)
+        else:
+            pegar_centrado(frame, self.tapa, x + dx, y - 85 * s, angulo=ang)
+            if self.candado:
+                d = ImageDraw.Draw(frame)
+                cx, cy = x + dx, y - 10 * s
+                d.arc((cx - 36 * s, cy - 80 * s, cx + 36 * s, cy - 6 * s), 180, 360, fill=(230, 230, 240, 255),
+                      width=int(14 * s))
+                d.rounded_rectangle((cx - 52 * s, cy - 44 * s, cx + 52 * s, cy + 40 * s), radius=int(12 * s),
+                                    fill=(230, 230, 240, 255), outline=(60, 40, 80, 255), width=int(5 * s))
+                d.ellipse((cx - 11 * s, cy - 16 * s, cx + 11 * s, cy + 6 * s), fill=(60, 40, 80, 255))
+        if abierta:  # chispas
+            d = ImageDraw.Draw(frame)
+            for ang0, v, r, col in self.chispas:
+                b = a
+                if b > 1.4:
+                    continue
+                px = x + math.cos(ang0) * v * b
+                py = y - 40 * s + math.sin(ang0) * v * b + 500 * b * b
+                rr = r * (1 - b / 1.4)
+                d.ellipse((px - rr, py - rr, px + rr, py + rr), fill=col + (int(255 * (1 - b / 1.4)),))
+
+
+def _miles(n):
+    return f"{int(n):,}".replace(",", ".")
+
+
+class Contador(Efecto):
+    """Número grande que cuenta hasta un valor y da un golpe al llegar."""
+
+    def __init__(self, ev, semilla):
+        self.t0, self.dur = ev.get("t", 0.1), ev.get("dur", 1.4)
+        self.desde, self.hasta = ev.get("desde", 0), ev["hasta"]
+        self.x, self.y, self.tam = ev.get("x", 540), ev.get("y", 860), ev.get("tam", 220)
+        self.pre, self.suf = ev.get("prefijo", ""), ev.get("sufijo", "")
+        self.texto = ev.get("texto")
+        self.cache = {}
+        self.capa_txt = None
+        if self.texto:
+            self.capa_txt = texto_con_estilo(self.texto, fuente(64), (255, 255, 255, 255), borde=8,
+                                             color_borde=(20, 6, 30))
+
+    def _capa(self, s):
+        if s not in self.cache:
+            self.cache[s] = texto_con_estilo(s, ajustar_fuente(s, W - 140, self.tam, borde=14),
+                                             (255, 210, 63, 255), borde=14, color_borde=(20, 6, 30),
+                                             brillo=(255, 61, 139))
+        return self.cache[s]
+
+    def encima(self, frame, t):
+        a = t - self.t0
+        if a < 0:
+            return
+        p = ease_out_cubic(a / self.dur)
+        v = self.desde + (self.hasta - self.desde) * p
+        cap = self._capa(f"{self.pre}{_miles(round(v))}{self.suf}")
+        golpe = 1.0
+        if a > self.dur:
+            b = a - self.dur
+            golpe = 1 + 0.18 * math.exp(-b * 9) * math.cos(b * 18)
+        entra = ease_out_back(a / 0.25)
+        pegar_centrado(frame, cap, self.x, self.y, escala=entra * golpe, angulo=-3)
+        if self.capa_txt is not None:
+            pegar_centrado(frame, self.capa_txt, self.x, self.y + self.tam * 0.75, alfa=clamp((a - 0.2) / 0.2))
+
+
+class LluviaCopias(Efecto):
+    def __init__(self, ev, semilla):
+        rnd = random.Random(semilla)
+        self.t0 = ev.get("t", 0)
+        self.img = _copia_img(0.8)
+        self.copias = [(rnd.uniform(-40, W + 40), rnd.uniform(-1800, -100), rnd.uniform(420, 700),
+                        rnd.uniform(0, 6.28), rnd.uniform(1, 2.5), rnd.uniform(0.6, 1.0)) for _ in range(26)]
+        self.cache = {}
+
+    def dibujar(self, frame, t, mapa):
+        a = t - self.t0
+        if a < 0:
+            return
+        for x, y, v, fase, giro, esc in self.copias:
+            py = y + v * a
+            if py > H + 150 or py < -150:
+                continue
+            ang = math.degrees(math.sin(fase + a * giro)) * 0.5
+            pegar_centrado(frame, self.img, x + math.sin(fase + a) * 40, py, escala=esc, angulo=ang, alfa=0.9)
+
+
+class Progreso(Efecto):
+    """Anillo que se llena de 0:00 a 3:00 h y desbloquea la caja."""
+
+    def __init__(self, ev, semilla):
+        self.t0, self.dur = ev.get("t", 0.2), ev.get("dur", 2.4)
+        self.x, self.y, self.r = ev.get("x", 540), ev.get("y", 870), ev.get("r", 230)
+        self.horas = ev.get("horas", 3)
+        self.ok = texto_con_estilo("¡CAJA LISTA!", fuente(70), VERDE + (255,), borde=10, color_borde=(10, 20, 6))
+
+    def encima(self, frame, t):
+        a = t - self.t0
+        x, y, r = self.x, self.y, self.r
+        capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(capa)
+        d.ellipse((x - r - 40, y - r - 40, x + r + 40, y + r + 40), fill=(30, 14, 54, 120))
+        d.ellipse((x - r, y - r, x + r, y + r), outline=(120, 105, 150, 255), width=34)
+        p = ease_in_out(clamp(a / self.dur))
+        if p > 0:
+            d.arc((x - r, y - r, x + r, y + r), -90, -90 + 360 * p, fill=VERDE + (255,), width=34)
+            ang = math.radians(-90 + 360 * p)
+            ex, ey = x + r * math.cos(ang), y + r * math.sin(ang)
+            d.ellipse((ex - 24, ey - 24, ex + 24, ey + 24), fill=(255, 255, 255, 255))
+        frame.alpha_composite(capa)
+        mins = int(round(p * self.horas * 60))
+        txt = f"{mins // 60}:{mins % 60:02d}"
+        hecho = a > self.dur
+        col = VERDE if hecho else (255, 255, 255)
+        f = fuente(150)
+        golpe = 1 + (0.2 * math.exp(-(a - self.dur) * 8) if hecho else 0)
+        pegar_centrado(frame, texto_con_estilo(txt, f, col + (255,), borde=10, color_borde=(10, 6, 20)),
+                       x, y - 20, escala=golpe)
+        pegar_centrado(frame, texto_con_estilo("HORAS", fuente(50), (200, 190, 220, 255), borde=6,
+                                               color_borde=(10, 6, 20)), x, y + 95)
+        if hecho:
+            b = a - self.dur
+            pegar_centrado(frame, self.ok, x, y + r + 110, escala=ease_out_back(b / 0.3), angulo=-3)
+            rr = r + 40 + 200 * ease_out_cubic(b / 0.6)
+            al = int(220 * clamp(1 - b / 0.6))
+            ImageDraw.Draw(frame).ellipse((x - rr, y - rr, x + rr, y + rr), outline=VERDE + (al,), width=12)
+
+    def destello(self, t):
+        b = t - self.t0 - self.dur
+        return 0.3 * (1 - b / 0.25) ** 2 if 0 <= b < 0.25 else 0
+
+
+class CalendarioDic(Efecto):
+    """Tacha los días después del 7 y hace latir el 7 (último día del sorteo)."""
+
+    @staticmethod
+    def pos(n):
+        fila, col = divmod(n + 0, 7)  # 1 de diciembre = martes (columna 1)
+        return 150 + col * 130, 600 + 250 + fila * 90
+
+    def __init__(self, ev, semilla):
+        self.t0 = ev.get("t", 0.3)
+
+    def dibujar(self, frame, t, mapa):
+        a = t - self.t0
+        if a < 0:
+            return
+        d = ImageDraw.Draw(frame)
+        for k, n in enumerate(range(31, 7, -1)):
+            if a < k * 0.06:
+                break
+            x, y = mapa(*self.pos(n))
+            d.line((x - 30, y - 26, x + 30, y + 26), fill=(255, 61, 90, 230), width=8)
+            d.line((x - 30, y + 26, x + 30, y - 26), fill=(255, 61, 90, 230), width=8)
+        x, y = mapa(*self.pos(7))
+        r = 54 + 8 * math.sin(a * 9)
+        d.ellipse((x - r, y - r, x + r, y + r), outline=(255, 210, 63, 255), width=11)
+
+
+class Plataformas(Efecto):
+    """Dos tarjetas: Xbox (todo el mundo) y PS5 (solo algunos países)."""
+
+    def __init__(self, ev, semilla):
+        self.t1, self.t2 = ev.get("t1", 0.4), ev.get("t2", 2.2)
+        self.y1, self.y2 = ev.get("y1", 700), ev.get("y2", 1010)
+        self.c1 = self._tarjeta("XBOX", "TODO EL MUNDO", (40, 190, 90), "ok")
+        self.c2 = self._tarjeta("PS5", "SOLO ALGUNOS PAÍSES", (255, 140, 40), "ojo")
+
+    def _tarjeta(self, nombre, texto, col, icono):
+        w, h = 900, 250
+        img = Image.new("RGBA", (w + 40, h + 50), (0, 0, 0, 0))
+        sombra = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(sombra).rounded_rectangle((26, 30, w + 26, h + 30), radius=40, fill=(0, 0, 0, 160))
+        img.alpha_composite(sombra.filter(ImageFilter.GaussianBlur(12)))
+        d = ImageDraw.Draw(img)
+        d.rounded_rectangle((20, 20, w + 20, h + 20), radius=40, fill=(255, 255, 255, 255))
+        d.rounded_rectangle((20, 20, 260, h + 20), radius=40, fill=col + (255,))
+        d.rectangle((200, 20, 260, h + 20), fill=col + (255,))
+        cx, cy = 140, 20 + h / 2
+        if icono == "ok":
+            d.line([(cx - 55, cy), (cx - 15, cy + 45), (cx + 60, cy - 50)], fill=(255, 255, 255, 255), width=26,
+                   joint="curve")
+        else:
+            d.polygon([(cx, cy - 70), (cx + 72, cy + 58), (cx - 72, cy + 58)], fill=(255, 255, 255, 255))
+            d.text((cx, cy + 14), "!", font=fuente(90), fill=col + (255,), anchor="mm")
+        d.text((300, 20 + h * 0.34), nombre, font=fuente(96), fill=(20, 12, 30, 255), anchor="lm")
+        ft = ajustar_fuente(texto, w - 320, 54)
+        d.text((300, 20 + h * 0.74), texto, font=ft, fill=col + (255,), anchor="lm")
+        return img
+
+    def encima(self, frame, t):
+        for t0, y, img, lado in ((self.t1, self.y1, self.c1, -1), (self.t2, self.y2, self.c2, 1)):
+            a = t - t0
+            if a < 0:
+                continue
+            p = ease_out_back(a / 0.35, 1.4)
+            pegar_centrado(frame, img, W / 2 + lado * (1 - p) * 900, y, angulo=lado * -2)
+
+
+ILUSTRACIONES.update({"sunset": ilus_sunset, "sala_stream": ilus_sala_stream, "calendario_dic": ilus_calendario_dic})
+FX.update({"caja_premio": CajaPremio, "contador": Contador, "lluvia_copias": LluviaCopias, "progreso": Progreso,
+           "calendario_dic": CalendarioDic, "plataformas": Plataformas})
+
+
+# --------------------------------------------------------------------------
 # subtítulos
 # --------------------------------------------------------------------------
 
@@ -1469,6 +1909,23 @@ def sfx_caja():
     return (np.sin(2 * math.pi * 2100 * tt) + 0.6 * np.sin(2 * math.pi * 3150 * tt)) * np.exp(-tt * 9) * 0.25
 
 
+def sfx_tic():
+    L = int(0.05 * SR)
+    tt = np.arange(L) / SR
+    return np.sin(2 * math.pi * 1800 * tt) * np.exp(-tt * 120) * 0.5
+
+
+def sfx_brillo():
+    """Campanilla de premio: arpegio brillante ascendente."""
+    L = int(1.1 * SR)
+    out = np.zeros(L)
+    for k, n in enumerate((84, 88, 91, 96)):
+        a = int(k * 0.06 * SR)
+        tt = np.arange(L - a) / SR
+        out[a:] += (np.sin(2 * math.pi * nota(n) * tt) + 0.3 * np.sin(4 * math.pi * nota(n) * tt)) * np.exp(-tt * 5)
+    return out * 0.22
+
+
 def musica(total, bpm):
     N = int(total * SR) + SR
     out = np.zeros(N)
@@ -1589,6 +2046,24 @@ def escribir_audio(render, ruta):
                     pegar(sfx, (b + f.get("t", 0) + k * 0.35) * SR, sfx_caja(), 0.8)
             elif f["tipo"] == "revelar":
                 pegar(sfx, (b + f["t"]) * SR, sfx_explosion(rng, 0.9), 0.4)
+            elif f["tipo"] == "caja_premio" and f.get("t") is not None:
+                pegar(sfx, (b + f["t"] - 0.45) * SR, sfx_whoosh(rng, 0.45), 0.4)
+                pegar(sfx, (b + f["t"]) * SR, sfx_explosion(rng, 0.7), 0.12)
+                pegar(sfx, (b + f["t"]) * SR, sfx_brillo(), 0.55)
+            elif f["tipo"] == "contador":
+                n_tic = 10
+                for k in range(n_tic):  # ticks que se van espaciando como el número
+                    tk = f.get("dur", 1.4) * (1 - (1 - (k + 1) / n_tic) ** (1 / 3))
+                    pegar(sfx, (b + f.get("t", 0.1) + tk) * SR, sfx_tic(), 0.5)
+                pegar(sfx, (b + f.get("t", 0.1) + f.get("dur", 1.4)) * SR, sfx_brillo(), 0.8)
+            elif f["tipo"] == "progreso":
+                for k in range(12):
+                    pegar(sfx, (b + f.get("t", 0.2) + k * f.get("dur", 2.4) / 12) * SR, sfx_tic(), 0.35)
+                pegar(sfx, (b + f.get("t", 0.2) + f.get("dur", 2.4)) * SR, sfx_brillo(), 1.0)
+            elif f["tipo"] == "plataformas":
+                for tt in (f.get("t1", 0.4), f.get("t2", 2.2)):
+                    pegar(sfx, (b + tt - 0.15) * SR, sfx_whoosh(rng, 0.3), 0.6)
+                    pegar(sfx, (b + tt + 0.1) * SR, sfx_pop(), 0.9)
         if e.get("pregunta"):
             pegar(sfx, (b + e["duracion"] - 1.45) * SR, sfx_pop(), 1.0)
     voz = np.zeros(N)

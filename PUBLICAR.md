@@ -372,3 +372,41 @@ Adiós, GTA 5 🥲 13 años después llega el final. ¿Cuántas horas le echaste
 - Golpe del Kortz Center (14 jul 2026, el primero desde Cayo Perico en 2020; que sea el último es **rumor**): [Shacknews](https://www.shacknews.com/article/149946/gta-online-kortz-center-heist-release-date), [GamesRadar](https://www.gamesradar.com/games/grand-theft-auto/gta-online-is-getting-its-first-big-heist-update-in-6-years-next-week-with-the-kortz-center-heist/), [Beebom](https://beebom.com/the-kortz-center-heist-is-gta-onlines-final-big-update-before-gta-6-and-it-has-a-release-date/amp/)
 - La última vuelta de la comunidad (18 nov): [Presse-Citron](https://presse-citron.net/la-communaute-gta-prepare-un-important-rassemblement-le-18-novembre-la-veille-de-la-sortie-de-gta-6), [ScalaCube](https://scalacube.com/blog/news/gta-5-players-are-planning-one-last-drive-before-the-release-of-gta-6)
 - GTA Online seguirá con soporte: [TechRadar](https://www.techradar.com/gaming/gta-6-online-might-not-be-coming-anytime-soon-as-take-two-confirms-gta-online-support-will-continue-after-gta-6-launches-and-beyond)
+
+---
+
+# REEL: "¡Corre! GTA 6 gratis" (sorteo de Kick, 28 s)
+
+Vídeo: `salida/kick_sorteo/reel.mp4` · Portada: `salida/kick_sorteo/portada.jpg` (la caja abriéndose bajo "¡CORRE! GTA 6 GRATIS").
+
+**Cuándo:** **hoy, 14 nov, a las 20:00-22:00.** El sorteo acaba el 7 de diciembre: cuanto antes se publique, más útil es.
+
+## Instagram
+```
+¡Corre! 🏃‍♂️ Kick sortea 10.000 copias de GTA 6 Ultimate Edition 🎁
+
+✅ Ve 3 horas de directos en Kick con tu cuenta iniciada
+✅ Se desbloquea 1 caja al día (puede tocarte o no)
+✅ Hasta el 7 de diciembre
+⚠️ Xbox: todo el mundo · PS5: solo algunos países (mira las bases en kick.com)
+
+Guárdalo para no olvidarte 📌 y pásaselo a quien quiera GTA 6 gratis 👇
+
+#GTA6 #GTAVI #Kick #Sorteo #Gaming
+```
+## YouTube Shorts
+**Título:** `¡CORRE! GTA 6 GRATIS para 10.000 personas 🎁 #shorts`
+**Descripción:**
+```
+Kick sortea 10.000 copias de GTA 6 Ultimate Edition. Cómo participar: ve 3 horas de directos en Kick con tu cuenta iniciada y se desbloquea una caja al día, hasta el 7 de diciembre. Es un sorteo: puede tocarte o no. Xbox vale en todo el mundo; PS5 solo en algunos países (mira las bases completas en kick.com). ¿Te tocará a ti? 👇
+
+#GTA6 #Kick #Shorts
+```
+## TikTok
+```
+¡Corre! Kick sortea 10.000 copias de GTA 6 🎁 Así puedes participar 👇 ¿Te tocará a ti? #GTA6 #kick #sorteo #gaming #fyp
+```
+**Comentario fijado (las 3 redes):** `Bases completas en kick.com 👉 Xbox: todo el mundo · PS5: solo algunos países. ¿Lo vas a probar? 🎁`
+
+## Fuentes
+- Sorteo "Sunset Reward Case" (12 nov – 7 dic, 3 h de visionado = 1 caja al día, 10.000 Ultimate Edition, PS5 con restricción por región): [Streams Charts](https://streamscharts.com/news/kick-giving-away-10000-gta-vi-copies), [TweakTown](https://www.tweaktown.com/news/114652/kick-viewers-can-win-one-of-10000-free-gta-6-ultimate-edition-copies-by-watching-3-hours/index.html), [iGeeksBlog](https://www.igeeksblog.com/kick-gta-6-ultimate-edition-giveaway/), [TechWiser](https://techwiser.com/kick-giving-away-free-gta-6-ultimate-edition/)

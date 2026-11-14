@@ -175,6 +175,16 @@ Se publica el **13 nov a las 20:00-22:00** (Albert adelanta la fecha para hacer 
 - Encuesta "¿SEGUIRÁS JUGANDO?" a mitad-final, compartir "PÁSASELO A QUIEN JUGÓ DESDE 2013" a mitad.
 - Coste: 6 fotos (1,5 créditos) + 6 clips de Kling (27 créditos; uno no se usó: el de consolas inventadas). Saldo restante ~33 créditos.
 
+### "¡Corre! GTA 6 gratis" (sorteo de Kick, 27,9 s)
+Para el **14 nov a las 20:00-22:00**. Idea y gancho de Albert: "¡Corre! GTA 6 está gratis, pero solo para unos pocos". Primero iba a ser sobre el streaming que resucita con GTA 6, pero Albert lo cambió a **solo el sorteo** porque se puede explicar bien. **Qué probamos:**
+- **Contenido útil con fecha de caducidad**: cómo participar (ver 3 h de directos con la sesión iniciada → 1 caja al día, hasta el 7 dic). Esperamos muchos guardados y compartidos.
+- **Gancho de promesa + urgencia** ("¡CORRE!") y una caja de premio que **se abre en el segundo 0,35** con destello y copias saliendo: momento satisfactorio en el primer segundo.
+- **Honestidad**: decimos "sortea", "puede tocarte o no" y "ojo con la PS5" (Xbox vale en todo el mundo, PS5 solo en algunos países). Que nadie se sienta engañado.
+- **Todo animado por código, 0 créditos**: caja de premio, lluvia de copias, contador hasta 10.000, anillo de 0:00 a 3:00 h, calendario de diciembre tachándose, tarjetas Xbox/PS5. Sin logos de Kick ni de GTA ni portada oficial (los nombres solo en texto y voz).
+- Música trap de 140 bpm con `sfx: suave` (sin disparos) más SFX nuevos: tics de contador y campanilla de premio.
+- Sticker "¿LO VAS A PROBAR?" (escena 4) y compartir "PÁSASELO A QUIEN QUIERA GTA 6" en el cierre. Bucle: el cierre vuelve a la caja cerrada temblando, y el gancho la abre.
+- **Control de calidad:** brillo de 58 a 90 (la escena del anillo da 58 a propósito, porque el disco oscuro hace que se lean las horas), titulares de 914 a 947 px de capa, voz con correlación de 0,76 a 0,91. **Bug evitado:** el golpe de la caja tapaba la voz del gancho (0,59), así que se bajó la explosión, el whoosh y la campanilla.
+
 ---
 
 ## Referencias rápidas
@@ -283,7 +293,7 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
    - Instagram de GTA P1 y P2 a los 3 días.
 - **Ritmo nuevo: un vídeo al día** (decisión de Albert, 13 nov). Calendario propuesto hasta el lanzamiento:
   - 13 nov: "Adiós, GTA 5" ✅ publicado
-  - 14 nov: **idea de Albert pendiente** (no quiere el de "saturando internet"; lo está pensando)
+  - 14 nov: "¡Corre! GTA 6 gratis" (sorteo de Kick) ✅ montado. Faltan sus métricas a las 24 h
   - 15 nov: "5 cosas que hacer antes del 19" (precargar, liberar espacio, ajustes de la consola…)
   - 16 nov: por decidir (idea de la semana o una noticia de última hora)
   - 17 nov: por decidir
