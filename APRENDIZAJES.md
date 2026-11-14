@@ -277,12 +277,13 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 1. ✅ **12 nov:** Albert subió el **Drift Reel 2** (soluciones). Falta: sus métricas a las 24 h y a los 3 días, y responder a los comentarios del Reel 1 con "Ya está la solución en mi perfil 👆".
 2. **Métricas pendientes:**
    - ✅ Drift R1: Instagram y TikTok recibidas. Falta solo la gráfica de retención de YouTube.
-   - Drift R2: a las 24 h y a los 3 días, en las 3 plataformas.
+   - ✅ Drift R2 a las 24 h (las 3 plataformas). Falta: a los 3 días y la retención de YouTube.
+   - "Adiós, GTA 5" (publicado el 13 nov, la versión con grano): métricas a las 24 h.
    - ~~Versión de prueba de la Parte 2 de GTA~~: **no se subió**. A Albert no le aparece la opción de Reel de prueba en Instagram (requiere cuenta profesional de creador, y se activa poco a poco). Decisión: no subirla como reel normal (duplicaría la Parte 2); su aprendizaje se aplica en la Parte 3.
    - Instagram de GTA P1 y P2 a los 3 días.
 - **Ritmo nuevo: un vídeo al día** (decisión de Albert, 13 nov). Calendario propuesto hasta el lanzamiento:
-  - 13 nov: "Adiós, GTA 5" ✅ listo
-  - 14 nov: "GTA 6 está saturando internet" (boceto hecho: 212 GB, redes saturadas, operadoras regalando velocidad, cuánto tardas tú)
+  - 13 nov: "Adiós, GTA 5" ✅ publicado
+  - 14 nov: **idea de Albert pendiente** (no quiere el de "saturando internet"; lo está pensando)
   - 15 nov: "5 cosas que hacer antes del 19" (precargar, liberar espacio, ajustes de la consola…)
   - 16 nov: por decidir (idea de la semana o una noticia de última hora)
   - 17 nov: por decidir
