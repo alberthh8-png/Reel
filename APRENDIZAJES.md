@@ -30,6 +30,7 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 - **Créditos de Higgsfield:** a Albert no le preocupa gastarlos si mejora el vídeo (12 nov: "no te preocupes por los créditos"). Priorizar la calidad (vídeo IA con movimiento real), aunque informándole del gasto.
 - Prefiere **productos reales** (consolas reales) antes que diseños inventados.
 - Quiere que **todo lo aprendido se guarde** para ir afinando vídeo a vídeo.
+- **SIEMPRE enseñarle el boceto ANTES de producir** (14 nov): escena por escena, con el texto de arriba, la voz, la animación y el sello. No generar voz, imágenes ni render hasta que diga "sí" al boceto, aunque cambie el tema o el gancho: un cambio de tema = un boceto nuevo.
 
 ---
 
