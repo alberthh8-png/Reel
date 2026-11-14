@@ -12,7 +12,7 @@
   "y_subtitulos": 1390,
   "margen_subtitulos": 240,
   "subtitulos_continuos": true,
-  "duck_voz": 0.75,
+  "duck_voz": 0.8,
   "oscurecer_inferior": [
     0.7,
     110
@@ -301,5 +301,13 @@
       "duracion": 2.414
     }
   ],
-  "vineta": 0.6
+  "vineta": 0.6,
+  "volumen_musica": 0.45,
+  "musica_baja": [
+    [
+      26.3,
+      31.3,
+      0.35
+    ]
+  ]
 }

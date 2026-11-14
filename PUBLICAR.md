@@ -411,3 +411,44 @@ Kick sortea 10.000 copias de GTA 6 Ultimate Edition (99,99 $). Cómo participar:
 ## Fuentes
 - Sorteo "Sunset Reward Case" (12 nov – 7 dic, 3 h de visionado = 1 caja al día, 10.000 Ultimate Edition, PS5 con restricción por región): [Streams Charts](https://streamscharts.com/news/kick-giving-away-10000-gta-vi-copies), [TweakTown](https://www.tweaktown.com/news/114652/kick-viewers-can-win-one-of-10000-free-gta-6-ultimate-edition-copies-by-watching-3-hours/index.html), [iGeeksBlog](https://www.igeeksblog.com/kick-gta-6-ultimate-edition-giveaway/), [TechWiser](https://techwiser.com/kick-giving-away-free-gta-6-ultimate-edition/)
 - Precio de la Ultimate Edition (99,99 $; estándar 79,99 $): [TechRadar](https://www.techradar.com/gaming/we-finally-know-the-official-gta-6-price-its-expensive-but-not-too-bad), [Windows Central](https://windowscentral.com/gaming/grand-theft-auto-vi-price-confirmed-at-usd79-99-with-a-feature-locking-ultimate-edition-at-usd99-99-and-the-physical-edition-is-just-a-code-in-a-box)
+
+---
+
+# REEL: "Horas antes que tú" (GTA 6, 28,7 s)
+
+Vídeo: `salida/doce_horas/reel.mp4` · Portada: `salida/doce_horas/portada.jpg` (persecución de noche con los relojes 00:00 / 12:00).
+
+**Cuándo:** 15-17 nov, a las 20:00-22:00 (antes del 18, que es cuando importa la hora).
+
+## Instagram
+```
+Hay gente que va a jugar a GTA 6 muchas horas antes que tú 😳⏰
+
+🇳🇿 Nueva Zelanda es la primera: allí es medianoche cuando en España son las 12:00, en Argentina las 8:00 y en México las 5:00 del 18
+🎮 Truco de Xbox: con el juego precargado, cambia la región a Nueva Zelanda (no garantizado · en PS5 no se puede)
+⚡ Rockstar confirma 30 FPS: se verá brutal, pero se notará en los giros bruscos de cámara
+
+💡 Extra: pon tu tele en modo juego para notar menos el retraso
+
+¿A qué hora vas a jugar tú? 👇 Pásaselo a tu amigo con Xbox
+
+#GTA6 #GTAVI #Xbox #PS5 #Gaming
+```
+## YouTube Shorts
+**Título:** `Hay gente que jugará GTA 6 HORAS ANTES que tú 😳 #shorts`
+**Descripción:**
+```
+GTA 6 se desbloquea a medianoche en cada país, y Nueva Zelanda es la primera: allí empieza cuando en España son las 12:00 del 18, en Argentina y Chile las 8:00, en Colombia y Perú las 6:00 y en México las 5:00. En Xbox circula un truco (cambiar la región a Nueva Zelanda con el juego precargado), pero no está garantizado; en PS5 no se puede cambiar la región. Y Rockstar confirma 30 FPS en consolas. Truco extra: activa el modo juego de tu tele para notar menos el retraso. ¿A qué hora vas a jugar? 👇
+
+#GTA6 #Xbox #Shorts
+```
+## TikTok
+```
+Hay gente que va a jugar a GTA 6 muchas horas antes que tú 😳 ¿A qué hora juegas tú? 👇 #GTA6 #xbox #ps5 #gaming #fyp
+```
+**Comentario fijado (las 3 redes):** `💡 Truco extra: pon tu tele en MODO JUEGO para notar menos el retraso a 30 FPS. ¿Tú a qué hora vas a jugar? ⏰`
+
+## Fuentes
+- Medianoche local por país y Nueva Zelanda primero (11:00 UTC del 18): [Arkaia](https://arkaiacorp.com/blog/gta-6-a-que-hora-sale-espana-latinoamerica), [MetaForge](https://metaforge.app/gta-6/gta-6-release-time-when-it-unlocks-in-your-country), [MP1st](https://mp1st.com/news/gta-6-unlock-times-revealed)
+- Truco de región en Xbox (no confirmado): [Windows Central](https://www.windowscentral.com/gaming/xbox/grand-theft-auto-6-launch-new-zealand-changing-region), [All Things How](https://allthings.how/gta-6-release-times-by-region-and-how-to-play-early-on-xbox/), [Tech Insider](https://tech-insider.org/gta-6-time-zone-trick-new-zealand-xbox-ps5-unconfirmed-2026/)
+- 30 FPS: [Tom's Hardware](https://www.tomshardware.com/video-games/grand-theft-auto-6-will-run-at-only-30-fps-on-consoles-at-launch-no-performance-mode-promised-even-the-souped-up-ps5-pro-might-not-get-60-fps-support), [TechRadar](https://techradar.com/gaming/analysts-say-getting-gta-6-to-run-at-60fps-is-extremely-unlikely-on-console-hardware-as-rockstar-confirms-30fps-limit)

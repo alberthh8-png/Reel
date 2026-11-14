@@ -2077,7 +2077,7 @@ def escribir_audio(render, ruta):
     if render.g.get("musica") == "nostalgia":
         mus = musica_nostalgia(total, render.g.get("bpm", 80))[:N] * 0.6
     else:
-        mus = musica(total, render.g.get("bpm", 140))[:N] * 0.5
+        mus = musica(total, render.g.get("bpm", 140))[:N] * render.g.get("volumen_musica", 0.5)
     sfx = np.zeros(N)
     suave = render.g.get("sfx") == "suave"
     for e in render.escenas:
@@ -2130,6 +2130,13 @@ def escribir_audio(render, ruta):
         if archivo_voz and os.path.exists(os.path.join(RAIZ, archivo_voz)):
             retardo = 0 if e["idx"] == 0 else VOZ_RETARDO
             pegar(voz, (e["inicio"] + retardo) * SR, leer_wav(os.path.join(RAIZ, archivo_voz)), 1.0)
+    for ini, fin, fac in render.g.get("musica_baja", []):  # tramos con la música más baja (p. ej. el cierre)
+        a, b = int(ini * SR), min(len(mus), int(fin * SR))
+        rampa = int(0.08 * SR)
+        g = np.ones(len(mus))
+        g[a:b] = fac
+        g[max(0, a - rampa):a] = np.linspace(1, fac, a - max(0, a - rampa))
+        mus = mus * g
     env = filtro_lp(np.abs(sfx), 20)  # ducking: la música baja con los golpes
     env_voz = np.clip(filtro_lp(np.abs(voz), 8) * 12, 0, 1)  # y bastante más cuando habla la voz
     mus = mus / (1 + 2.5 * env) * (1 - render.g.get("duck_voz", 0.6) * env_voz)

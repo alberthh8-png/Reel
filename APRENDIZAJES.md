@@ -49,7 +49,8 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
    - **Guion:** `"bucle": true`.
    - **Comprobación:** sin silencio entre los últimos y los primeros 150 ms, y el último fotograma parecido al primero (revisado a ojo).
 8. **Sellos de credibilidad** (REAL / RUMOR / TEORÍA) y datos con fuente: los guardados y republicaciones suben.
-9. **Voz**: Dan (ElevenLabs), frases cortas, sin puntos suspensivos (estiran las vocales) y revisando que ninguna vocal sostenida pase de 0,13 s. **Ritmo con el ajuste de velocidad de ElevenLabs (~1,1), nunca con atempo de más de 1,05×** (ver regla 18). Para que tenga "vidilla": estabilidad 0,28-0,35 y estilo 0,6. "PS5" se escribe "la Play cinco" en la voz.
+9. **Guion: máximo 3-4 datos, cada uno con su explicación** (dato → qué significa para ti); si salta de dato en dato "sin procesar", no funciona (Albert, 14 nov).
+9b. **Voz**: Dan (ElevenLabs), frases cortas, sin puntos suspensivos (estiran las vocales) y revisando que ninguna vocal sostenida pase de 0,13 s. **Ritmo con el ajuste de velocidad de ElevenLabs (~1,1), nunca con atempo de más de 1,05×** (ver regla 18). Para que tenga "vidilla": estabilidad 0,28-0,35 y estilo 0,6. "PS5" se escribe "la Play cinco" en la voz.
 10. **YouTube retiene mejor que Instagram** con este contenido: hay que cuidar siempre el título de YouTube.
 11. **Titular siempre con margen de seguridad** (máximo ~880 px de ancho): las apps recortan los bordes y la animación lo agranda. Comprobado por código antes de exportar.
 12. ✅ **REGLA FIJA: llamada a compartir con un destinatario concreto** ("pásaselo a tu jefe", "pásaselo a quien culpa al mando") en la mitad del vídeo. Funcionó dos veces: 2 compartidos en TikTok (GTA P2) y **2,4 % en Instagram** (Drift R1, el mejor dato).
@@ -228,6 +229,27 @@ Para el **14 nov a las 20:00-22:00**. Gancho de Albert: "Corre, GTA 6 está grat
 - Brillo entre 63 y 87.
 - Voz con correlación de 0,71 a 0,97: en la escena del contador, el trap tapaba la voz, así que el ducking subió de 0,6 a 0,75 (`duck_voz`).
 - Bucle sin salto.
+
+### "Horas antes que tú" (GTA 6, 28,7 s, clips de acción IA)
+Hecho el 14 nov. **Proceso:**
+- Albert quería **clips del tráiler** de fondo → **NO** (copyright de Rockstar: Content ID + 3 avisos = canal borrado). Alternativa aceptada: **clips de acción IA originales** (persecución de noche, atraco con pasamontañas, persecución desde helicóptero, amanecer en la playa). Le encantaron. Sin personajes ni planos del tráiler.
+- **El guion v1 "saltaba de un dato a otro sin procesar el anterior"** → regla nueva: **máximo 3-4 datos por vídeo, cada dato con su explicación** (dato + qué significa para ti) y la voz a ritmo natural.
+- **Voz entrecortada al principio** → el silenceremove se comía el arranque. Ahora: umbral -55 dB, 0,08 s y `adelay=40`. Estabilidad 0,45-0,5, estilo 0,45, velocidad 1,0 (más fluida que con 0,3).
+- A Albert le interesan **cosas que la gente NO sabe** (descartó lo del disco, los spoilers y los golpes por demasiado conocidos o poco útiles).
+- **Horas por país hispanohablante:** el juego sale a las 00:00 locales en cada país. Lo potente es enseñar qué hora es en cada país cuando Nueva Zelanda ya juega (España 12:00, Argentina 08:00, Colombia 06:00, México 05:00).
+- La duración subió a 35 s → Albert eligió recortar a ~28 s (fuera el modo juego, que pasa a la descripción y al comentario fijado).
+
+**Qué probamos:**
+- Fondos de **acción** con movimiento real y **capas animadas útiles** encima: relojes, tabla de países, menú de Xbox paso a paso, comparativa 30/60 FPS.
+- Público **hispanohablante** (no solo España).
+- Compartir con un destinatario: "PÁSASELO A TU AMIGO CON XBOX". Encuesta "¿TE VALEN 30 FPS?" para generar debate.
+- Cierre de 2,4 s (regla 19).
+
+**Control de calidad:**
+- Brillo de 63 a 70, tras subir la gamma en las escenas de noche.
+- Voz con correlación de 0,86 a 0,97. La música tapaba la pregunta final (0,25): nuevo `musica_baja` en el cierre y `volumen_musica` 0,45.
+- Bucle sin salto y sin grano.
+- **Créditos:** ~82 (9 imágenes y 8 clips; 2 clips del intento anterior no se usaron). Quedan ~119.
 
 ---
 
