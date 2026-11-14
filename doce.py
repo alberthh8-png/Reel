@@ -24,7 +24,7 @@ VERDE, ROJO, AMARILLO, CIAN, ROSA = (60, 230, 120), (255, 50, 70), (255, 210, 63
 OSCURO = (12, 8, 24)
 
 
-def tarjeta(w, h, relleno=(14, 10, 28, 225), borde=None, radio=34):
+def tarjeta(w, h, relleno=(20, 14, 38, 195), borde=None, radio=34):
     img = Image.new("RGBA", (w + 40, h + 50), (0, 0, 0, 0))
     sombra = Image.new("RGBA", img.size, (0, 0, 0, 0))
     ImageDraw.Draw(sombra).rounded_rectangle((26, 30, w + 26, h + 30), radius=radio, fill=(0, 0, 0, 150))

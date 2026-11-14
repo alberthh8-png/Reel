@@ -14,8 +14,8 @@
   "subtitulos_continuos": true,
   "duck_voz": 0.75,
   "oscurecer_inferior": [
-    0.62,
-    150
+    0.7,
+    110
   ],
   "colores": {
     "acento": "#ffd23f",
@@ -43,11 +43,12 @@
             0.5
           ],
           "dur": 3.95,
-          "gamma": 0.9
+          "gamma": 0.62,
+          "color": 1.06
         },
         {
           "tipo": "velo_superior",
-          "fuerza": 150,
+          "fuerza": 125,
           "alto": 640
         },
         {
@@ -80,11 +81,13 @@
             0.5,
             0.5
           ],
-          "dur": 5.55
+          "dur": 5.55,
+          "gamma": 1.0,
+          "color": 1.06
         },
         {
           "tipo": "velo_superior",
-          "fuerza": 150,
+          "fuerza": 125,
           "alto": 640
         },
         {
@@ -121,7 +124,8 @@
           "dur": 5.0,
           "desde": 0,
           "hasta": 5.0,
-          "gamma": 0.9
+          "gamma": 0.6,
+          "color": 1.06
         },
         {
           "tipo": "clip_tramo",
@@ -136,11 +140,12 @@
           ],
           "dur": 2.0999999999999996,
           "desde": 5.0,
-          "gamma": 0.9
+          "gamma": 0.7,
+          "color": 1.06
         },
         {
           "tipo": "velo_superior",
-          "fuerza": 150,
+          "fuerza": 125,
           "alto": 640
         },
         {
@@ -174,11 +179,13 @@
             0.5,
             0.5
           ],
-          "dur": 6.1
+          "dur": 6.1,
+          "gamma": 0.82,
+          "color": 1.06
         },
         {
           "tipo": "velo_superior",
-          "fuerza": 150,
+          "fuerza": 125,
           "alto": 640
         },
         {
@@ -211,11 +218,12 @@
             0.5
           ],
           "dur": 4.35,
-          "gamma": 0.85
+          "gamma": 0.6,
+          "color": 1.06
         },
         {
           "tipo": "velo_superior",
-          "fuerza": 150,
+          "fuerza": 125,
           "alto": 640
         },
         {
@@ -248,11 +256,12 @@
             0.5
           ],
           "dur": 2.521,
-          "gamma": 0.9
+          "gamma": 0.62,
+          "color": 1.06
         },
         {
           "tipo": "velo_superior",
-          "fuerza": 150,
+          "fuerza": 125,
           "alto": 640
         },
         {
@@ -267,5 +276,6 @@
       "y_titular": 340,
       "duracion": 2.521
     }
-  ]
+  ],
+  "vineta": 0.6
 }
