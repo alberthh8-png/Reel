@@ -98,6 +98,10 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 | **Drift R2** | **YouTube** | (sin dato) | **21,1 % saltan** 🏆 (R1: 63 %) | **20 s (73 %)** 🏆 | — | — | — | Titular arriba, probador con movimiento desde el fotograma 0, "ARREGLADO" en el s 0,9, sin introducción |
 | **Drift R2** | **Instagram** | **1.458** 🏆 (R1: 149) | 39,8 % | 12 s (44 %) | 0,2 % | **1,0 % (12)** ✅ | 0 | Igual |
 | Drift R2 | TikTok | 85 | (se van en 1 s) | 6 s (22 %) · 4,6 % completo | 1 | 0 | 0 | Igual |
+| **Adiós GTA 5** (17 h) | **YouTube** | **2.081** | **30,2 % saltan** (2.º mejor) | (retención pendiente) | — | — | **+3** 🏆 | Vídeo IA con movimiento real, música nostálgica, titular arriba; versión con grano. 49 likes, 4 comentarios. **46 % del tiempo de visualización, en TELEVISIÓN** |
+| Adiós GTA 5 (17 h) | Instagram | 133 (114 personas) | 44,3 % | 11 s (41 %) | **0 %** | **0 %** | 0 | Igual. Instagram dejó de enseñarlo a la 1.ª hora (curva plana) |
+| Adiós GTA 5 (17 h) | TikTok | 90 | (se van en 1 s) | 40,5 s de media (repeticiones de pocos) · 5,6 % completo | 1 | 1 | 0 | Igual |
+| Kick (2 h 15 min) | YouTube | **649** | — | — | — | — | — | Arranque rapidísimo (14 likes). Subido a mediodía; TikTok, a las 20-22 h |
 
 ## Registro de vídeos
 
@@ -177,6 +181,12 @@ Se publica el **13 nov a las 20:00-22:00** (Albert adelanta la fecha para hacer 
 - **Bucle perfecto**: el cierre reproduce el clip del gancho al revés.
 - Encuesta "¿SEGUIRÁS JUGANDO?" a mitad-final, compartir "PÁSASELO A QUIEN JUGÓ DESDE 2013" a mitad.
 - Coste: 6 fotos (1,5 créditos) + 6 clips de Kling (27 créditos; uno no se usó: el de consolas inventadas). Saldo restante ~33 créditos.
+
+**Resultados (17 h) y lecciones:**
+- **YouTube: el movimiento real funciona.** El 69,8 % se queda (GTA P1: 49,5 %; Drift R1: 37 %), y es el que más suscriptores ha dado (+3) y más comentarios (4: la pregunta "¿cuántas horas le echaste?" hace hablar). Confirma la regla 2 con otro tema.
+- **Instagram: la nostalgia no se guarda ni se comparte** (0 % y 0 %), e Instagram corta la distribución en la 1.ª hora. El Drift R2, que era útil, llegó a 1.458. **En Instagram manda el contenido útil o el que se manda a un amigo con un motivo práctico** (regla 14). "Pásaselo a quien jugó desde 2013" es demasiado vago.
+- **El 46 % del tiempo de YouTube es en TELEVISIÓN.** Hay que escribir textos grandes y legibles (ya lo hacemos) y cuidar la imagen nítida, porque en una pantalla grande el grano se nota mucho más.
+- **TikTok sigue estancado en ~90** con cualquier vídeo: es la cuenta, no el contenido. Toca calentar la cuenta (ver consejos).
 
 ### "¡Corre! GTA 6 gratis" (sorteo de Kick, 27 s)
 Para el **14 nov a las 20:00-22:00**. Gancho de Albert: "Corre, GTA 6 está gratis, pero solo para unos pocos". Al principio iba sobre el streaming que resucita con GTA 6; Albert lo cambió a **solo el sorteo**, porque se puede explicar bien.
@@ -305,7 +315,8 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 2. **Métricas pendientes:**
    - ✅ Drift R1: Instagram y TikTok recibidas. Falta solo la gráfica de retención de YouTube.
    - ✅ Drift R2 a las 24 h (las 3 plataformas). Falta: a los 3 días y la retención de YouTube.
-   - "Adiós, GTA 5" (publicado el 13 nov, la versión con grano): métricas a las 24 h.
+   - ✅ "Adiós, GTA 5" a las 17 h (las 3 plataformas). Falta: la retención de YouTube (tarda hasta 2 días) y los 3 días.
+  - Kick: métricas a las 24 h (YouTube arrancó con 649 en 2 h 15 min).
    - ~~Versión de prueba de la Parte 2 de GTA~~: **no se subió**. A Albert no le aparece la opción de Reel de prueba en Instagram (requiere cuenta profesional de creador, y se activa poco a poco). Decisión: no subirla como reel normal (duplicaría la Parte 2); su aprendizaje se aplica en la Parte 3.
    - Instagram de GTA P1 y P2 a los 3 días.
 - **Ritmo nuevo: un vídeo al día** (decisión de Albert, 13 nov). Calendario propuesto hasta el lanzamiento:
