@@ -68,6 +68,9 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
    - **Albert:** antes de subirlo, lo ve una vez **en el móvil, a pantalla completa**. Si nota algo raro, me lo dice **antes** de publicar.
    - **Si ya está publicado y se encuentra un fallo menor:** **no borrar ni volver a subir** (se pierden vistas y las plataformas penalizan el contenido repetido). La corrección se aplica al vídeo siguiente. Solo se reemplaza si el fallo es grave (texto cortado, imagen en blanco, audio roto) **y** lleva menos de 30 min con menos de 50 vistas.
 
+19. **El cierre no debe "sonar a final" ni alargarse** (gráficas de retención de YouTube, 14 nov). En GTA P2 y en el Drift R1 hay una **caída brusca en los últimos 3-4 s** (P2: del ~60 % al ~20 %; R1: del ~33 % al ~12 %), justo cuando entra la escena de cierre con la llamada a la acción. GTA P1, que no tiene ese cierre largo, termina con ~50 %. **Escena final de 3,5 s como máximo**, con la llamada a compartir antes (a mitad del vídeo, regla 12) y el salto al bucle rápido. *(El de Kick ya salió con un cierre de 5,2 s: vigilar su gráfica para confirmarlo).*
+20. **YouTube a veces "despierta" tarde un vídeo:** GTA P2 tenía 8 vistas a las 22 h y al día y medio saltó a ~1 K. **Nunca juzgar ni borrar un vídeo de YouTube antes de los 3 días.**
+
 ---
 
 ## Método para afinar el tiro
@@ -102,6 +105,20 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 | Adiós GTA 5 (17 h) | Instagram | 133 (114 personas) | 44,3 % | 11 s (41 %) | **0 %** | **0 %** | 0 | Igual. Instagram dejó de enseñarlo a la 1.ª hora (curva plana) |
 | Adiós GTA 5 (17 h) | TikTok | 90 | (se van en 1 s) | 40,5 s de media (repeticiones de pocos) · 5,6 % completo | 1 | 1 | 0 | Igual |
 | Kick (2 h 15 min) | YouTube | **649** | — | — | — | — | — | Arranque rapidísimo (14 likes). Subido a mediodía; TikTok, a las 20-22 h |
+
+### Retención de YouTube (gráfica completa)
+
+| Vídeo | Días | Vistas | Duración media | Arranque | Dónde se cae |
+|---|---|---|---|---|---|
+| GTA P1 | 4 | 1,5 K | **0:20 (83,9 %)** 🏆 | ~125 % (la gente repite) | Bajada suave; pequeña caída a los 6-7 s (1.ª pregunta); termina con ~50 % |
+| GTA P2 | 3 | ~1 K (despertó al día y medio) | 0:17 (71,8 %) | ~115 % | Caída a los 3-6 s y **caída brusca en el cierre** (s 21 → ~20 %) |
+| Drift R1 | 3 | ~1 K | 0:16 (57,2 %) | ~110 % | Caída a los 4 s (la escena de introducción, regla 13) y **caída brusca en el cierre** (s 23 → ~12 %) |
+| Drift R2 | 42 h | 127 | 0:18 (66,0 %) | ~115 % | Bajada por escalones (muestra pequeña); termina con ~30 % |
+
+**Conclusiones:**
+- **Todos empiezan por encima del 100 %**: el bucle funciona (regla 7 confirmada).
+- **Los de GTA retienen más que los del drift** en YouTube (84 % y 72 % frente a 57 % y 66 %).
+- **El cierre largo con llamada a la acción hace que se vayan** (regla 19).
 
 ## Registro de vídeos
 
