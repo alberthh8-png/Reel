@@ -49,7 +49,7 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
    - **Guion:** `"bucle": true`.
    - **Comprobación:** sin silencio entre los últimos y los primeros 150 ms, y el último fotograma parecido al primero (revisado a ojo).
 8. **Sellos de credibilidad** (REAL / RUMOR / TEORÍA) y datos con fuente: los guardados y republicaciones suben.
-9. **Voz**: Dan (ElevenLabs), frases cortas, sin puntos suspensivos (estiran las vocales), acelerada un 8-15 % y revisando que ninguna vocal sostenida pase de 0,13 s.
+9. **Voz**: Dan (ElevenLabs), frases cortas, sin puntos suspensivos (estiran las vocales) y revisando que ninguna vocal sostenida pase de 0,13 s. **Ritmo con el ajuste de velocidad de ElevenLabs (~1,1), nunca con atempo de más de 1,05×** (ver regla 18). Para que tenga "vidilla": estabilidad 0,28-0,35 y estilo 0,6. "PS5" se escribe "la Play cinco" en la voz.
 10. **YouTube retiene mejor que Instagram** con este contenido: hay que cuidar siempre el título de YouTube.
 11. **Titular siempre con margen de seguridad** (máximo ~880 px de ancho): las apps recortan los bordes y la animación lo agranda. Comprobado por código antes de exportar.
 12. ✅ **REGLA FIJA: llamada a compartir con un destinatario concreto** ("pásaselo a tu jefe", "pásaselo a quien culpa al mando") en la mitad del vídeo. Funcionó dos veces: 2 compartidos en TikTok (GTA P2) y **2,4 % en Instagram** (Drift R1, el mejor dato).
