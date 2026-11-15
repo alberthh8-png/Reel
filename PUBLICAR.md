@@ -438,7 +438,7 @@ Hay gente que va a jugar a GTA 6 muchas horas antes que tú 😳⏰
 **Título:** `Hay gente que jugará GTA 6 HORAS ANTES que tú 😳 #shorts`
 **Descripción:**
 ```
-GTA 6 se desbloquea a medianoche en cada país, y Nueva Zelanda es la primera: allí empieza cuando en España son las 12:00 del 18, en Argentina y Chile las 8:00, en Colombia y Perú las 6:00 y en México las 5:00. En Xbox circula un truco (cambiar la región a Nueva Zelanda con el juego precargado), pero no está garantizado; en PS5 no se puede cambiar la región. Y Rockstar confirma 30 FPS en consolas. Truco extra: activa el modo juego de tu tele para notar menos el retraso. ¿A qué hora vas a jugar? 👇
+GTA 6 se desbloquea a medianoche en cada país, y Nueva Zelanda es la primera: allí empieza cuando en España son las 12:00 del 18, en Argentina y Chile las 8:00, en Colombia y Perú las 6:00 y en México las 5:00. En Xbox circula un truco (cambiar la región a Nueva Zelanda con el juego precargado), pero no está garantizado; en PS5 no se puede cambiar la región. Y Rockstar confirma 30 FPS en consolas. Truco extra: activa el modo juego de tu tele para notar menos el retraso. ¿Quién de los dos lo juega antes? Pásaselo a tu amigo de otro país 👇
 
 #GTA6 #Xbox #Shorts
 ```
