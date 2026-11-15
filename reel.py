@@ -1729,6 +1729,8 @@ class Render:
             e["capa_preg"] = self._sticker_compartir(e["compartir"])
 
     def _sticker_compartir(self, texto):
+        if "\n" in texto:
+            return self._sticker_compartir_2(*texto.split("\n", 1))
         f = ajustar_fuente(texto, 640, 66)
         bb = f.getbbox(texto)
         ancho = max(bb[2] + 210, 700)
@@ -1744,6 +1746,24 @@ class Render:
         d.polygon([(cx - 46, cy + 4), (cx + 50, cy - 42), (cx + 18, cy + 46), (cx + 2, cy + 14)], fill=(45, 120, 255, 255))
         d.polygon([(cx + 2, cy + 14), (cx + 50, cy - 42), (cx - 4, cy + 34)], fill=(20, 80, 200, 255))
         d.text((160, cy), texto, font=f, fill=(15, 10, 25, 255), anchor="lm")
+        return img
+
+    def _sticker_compartir_2(self, pregunta, accion):
+        """Sticker de dos líneas: pregunta arriba (grande) y acción de compartir abajo con el avión."""
+        ancho, alto = 800, 220
+        f1 = ajustar_fuente(pregunta, ancho - 90, 58, tam_min=28)
+        f2 = ajustar_fuente(accion, ancho - 240, 44, tam_min=24)
+        img = Image.new("RGBA", (ancho + 40, alto + 50), (0, 0, 0, 0))
+        sombra = Image.new("RGBA", img.size, (0, 0, 0, 0))
+        ImageDraw.Draw(sombra).rounded_rectangle((26, 30, ancho + 26, alto + 30), radius=44, fill=(0, 0, 0, 150))
+        img.alpha_composite(sombra.filter(ImageFilter.GaussianBlur(10)))
+        d = ImageDraw.Draw(img)
+        d.rounded_rectangle((20, 20, ancho + 20, alto + 20), radius=44, fill=(255, 255, 255, 255))
+        d.text((20 + ancho / 2, 78), pregunta, font=f1, fill=(15, 10, 25, 255), anchor="mm")
+        d.rounded_rectangle((50, 128, ancho - 10, 220), radius=30, fill=(45, 120, 255, 255))
+        cx, cy = 110, 174
+        d.polygon([(cx - 34, cy + 3), (cx + 37, cy - 31), (cx + 13, cy + 34), (cx + 1, cy + 10)], fill=(255, 255, 255, 255))
+        d.text((165, cy), accion, font=f2, fill=(255, 255, 255, 255), anchor="lm")
         return img
 
     def _sticker(self, pregunta):
@@ -1860,8 +1880,9 @@ class Render:
         p = ease_out_back(a / 0.3, 2.6)
         bamboleo = math.sin(a * 7) * 3 * clamp(1 - a)
         ys = 900 if e.get("y_titular", 1220) < 800 else 640  # con el titular arriba, el sticker baja
+        ys = e.get("y_sticker", ys)
         pegar_centrado(frame, e["capa_preg"], W / 2, ys, escala=p, angulo=-4 + bamboleo)
-        if a > 0.55:  # "toque" sobre el botón SÍ
+        if a > 0.55 and e.get("pregunta") and not e.get("compartir"):  # "toque" sobre el botón SÍ
             b = (a - 0.55) % 0.9
             r = 30 + 120 * ease_out_cubic(b / 0.5)
             al = int(200 * clamp(1 - b / 0.5))

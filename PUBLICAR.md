@@ -430,7 +430,7 @@ Hay gente que va a jugar a GTA 6 muchas horas antes que tú 😳⏰
 
 💡 Extra: pon tu tele en modo juego para notar menos el retraso
 
-¿A qué hora vas a jugar tú? 👇 Pásaselo a tu amigo con Xbox
+¿Quién de los dos lo juega antes? 👀 Pásaselo a tu amigo de otro país 👇
 
 #GTA6 #GTAVI #Xbox #PS5 #Gaming
 ```
@@ -444,9 +444,9 @@ GTA 6 se desbloquea a medianoche en cada país, y Nueva Zelanda es la primera: a
 ```
 ## TikTok
 ```
-Hay gente que va a jugar a GTA 6 muchas horas antes que tú 😳 ¿A qué hora juegas tú? 👇 #GTA6 #xbox #ps5 #gaming #fyp
+Hay gente que va a jugar a GTA 6 muchas horas antes que tú 😳 Pásaselo a tu amigo de otro país: ¿quién lo juega antes? 👇 #GTA6 #xbox #ps5 #gaming #fyp
 ```
-**Comentario fijado (las 3 redes):** `💡 Truco extra: pon tu tele en MODO JUEGO para notar menos el retraso a 30 FPS. ¿Tú a qué hora vas a jugar? ⏰`
+**Comentario fijado (las 3 redes):** `¿En qué país lo vas a jugar tú? 👇🌎 (💡 Truco extra: pon tu tele en MODO JUEGO para notar menos el retraso a 30 FPS)`
 
 ## Fuentes
 - Medianoche local por país y Nueva Zelanda primero (11:00 UTC del 18): [Arkaia](https://arkaiacorp.com/blog/gta-6-a-que-hora-sale-espana-latinoamerica), [MetaForge](https://metaforge.app/gta-6/gta-6-release-time-when-it-unlocks-in-your-country), [MP1st](https://mp1st.com/news/gta-6-unlock-times-revealed)

@@ -117,7 +117,7 @@
         {
           "tipo": "paises",
           "t": 0.15,
-          "y": 930,
+          "y": 815,
           "filas": [
             0.6,
             3.6,
@@ -130,7 +130,9 @@
       "ilustracion": "taller",
       "audio_voz": "voz/doce/escena_1.wav",
       "y_titular": 340,
-      "duracion": 7.5
+      "duracion": 7.5,
+      "compartir": "¿QUIÉN DE LOS DOS LO JUEGA ANTES?\nPÁSASELO A TU AMIGO DE OTRO PAÍS",
+      "y_sticker": 1225
     },
     {
       "id": "truco_xbox",
@@ -138,7 +140,6 @@
       "titular": "EL TRUCO DE XBOX",
       "detalle": "no garantizado · en PS5 no se puede",
       "voz": "En Xbox hay un truco: con el juego precargado, cambia la región a Nueva Zelanda. Eso sí, no está garantizado.",
-      "compartir": "PÁSASELO A TU AMIGO CON XBOX",
       "fx": [
         {
           "tipo": "clip_tramo",

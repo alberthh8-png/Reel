@@ -242,7 +242,7 @@ Hecho el 14 nov. **Proceso:**
 **Qué probamos:**
 - Fondos de **acción** con movimiento real y **capas animadas útiles** encima: relojes, tabla de países, menú de Xbox paso a paso, comparativa 30/60 FPS.
 - Público **hispanohablante** (no solo España).
-- Compartir con un destinatario: "PÁSASELO A TU AMIGO CON XBOX". Encuesta "¿TE VALEN 30 FPS?" para generar debate.
+- **Compartir con pique (idea de Albert):** justo después de la tabla de horas, sticker de 2 líneas "¿QUIÉN DE LOS DOS LO JUEGA ANTES? / PÁSASELO A TU AMIGO DE OTRO PAÍS". En el comentario fijado: "¿En qué país lo vas a jugar tú?". (Descartado: presumir de que España juega 7 h antes que México, por si molesta a Latinoamérica.) Encuesta "¿TE VALEN 30 FPS?" para generar debate.
 - Cierre de 2,4 s (regla 19).
 
 **Control de calidad:**
