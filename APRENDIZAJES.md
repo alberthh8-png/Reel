@@ -69,7 +69,7 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
    - **Albert:** antes de subirlo, lo ve una vez **en el móvil, a pantalla completa**. Si nota algo raro, me lo dice **antes** de publicar.
    - **Si ya está publicado y se encuentra un fallo menor:** **no borrar ni volver a subir** (se pierden vistas y las plataformas penalizan el contenido repetido). La corrección se aplica al vídeo siguiente. Solo se reemplaza si el fallo es grave (texto cortado, imagen en blanco, audio roto) **y** lleva menos de 30 min con menos de 50 vistas.
 
-19. **El cierre no debe "sonar a final" ni alargarse** (gráficas de retención de YouTube, 14 nov). En GTA P2 y en el Drift R1 hay una **caída brusca en los últimos 3-4 s** (P2: del ~60 % al ~20 %; R1: del ~33 % al ~12 %), justo cuando entra la escena de cierre con la llamada a la acción. GTA P1, que no tiene ese cierre largo, termina con ~50 %. **Escena final de 3,5 s como máximo**, con la llamada a compartir antes (a mitad del vídeo, regla 12) y el salto al bucle rápido. *(El de Kick ya salió con un cierre de 5,2 s: vigilar su gráfica para confirmarlo).*
+19. ✅ **REGLA FIJA (confirmada 3 veces: GTA P2, Drift R1, Adiós GTA 5): el cierre no debe "sonar a final" ni alargarse** (gráficas de retención de YouTube, 14 nov). En GTA P2 y en el Drift R1 hay una **caída brusca en los últimos 3-4 s** (P2: del ~60 % al ~20 %; R1: del ~33 % al ~12 %), justo cuando entra la escena de cierre con la llamada a la acción. GTA P1, que no tiene ese cierre largo, termina con ~50 %. **Escena final de 3,5 s como máximo**, con la llamada a compartir antes (a mitad del vídeo, regla 12) y el salto al bucle rápido. *(El de Kick ya salió con un cierre de 5,2 s: vigilar su gráfica para confirmarlo).*
 20. **YouTube a veces "despierta" tarde un vídeo:** GTA P2 tenía 8 vistas a las 22 h y al día y medio saltó a ~1 K. **Nunca juzgar ni borrar un vídeo de YouTube antes de los 3 días.**
 
 ---
@@ -105,7 +105,9 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 | **Adiós GTA 5** (17 h) | **YouTube** | **2.081** | **30,2 % saltan** (2.º mejor) | (retención pendiente) | — | — | **+3** 🏆 | Vídeo IA con movimiento real, música nostálgica, titular arriba; versión con grano. 49 likes, 4 comentarios. **46 % del tiempo de visualización, en TELEVISIÓN** |
 | Adiós GTA 5 (17 h) | Instagram | 133 (114 personas) | 44,3 % | 11 s (41 %) | **0 %** | **0 %** | 0 | Igual. Instagram dejó de enseñarlo a la 1.ª hora (curva plana) |
 | Adiós GTA 5 (17 h) | TikTok | 90 | (se van en 1 s) | 40,5 s de media (repeticiones de pocos) · 5,6 % completo | 1 | 1 | 0 | Igual |
-| Kick (2 h 15 min) | YouTube | **649** | — | — | — | — | — | Arranque rapidísimo (14 likes). Subido a mediodía; TikTok, a las 20-22 h |
+| **Kick** (29 h) | **Instagram** | **730** (600 personas) 🥈 | 43,7 % | 10 s (37 %) | **2,7 %** 🏆 récord | **0 %** | **1** | Contenido útil con fecha + "pásaselo a ese amigo que siempre te pide juegos". 15 likes, **2 republicaciones** (0,3 %). Siguió creciendo durante el día |
+| Kick (29 h) | YouTube | 1.322 | 40,1 % saltan | (retención pendiente) | — | — | +1 | Animación por código (dibujos). Se estancó a las ~3 h |
+| Kick (29 h) | TikTok | 89 | (76 % sigue en el s 1) | 5,8 s (21 %) · 4,3 % completo | 1 | 1 | 0 | Igual: techo de ~90 en TikTok |
 
 ### Retención de YouTube (gráfica completa)
 
@@ -115,6 +117,7 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 | GTA P2 | 3 | ~1 K (despertó al día y medio) | 0:17 (71,8 %) | ~115 % | Caída a los 3-6 s y **caída brusca en el cierre** (s 21 → ~20 %) |
 | Drift R1 | 3 | ~1 K | 0:16 (57,2 %) | ~110 % | Caída a los 4 s (la escena de introducción, regla 13) y **caída brusca en el cierre** (s 23 → ~12 %) |
 | Drift R2 | 42 h | 127 | 0:18 (66,0 %) | ~115 % | Bajada por escalones (muestra pequeña); termina con ~30 % |
+| Adiós GTA 5 | 2 | 3,2 K (segunda ola de visitas) | **0:21 (76,7 %)** | ~120 % | Bajada suave, escalón a los ~20 s (escena "¿Y después?") y **caída en picado en los últimos 3 s** (→ ~12 %) |
 
 **Conclusiones:**
 - **Todos empiezan por encima del 100 %**: el bucle funciona (regla 7 confirmada).
@@ -229,6 +232,12 @@ Para el **14 nov a las 20:00-22:00**. Gancho de Albert: "Corre, GTA 6 está grat
 - Brillo entre 63 y 87.
 - Voz con correlación de 0,71 a 0,97: en la escena del contador, el trap tapaba la voz, así que el ducking subió de 0,6 a 0,75 (`duck_voz`).
 - Bucle sin salto.
+
+**Resultados de Kick (29 h) y lecciones:**
+- **Instagram: récord de compartidos (2,7 %)** con el destinatario concreto y con gracia ("ese amigo que siempre te pide juegos"). Instagram lo repartió 5 veces más que "Adiós, GTA 5" (730 frente a 133). **Regla 12 confirmada por tercera vez**: el destinatario concreto es lo que más mueve Instagram.
+- **0 guardados:** un sorteo con fecha se **comparte**, no se guarda. Los guardados salen de lo útil y atemporal ("cómo arreglar el drift"). Para buscar guardados: trucos que sirvan siempre.
+- **YouTube: se quedan el 59,9 %**, menos que "Adiós, GTA 5" (69,8 %) y el Drift R2 (79 %). **Hipótesis:** en YouTube engancha más la imagen realista con movimiento que la animación tipo dibujo. Lo comprobamos con "Horas antes que tú" (clips de acción IA).
+- **TikTok: 89 visitas otra vez.** Es la cuenta, no el vídeo (todos rondan los 90).
 
 ### "Horas antes que tú" (GTA 6, 28,7 s, clips de acción IA)
 Hecho el 14 nov. **Proceso:**
@@ -354,8 +363,9 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 2. **Métricas pendientes:**
    - ✅ Drift R1: Instagram y TikTok recibidas. Falta solo la gráfica de retención de YouTube.
    - ✅ Drift R2 a las 24 h (las 3 plataformas). Falta: a los 3 días y la retención de YouTube.
-   - ✅ "Adiós, GTA 5" a las 17 h (las 3 plataformas). Falta: la retención de YouTube (tarda hasta 2 días) y los 3 días.
-  - Kick: métricas a las 24 h (YouTube arrancó con 649 en 2 h 15 min).
+   - ✅ "Adiós, GTA 5": 17 h y retención de YouTube (76,7 %).
+  - ✅ Kick a las 29 h (las 3 plataformas). Falta: la retención de YouTube (¿cae en el cierre de 5,2 s?).
+  - "Horas antes que tú" (publicado el 15 nov): métricas a las 24 h. Comprobar si los clips de acción IA suben el % que se queda en YouTube.
    - ~~Versión de prueba de la Parte 2 de GTA~~: **no se subió**. A Albert no le aparece la opción de Reel de prueba en Instagram (requiere cuenta profesional de creador, y se activa poco a poco). Decisión: no subirla como reel normal (duplicaría la Parte 2); su aprendizaje se aplica en la Parte 3.
    - Instagram de GTA P1 y P2 a los 3 días.
 - **Ritmo nuevo: un vídeo al día** (decisión de Albert, 13 nov). Calendario propuesto hasta el lanzamiento:
