@@ -1,22 +1,19 @@
-# Guion de locución — 5 teorías de GTA 6 Online
+# Guion de locución — 4 teorías de GTA 6 Online
 
-Duración total: 33.9 s
+Duración total: 36.4 s
 
-**[00.00s – 08.85s] gratis**  
-¿Y si GTA 6 Online fuera gratis? Es la primera teoría: en la tienda de Xbox, el online aparece como un paquete aparte.
+**[00.00s – 12.80s] gratis**  
+¿Y si GTA 6 Online fuera gratis? En la tienda de Xbox, el online aparece como un paquete aparte de la historia, y eso abriría la puerta a jugarlo sin pagar, como Warzone.
 
-**[08.85s – 14.55s] personaje**  
-La dos: tu personaje de GTA Online podría mudarse a Vice City, pero sin tu dinero.
+**[12.80s – 24.45s] personaje**  
+La segunda teoría dice que tu personaje se mudaría a Vice City. Te llevarías tu cara y tu nombre, pero no tu dinero ni tus coches, y todos empezaríamos de cero.
 
-**[14.55s – 22.00s] rol**  
-Pero la que más ilusiona: Rockstar compró a los creadores de FiveM. ¿Habrá servidores de rol oficiales?
+**[24.45s – 28.95s] mapa**  
+Otra teoría dice que el mapa irá creciendo con cada actualización.
 
-**[22.00s – 26.40s] mapa**  
-Y otra: dicen que el mapa irá creciendo con cada actualización.
+**[28.95s – 34.05s] salas**  
+Y la más loca habla de salas de hasta 96 jugadores.
 
-**[26.40s – 31.45s] salas**  
-Y la más loca: salas de hasta 96 jugadores.
-
-**[31.45s – 33.86s] cierre**  
+**[34.05s – 36.43s] cierre**  
 ¿Cuál crees que se cumplirá?
 

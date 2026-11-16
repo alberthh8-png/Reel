@@ -270,20 +270,22 @@ Hecho el 14 nov. **Proceso:**
 - Bucle sin salto y sin grano.
 - **Créditos:** ~82 (9 imágenes y 8 clips; 2 clips del intento anterior no se usaron). Quedan ~119.
 
-### "5 teorías de GTA 6 Online" (27,9 s, clips IA de ambiente online)
+### "4 teorías de GTA 6 Online" (36,4 s, clips IA de ambiente online)
 Hecho el 16 nov. Idea de Albert. **Proceso:**
-- Albert pasó un **vídeo de gameplay oficial de GTA 6** (con la etiqueta RP/ESRB y carteles de Leonida) para usarlo de fondo → **NO**: es material de Rockstar y además no se puede recrear su aspecto con IA. Alternativa: escenas originales con **"ambiente online"**, como pidió: quedada de coches de noche, una crew con la misma ropa, amigos jugando con cascos, grupo de motos de cross y salida de una carrera callejera.
-- **Las 5 teorías elegidas** (con sello): online gratis o aparte (TEORÍA), tu personaje se muda sin tu dinero (TEORÍA), rol oficial porque Rockstar compró FiveM (DATO REAL + TEORÍA), un mapa que crece (RUMOR) y salas de 96 (RUMOR).
-- Capas: contador de dinero que cae a $0 ("TU DINERO") y contador de 30 a 96 jugadores por sala.
+- Albert pasó un **vídeo de gameplay oficial de GTA 6** (con la etiqueta RP/ESRB y carteles de Leonida) para usarlo de fondo → **NO**: es material de Rockstar y además no se puede recrear su aspecto con IA. Alternativa: escenas originales con **"ambiente online"**: quedada de coches de noche, una crew con la misma ropa, amigos jugando con cascos, motos de cross y salida de una carrera callejera. Le encantaron.
+- **"Les falta algo entre dato y dato"** → conectores en la voz + **sello "TEORÍA #N" que golpea la pantalla** con sonido de impacto (`sello_teoria`).
+- **La voz cambiaba de tono en los conectores** ("La dos:", "Y la más loca:") → **regla nueva:** conectores **dentro de la frase**, sin dos puntos ("La segunda teoría dice que…"), y generar cada frase con `previous_text` y `next_text` de ElevenLabs (las frases de alrededor) para que la entonación sea continua. Estabilidad 0,55-0,6, estilo 0,4.
+- Albert quitó la teoría del rol y pidió **desarrollar más la 1 y la 2** (dato + qué significa: "como Warzone", "todos empezaríamos de cero"). Quedó en **36,4 s**: Albert decidió "jugárnosla" con la duración larga.
 
 **Qué probamos:**
+- **Vídeo largo (36 s) pero con cada dato bien explicado.** Comparar su retención con la de los de ~27 s.
 - **Tercera prueba de clips realistas en YouTube**: si el % que se queda supera el 65 %, pasa a regla.
-- Compartir con "PÁSASELO A TU COMPAÑERO DE GTA ONLINE" a mitad del vídeo, y encuesta "¿LO PAGARÍAS APARTE?".
+- Compartir "PÁSASELO A TU COMPAÑERO DE GTA ONLINE" a mitad del vídeo (teoría 2) y encuesta "¿LO PAGARÍAS APARTE?".
 - Cierre de 2,4 s.
 
 **Control de calidad:**
-- Brillo de 61 a 84 (gamma 0,55-0,6 en los clips de noche).
-- Voz con correlación de 0,89 a 0,99.
+- Brillo de 59 a 85 (la escena de la crew queda en 59, se ve bien).
+- Voz con correlación de 0,81 a 1,0.
 - Bucle sin salto y sin grano.
 - **Créditos:** ~39.
 
@@ -399,7 +401,7 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
   - 13 nov: "Adiós, GTA 5" ✅ publicado
   - 14 nov: "¡Corre! GTA 6 gratis" (sorteo de Kick) ✅ publicado
   - 15 nov: "Horas antes que tú" (Nueva Zelanda, truco de Xbox, 30 FPS) ✅ publicado (sustituyó a "5 cosas que hacer antes del 19")
-  - 16 nov: "5 teorías de GTA 6 Online" ✅ montado
+  - 16 nov: "4 teorías de GTA 6 Online" ✅ montado
   - 17 nov: por decidir
   - 18 nov: "Mañana sale GTA 6" (cuenta atrás / lo que sabemos)
   - 19 nov: "¿Se cumplieron las teorías?"

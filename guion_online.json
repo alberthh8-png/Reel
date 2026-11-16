@@ -1,5 +1,5 @@
 {
-  "titulo": "5 teorías de GTA 6 Online",
+  "titulo": "4 teorías de GTA 6 Online",
   "fps": 30,
   "ancho": 1080,
   "alto": 1920,
@@ -21,8 +21,8 @@
   "vineta": 0.6,
   "musica_baja": [
     [
-      31.45,
-      34.857,
+      34.05,
+      37.429,
       0.35
     ]
   ],
@@ -38,7 +38,7 @@
       "etiqueta": "TEORÍA #1",
       "titular": "¿GTA 6 ONLINE GRATIS?",
       "detalle": "en Xbox aparece como paquete aparte",
-      "voz": "¿Y si GTA 6 Online fuera gratis? Es la primera teoría: en la tienda de Xbox, el online aparece como un paquete aparte.",
+      "voz": "¿Y si GTA 6 Online fuera gratis? En la tienda de Xbox, el online aparece como un paquete aparte de la historia, y eso abriría la puerta a jugarlo sin pagar, como Warzone.",
       "fx": [
         {
           "tipo": "clip_tramo",
@@ -69,101 +69,11 @@
             0.5,
             0.5
           ],
-          "dur": 3.85,
-          "desde": 5.0,
-          "hasta": 99,
-          "offset": 1.0,
-          "gamma": 0.65,
-          "color": 1.06
-        },
-        {
-          "tipo": "velo_superior",
-          "fuerza": 125,
-          "alto": 640
-        }
-      ],
-      "ilustracion": "taller",
-      "audio_voz": "voz/online/escena_0.wav",
-      "y_titular": 340,
-      "duracion": 8.85
-    },
-    {
-      "id": "personaje",
-      "etiqueta": "TEORÍA #2",
-      "titular": "TU PERSONAJE SE MUDA",
-      "detalle": "a Vice City… pero sin tu dinero",
-      "voz": "La dos: tu personaje de GTA Online podría mudarse a Vice City, pero sin tu dinero.",
-      "fx": [
-        {
-          "tipo": "clip_tramo",
-          "video": "videos/online/01_crew.mp4",
-          "z": [
-            1.0,
-            1.06
-          ],
-          "foco": [
-            0.5,
-            0.5
-          ],
-          "dur": 5.7,
-          "desde": 0,
-          "hasta": 99,
-          "offset": 0.0,
-          "gamma": 0.55,
-          "color": 1.06
-        },
-        {
-          "tipo": "velo_superior",
-          "fuerza": 125,
-          "alto": 640
-        },
-        {
-          "tipo": "contador",
-          "t": 3.4,
-          "dur": 1.6,
-          "desde": 12450000,
-          "hasta": 0,
-          "prefijo": "$ ",
-          "y": 900,
-          "tam": 170,
-          "texto": "TU DINERO"
-        },
-        {
-          "tipo": "sello_teoria",
-          "n": 2,
-          "t": 0.05,
-          "y": 900
-        }
-      ],
-      "ilustracion": "taller",
-      "audio_voz": "voz/online/escena_1.wav",
-      "y_titular": 340,
-      "duracion": 5.7
-    },
-    {
-      "id": "rol",
-      "etiqueta": "DATO REAL + TEORÍA",
-      "titular": "¿ROL OFICIAL?",
-      "detalle": "Rockstar compró a los creadores de FiveM",
-      "voz": "Pero la que más ilusiona: Rockstar compró a los creadores de FiveM. ¿Habrá servidores de rol oficiales?",
-      "compartir": "PÁSASELO A TU COMPAÑERO DE GTA ONLINE",
-      "fx": [
-        {
-          "tipo": "clip_tramo",
-          "video": "videos/online/02_amigos.mp4",
-          "z": [
-            1.0,
-            1.06
-          ],
-          "foco": [
-            0.5,
-            0.5
-          ],
           "dur": 5.0,
-          "desde": 0,
-          "hasta": 5.0,
+          "desde": 5.0,
+          "hasta": 10.0,
           "offset": 0.0,
-          "gamma": 0.6,
+          "gamma": 0.65,
           "color": 1.06
         },
         {
@@ -177,11 +87,137 @@
             0.5,
             0.5
           ],
-          "dur": 2.45,
-          "desde": 5.0,
+          "dur": 2.8,
+          "desde": 10.0,
           "hasta": 99,
-          "offset": 2.4,
+          "offset": 2.2,
           "gamma": 0.58,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/online/escena_0.wav",
+      "y_titular": 340,
+      "duracion": 12.8
+    },
+    {
+      "id": "personaje",
+      "etiqueta": "TEORÍA #2",
+      "titular": "TU PERSONAJE SE MUDA",
+      "detalle": "a Vice City… sin tu dinero ni tus coches",
+      "voz": "La segunda teoría dice que tu personaje se mudaría a Vice City. Te llevarías tu cara y tu nombre, pero no tu dinero ni tus coches, y todos empezaríamos de cero.",
+      "compartir": "PÁSASELO A TU COMPAÑERO DE GTA ONLINE",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/online/01_crew.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 5.0,
+          "desde": 0,
+          "hasta": 5.0,
+          "offset": 0.0,
+          "gamma": 0.55,
+          "color": 1.06
+        },
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/online/02_amigos.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 5.0,
+          "desde": 5.0,
+          "hasta": 10.0,
+          "offset": 0.0,
+          "gamma": 0.6,
+          "color": 1.06
+        },
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/online/01_crew.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 1.65,
+          "desde": 10.0,
+          "hasta": 99,
+          "offset": 3.0,
+          "gamma": 0.55,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        },
+        {
+          "tipo": "sello_teoria",
+          "n": 2,
+          "t": 0.05,
+          "y": 900
+        },
+        {
+          "tipo": "contador",
+          "t": 6.6,
+          "dur": 1.6,
+          "desde": 12450000,
+          "hasta": 0,
+          "prefijo": "$ ",
+          "y": 900,
+          "tam": 170,
+          "texto": "TU DINERO"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/online/escena_1.wav",
+      "y_titular": 340,
+      "duracion": 11.65
+    },
+    {
+      "id": "mapa",
+      "etiqueta": "RUMOR",
+      "titular": "UN MAPA QUE CRECE",
+      "detalle": "más zonas con cada actualización",
+      "voz": "Otra teoría dice que el mapa irá creciendo con cada actualización.",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/online/03_motos.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 4.5,
+          "desde": 0,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 1.0,
           "color": 1.06
         },
         {
@@ -199,56 +235,14 @@
       "ilustracion": "taller",
       "audio_voz": "voz/online/escena_2.wav",
       "y_titular": 340,
-      "duracion": 7.45
-    },
-    {
-      "id": "mapa",
-      "etiqueta": "RUMOR",
-      "titular": "UN MAPA QUE CRECE",
-      "detalle": "más zonas con cada actualización",
-      "voz": "Y otra: dicen que el mapa irá creciendo con cada actualización.",
-      "fx": [
-        {
-          "tipo": "clip_tramo",
-          "video": "videos/online/03_motos.mp4",
-          "z": [
-            1.0,
-            1.06
-          ],
-          "foco": [
-            0.5,
-            0.5
-          ],
-          "dur": 4.4,
-          "desde": 0,
-          "hasta": 99,
-          "offset": 0.0,
-          "gamma": 1.0,
-          "color": 1.06
-        },
-        {
-          "tipo": "velo_superior",
-          "fuerza": 125,
-          "alto": 640
-        },
-        {
-          "tipo": "sello_teoria",
-          "n": 4,
-          "t": 0.05,
-          "y": 900
-        }
-      ],
-      "ilustracion": "taller",
-      "audio_voz": "voz/online/escena_3.wav",
-      "y_titular": 340,
-      "duracion": 4.4
+      "duracion": 4.5
     },
     {
       "id": "salas",
       "etiqueta": "RUMOR",
       "titular": "¿SALAS DE 96?",
       "detalle": "ahora son 30 por sesión",
-      "voz": "Y la más loca: salas de hasta 96 jugadores.",
+      "voz": "Y la más loca habla de salas de hasta 96 jugadores.",
       "pregunta": "¿LO PAGARÍAS APARTE?",
       "fx": [
         {
@@ -262,7 +256,7 @@
             0.5,
             0.5
           ],
-          "dur": 5.05,
+          "dur": 5.1,
           "desde": 0,
           "hasta": 99,
           "offset": 0.0,
@@ -275,6 +269,12 @@
           "alto": 640
         },
         {
+          "tipo": "sello_teoria",
+          "n": 4,
+          "t": 0.05,
+          "y": 900
+        },
+        {
           "tipo": "contador",
           "t": 1.1,
           "dur": 1.5,
@@ -283,18 +283,12 @@
           "y": 880,
           "tam": 230,
           "texto": "JUGADORES POR SALA"
-        },
-        {
-          "tipo": "sello_teoria",
-          "n": 5,
-          "t": 0.05,
-          "y": 900
         }
       ],
       "ilustracion": "taller",
-      "audio_voz": "voz/online/escena_4.wav",
+      "audio_voz": "voz/online/escena_3.wav",
       "y_titular": 340,
-      "duracion": 5.05
+      "duracion": 5.1
     },
     {
       "id": "cierre",
@@ -313,7 +307,7 @@
             0.5,
             0.5
           ],
-          "dur": 2.407,
+          "dur": 2.379,
           "desde": 0,
           "hasta": 99,
           "offset": 0.0,
@@ -327,9 +321,9 @@
         }
       ],
       "ilustracion": "taller",
-      "audio_voz": "voz/online/escena_5.wav",
+      "audio_voz": "voz/online/escena_4.wav",
       "y_titular": 340,
-      "duracion": 2.407
+      "duracion": 2.379
     }
   ]
 }

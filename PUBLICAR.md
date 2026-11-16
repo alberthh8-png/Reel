@@ -455,7 +455,7 @@ Hay gente que va a jugar a GTA 6 muchas horas antes que tú 😳 Pásaselo a tu 
 
 ---
 
-# REEL: "5 teorías de GTA 6 Online" (~28 s)
+# REEL: "4 teorías de GTA 6 Online" (36,4 s)
 
 Vídeo: `salida/online/reel.mp4` · Portada: `salida/online/portada.jpg` (quedada de coches de noche con "¿GTA 6 ONLINE GRATIS?").
 
@@ -463,13 +463,12 @@ Vídeo: `salida/online/reel.mp4` · Portada: `salida/online/portada.jpg` (quedad
 
 ## Instagram
 ```
-¿Y si GTA 6 Online fuera GRATIS? 🤯 5 teorías que la comunidad da por hechas:
+¿Y si GTA 6 Online fuera GRATIS? 🤯 4 teorías que la comunidad da por hechas:
 
-1️⃣ Online gratis o aparte: en la tienda de Xbox aparece como un paquete separado
-2️⃣ Tu personaje se muda a Vice City… pero sin tu dinero 💸
-3️⃣ Rol oficial: Rockstar compró a los creadores de FiveM
-4️⃣ Un mapa que crece con cada actualización 🗺️
-5️⃣ Salas de hasta 96 jugadores
+1️⃣ Online gratis: en la tienda de Xbox aparece como un paquete aparte de la historia, como Warzone
+2️⃣ Tu personaje se muda a Vice City… pero sin tu dinero ni tus coches 💸 Todos desde cero
+3️⃣ Un mapa que crece con cada actualización 🗺️
+4️⃣ La más loca: salas de hasta 96 jugadores
 
 ⚠️ Nada confirmado por Rockstar: son teorías y rumores.
 ¿Cuál crees que se cumplirá? 👇 Pásaselo a tu compañero de GTA Online
@@ -477,22 +476,21 @@ Vídeo: `salida/online/reel.mp4` · Portada: `salida/online/portada.jpg` (quedad
 #GTA6 #GTAOnline #GTAVI #Gaming #Rockstar
 ```
 ## YouTube Shorts
-**Título:** `¿GTA 6 ONLINE GRATIS? 5 teorías de la comunidad 🤯 #shorts`
+**Título:** `¿GTA 6 ONLINE GRATIS? 4 teorías de la comunidad 🤯 #shorts`
 **Descripción:**
 ```
-5 teorías sobre GTA 6 Online: que sea gratis o se venda aparte (en la tienda de Xbox aparece como paquete separado), que tu personaje se mude a Vice City sin tu dinero, servidores de rol oficiales (Rockstar compró a los creadores de FiveM en 2023), un mapa que crece con las actualizaciones y salas de hasta 96 jugadores. Rockstar no ha confirmado nada todavía. ¿Cuál crees que se cumplirá? 👇
+4 teorías sobre GTA 6 Online: que sea gratis (en la tienda de Xbox aparece como paquete aparte de la historia, como Warzone), que tu personaje se mude a Vice City pero sin tu dinero ni tus coches, un mapa que crece con cada actualización y salas de hasta 96 jugadores. Rockstar no ha confirmado nada todavía. ¿Cuál crees que se cumplirá? 👇 Pásaselo a tu compañero de GTA Online
 
 #GTA6 #GTAOnline #Shorts
 ```
 ## TikTok
 ```
-¿GTA 6 Online GRATIS? 🤯 5 teorías de la comunidad. ¿Cuál se cumplirá? 👇 #GTA6 #gtaonline #gaming #rockstar #fyp
+¿GTA 6 Online GRATIS? 🤯 4 teorías de la comunidad. ¿Cuál se cumplirá? 👇 #GTA6 #gtaonline #gaming #rockstar #fyp
 ```
 **Comentario fijado (las 3 redes):** `Si te quitan todo tu dinero de GTA Online… ¿empezarías de cero en GTA 6? 💸👇`
 
 ## Fuentes
 - Online como paquete aparte en Xbox: [Notebookcheck](https://www.notebookcheck.net/GTA-6-Online-apparently-a-separate-download-and-what-that-could-mean.1348979.0.html), [TweakTown](https://tweaktown.com/news/112343/gta-6-is-a-singleplayer-experience-gta-online-may-be-sold-separately/index.html)
 - Personaje y dinero: [Gameranx](https://gameranx.com/updates/id/559637/article/could-gta-6-allow-for-gta-online-characters-to-be-transferred-over/), [Gfinity](https://www.gfinityesports.com/article/gta-online-gta-6-grinding-money)
-- Compra de Cfx.re (FiveM): [GamesRadar](https://www.gamesradar.com/rockstars-acquisition-of-fivem-mod-team-could-be-absolutely-massive-for-gta-6), [GTA Intel](https://gtaintel.com/news/gta-6-fivem-rockstar-online-roleplay)
 - Mapa que evoluciona: [Tom's Guide](https://tomsguide.com/news/gta-6-release-date-reportedly-set-for-2025-with-an-evolving-map)
 - Salas más grandes (rumor): [PC Gamer](https://www.pcgamer.com/games/grand-theft-auto/gta-6s-server-player-count-rumour-could-be-great-news-for-gta-online-2-0), [GamingBible](https://www.gamingbible.com/news/gta-6-online-player-count-468762-20250710)
