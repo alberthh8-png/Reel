@@ -108,6 +108,9 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 | **Kick** (29 h) | **Instagram** | **730** (600 personas) 🥈 | 43,7 % | 10 s (37 %) | **2,7 %** 🏆 récord | **0 %** | **1** | Contenido útil con fecha + "pásaselo a ese amigo que siempre te pide juegos". 15 likes, **2 republicaciones** (0,3 %). Siguió creciendo durante el día |
 | Kick (29 h) | YouTube | 1.322 | 40,1 % saltan | (retención pendiente) | — | — | +1 | Animación por código (dibujos). Se estancó a las ~3 h |
 | Kick (29 h) | TikTok | 89 | (76 % sigue en el s 1) | 5,8 s (21 %) · 4,3 % completo | 1 | 1 | 0 | Igual: techo de ~90 en TikTok |
+| **Horas antes** (26 h) | **YouTube** | 1,2 K interesadas (~2,3 K en 48 h, 2.ª ola) | **32,6 % saltan** (Kick: 40,1 %) | (retención pendiente) | — | — | — | Clips de acción IA realistas + relojes. El 95 % del tráfico, del feed de Shorts |
+| **Horas antes** (26 h) | **Instagram** | 156 (121 personas) | **33,1 %** 🏆 (1.ª vez por debajo del 35 %) | 12 s (43 %) | **4,1 %** 🏆 récord | 0,8 % | 0 | Pique "¿quién de los dos lo juega antes?". **Todas las tasas "Superior"**, pero Instagram casi no lo repartió (curva plana). Pico de likes en el truco de Xbox |
+| Horas antes (26 h) | TikTok | 81 | (cae en el s 1) | 7,7 s (27 %) · **8 % completo** (el mejor de TikTok) | 0 | 0 | 0 | Igual: techo de ~90 |
 
 ### Retención de YouTube (gráfica completa)
 
@@ -240,6 +243,13 @@ Para el **14 nov a las 20:00-22:00**. Gancho de Albert: "Corre, GTA 6 está grat
 - **TikTok: 89 visitas otra vez.** Es la cuenta, no el vídeo (todos rondan los 90).
 
 ### "Horas antes que tú" (GTA 6, 28,7 s, clips de acción IA)
+
+**Resultados (26 h):**
+- **YouTube: se queda el 67,4 %** (Kick, animado: 59,9 %). **Segundo dato a favor de la hipótesis**: en YouTube, la imagen realista con movimiento engancha más que la animación tipo dibujo. Si se repite una vez más, pasa a regla.
+- **Instagram: la mejor calidad de la cuenta** (omisión del 33,1 %, compartidos 4,1 %, likes 4,1 %, guardados 0,8 %, republicaciones 0,8 %, todo "Superior"), pero **solo 156 reproducciones**: Instagram no lo empujó. Esperar a los 3 días (regla 20); si sigue igual, el problema es de distribución, no del vídeo.
+- **El pique entre países funciona:** 4,1 % de compartidos, récord. **Regla 12 confirmada por cuarta vez.**
+- **El truco de Xbox fue el pico de likes**: a la gente le gustan los trucos concretos, paso a paso.
+- TikTok: 81 (cuenta sin calentar), aunque con el mejor % de vídeo completo (8 %).
 Hecho el 14 nov. **Proceso:**
 - Albert quería **clips del tráiler** de fondo → **NO** (copyright de Rockstar: Content ID + 3 avisos = canal borrado). Alternativa aceptada: **clips de acción IA originales** (persecución de noche, atraco con pasamontañas, persecución desde helicóptero, amanecer en la playa). Le encantaron. Sin personajes ni planos del tráiler.
 - **El guion v1 "saltaba de un dato a otro sin procesar el anterior"** → regla nueva: **máximo 3-4 datos por vídeo, cada dato con su explicación** (dato + qué significa para ti) y la voz a ritmo natural.
@@ -365,7 +375,7 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
    - ✅ Drift R2 a las 24 h (las 3 plataformas). Falta: a los 3 días y la retención de YouTube.
    - ✅ "Adiós, GTA 5": 17 h y retención de YouTube (76,7 %).
   - ✅ Kick a las 29 h (las 3 plataformas). Falta: la retención de YouTube (¿cae en el cierre de 5,2 s?).
-  - "Horas antes que tú" (publicado el 15 nov): métricas a las 24 h. Comprobar si los clips de acción IA suben el % que se queda en YouTube.
+  - ✅ "Horas antes que tú" a las 26 h. Falta: Instagram a los 3 días (¿despega?) y la retención de YouTube.
    - ~~Versión de prueba de la Parte 2 de GTA~~: **no se subió**. A Albert no le aparece la opción de Reel de prueba en Instagram (requiere cuenta profesional de creador, y se activa poco a poco). Decisión: no subirla como reel normal (duplicaría la Parte 2); su aprendizaje se aplica en la Parte 3.
    - Instagram de GTA P1 y P2 a los 3 días.
 - **Ritmo nuevo: un vídeo al día** (decisión de Albert, 13 nov). Calendario propuesto hasta el lanzamiento:
