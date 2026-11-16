@@ -270,6 +270,23 @@ Hecho el 14 nov. **Proceso:**
 - Bucle sin salto y sin grano.
 - **Créditos:** ~82 (9 imágenes y 8 clips; 2 clips del intento anterior no se usaron). Quedan ~119.
 
+### "5 teorías de GTA 6 Online" (27,9 s, clips IA de ambiente online)
+Hecho el 16 nov. Idea de Albert. **Proceso:**
+- Albert pasó un **vídeo de gameplay oficial de GTA 6** (con la etiqueta RP/ESRB y carteles de Leonida) para usarlo de fondo → **NO**: es material de Rockstar y además no se puede recrear su aspecto con IA. Alternativa: escenas originales con **"ambiente online"**, como pidió: quedada de coches de noche, una crew con la misma ropa, amigos jugando con cascos, grupo de motos de cross y salida de una carrera callejera.
+- **Las 5 teorías elegidas** (con sello): online gratis o aparte (TEORÍA), tu personaje se muda sin tu dinero (TEORÍA), rol oficial porque Rockstar compró FiveM (DATO REAL + TEORÍA), un mapa que crece (RUMOR) y salas de 96 (RUMOR).
+- Capas: contador de dinero que cae a $0 ("TU DINERO") y contador de 30 a 96 jugadores por sala.
+
+**Qué probamos:**
+- **Tercera prueba de clips realistas en YouTube**: si el % que se queda supera el 65 %, pasa a regla.
+- Compartir con "PÁSASELO A TU COMPAÑERO DE GTA ONLINE" a mitad del vídeo, y encuesta "¿LO PAGARÍAS APARTE?".
+- Cierre de 2,4 s.
+
+**Control de calidad:**
+- Brillo de 61 a 84 (gamma 0,55-0,6 en los clips de noche).
+- Voz con correlación de 0,89 a 0,99.
+- Bucle sin salto y sin grano.
+- **Créditos:** ~39.
+
 ---
 
 ## Referencias rápidas
@@ -382,7 +399,7 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
   - 13 nov: "Adiós, GTA 5" ✅ publicado
   - 14 nov: "¡Corre! GTA 6 gratis" (sorteo de Kick) ✅ publicado
   - 15 nov: "Horas antes que tú" (Nueva Zelanda, truco de Xbox, 30 FPS) ✅ publicado (sustituyó a "5 cosas que hacer antes del 19")
-  - 16 nov: por decidir
+  - 16 nov: "5 teorías de GTA 6 Online" ✅ montado
   - 17 nov: por decidir
   - 18 nov: "Mañana sale GTA 6" (cuenta atrás / lo que sabemos)
   - 19 nov: "¿Se cumplieron las teorías?"
