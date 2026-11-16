@@ -1,0 +1,293 @@
+{
+  "titulo": "5 teorías de GTA 6 Online",
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1920,
+  "bpm": 140,
+  "bucle": true,
+  "sfx": "suave",
+  "transicion": "zoom",
+  "grano": false,
+  "nitido": true,
+  "y_subtitulos": 1390,
+  "margen_subtitulos": 240,
+  "subtitulos_continuos": true,
+  "duck_voz": 0.8,
+  "volumen_musica": 0.45,
+  "oscurecer_inferior": [
+    0.7,
+    110
+  ],
+  "vineta": 0.6,
+  "musica_baja": [
+    [
+      25.45,
+      28.857,
+      0.35
+    ]
+  ],
+  "colores": {
+    "acento": "#ffd23f",
+    "rosa": "#ff3d8b",
+    "cian": "#2de2e6",
+    "texto": "#ffffff"
+  },
+  "escenas": [
+    {
+      "id": "gratis",
+      "etiqueta": "TEORÍA #1",
+      "titular": "¿GTA 6 ONLINE GRATIS?",
+      "detalle": "en Xbox aparece como paquete aparte",
+      "voz": "¿Y si GTA 6 Online fuera gratis? En la tienda de Xbox, el online aparece como un paquete aparte.",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/online/00_quedada.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 5.0,
+          "desde": 0,
+          "hasta": 5.0,
+          "offset": 0.0,
+          "gamma": 0.7,
+          "color": 1.06
+        },
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/doce/x_ciudad_noche.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 1.7999999999999998,
+          "desde": 5.0,
+          "hasta": 99,
+          "offset": 1.0,
+          "gamma": 0.7,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/online/escena_0.wav",
+      "y_titular": 340,
+      "duracion": 6.8
+    },
+    {
+      "id": "personaje",
+      "etiqueta": "TEORÍA #2",
+      "titular": "TU PERSONAJE SE MUDA",
+      "detalle": "a Vice City… pero sin tu dinero",
+      "voz": "Tu personaje de GTA Online podría mudarse a Vice City, pero sin tu dinero.",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/online/01_crew.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 5.35,
+          "desde": 0,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 0.68,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        },
+        {
+          "tipo": "contador",
+          "t": 2.4,
+          "dur": 1.6,
+          "desde": 12450000,
+          "hasta": 0,
+          "prefijo": "$ ",
+          "y": 900,
+          "tam": 170,
+          "texto": "TU DINERO"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/online/escena_1.wav",
+      "y_titular": 340,
+      "duracion": 5.35
+    },
+    {
+      "id": "rol",
+      "etiqueta": "DATO REAL + TEORÍA",
+      "titular": "¿ROL OFICIAL?",
+      "detalle": "Rockstar compró a los creadores de FiveM",
+      "voz": "Rockstar compró a los creadores de FiveM. ¿Habrá servidores de rol oficiales?",
+      "compartir": "PÁSASELO A TU COMPAÑERO DE GTA ONLINE",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/online/02_amigos.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 4.9,
+          "desde": 0,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 0.75,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/online/escena_2.wav",
+      "y_titular": 340,
+      "duracion": 4.9
+    },
+    {
+      "id": "mapa",
+      "etiqueta": "RUMOR",
+      "titular": "UN MAPA QUE CRECE",
+      "detalle": "más zonas con cada actualización",
+      "voz": "Dicen que el mapa irá creciendo con cada actualización.",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/online/03_motos.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 3.45,
+          "desde": 0,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 1.0,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/online/escena_3.wav",
+      "y_titular": 340,
+      "duracion": 3.45
+    },
+    {
+      "id": "salas",
+      "etiqueta": "RUMOR",
+      "titular": "¿SALAS DE 96?",
+      "detalle": "ahora son 30 por sesión",
+      "voz": "Y se rumorea que habrá salas de hasta 96 jugadores.",
+      "pregunta": "¿LO PAGARÍAS APARTE?",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/online/04_carrera.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 4.95,
+          "desde": 0,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 0.7,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        },
+        {
+          "tipo": "contador",
+          "t": 0.3,
+          "dur": 1.5,
+          "desde": 30,
+          "hasta": 96,
+          "y": 880,
+          "tam": 230,
+          "texto": "JUGADORES POR SALA"
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/online/escena_4.wav",
+      "y_titular": 340,
+      "duracion": 4.95
+    },
+    {
+      "id": "cierre",
+      "etiqueta": "TEORÍAS",
+      "titular": "¿CUÁL CREES TÚ?",
+      "voz": "¿Cuál crees que se cumplirá?",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/online/00_quedada.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 2.407,
+          "desde": 0,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 0.7,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/online/escena_5.wav",
+      "y_titular": 340,
+      "duracion": 2.407
+    }
+  ]
+}
