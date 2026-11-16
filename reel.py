@@ -2139,6 +2139,10 @@ def escribir_audio(render, ruta):
                 pegar(sfx, (b + f.get("tacha", 1.1) - 0.1) * SR, sfx_whoosh(rng, 0.25), 0.6)
                 pegar(sfx, (b + f.get("tacha", 1.1) + 0.2) * SR, sfx_explosion(rng, 0.5), 0.15)
                 pegar(sfx, (b + f.get("tacha", 1.1) + 0.2) * SR, sfx_brillo(), 0.5)
+            elif f["tipo"] == "sello_teoria":
+                pegar(sfx, (b + f.get("t", 0.05) - 0.12) * SR, sfx_whoosh(rng, 0.2), 0.5)
+                pegar(sfx, (b + f.get("t", 0.05)) * SR, sfx_explosion(rng, 0.5), 0.2)
+                pegar(sfx, (b + f.get("t", 0.05)) * SR, sfx_pop(), 0.9)
             elif f["tipo"] == "plataformas":
                 for tt in (f.get("t1", 0.4), f.get("t2", 2.2)):
                     pegar(sfx, (b + tt - 0.15) * SR, sfx_whoosh(rng, 0.3), 0.6)

@@ -317,7 +317,32 @@ class MenuXbox(reel.Efecto):
             pegar_centrado(frame, self.aviso, W / 2, self.y + 300, escala=ease_out_back(b / 0.3), angulo=-4)
 
 
-reel.FX.update({"paises": Paises, "menu_xbox": MenuXbox, "relojes": Relojes, "espera": Espera, "lobby": Lobby, "fps": Fps, "modo_juego": ModoJuego,
+class SelloTeoria(reel.Efecto):
+    """Sello grande 'TEORÍA #N' que golpea la pantalla al empezar cada teoría."""
+
+    def __init__(self, ev, semilla):
+        self.t0, self.y = ev.get("t", 0.05), ev.get("y", 880)
+        self.capa = texto_con_estilo(ev.get("texto", f"TEORÍA #{ev.get('n', 1)}"), fuente(150), AMARILLO + (255,),
+                                     borde=14, color_borde=OSCURO, brillo=ROSA)
+
+    def destello(self, t):
+        b = t - self.t0
+        return 0.25 * (1 - b / 0.2) ** 2 if 0 <= b < 0.2 else 0
+
+    def sacudida(self, t):
+        b = t - self.t0
+        return 14 * (1 - b / 0.25) if 0 <= b < 0.25 else 0
+
+    def encima(self, frame, t):
+        b = t - self.t0
+        if b < 0 or b > 1.0:
+            return
+        esc = 2.4 - 1.4 * ease_out_cubic(b / 0.18)
+        alfa = clamp(b / 0.06) * clamp((1.0 - b) / 0.25)
+        pegar_centrado(frame, self.capa, W / 2, self.y, escala=esc, alfa=alfa, angulo=-6)
+
+
+reel.FX.update({"sello_teoria": SelloTeoria, "paises": Paises, "menu_xbox": MenuXbox, "relojes": Relojes, "espera": Espera, "lobby": Lobby, "fps": Fps, "modo_juego": ModoJuego,
                 "clip_tramo": ClipTramo})
 
 if __name__ == "__main__":
