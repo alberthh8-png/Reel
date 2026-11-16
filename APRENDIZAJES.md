@@ -370,9 +370,9 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
    - Instagram de GTA P1 y P2 a los 3 días.
 - **Ritmo nuevo: un vídeo al día** (decisión de Albert, 13 nov). Calendario propuesto hasta el lanzamiento:
   - 13 nov: "Adiós, GTA 5" ✅ publicado
-  - 14 nov: "¡Corre! GTA 6 gratis" (sorteo de Kick) ✅ montado. Faltan sus métricas a las 24 h
-  - 15 nov: "5 cosas que hacer antes del 19" (precargar, liberar espacio, ajustes de la consola…)
-  - 16 nov: por decidir (idea de la semana o una noticia de última hora)
+  - 14 nov: "¡Corre! GTA 6 gratis" (sorteo de Kick) ✅ publicado
+  - 15 nov: "Horas antes que tú" (Nueva Zelanda, truco de Xbox, 30 FPS) ✅ publicado (sustituyó a "5 cosas que hacer antes del 19")
+  - 16 nov: por decidir
   - 17 nov: por decidir
   - 18 nov: "Mañana sale GTA 6" (cuenta atrás / lo que sabemos)
   - 19 nov: "¿Se cumplieron las teorías?"
