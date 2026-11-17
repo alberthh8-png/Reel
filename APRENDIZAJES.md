@@ -365,6 +365,15 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 
 ---
 
+## Gameplay propio de GTA 6 (desde el 19 nov)
+- **SÍ se puede usar el gameplay que grabe Albert** con su consola. La política de vídeos de Rockstar permite que los fans suban su gameplay. Lo que NO: tráileres o vídeos oficiales de Rockstar, filtraciones o datamining.
+- **Reglas al grabar:**
+  1. **Radio APAGADA.** Las emisoras llevan canciones con derechos que Content ID detecta; en el reel va solo nuestra música, la voz y los efectos.
+  2. **Sin spoilers de la historia** las primeras semanas (sobre todo el final), aunque se permita.
+  3. **Nada de "masacres" de NPC en los primeros segundos**: YouTube desmonetiza la violencia gráfica pensada para impactar al principio del vídeo.
+  4. Grabar en la mayor calidad posible (en PS5 y Xbox, la función de capturar/compartir) y pasarme el clip original, sin recomprimir por WhatsApp.
+- Su política está pensada para uso "no comercial": cuando el canal se monetice, revisar la política vigente.
+
 ## Marca GNews
 
 - **Archivos** (`marca/`): `gnews_perfil_1080.png` (foto de perfil apta para recorte circular), `gnews_banner_youtube_2560x1440.jpg` (todo dentro de la zona segura de 1546×423) y `gnews_logo_transparente.png`.
