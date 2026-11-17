@@ -21,7 +21,7 @@
   "vineta": 0.6,
   "musica_baja": [
     [
-      31.9,
+      31.799999999999997,
       36.143,
       0.35
     ]
@@ -36,9 +36,9 @@
     {
       "id": "gancho",
       "etiqueta": "CONFIRMADO",
-      "titular": "EL DOBLE QUE GTA 5",
-      "detalle": "y 3 veces el de Red Dead 2",
-      "voz": "El mapa de GTA 6 es el doble que el de GTA 5. Y estas son sus zonas.",
+      "titular": "EL MAPA DE GTA 6",
+      "detalle": "en 30 segundos · el doble que GTA 5",
+      "voz": "El mapa de GTA 6 en 30 segundos. Es el doble que el de GTA 5.",
       "fx": [
         {
           "tipo": "clip_tramo",
@@ -51,7 +51,7 @@
             0.5,
             0.5
           ],
-          "dur": 5.4,
+          "dur": 5.3,
           "desde": 0,
           "hasta": 99,
           "offset": 0.0,
@@ -76,7 +76,7 @@
       "ilustracion": "taller",
       "audio_voz": "voz/mapa/escena_0.wav",
       "y_titular": 340,
-      "duracion": 5.4
+      "duracion": 5.3
     },
     {
       "id": "ciudad_cayos",
@@ -514,7 +514,7 @@
             0.5,
             0.5
           ],
-          "dur": 3.243,
+          "dur": 3.343,
           "desde": 0,
           "hasta": 99,
           "offset": 0.0,
@@ -530,7 +530,7 @@
       "ilustracion": "taller",
       "audio_voz": "voz/mapa/escena_4.wav",
       "y_titular": 340,
-      "duracion": 3.243
+      "duracion": 3.343
     }
   ]
 }
