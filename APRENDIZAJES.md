@@ -16,6 +16,12 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 - **Formato:** vídeos cortos verticales 1080×1920 de 22-27 s, con voz de narrador, subtítulos, animaciones y bucle.
 - **Momento clave:** GTA 6 sale el **19 nov 2026** (PS5 y Xbox Series). Esa semana, contenido diario de GTA.
 
+## Cuenta principal de Albert: "Albertesonrrei" (17 nov)
+- Es su cuenta **principal de creador**: lleva **~1 año y medio** haciendo directos en **Twitch y TikTok** y subiendo gameplays y clips de **Rocket League, GTA 5, Overwatch, Minecraft** y un poco de todo.
+- **Plan nuevo:** seguir con los reels de **GNews** (noticias y curiosidades, crecer la cuenta) **y además editar los clips y gameplays** que Albert pase **para Albertesonrrei**.
+- Son **dos marcas distintas**: GNews = noticias con la voz de Dan y animaciones; Albertesonrrei = Albert jugando (su voz, su cara y su humor). No mezclar estilos sin hablarlo.
+- Pendiente de definir con Albert: formato de sus clips (¿cámara?, ¿vertical u horizontal?), estilo de edición y si se promocionan entre sí.
+
 ## Preferencias y decisiones de Albert
 
 - **No quiere** "un top con solo texto y fondo": quiere **acción y animación** (disparos, explosiones, cámara que se mueve, imágenes).
