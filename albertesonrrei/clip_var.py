@@ -23,7 +23,7 @@ from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 import reel  # noqa: E402
-from albertesonrrei.efectos import frase_lenta  # noqa: E402  (fuentes, texto con estilo, utilidades)
+from albertesonrrei.efectos import VEL_GRAVE, frase_lenta, voz_grave  # noqa: E402  (fuentes, texto con estilo, utilidades)
 from reel import clamp, ease_out_back, ease_out_cubic, fuente, pegar_centrado, texto_con_estilo  # noqa: E402
 
 W, H, FPS = 1080, 1920, 60
@@ -42,7 +42,7 @@ MAIN0, MAIN1 = 116.0, 150.6      # la jugada completa
 GOL_S = 134.0
 ZOOM_S = 133.8                   # "ay, ay, ay, me sudan las manos"
 VAR_S = 144.3                    # "adelantado anulado"
-LENTO = 0.62                     # velocidad en las palabras malsonantes (voz más grave y lenta)
+LENTO = VEL_GRAVE                # velocidad de las frases malsonantes (voz "A1": más grave y algo lenta)
 MALSONANTES = {"culo", "mierda", "puta", "puto", "putas", "putos", "joder", "coño", "polla", "pinga", "verga",
                "cabrón", "cabron", "gilipollas", "hostia", "hostias", "pinche"}
 CENSURA = {"culo": "c•lo", "mierda": "m•••da", "puta": "p•ta", "puto": "p•to", "putas": "p•tas", "putos": "p•tos",
@@ -299,8 +299,7 @@ def audio(ruta_wav, salida):
         a, b = int(s0 * sr), int(s1 * sr)
         seg = x[a:b]
         if v != 1.0:  # cinta ralentizada: más lenta y más grave a la vez
-            n = int(len(seg) / v)
-            seg = np.interp(np.linspace(0, len(seg) - 1, n), np.arange(len(seg)), seg) * 1.25
+            seg = voz_grave(seg, sr)
         i = int(u0 * sr)
         k = min(len(seg), N - i)
         if k > 0:

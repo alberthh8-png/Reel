@@ -21,7 +21,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from albertesonrrei.efectos import frase_lenta  # noqa: E402
+from albertesonrrei.efectos import VEL_GRAVE, frase_lenta, voz_grave  # noqa: E402
 from reel import clamp, ease_out_back, ease_out_cubic, fuente, pegar_centrado, texto_con_estilo  # noqa: E402
 
 W, H, FPS = 1080, 1920, 60
@@ -29,7 +29,7 @@ CAM = (46, 230, 314, 378)
 JUEGO = (335, 0, 1145, 720)
 Y_CAM, H_CAM = 300, 597
 Y_JUEGO, H_JUEGO = 900, 960
-LENTO = 0.62
+LENTO = VEL_GRAVE
 TRANS = 0.3
 ROSA, AMARILLO, BLANCO, OSCURO, VERDE = (255, 61, 139), (255, 210, 63), (255, 255, 255), (12, 8, 24), (60, 230, 120)
 MALSONANTES = {"culo", "mierda", "puta", "puto", "putas", "putos", "joder", "coño", "polla", "pinga", "verga",
@@ -319,8 +319,7 @@ def audio(ed, salida):
         x = cache[m["wav"]]
         seg = x[int(s0 * sr):int(s1 * sr)]
         if v != 1.0:
-            n = int(len(seg) / v)
-            seg = np.interp(np.linspace(0, len(seg) - 1, n), np.arange(len(seg)), seg) * 1.25
+            seg = voz_grave(seg, sr)
         i = int(u0 * sr)
         k = min(len(seg), N - i)
         if k > 0:
