@@ -48,6 +48,7 @@ MALSONANTES = {"culo", "mierda", "puta", "puto", "putas", "putos", "joder", "co�
 CENSURA = {"culo": "c•lo", "mierda": "m•••da", "puta": "p•ta", "puto": "p•to", "putas": "p•tas", "putos": "p•tos",
            "joder": "j•der", "coño": "c•ño", "polla": "p•lla", "pinga": "p•nga", "verga": "v•rga",
            "cabrón": "c•brón", "gilipollas": "g•lipollas", "hostia": "h•stia", "hostias": "h•stias"}
+ROSA, AMARILLO, BLANCO, OSCURO = (255, 61, 139), (255, 210, 63), (255, 255, 255), (12, 8, 24)
 TRAMOS = []                      # (u0, s0, s1, velocidad, tipo); se rellena en preparar_tiempos()
 TOTAL = 0.0
 U_MAIN = FRIO[0] + REBOB[0]
