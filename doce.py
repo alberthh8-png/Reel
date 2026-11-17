@@ -20,6 +20,7 @@ import reel
 import drift2  # registra "clip" y "velo_superior"
 from reel import W, clamp, ease_out_back, ease_out_cubic, ease_in_out, fuente, pegar_centrado, texto_con_estilo
 
+BLANCO_ = (255, 255, 255)
 VERDE, ROJO, AMARILLO, CIAN, ROSA = (60, 230, 120), (255, 50, 70), (255, 210, 63), (45, 226, 230), (255, 61, 139)
 OSCURO = (12, 8, 24)
 
@@ -342,7 +343,81 @@ class SelloTeoria(reel.Efecto):
         pegar_centrado(frame, self.capa, W / 2, self.y, escala=esc, alfa=alfa, angulo=-6)
 
 
-reel.FX.update({"sello_teoria": SelloTeoria, "paises": Paises, "menu_xbox": MenuXbox, "relojes": Relojes, "espera": Espera, "lobby": Lobby, "fps": Fps, "modo_juego": ModoJuego,
+class MapaLeonida(reel.Efecto):
+    """Mapa propio y aproximado de Leonida (forma tipo Florida) con pines por zona.
+
+    "pines": lista de [nombre, x, y] (0-1 dentro del mapa); "activos": los que laten en esta escena;
+    "compara": True muestra la comparación ×2 con GTA 5 al principio.
+    """
+
+    CONTORNO = [(0.04, 0.10), (0.30, 0.07), (0.60, 0.05), (0.70, 0.10), (0.76, 0.28), (0.83, 0.52), (0.88, 0.72),
+                (0.85, 0.85), (0.77, 0.90), (0.66, 0.80), (0.58, 0.63), (0.52, 0.47), (0.44, 0.32), (0.32, 0.23),
+                (0.18, 0.22), (0.04, 0.24)]
+    CAYOS = [(0.72, 0.93), (0.66, 0.95), (0.60, 0.965), (0.54, 0.975), (0.48, 0.98)]
+
+    def __init__(self, ev, semilla):
+        self.t0, self.y = ev.get("t", 0.1), ev.get("y", 900)
+        self.w, self.h = ev.get("w", 600), ev.get("h", 740)
+        self.pines = ev.get("pines", [])
+        self.activos = set(ev.get("activos", []))
+        self.compara = ev.get("compara", False)
+        self.hasta = ev.get("hasta", 1e9)
+        self.base = self._base()
+
+    def _pt(self, x, y):
+        return 30 + x * self.w, 30 + y * self.h
+
+    def _base(self):
+        img = Image.new("RGBA", (self.w + 60, self.h + 90), (0, 0, 0, 0))
+        d = ImageDraw.Draw(img)
+        d.rounded_rectangle((0, 0, self.w + 59, self.h + 89), radius=36, fill=(10, 30, 60, 175),
+                            outline=(45, 226, 230, 200), width=4)
+        if not self.compara:
+            pol = [self._pt(x, y) for x, y in self.CONTORNO]
+            d.polygon(pol, fill=(40, 120, 90, 235), outline=(150, 255, 200, 255))
+        for x, y in ([] if self.compara else self.CAYOS):
+            cx, cy = self._pt(x, y)
+            d.ellipse((cx - 9, cy - 5, cx + 9, cy + 5), fill=(40, 120, 90, 235), outline=(150, 255, 200, 255))
+        d.text((self.w / 2 + 30, self.h + 62), "LEONIDA · mapa aproximado, no oficial", font=fuente(26),
+               fill=(200, 230, 255, 220), anchor="mm")
+        return img
+
+    def encima(self, frame, t):
+        a = t - self.t0
+        if a < 0 or t >= self.hasta:
+            return
+        capa = self.base.copy()
+        d = ImageDraw.Draw(capa)
+        if self.compara:  # Leonida empieza del tamaño de GTA 5 (área ×0,5) y crece hasta el doble
+            k = ease_out_cubic(clamp((a - 0.35) / 1.0))
+            cx0, cy0 = 0.62, 0.55
+
+            def escala(e):
+                return [self._pt(cx0 + (x - cx0) * e, cy0 + (y - cy0) * e) for x, y in self.CONTORNO]
+            d.polygon(escala(0.71 + 0.29 * k), fill=(40, 120, 90, 235), outline=(150, 255, 200, 255))
+            d.polygon(escala(0.71), outline=(255, 210, 63, 255), width=6)
+            et5 = texto_con_estilo("GTA 5", fuente(48), AMARILLO + (255,), borde=7, color_borde=OSCURO)
+            capa.alpha_composite(et5, (int(self._pt(0.30, 0.0)[0]), int(self._pt(0, 0.36)[1])))
+            if k > 0.6:
+                x2 = texto_con_estilo("x2", fuente(150), BLANCO_ + (255,), borde=12, color_borde=OSCURO, brillo=ROSA)
+                e = ease_out_back((k - 0.6) / 0.4, 2.4)
+                big = x2.resize((max(1, int(x2.width * e)), max(1, int(x2.height * e))))
+                capa.alpha_composite(big, (int(self._pt(0.40, 0)[0] - big.width / 2 + 60), int(self._pt(0, 0.62)[1] - big.height / 2)))
+        for nombre, x, y in self.pines:
+            cx, cy = self._pt(x, y)
+            activo = nombre in self.activos
+            r = 13 + (5 * math.sin(a * 7) if activo else 0)
+            col = ROSA if activo else (230, 230, 240)
+            d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=col + (255,), outline=(20, 10, 30, 255), width=3)
+            if activo:
+                rr = 20 + 30 * ((a * 1.5) % 1)
+                d.ellipse((cx - rr, cy - rr, cx + rr, cy + rr), outline=ROSA + (int(200 * (1 - (a * 1.5) % 1)),), width=4)
+                et = texto_con_estilo(nombre, fuente(38), BLANCO_ + (255,), borde=6, color_borde=OSCURO)
+                capa.alpha_composite(et, (int(min(max(cx - et.width / 2, 0), capa.width - et.width)), int(cy - 62)))
+        pegar_centrado(frame, capa, W / 2, self.y, escala=1.0 if self.t0 <= 0 else entrada(a), alfa=1.0)
+
+
+reel.FX.update({"mapa_leonida": MapaLeonida, "sello_teoria": SelloTeoria, "paises": Paises, "menu_xbox": MenuXbox, "relojes": Relojes, "espera": Espera, "lobby": Lobby, "fps": Fps, "modo_juego": ModoJuego,
                 "clip_tramo": ClipTramo})
 
 if __name__ == "__main__":

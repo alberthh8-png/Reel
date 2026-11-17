@@ -1,0 +1,536 @@
+{
+  "titulo": "El mapa de GTA 6",
+  "fps": 30,
+  "ancho": 1080,
+  "alto": 1920,
+  "bpm": 140,
+  "bucle": true,
+  "sfx": "suave",
+  "transicion": "zoom",
+  "grano": false,
+  "nitido": true,
+  "y_subtitulos": 1390,
+  "margen_subtitulos": 240,
+  "subtitulos_continuos": true,
+  "duck_voz": 0.8,
+  "volumen_musica": 0.45,
+  "oscurecer_inferior": [
+    0.7,
+    110
+  ],
+  "vineta": 0.6,
+  "musica_baja": [
+    [
+      31.9,
+      36.143,
+      0.35
+    ]
+  ],
+  "colores": {
+    "acento": "#ffd23f",
+    "rosa": "#ff3d8b",
+    "cian": "#2de2e6",
+    "texto": "#ffffff"
+  },
+  "escenas": [
+    {
+      "id": "gancho",
+      "etiqueta": "CONFIRMADO",
+      "titular": "EL DOBLE QUE GTA 5",
+      "detalle": "y 3 veces el de Red Dead 2",
+      "voz": "El mapa de GTA 6 es el doble que el de GTA 5. Y estas son sus zonas.",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/doce/x_ciudad_noche.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 5.4,
+          "desde": 0,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 0.7,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        },
+        {
+          "tipo": "mapa_leonida",
+          "t": 0.0,
+          "hasta": 1000000000.0,
+          "y": 900,
+          "pines": [],
+          "activos": [],
+          "compara": true
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/mapa/escena_0.wav",
+      "y_titular": 340,
+      "duracion": 5.4
+    },
+    {
+      "id": "ciudad_cayos",
+      "etiqueta": "ZONAS 1 Y 2",
+      "titular": "VICE CITY Y LOS CAYOS",
+      "detalle": "la ciudad y las islas del sur",
+      "voz": "Vice City, la gran ciudad. Y al sur, los cayos: islas, barcos y, según dicen, la zona clave del online.",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/doce/01_amanecer.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 5.2,
+          "desde": 0,
+          "hasta": 5.2,
+          "offset": 0.0,
+          "gamma": 1.0,
+          "color": 1.06
+        },
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/mapa/01_cayos.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 5.55,
+          "desde": 5.2,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 1.0,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        },
+        {
+          "tipo": "mapa_leonida",
+          "t": 0.15,
+          "hasta": 5.2,
+          "y": 900,
+          "pines": [
+            [
+              "MOUNT KALAGA",
+              0.47,
+              0.11
+            ],
+            [
+              "PORT GELLHORN",
+              0.17,
+              0.17
+            ],
+            [
+              "AMBROSIA",
+              0.62,
+              0.3
+            ],
+            [
+              "GRASSRIVERS",
+              0.71,
+              0.68
+            ],
+            [
+              "VICE CITY",
+              0.84,
+              0.79
+            ],
+            [
+              "LEONIDA KEYS",
+              0.6,
+              0.93
+            ]
+          ],
+          "activos": [
+            "VICE CITY"
+          ],
+          "compara": false
+        },
+        {
+          "tipo": "mapa_leonida",
+          "t": 5.2,
+          "hasta": 1000000000.0,
+          "y": 900,
+          "pines": [
+            [
+              "MOUNT KALAGA",
+              0.47,
+              0.11
+            ],
+            [
+              "PORT GELLHORN",
+              0.17,
+              0.17
+            ],
+            [
+              "AMBROSIA",
+              0.62,
+              0.3
+            ],
+            [
+              "GRASSRIVERS",
+              0.71,
+              0.68
+            ],
+            [
+              "VICE CITY",
+              0.84,
+              0.79
+            ],
+            [
+              "LEONIDA KEYS",
+              0.6,
+              0.93
+            ]
+          ],
+          "activos": [
+            "VICE CITY",
+            "LEONIDA KEYS"
+          ],
+          "compara": false
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/mapa/escena_1.wav",
+      "y_titular": 340,
+      "duracion": 10.75
+    },
+    {
+      "id": "pantano_montana",
+      "etiqueta": "ZONAS 3 Y 4",
+      "titular": "PANTANOS Y MONTAÑA",
+      "detalle": "caimanes, caza y todoterreno",
+      "voz": "Los pantanos de Grassrivers, llenos de caimanes. Y al norte, Mount Kalaga, para cazar, pescar e ir en todoterreno.",
+      "compartir": "GUÁRDALO PARA EL DÍA 19",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/mapa/02_pantano.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 4.7,
+          "desde": 0,
+          "hasta": 4.7,
+          "offset": 0.0,
+          "gamma": 1.0,
+          "color": 1.06
+        },
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/mapa/03_montana.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 4.75,
+          "desde": 4.7,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 1.0,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        },
+        {
+          "tipo": "mapa_leonida",
+          "t": 0.15,
+          "hasta": 4.7,
+          "y": 900,
+          "pines": [
+            [
+              "MOUNT KALAGA",
+              0.47,
+              0.11
+            ],
+            [
+              "PORT GELLHORN",
+              0.17,
+              0.17
+            ],
+            [
+              "AMBROSIA",
+              0.62,
+              0.3
+            ],
+            [
+              "GRASSRIVERS",
+              0.71,
+              0.68
+            ],
+            [
+              "VICE CITY",
+              0.84,
+              0.79
+            ],
+            [
+              "LEONIDA KEYS",
+              0.6,
+              0.93
+            ]
+          ],
+          "activos": [
+            "GRASSRIVERS"
+          ],
+          "compara": false
+        },
+        {
+          "tipo": "mapa_leonida",
+          "t": 4.7,
+          "hasta": 1000000000.0,
+          "y": 900,
+          "pines": [
+            [
+              "MOUNT KALAGA",
+              0.47,
+              0.11
+            ],
+            [
+              "PORT GELLHORN",
+              0.17,
+              0.17
+            ],
+            [
+              "AMBROSIA",
+              0.62,
+              0.3
+            ],
+            [
+              "GRASSRIVERS",
+              0.71,
+              0.68
+            ],
+            [
+              "VICE CITY",
+              0.84,
+              0.79
+            ],
+            [
+              "LEONIDA KEYS",
+              0.6,
+              0.93
+            ]
+          ],
+          "activos": [
+            "GRASSRIVERS",
+            "MOUNT KALAGA"
+          ],
+          "compara": false
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/mapa/escena_2.wav",
+      "y_titular": 340,
+      "duracion": 9.45
+    },
+    {
+      "id": "turbia",
+      "etiqueta": "ZONAS 5 Y 6",
+      "titular": "LA LEONIDA MÁS TURBIA",
+      "detalle": "la costa olvidada y los moteros",
+      "voz": "Y la parte turbia: Port Gellhorn, la costa olvidada, y Ambrosia, donde mandan los moteros.",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/mapa/04_costa.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 3.1,
+          "desde": 0,
+          "hasta": 3.1,
+          "offset": 0.0,
+          "gamma": 1.0,
+          "color": 1.06
+        },
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/mapa/05_moteros.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 3.2,
+          "desde": 3.1,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 1.0,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        },
+        {
+          "tipo": "mapa_leonida",
+          "t": 0.15,
+          "hasta": 3.1,
+          "y": 900,
+          "pines": [
+            [
+              "MOUNT KALAGA",
+              0.47,
+              0.11
+            ],
+            [
+              "PORT GELLHORN",
+              0.17,
+              0.17
+            ],
+            [
+              "AMBROSIA",
+              0.62,
+              0.3
+            ],
+            [
+              "GRASSRIVERS",
+              0.71,
+              0.68
+            ],
+            [
+              "VICE CITY",
+              0.84,
+              0.79
+            ],
+            [
+              "LEONIDA KEYS",
+              0.6,
+              0.93
+            ]
+          ],
+          "activos": [
+            "PORT GELLHORN"
+          ],
+          "compara": false
+        },
+        {
+          "tipo": "mapa_leonida",
+          "t": 3.1,
+          "hasta": 1000000000.0,
+          "y": 900,
+          "pines": [
+            [
+              "MOUNT KALAGA",
+              0.47,
+              0.11
+            ],
+            [
+              "PORT GELLHORN",
+              0.17,
+              0.17
+            ],
+            [
+              "AMBROSIA",
+              0.62,
+              0.3
+            ],
+            [
+              "GRASSRIVERS",
+              0.71,
+              0.68
+            ],
+            [
+              "VICE CITY",
+              0.84,
+              0.79
+            ],
+            [
+              "LEONIDA KEYS",
+              0.6,
+              0.93
+            ]
+          ],
+          "activos": [
+            "PORT GELLHORN",
+            "AMBROSIA"
+          ],
+          "compara": false
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/mapa/escena_3.wav",
+      "y_titular": 340,
+      "duracion": 6.3
+    },
+    {
+      "id": "cierre",
+      "etiqueta": "19 DE NOVIEMBRE",
+      "titular": "ESTA NOCHE NO SE DUERME",
+      "voz": "Pásaselo a ese amigo que no dormirá esta noche.",
+      "compartir": "PÁSASELO A ESE AMIGO",
+      "fx": [
+        {
+          "tipo": "clip_tramo",
+          "video": "videos/doce/x_ciudad_noche.mp4",
+          "z": [
+            1.0,
+            1.06
+          ],
+          "foco": [
+            0.5,
+            0.5
+          ],
+          "dur": 3.243,
+          "desde": 0,
+          "hasta": 99,
+          "offset": 0.0,
+          "gamma": 0.7,
+          "color": 1.06
+        },
+        {
+          "tipo": "velo_superior",
+          "fuerza": 125,
+          "alto": 640
+        }
+      ],
+      "ilustracion": "taller",
+      "audio_voz": "voz/mapa/escena_4.wav",
+      "y_titular": 340,
+      "duracion": 3.243
+    }
+  ]
+}
