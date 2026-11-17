@@ -90,6 +90,9 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 19. ✅ **REGLA FIJA (confirmada 3 veces: GTA P2, Drift R1, Adiós GTA 5): el cierre no debe "sonar a final" ni alargarse** (gráficas de retención de YouTube, 14 nov). En GTA P2 y en el Drift R1 hay una **caída brusca en los últimos 3-4 s** (P2: del ~60 % al ~20 %; R1: del ~33 % al ~12 %), justo cuando entra la escena de cierre con la llamada a la acción. GTA P1, que no tiene ese cierre largo, termina con ~50 %. **Escena final de 3,5 s como máximo**, con la llamada a compartir antes (a mitad del vídeo, regla 12) y el salto al bucle rápido. *(El de Kick ya salió con un cierre de 5,2 s: vigilar su gráfica para confirmarlo).*
 20. **YouTube a veces "despierta" tarde un vídeo:** GTA P2 tenía 8 vistas a las 22 h y al día y medio saltó a ~1 K. **Nunca juzgar ni borrar un vídeo de YouTube antes de los 3 días.**
 
+
+21. ✅ **REGLA FIJA (confirmada 3 veces en YouTube): fondos de clips realistas con movimiento** (vídeo IA tipo cine), no animación tipo dibujo. Se quedan: "Adiós, GTA 5" 69,8 %, "Horas antes" 67,4 %, "4 teorías Online" 74,1 % frente al 59,9 % de Kick (animado). En Instagram también dan la mejor omisión (33,1 % y 30,5 %).
+22. **Lo que se comparte es lo útil o el pique, no las teorías.** Kick (útil + amigo que pide juegos): 2,7 %; "Horas antes" (pique entre países): 4,1 %; "4 teorías Online": 0 %. Las teorías enganchan (buen gancho) pero nadie se las manda a nadie: a un vídeo de teorías hay que darle un motivo para compartir (un pique o algo que el amigo NECESITE saber).
 ---
 
 ## Método para afinar el tiro
@@ -129,6 +132,9 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 | **Horas antes** (26 h) | **YouTube** | 1,2 K interesadas (~2,3 K en 48 h, 2.ª ola) | **32,6 % saltan** (Kick: 40,1 %) | (retención pendiente) | — | — | — | Clips de acción IA realistas + relojes. El 95 % del tráfico, del feed de Shorts |
 | **Horas antes** (26 h) | **Instagram** | 156 (121 personas) | **33,1 %** 🏆 (1.ª vez por debajo del 35 %) | 12 s (43 %) | **4,1 %** 🏆 récord | 0,8 % | 0 | Pique "¿quién de los dos lo juega antes?". **Todas las tasas "Superior"**, pero Instagram casi no lo repartió (curva plana). Pico de likes en el truco de Xbox |
 | Horas antes (26 h) | TikTok | 81 | (cae en el s 1) | 7,7 s (27 %) · **8 % completo** (el mejor de TikTok) | 0 | 0 | 0 | Igual: techo de ~90 |
+| **4 teorías Online** (23 h) | YouTube | **30** (casi sin repartir) | **25,9 % saltan** 🏆 (74,1 % se quedan) | (retención pendiente) | — | — | 0 | Clips IA de "ambiente online", 36 s, sellos TEORÍA #N, conectores. YouTube lo enseñó a muy poca gente: esperar a los 3 días (regla 20) |
+| 4 teorías Online (23 h) | Instagram | 147 (131 personas) | **30,5 %** 🏆 (la mejor omisión) | 12 s (33 %) | **0 %** | **0 %** | 0 | Pico de likes a los 3 s (el gancho). Nadie lo compartió ni lo guardó |
+| 4 teorías Online (23 h) | TikTok | 81 | (cae en el s 2) | 7,8 s (21 %) · 5,3 % completo | 1 | 0 | 0 | Igual: techo de ~90 |
 
 ### Retención de YouTube (gráfica completa)
 
@@ -289,6 +295,8 @@ Hecho el 14 nov. **Proceso:**
 - **Créditos:** ~82 (9 imágenes y 8 clips; 2 clips del intento anterior no se usaron). Quedan ~119.
 
 ### "4 teorías de GTA 6 Online" (36,4 s, clips IA de ambiente online)
+**Resultados (23 h):** el mejor gancho de la cuenta (Instagram: omisión del 30,5 %; YouTube: 74,1 % se quedan), pero **0 compartidos y 0 guardados** y muy poco alcance (YouTube 30, Instagram 147). Con 36 s, el tiempo medio en Instagram baja al 33 %.
+
 Hecho el 16 nov. Idea de Albert. **Proceso:**
 - Albert pasó un **vídeo de gameplay oficial de GTA 6** (con la etiqueta RP/ESRB y carteles de Leonida) para usarlo de fondo → **NO**: es material de Rockstar y además no se puede recrear su aspecto con IA. Alternativa: escenas originales con **"ambiente online"**: quedada de coches de noche, una crew con la misma ropa, amigos jugando con cascos, motos de cross y salida de una carrera callejera. Le encantaron.
 - **"Les falta algo entre dato y dato"** → conectores en la voz + **sello "TEORÍA #N" que golpea la pantalla** con sonido de impacto (`sello_teoria`).
