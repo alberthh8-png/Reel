@@ -28,6 +28,7 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 ### Albertesonrrei: primer clip editado, "Le está revisando el VAR" (17 nov)
 - Fuente: VOD de Twitch (2 h 47 min). **Cómo se sacó:** solo el audio con yt-dlp → picos de energía (gritos y risas) → transcripción **solo de esos tramos** con ElevenLabs Scribe (para no gastar créditos) → descarga de los trozos .ts del 720p60 con curl (ffmpeg no pasa por el proxy). En el entorno "Reel" se permitieron gql.twitch.tv, usher.ttvnw.net y d3stzm2eumvgb4.cloudfront.net (el servidor de los VOD puede cambiar).
 - Montaje (`albertesonrrei/clip_var.py`): 1080×1920 a **60 fps**; gancho arriba ("EMPATE A 3 Y QUEDAN 24 SEGUNDOS…"), cámara arriba (recorte 268×148 → ancho completo, con enfoque), partida en el centro (recorte sin chat ni turbo), **arranque en frío con el gol**, rebobinado de "20 SEGUNDOS ANTES", karaoke con su voz y censura con puntitos, zoom a la cara en la reacción, golpe en el gol, sticker "VAR REVISANDO" y audio a -14 LUFS.
+- **Efecto viral de voz (pedido por Albert):** en lo malsonante, el vídeo y la voz se ralentizan al 62 % (voz más grave y lenta) con zoom a la cara. **Se ralentiza la FRASE entera** (`efectos.frase_lenta`: corta en . ? ! o en pausas de más de 1 s, como mucho ~2 s antes y ~2,4 s después de la palabra), no solo la palabra. Los subtítulos siguen censurados con puntitos.
 - Limitación: la cámara del directo es muy pequeña y se ve algo blanda → pedirle que grabe la cámara aparte (Source Record de OBS).
 
 ## Preferencias y decisiones de Albert

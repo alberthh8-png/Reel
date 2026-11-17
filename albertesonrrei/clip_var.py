@@ -22,7 +22,8 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-import reel  # noqa: E402  (fuentes, texto con estilo, utilidades)
+import reel  # noqa: E402
+from albertesonrrei.efectos import frase_lenta  # noqa: E402  (fuentes, texto con estilo, utilidades)
 from reel import clamp, ease_out_back, ease_out_cubic, fuente, pegar_centrado, texto_con_estilo  # noqa: E402
 
 W, H, FPS = 1080, 1920, 60
@@ -65,9 +66,9 @@ def preparar_tiempos(palabras):
     for k, w in enumerate(ws):
         if limpia(w["text"]) not in MALSONANTES:
             continue
-        ini = ws[max(0, k - 2)]["start"]  # la expresión entera ("darme por culo"), no solo la palabra
+        ini, fin, _, _ = frase_lenta(ws, k)  # la frase entera, no solo la palabra
         s0 = VENTANA_STT + ini - ABS0 - 0.04
-        s1 = VENTANA_STT + w["end"] - ABS0 + 0.08
+        s1 = VENTANA_STT + fin - ABS0 + 0.1
         if MAIN0 < s0 < MAIN1:
             feas.append((s0, s1))
     TRAMOS = [(0.0, FRIO[1], FRIO[1] + FRIO[0], 1.0, "frio"), (FRIO[0], REBOB[1], REBOB[2], None, "rebob")]

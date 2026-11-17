@@ -21,6 +21,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+from albertesonrrei.efectos import frase_lenta  # noqa: E402
 from reel import clamp, ease_out_back, ease_out_cubic, fuente, pegar_centrado, texto_con_estilo  # noqa: E402
 
 W, H, FPS = 1080, 1920, 60
@@ -73,10 +74,14 @@ class Linea:
             for k, w in enumerate(ws):
                 if limpia(w["text"]) not in MALSONANTES:
                     continue
-                a = ws[max(0, k - 1)]["start"] + m["stt"] - 0.04
-                b = w["end"] + m["stt"] + 0.08
-                if m["s0"] < a < m["s1"]:
-                    feas.append((a, b))
+                ini, fin, _, _ = frase_lenta(ws, k)  # la frase entera, no solo la palabra
+                a = max(ini + m["stt"] - 0.04, m["s0"])
+                b = min(fin + m["stt"] + 0.1, m["s1"])
+                if m["s0"] <= a < m["s1"]:
+                    if feas and a < feas[-1][1]:
+                        feas[-1] = (feas[-1][0], max(b, feas[-1][1]))
+                    else:
+                        feas.append((a, b))
             if self.tramos:
                 self.cortes.append(u)
             s = m["s0"]
