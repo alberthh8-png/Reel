@@ -20,6 +20,9 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 - Es su cuenta **principal de creador**: lleva **~1 año y medio** haciendo directos en **Twitch y TikTok** y subiendo gameplays y clips de **Rocket League, GTA 5, Overwatch, Minecraft** y un poco de todo.
 - **Plan nuevo:** seguir con los reels de **GNews** (noticias y curiosidades, crecer la cuenta) **y además editar los clips y gameplays** que Albert pase **para Albertesonrrei**.
 - Son **dos marcas distintas**: GNews = noticias con la voz de Dan y animaciones; Albertesonrrei = Albert jugando (su voz, su cara y su humor). No mezclar estilos sin hablarlo.
+- **Humor negro: es el estilo de su canal y es decisión suya** (17 nov). En sus clips: **la voz se deja tal cual** y en los **subtítulos se censura con puntitos** lo muy malsonante (insultos fuertes, palabras racistas u homófobas), por ejemplo "n•••o", "p••a". Ya se le avisó una vez de que las plataformas también analizan el audio: no insistir más.
+- **Cómo pasar los clips:** el archivo original (clip de Twitch, OBS o VOD; en horizontal, 1080p y a ser posible 60 fps), no descargas de TikTok ni por WhatsApp. Si puede: micro y juego en pistas separadas en OBS. Decir el minuto del momento bueno.
+- **Análisis de sus 3 clips antiguos:** tiene personalidad y gracia (el mejor concepto es el del cocinero italiano en directo). Fallos: arranque flojo (ajustando el audio o una captura del chat), 50 s sin un pico, pantalla saturada de overlays, marca de agua de TikTok y baja resolución, y audio bajo (-25/-29 dB de media).
 - Pendiente de definir con Albert: formato de sus clips (¿cámara?, ¿vertical u horizontal?), estilo de edición y si se promocionan entre sí.
 
 ## Preferencias y decisiones de Albert
