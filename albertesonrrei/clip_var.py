@@ -38,27 +38,69 @@ VENTANA_STT = 6020.0             # inicio de la ventana transcrita
 FRIO = (1.5, 132.7)              # arranque en frío: 1,5 s desde s=132,7 (gol del rival en s≈134)
 REBOB = (0.8, 134.2, 116.0)      # rebobinado de 0,8 s de s=134,2 a s=116
 MAIN0, MAIN1 = 116.0, 150.6      # la jugada completa
-U_MAIN = FRIO[0] + REBOB[0]
-TOTAL = U_MAIN + (MAIN1 - MAIN0)
 GOL_S = 134.0
 ZOOM_S = 133.8                   # "ay, ay, ay, me sudan las manos"
 VAR_S = 144.3                    # "adelantado anulado"
-CENSURA = {"culo": "c•lo", "culo.": "c•lo."}
+LENTO = 0.62                     # velocidad en las palabras malsonantes (voz más grave y lenta)
+MALSONANTES = {"culo", "mierda", "puta", "puto", "putas", "putos", "joder", "coño", "polla", "pinga", "verga",
+               "cabrón", "cabron", "gilipollas", "hostia", "hostias", "pinche"}
+CENSURA = {"culo": "c•lo", "mierda": "m•••da", "puta": "p•ta", "puto": "p•to", "putas": "p•tas", "putos": "p•tos",
+           "joder": "j•der", "coño": "c•ño", "polla": "p•lla", "pinga": "p•nga", "verga": "v•rga",
+           "cabrón": "c•brón", "gilipollas": "g•lipollas", "hostia": "h•stia", "hostias": "h•stias"}
+TRAMOS = []                      # (u0, s0, s1, velocidad, tipo); se rellena en preparar_tiempos()
+TOTAL = 0.0
+U_MAIN = FRIO[0] + REBOB[0]
+LENTOS = []                      # (u0, u1) de cada palabra ralentizada
 
-ROSA, AMARILLO, BLANCO, OSCURO = (255, 61, 139), (255, 210, 63), (255, 255, 255), (12, 8, 24)
+
+def limpia(txt):
+    return txt.lower().strip(".,;:!?¡¿«»\"'")
+
+
+def preparar_tiempos(palabras):
+    """Corta la jugada en tramos normales y tramos lentos (una palabra malsonante cada uno)."""
+    global TOTAL, TRAMOS, LENTOS
+    feas = []
+    ws = [w for w in palabras if w.get("type") == "word"]
+    for k, w in enumerate(ws):
+        if limpia(w["text"]) not in MALSONANTES:
+            continue
+        ini = ws[max(0, k - 2)]["start"]  # la expresión entera ("darme por culo"), no solo la palabra
+        s0 = VENTANA_STT + ini - ABS0 - 0.04
+        s1 = VENTANA_STT + w["end"] - ABS0 + 0.08
+        if MAIN0 < s0 < MAIN1:
+            feas.append((s0, s1))
+    TRAMOS = [(0.0, FRIO[1], FRIO[1] + FRIO[0], 1.0, "frio"), (FRIO[0], REBOB[1], REBOB[2], None, "rebob")]
+    u, s = U_MAIN, MAIN0
+    LENTOS = []
+    for a, b in feas:
+        if a > s:
+            TRAMOS.append((u, s, a, 1.0, "main"))
+            u += a - s
+        TRAMOS.append((u, a, b, LENTO, "main"))
+        LENTOS.append((u, u + (b - a) / LENTO))
+        u += (b - a) / LENTO
+        s = b
+    TRAMOS.append((u, s, MAIN1, 1.0, "main"))
+    u += MAIN1 - s
+    TOTAL = u
 
 
 def s_de_u(u):
-    if u < FRIO[0]:
-        return FRIO[1] + u, "frio"
-    if u < U_MAIN:
-        k = (u - FRIO[0]) / REBOB[0]
-        return REBOB[1] + (REBOB[2] - REBOB[1]) * (k ** 0.7), "rebob"
-    return MAIN0 + (u - U_MAIN), "main"
+    for u0, s0, s1, v, tipo in reversed(TRAMOS):
+        if u >= u0:
+            if tipo == "rebob":
+                k = (u - u0) / REBOB[0]
+                return s0 + (s1 - s0) * (min(k, 1) ** 0.7), tipo
+            return min(s1, s0 + (u - u0) * v), tipo
+    return FRIO[1], "frio"
 
 
 def u_de_s(s):
-    return U_MAIN + (s - MAIN0)
+    for u0, s0, s1, v, tipo in TRAMOS:
+        if tipo == "main" and s0 <= s <= s1:
+            return u0 + (s - s0) / v
+    return TOTAL
 
 
 class Clip:
@@ -102,10 +144,9 @@ class Clip:
             if s0 < MAIN0 - 0.2 or s0 > MAIN1:
                 continue
             txt = w["text"].strip()
-            low = txt.lower()
-            for k, v in CENSURA.items():
-                if low == k:
-                    txt = v
+            base = limpia(txt)
+            if base in CENSURA:
+                txt = txt.lower().replace(base, CENSURA[base])
             ws.append((txt, u_de_s(s0), u_de_s(min(s1, MAIN1))))
         bloques, act = [], []
         for p in ws:
@@ -134,6 +175,9 @@ class Clip:
         if tramo == "main" and uz <= u < uz + 3.0:
             k = (u - uz) / 3.0
             zoom = 1 + 0.22 * math.sin(min(k * 4, 1) * math.pi / 2) * (1 - max(0, (k - 0.75) / 0.25))
+        for a, b in LENTOS:
+            if a - 0.05 <= u < b + 0.15:
+                zoom = max(zoom, 1 + 0.3 * ease_out_cubic((u - a + 0.05) / 0.12))
         if tramo == "frio" and u > 0.9:
             zoom = 1 + 0.18 * ease_out_cubic((u - 0.9) / 0.4)
         x0, y0, x1, y1 = CAM
@@ -221,6 +265,7 @@ _C = None
 
 def _init(dir_fr, palabras):
     global _C
+    preparar_tiempos(palabras)
     _C = Clip(dir_fr, palabras)
 
 
@@ -246,8 +291,18 @@ def audio(ruta_wav, salida):
         i = int(u0 * sr)
         out[i:i + len(seg)] += seg[:max(0, N - i)]
 
-    tramo(FRIO[1], FRIO[1] + FRIO[0], 0.0)
-    tramo(MAIN0, MAIN1, U_MAIN)
+    for u0, s0, s1, v, tipo in TRAMOS:
+        if tipo == "rebob":
+            continue
+        a, b = int(s0 * sr), int(s1 * sr)
+        seg = x[a:b]
+        if v != 1.0:  # cinta ralentizada: más lenta y más grave a la vez
+            n = int(len(seg) / v)
+            seg = np.interp(np.linspace(0, len(seg) - 1, n), np.arange(len(seg)), seg) * 1.25
+        i = int(u0 * sr)
+        k = min(len(seg), N - i)
+        if k > 0:
+            out[i:i + k] += seg[:k]
     rng = np.random.default_rng(3)
     # rebobinado: barrido descendente con ruido de cinta
     L = int(REBOB[0] * sr)
@@ -295,6 +350,7 @@ def main():
     ap.add_argument("--preview", type=float, nargs="*")
     a = ap.parse_args()
     palabras = json.load(open(a.palabras))["words"]
+    preparar_tiempos(palabras)
     os.makedirs(a.salida, exist_ok=True)
     if a.preview:
         c = Clip(a.fotogramas, palabras)
