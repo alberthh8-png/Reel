@@ -436,8 +436,8 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
   - 13 nov: "Adiós, GTA 5" ✅ publicado
   - 14 nov: "¡Corre! GTA 6 gratis" (sorteo de Kick) ✅ publicado
   - 15 nov: "Horas antes que tú" (Nueva Zelanda, truco de Xbox, 30 FPS) ✅ publicado (sustituyó a "5 cosas que hacer antes del 19")
-  - 16 nov: "4 teorías de GTA 6 Online" ✅ montado
-  - 17 nov: por decidir
+  - 16 nov: "4 teorías de GTA 6 Online" ✅ publicado
+  - 17 nov: "El mapa de GTA 6 en 30 segundos" ✅ publicado el 17 por la noche (35 s; mapa propio con pines; "pásaselo a ese amigo que no dormirá esta noche")
   - 18 nov: "Mañana sale GTA 6" (cuenta atrás / lo que sabemos)
   - 19 nov: "¿Se cumplieron las teorías?"
 3. **19 nov:** **GTA Parte 3, "¿Se cumplieron las teorías?"**, con todas las reglas (sin "Parte 3" en pantalla ni en el título de YouTube).
