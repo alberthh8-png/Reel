@@ -494,3 +494,44 @@ Vídeo: `salida/online/reel.mp4` · Portada: `salida/online/portada.jpg` (quedad
 - Personaje y dinero: [Gameranx](https://gameranx.com/updates/id/559637/article/could-gta-6-allow-for-gta-online-characters-to-be-transferred-over/), [Gfinity](https://www.gfinityesports.com/article/gta-online-gta-6-grinding-money)
 - Mapa que evoluciona: [Tom's Guide](https://tomsguide.com/news/gta-6-release-date-reportedly-set-for-2025-with-an-evolving-map)
 - Salas más grandes (rumor): [PC Gamer](https://www.pcgamer.com/games/grand-theft-auto/gta-6s-server-player-count-rumour-could-be-great-news-for-gta-online-2-0), [GamingBible](https://www.gamingbible.com/news/gta-6-online-player-count-468762-20250710)
+
+---
+
+# REEL: "El mapa de GTA 6" (~35 s)
+
+Vídeo: `salida/mapa/reel.mp4` · Portada: `salida/mapa/portada.jpg` (Leonida creciendo "x2" sobre la ciudad de noche).
+
+**Cuándo:** **18 nov, a las 20:00-22:00** (la noche antes del lanzamiento: "el amigo que no dormirá esta noche").
+
+## Instagram
+```
+El mapa de GTA 6 es el DOBLE que el de GTA 5 🗺️🔥 Estas son sus 6 zonas:
+
+🏙️ Vice City, la gran ciudad
+🏝️ Leonida Keys, las islas del sur (dicen que la zona clave del online)
+🐊 Grassrivers, pantanos llenos de caimanes
+🏔️ Mount Kalaga, caza, pesca y todoterreno
+🏚️ Port Gellhorn, la costa olvidada
+🏍️ Ambrosia, donde mandan los moteros
+
+Guárdalo para el 19 📌 y pásaselo a ese amigo que no dormirá esta noche 👇
+
+#GTA6 #GTAVI #ViceCity #Leonida #Gaming
+```
+## YouTube Shorts
+**Título:** `El MAPA de GTA 6 es el DOBLE que GTA 5 🗺️ #shorts`
+**Descripción:**
+```
+Rockstar confirma que el mapa de GTA 6 es unas dos veces el de GTA 5 y tres veces el de Red Dead Redemption 2. Sus 6 zonas: Vice City, Leonida Keys, Grassrivers, Mount Kalaga, Port Gellhorn y Ambrosia. Mapa del vídeo aproximado y no oficial. Guárdalo para el 19 y pásaselo a ese amigo que no dormirá esta noche 👇
+
+#GTA6 #ViceCity #Shorts
+```
+## TikTok
+```
+El mapa de GTA 6 es el DOBLE que GTA 5 🗺️ Pásaselo a ese amigo que no dormirá esta noche 👇 #GTA6 #vicecity #leonida #gaming #fyp
+```
+**Comentario fijado (las 3 redes):** `¿A qué zona vas a ir primero? 🗺️👇`
+
+## Fuentes
+- Las 6 regiones: [GamesRadar](https://gamesradar.com/games/grand-theft-auto/gta-6-map-returns-to-vice-city-and-explores-the-riches-of-the-florida-lite-state-of-leonida-malt-liquor-painkillers-and-truck-stop-energy-drinks), [PC Gamer](https://www.pcgamer.com/games/grand-theft-auto/gta6-map), [Gfinity](https://www.gfinityesports.com/article/gta-6-map-guide-every-confirmed-location-in-leonida)
+- Tamaño (2 veces GTA 5, 3 veces RDR2): [Forbes](https://www.forbes.com/sites/brianmazique/2026/10/06/gta-6s-map-is-about-twice-the-size-of-gta-5-with-hurricanes-and-170-animal-species/), [Endgame Tools](https://endgametools.com/en/gta-6/news/gta-6-leonida-map-regions)
