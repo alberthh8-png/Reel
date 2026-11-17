@@ -25,6 +25,11 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 - **Análisis de sus 3 clips antiguos:** tiene personalidad y gracia (el mejor concepto es el del cocinero italiano en directo). Fallos: arranque flojo (ajustando el audio o una captura del chat), 50 s sin un pico, pantalla saturada de overlays, marca de agua de TikTok y baja resolución, y audio bajo (-25/-29 dB de media).
 - Pendiente de definir con Albert: formato de sus clips (¿cámara?, ¿vertical u horizontal?), estilo de edición y si se promocionan entre sí.
 
+### Albertesonrrei: primer clip editado, "Le está revisando el VAR" (17 nov)
+- Fuente: VOD de Twitch (2 h 47 min). **Cómo se sacó:** solo el audio con yt-dlp → picos de energía (gritos y risas) → transcripción **solo de esos tramos** con ElevenLabs Scribe (para no gastar créditos) → descarga de los trozos .ts del 720p60 con curl (ffmpeg no pasa por el proxy). En el entorno "Reel" se permitieron gql.twitch.tv, usher.ttvnw.net y d3stzm2eumvgb4.cloudfront.net (el servidor de los VOD puede cambiar).
+- Montaje (`albertesonrrei/clip_var.py`): 1080×1920 a **60 fps**; gancho arriba ("EMPATE A 3 Y QUEDAN 24 SEGUNDOS…"), cámara arriba (recorte 268×148 → ancho completo, con enfoque), partida en el centro (recorte sin chat ni turbo), **arranque en frío con el gol**, rebobinado de "20 SEGUNDOS ANTES", karaoke con su voz y censura con puntitos, zoom a la cara en la reacción, golpe en el gol, sticker "VAR REVISANDO" y audio a -14 LUFS.
+- Limitación: la cámara del directo es muy pequeña y se ve algo blanda → pedirle que grabe la cámara aparte (Source Record de OBS).
+
 ## Preferencias y decisiones de Albert
 
 - **No quiere** "un top con solo texto y fondo": quiere **acción y animación** (disparos, explosiones, cámara que se mueve, imágenes).
