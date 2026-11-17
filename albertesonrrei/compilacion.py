@@ -33,10 +33,11 @@ LENTO = VEL_GRAVE
 TRANS = 0.3
 ROSA, AMARILLO, BLANCO, OSCURO, VERDE = (255, 61, 139), (255, 210, 63), (255, 255, 255), (12, 8, 24), (60, 230, 120)
 MALSONANTES = {"culo", "mierda", "puta", "puto", "putas", "putos", "joder", "coño", "polla", "pinga", "verga",
-               "cabrón", "cabron", "gilipollas", "hostia", "hostias"}
+               "cabrón", "cabron", "cabrones", "cabronazo", "gilipollas", "hostia", "hostias", "cago"}
 CENSURA = {"culo": "c•lo", "mierda": "m•••da", "puta": "p•ta", "puto": "p•to", "joder": "j•der", "coño": "c•ño",
            "polla": "p•lla", "pinga": "p•nga", "verga": "v•rga", "cabrón": "c•brón", "gilipollas": "g•lipollas",
-           "hostia": "h•stia", "hostias": "h•stias"}
+           "hostia": "h•stia", "hostias": "h•stias", "cabrones": "c•brones", "cabronazo": "c•bronazo",
+           "pinga": "p•nga", "cago": "c•go"}
 
 # s = segundo dentro de cada tramo descargado (segX.mp4); stt = desplazamiento para pasar de la transcripción a s
 MOMENTOS = [
@@ -52,6 +53,17 @@ MOMENTOS = [
          s0=131.0, s1=150.6,
          stickers=[dict(tipo="var", s=144.3)], golpe=134.0, zooms=[133.8]),
 ]
+
+
+TITULOS = ("EL DIRECTO MÁS POBRE", "DE TWITCH")
+
+
+def cargar_config(ruta):
+    """Lee momentos y títulos de un JSON (si no, se usan los de "El directo más pobre")."""
+    global MOMENTOS, TITULOS
+    cfg = json.load(open(ruta))
+    MOMENTOS = cfg["momentos"]
+    TITULOS = tuple(cfg["titulos"])
 
 
 def limpia(txt):
@@ -82,7 +94,7 @@ class Linea:
                         feas[-1] = (feas[-1][0], max(b, feas[-1][1]))
                     else:
                         feas.append((a, b))
-            if self.tramos:
+            if self.tramos and not m.get("suave"):
                 self.cortes.append(u)
             s = m["s0"]
             for a, b in feas:
@@ -115,9 +127,9 @@ class Editor:
     def __init__(self, dir_):
         self.dir = dir_
         self.L = Linea(dir_)
-        self.titulo1 = texto_con_estilo("EL DIRECTO MÁS POBRE", fuente(78), AMARILLO + (255,), borde=10,
+        self.titulo1 = texto_con_estilo(TITULOS[0], fuente(78), AMARILLO + (255,), borde=10,
                                         color_borde=OSCURO, brillo=ROSA)
-        self.titulo2 = texto_con_estilo("DE TWITCH", fuente(64), BLANCO + (255,), borde=8, color_borde=OSCURO)
+        self.titulo2 = texto_con_estilo(TITULOS[1], fuente(64), BLANCO + (255,), borde=8, color_borde=OSCURO)
         self.fondo = Image.new("RGB", (W, H), (13, 9, 24))
         d = ImageDraw.Draw(self.fondo)
         d.rectangle((0, Y_CAM - 6, W, Y_CAM - 1), fill=ROSA)
@@ -160,6 +172,17 @@ class Editor:
         d.text((180, 70), "CÁMARA APOYADA", font=fuente(50), fill=(20, 12, 30, 255), anchor="lm")
         d.text((180, 128), "EN UN VENTILADOR", font=fuente(50), fill=(45, 120, 255, 255), anchor="lm")
         return img
+
+    def _texto(self, lineas):
+        k = tuple(lineas)
+        if k not in self.chat:
+            img = self._caja(820, 40 + 66 * len(lineas), relleno=(255, 255, 255, 255), borde=(20, 20, 30))
+            d = ImageDraw.Draw(img)
+            for i, l in enumerate(lineas):
+                d.text((430, 75 + 66 * i), l, font=fuente(54), fill=((20, 12, 30) if i == 0 else (230, 40, 70)) + (255,),
+                       anchor="mm")
+            self.chat[k] = img
+        return self.chat[k]
 
     def _chat(self, texto):
         if texto not in self.chat:
@@ -270,14 +293,17 @@ class Editor:
                 giro = 1 + 0.04 * math.sin(b * 8)
                 pegar_centrado(frame, self.st["ventilador"], W / 2, 1060, escala=ease_out_back(b / 0.35, 2.2) * giro,
                                angulo=-3)
+            elif st["tipo"] == "texto":
+                pegar_centrado(frame, self._texto(st["lineas"]), W / 2, 1060,
+                               escala=ease_out_back(b / 0.35, 2.2) * (1 + 0.04 * math.sin(b * 8)), angulo=-3)
             elif st["tipo"] == "var":
                 pegar_centrado(frame, self.st["var"], W / 2, 1060,
                                escala=ease_out_back(b / 0.35, 2.2) * (1 + 0.05 * math.sin(b * 9)), angulo=-4)
         self._subs(frame, u)
         rgb = frame.convert("RGB")
         flash, sac, glitch = 0.0, 0.0, 0.0
-        if m.get("golpe"):
-            ug = self.L.u_de(m["id"], m["golpe"])
+        for g in ([m["golpe"]] if m.get("golpe") else []) + m.get("golpes", []):
+            ug = self.L.u_de(m["id"], g)
             b = u - ug if ug is not None else -1
             if 0 <= b < 0.3:
                 flash, sac = 0.28 * (1 - b / 0.3) ** 2, 26 * (1 - b / 0.3)
@@ -317,7 +343,8 @@ def audio(ed, salida):
         if m["wav"] not in cache:
             cache[m["wav"]] = leer_wav(os.path.join(ed.dir, m["wav"]))[0]
         x = cache[m["wav"]]
-        seg = x[int(s0 * sr):int(s1 * sr)]
+        w0 = m.get("wav_inicio", 0.0)
+        seg = x[int((s0 - w0) * sr):int((s1 - w0) * sr)]
         if v != 1.0:
             seg = voz_grave(seg, sr)
         i = int(u0 * sr)
@@ -333,8 +360,8 @@ def audio(ed, salida):
         i = int((c - 0.2) * sr)
         out[i:i + Lw] += wv[:max(0, N - i)]
     for m in MOMENTOS:
-        if m.get("golpe"):
-            ug = L.u_de(m["id"], m["golpe"])
+        for g in ([m["golpe"]] if m.get("golpe") else []) + m.get("golpes", []):
+            ug = L.u_de(m["id"], g)
             Lb = int(0.6 * sr)
             tb = np.arange(Lb) / sr
             boom = np.sin(2 * np.pi * (45 * tb + 30 * (1 - np.exp(-tb * 8)))) * np.exp(-tb * 6) * 0.5
@@ -366,8 +393,10 @@ def audio(ed, salida):
 _E = None
 
 
-def _init(dir_):
+def _init(dir_, config=None):
     global _E
+    if config:
+        cargar_config(config)
     _E = Editor(dir_)
 
 
@@ -380,7 +409,10 @@ def main():
     ap.add_argument("--dir", required=True)
     ap.add_argument("--salida", required=True)
     ap.add_argument("--preview", type=float, nargs="*")
+    ap.add_argument("--config")
     a = ap.parse_args()
+    if a.config:
+        cargar_config(a.config)
     os.makedirs(a.salida, exist_ok=True)
     ed = Editor(a.dir)
     print(f"Duración: {ed.L.total:.1f} s · lentos: {[(round(x, 2), round(y, 2)) for x, y in ed.L.lentos]}")
@@ -396,7 +428,7 @@ def main():
                            "-r", str(FPS), "-i", "-", "-i", wav, "-c:v", "libx264", "-preset", "medium", "-crf", "18",
                            "-pix_fmt", "yuv420p", "-profile:v", "high", "-movflags", "+faststart", "-c:a", "aac",
                            "-b:a", "192k", "-shortest", out], stdin=subprocess.PIPE)
-    with Pool(os.cpu_count(), initializer=_init, initargs=(a.dir,)) as pool:
+    with Pool(os.cpu_count(), initializer=_init, initargs=(a.dir, a.config)) as pool:
         for datos in pool.imap(_render, range(int(ed.L.total * FPS)), chunksize=8):
             ff.stdin.write(datos)
     ff.stdin.close()

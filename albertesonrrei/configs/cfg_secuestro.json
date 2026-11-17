@@ -1,0 +1,100 @@
+{
+ "titulos": [
+  "MI CHAT QUIERE",
+  "SECUESTRARME"
+ ],
+ "momentos": [
+  {
+   "id": "P1",
+   "frames": "p_P1",
+   "s_frames": 8788.5,
+   "wav": "m8787.wav",
+   "wav_inicio": 8786.0,
+   "palabras": "ventanas/w8826.json",
+   "stt": 8781.0,
+   "s0": 8788.8,
+   "s1": 8790.4,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "P2",
+   "frames": "p_P2",
+   "s_frames": 8825.0,
+   "wav": "m8787.wav",
+   "wav_inicio": 8786.0,
+   "palabras": "ventanas/w8826.json",
+   "stt": 8781.0,
+   "s0": 8825.3,
+   "s1": 8833.4,
+   "stickers": [
+    {
+     "tipo": "chat",
+     "s": 8825.4,
+     "hasta": 8828.6,
+     "texto": "Hay que esconder los delitos de este caballero fantasma"
+    }
+   ],
+   "zooms": []
+  },
+  {
+   "id": "P3",
+   "frames": "p_P3",
+   "s_frames": 8840.400000000001,
+   "wav": "m8787.wav",
+   "wav_inicio": 8786.0,
+   "palabras": "ventanas/w8826.json",
+   "stt": 8781.0,
+   "s0": 8840.7,
+   "s1": 8849.9,
+   "stickers": [],
+   "zooms": [
+    8842.6
+   ]
+  },
+  {
+   "id": "P4",
+   "frames": "p_P4",
+   "s_frames": 8850.400000000001,
+   "wav": "m8787.wav",
+   "wav_inicio": 8786.0,
+   "palabras": "ventanas/w8826.json",
+   "stt": 8781.0,
+   "s0": 8850.7,
+   "s1": 8862.0,
+   "stickers": [
+    {
+     "tipo": "chat",
+     "s": 8850.8,
+     "hasta": 8854.2,
+     "texto": "Cloroformo con sabor a café"
+    }
+   ],
+   "zooms": []
+  },
+  {
+   "id": "P5",
+   "frames": "p_P5",
+   "s_frames": 8925.7,
+   "wav": "m8787.wav",
+   "wav_inicio": 8786.0,
+   "palabras": "ventanas/w8916.json",
+   "stt": 8871.0,
+   "s0": 8926.0,
+   "s1": 8936.6,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 8933.5,
+     "lineas": [
+      "EL BATE…",
+      "NO ES DE MADERA"
+     ]
+    }
+   ],
+   "zooms": [
+    8931.7
+   ]
+  }
+ ]
+}

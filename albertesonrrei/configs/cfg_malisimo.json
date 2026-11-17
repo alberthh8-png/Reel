@@ -1,0 +1,141 @@
+{
+ "titulos": [
+  "SOY MALÍSIMO",
+  "Y LO SÉ"
+ ],
+ "momentos": [
+  {
+   "id": "A",
+   "frames": "p_A",
+   "s_frames": 4093.2999999999997,
+   "wav": "m4092.wav",
+   "wav_inicio": 4092.0,
+   "palabras": "ventanas/w4128.json",
+   "stt": 4083.0,
+   "s0": 4094.2,
+   "s1": 4107.0,
+   "stickers": [],
+   "zooms": [
+    4097.3
+   ]
+  },
+  {
+   "id": "B",
+   "frames": "p_B",
+   "s_frames": 3111.7999999999997,
+   "wav": "m3110.wav",
+   "wav_inicio": 3110.0,
+   "palabras": "ventanas/w3140.json",
+   "stt": 3095.0,
+   "s0": 3112.1,
+   "s1": 3120.6,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "C",
+   "frames": "p_C",
+   "s_frames": 3122.2999999999997,
+   "wav": "m3110.wav",
+   "wav_inicio": 3110.0,
+   "palabras": "ventanas/w3140.json",
+   "stt": 3095.0,
+   "s0": 3122.6,
+   "s1": 3125.0,
+   "stickers": [],
+   "zooms": [],
+   "suave": true
+  },
+  {
+   "id": "D",
+   "frames": "p_D",
+   "s_frames": 3132.6,
+   "wav": "m3110.wav",
+   "wav_inicio": 3110.0,
+   "palabras": "ventanas/w3140.json",
+   "stt": 3095.0,
+   "s0": 3132.9,
+   "s1": 3134.4,
+   "stickers": [],
+   "zooms": [],
+   "suave": true,
+   "golpes": [
+    3133.7
+   ]
+  },
+  {
+   "id": "E",
+   "frames": "p_E",
+   "s_frames": 7411.5,
+   "wav": "m7410.wav",
+   "wav_inicio": 7410.0,
+   "palabras": "ventanas/w7417.json",
+   "stt": 7372.0,
+   "s0": 7411.8,
+   "s1": 7417.0,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "F",
+   "frames": "p_F",
+   "s_frames": 7435.4,
+   "wav": "m7410.wav",
+   "wav_inicio": 7410.0,
+   "palabras": "ventanas/w7417.json",
+   "stt": 7372.0,
+   "s0": 7435.7,
+   "s1": 7439.2,
+   "stickers": [],
+   "zooms": [],
+   "suave": true
+  },
+  {
+   "id": "G",
+   "frames": "p_G",
+   "s_frames": 7459.0,
+   "wav": "m7410.wav",
+   "wav_inicio": 7410.0,
+   "palabras": "ventanas/w7417.json",
+   "stt": 7372.0,
+   "s0": 7459.3,
+   "s1": 7462.2,
+   "stickers": [],
+   "zooms": [
+    7460.3
+   ],
+   "suave": true
+  },
+  {
+   "id": "H",
+   "frames": "p_H",
+   "s_frames": 8433.400000000001,
+   "wav": "m8430.wav",
+   "wav_inicio": 8430.0,
+   "palabras": "ventanas/w8430.json",
+   "stt": 8385.0,
+   "s0": 8433.7,
+   "s1": 8439.6,
+   "stickers": [],
+   "zooms": [],
+   "golpes": [
+    8438.1
+   ]
+  },
+  {
+   "id": "I",
+   "frames": "p_I",
+   "s_frames": 8705.7,
+   "wav": "m8705.wav",
+   "wav_inicio": 8703.0,
+   "palabras": "ventanas/w8676.json",
+   "stt": 8631.0,
+   "s0": 8706.0,
+   "s1": 8710.5,
+   "stickers": [],
+   "zooms": [
+    8707.6
+   ]
+  }
+ ]
+}
