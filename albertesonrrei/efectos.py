@@ -26,7 +26,7 @@ def frase_lenta(ws, k, max_antes=2.0, max_despues=2.4, pausa=1.0):
     return ws[i]["start"], ws[j]["end"], i, j
 
 
-VEL_GRAVE, TONO_GRAVE = 0.85, 0.66  # voz "A1": 85 % de velocidad y bastante más grave (elegida por Albert)
+VEL_GRAVE, TONO_GRAVE = 0.89, 0.66  # voz grave: 89 % de velocidad y tono 0,66 (elegida por Albert el 17 nov)
 
 
 def voz_grave(seg, sr, vel=VEL_GRAVE, tono=TONO_GRAVE):
@@ -45,10 +45,10 @@ def voz_grave(seg, sr, vel=VEL_GRAVE, tono=TONO_GRAVE):
             w.setsampwidth(2)
             w.setframerate(sr)
             w.writeframes((np.clip(seg, -1, 1) * 32767).astype(np.int16).tobytes())
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", a, "-af", f"rubberband=tempo={vel}:pitch={tono}",
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", a, "-af", f"rubberband=tempo={vel}:pitch={tono},equalizer=f=2500:t=q:w=1.2:g=4",
                         "-ar", str(sr), "-ac", "1", b], check=True)
         with wave.open(b) as w:
             out = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
     if len(out) < n:
         out = np.pad(out, (0, n - len(out)))
-    return out[:n] * 1.15
+    return out[:n] * 1.6  # más volumen: al bajar el tono la voz pierde presencia
