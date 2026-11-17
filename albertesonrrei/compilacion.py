@@ -77,7 +77,7 @@ class Linea:
                 ini, fin, _, _ = frase_lenta(ws, k)  # la frase entera, no solo la palabra
                 a = max(ini + m["stt"] - 0.04, m["s0"])
                 b = min(fin + m["stt"] + 0.1, m["s1"])
-                if m["s0"] <= a < m["s1"]:
+                if a < b and m["s0"] <= a < m["s1"] and m["s0"] <= w["start"] + m["stt"] <= m["s1"]:
                     if feas and a < feas[-1][1]:
                         feas[-1] = (feas[-1][0], max(b, feas[-1][1]))
                     else:
