@@ -34,6 +34,8 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 
 ## Preferencias y decisiones de Albert
 
+- ✅ **REGLA FIJA (17 nov): TODO en español.** Los mensajes, los avisos de lo que voy haciendo, las explicaciones entre pasos y los textos de las herramientas que ve Albert: siempre en español, nunca en inglés.
+
 - **No quiere** "un top con solo texto y fondo": quiere **acción y animación** (disparos, explosiones, cámara que se mueve, imágenes).
 - Para GTA: **teorías de la comunidad e hipótesis**, con un par sobre el **Online**, y datos "locos" (la policía con IA, el mundo que se para).
 - Duración: entre 15 y 25 s si es posible (aceptó ~27 s en el drift). Preguntas tipo **"¿Tú qué crees?"** intercaladas.
