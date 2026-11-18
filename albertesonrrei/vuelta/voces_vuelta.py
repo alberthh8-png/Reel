@@ -12,9 +12,10 @@ LINEAS = [
  ("l1", LEO, "¡Atención... pelotuditos!"),
  ("l2", LEO, "Desapareció sin avisar... pero hay cosas que no se olvidan."),
  ("l3", LEO, "¡¡El pedazo de mierda de Alberte sonrreí... ha vuelto!!"),
- ("l4", LEO, "¡¡Hoy a medianoche... el planeta explota!!"),
+ ("l4", LEO, "¡¡Hoy a medianoche... la luna... [inhales deeply] ¡impacta contra la Tierra! ...como los huevos de este hombre!!"),
  ("l5", LEO, "Directo en Twitch, jugando a GTA 6, a las once y media de la noche, hora española."),
  ("l6", LEO, "¿Os venís, pelotuditos?"),
+ ("l7", LEO, "¡¡Quien no venga... come miembros!!"),
 ]
 # fragmentos de Albert con SU voz normal (sin voz grave): (clave, wav, inicio_wav, [(desde, hasta), ...])
 FRAG = [("a_hugo", "m7410.wav", 7410.0, [(7459.30, 7462.05)]),
@@ -27,7 +28,7 @@ def tts(clave, voz, txt):
     grito = txt.startswith("¡¡")
     vs = {"stability": 0.3 if grito else 0.4, "similarity_boost": 0.85, "style": 0.8 if grito else 0.6, "use_speaker_boost": True}
     r = S.post(f"https://api.elevenlabs.io/v1/text-to-speech/{voz}/with-timestamps", headers={"xi-api-key": "proxy-injected"},
-               json={"text": PRE + txt, "model_id": "eleven_multilingual_v2", "voice_settings": vs}, timeout=120)
+               json={"text": PRE + txt, "model_id": "eleven_v3" if "[" in txt else "eleven_multilingual_v2", "voice_settings": vs if "[" not in txt else {"stability": 0.5, "similarity_boost": 0.85, "style": 0.8, "use_speaker_boost": True}}, timeout=120)
     r.raise_for_status(); d = r.json(); al = d["alignment"]
     crudo = out + "_crudo.mp3"; open(crudo, "wb").write(base64.b64decode(d["audio_base64"]))
     x = np.frombuffer(subprocess.check_output(["ffmpeg", "-v", "error", "-i", crudo, "-f", "f32le", "-ac", "1", "-ar", "44100", "-"]), np.float32)
