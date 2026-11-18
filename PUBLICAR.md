@@ -535,3 +535,43 @@ El mapa de GTA 6 es el DOBLE que GTA 5 🗺️ Pásaselo a ese amigo que no dorm
 ## Fuentes
 - Las 6 regiones: [GamesRadar](https://gamesradar.com/games/grand-theft-auto/gta-6-map-returns-to-vice-city-and-explores-the-riches-of-the-florida-lite-state-of-leonida-malt-liquor-painkillers-and-truck-stop-energy-drinks), [PC Gamer](https://www.pcgamer.com/games/grand-theft-auto/gta6-map), [Gfinity](https://www.gfinityesports.com/article/gta-6-map-guide-every-confirmed-location-in-leonida)
 - Tamaño (2 veces GTA 5, 3 veces RDR2): [Forbes](https://www.forbes.com/sites/brianmazique/2026/10/06/gta-6s-map-is-about-twice-the-size-of-gta-5-with-hurricanes-and-170-animal-species/), [Endgame Tools](https://endgametools.com/en/gta-6/news/gta-6-leonida-map-regions)
+
+---
+
+# Vídeo largo de YouTube: "GTA 6: todo lo que sabemos (y todo lo que sospechan los fans)"
+
+- **Archivo:** `salida/largo/video.mp4` (1920×1080, 30 fps, 18:47) · **Miniatura:** `salida/largo/miniatura.jpg` · **Subtítulos:** `salida/largo/subtitulos.srt` (opcional, ya van quemados en el vídeo)
+
+**Título (elige uno):**
+1. GTA 6: TODO lo que sabemos… y las 7 teorías más locas de los fans
+2. ¿Lucía traiciona a Jason? Todo lo que sabemos de GTA 6 (y lo que sospechan los fans)
+
+**Descripción:**
+```
+GTA 6 ya está aquí 🔥 Te cuento todo lo que sabemos del juego: quiénes son Jason y Lucía, el mapa de Leónida, todo lo que vas a poder hacer, qué pasa con el online y a qué hora se juega en tu país. Y además, las 7 teorías más locas de los fans (la #7 es nuestra 👀).
+
+💬 ¿Cuál de las 7 teorías te crees? Comenta el número.
+
+⏱️ Capítulos
+0:00 Intro
+0:38 Jason y Lucía
+3:15 Las teorías de la historia
+7:41 El mapa
+9:45 Todo lo que puedes hacer
+12:32 Las redes dentro del juego
+13:51 El online
+16:19 Antes de jugar: horarios, truco de Xbox, 30 FPS, precio y Kick
+18:14 Cierre
+
+Las imágenes son recreaciones propias hechas con IA (no son del juego). Las teorías son de la comunidad y no están confirmadas por Rockstar.
+
+🔔 Suscríbete: a partir de ahora, gameplay real y comprobamos qué teorías se cumplen.
+
+#GTA6 #GTAVI #GTA6Teorias #Rockstar #ViceCity #Leonida #GNews
+```
+
+**Etiquetas:** GTA 6, GTA VI, GTA 6 teorías, GTA 6 Lucía, GTA 6 Jason, GTA 6 mapa, GTA 6 online, GTA 6 actividades, Leónida, Vice City, GTA 6 todo lo que sabemos, GTA 6 español, Rockstar Games
+
+**Comentario fijado:** "¿Cuál de las 7 teorías te crees? 👇 Yo voy con la #7: Brian se lo acaba cobrando."
+
+**Consejos:** sube la miniatura personalizada, añade el vídeo a una lista "GTA 6", y desde los Shorts de GTA 6 enlaza este vídeo como "vídeo relacionado".

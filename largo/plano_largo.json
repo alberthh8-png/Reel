@@ -2,421 +2,236 @@
  "00_intro": {
   "musica": "trap",
   "fondos": [
-   "h:videos/largo/00_ciudad_atardecer.mp4",
+   "img:imagenes/largo/26_abrazo.png",
+   "h:videos/largo/12_pareja_huida.mp4",
    "h:videos/largo/16_persecucion.mp4",
-   "h:videos/largo/03_pareja.mp4",
-   "h:videos/largo/06_surf.mp4",
-   "h:videos/largo/07_cayos.mp4",
+   "h:videos/largo/00_ciudad_atardecer.mp4",
+   "h:videos/largo/20_buceo.mp4",
+   "h:videos/largo/21_moto_agua.mp4",
    "h:videos/largo/13_quedada.mp4",
-   "h:videos/largo/01_neon_noche.mp4",
    "h:videos/largo/14_medianoche.mp4"
   ],
   "overlays": [
    {
-    "p": 1,
-    "en": "Tráileres",
-    "tipo": "cifra",
-    "texto": "475 MILLONES",
-    "sub": "de visitas en un día",
-    "dur": 3.2
+    "p": 0,
+    "en": "traiciona",
+    "tipo": "etiqueta",
+    "texto": "¿TRAICIÓN?",
+    "dur": 2.6
    },
    {
-    "p": 1,
-    "en": "Parejas",
+    "p": 0,
+    "en": "tercer protagonista",
     "tipo": "etiqueta",
-    "texto": "«NO VAS A JUGAR»",
+    "texto": "¿UN TERCER PROTAGONISTA?",
     "dur": 3.0
    },
    {
     "p": 1,
-    "en": "Vídeos falsos",
-    "tipo": "etiqueta",
-    "texto": "FALSO",
-    "sub": "hecho con inteligencia artificial",
-    "dur": 3.4
-   },
-   {
-    "p": 2,
-    "en": "todo lo que ha pasado",
+    "en": "quiénes son",
     "tipo": "lista",
     "titulo": "En este vídeo",
     "items": [
-     "Lo que ha pasado en las redes",
-     "El mapa y Jason y Lucia",
-     "Las teorías del online",
+     "Jason y Lucía",
+     "El mapa",
+     "Todo lo que puedes hacer",
+     "El online",
      "Horarios y trucos"
     ],
     "marcas": [
-     "todo lo que ha pasado",
-     "el mapa",
-     "el online",
+     "quiénes son",
+     "cómo es el mapa",
+     "todo lo que vas",
+     "qué pasa con el online",
      "a qué hora"
     ]
-   }
-  ]
- },
- "01_records": {
-  "musica": "trap",
-  "fondos": [
-   "h:videos/largo/00_ciudad_atardecer.mp4",
-   "v:videos/doce/x_ciudad_noche.mp4",
-   "h:videos/largo/02_movil_cama.mp4",
-   "img:imagenes/largo/17_marina.png",
-   "h:videos/largo/01_neon_noche.mp4",
-   "v:videos/doce/03_helicoptero.mp4",
-   "h:videos/largo/16_persecucion.mp4",
-   "img:imagenes/largo/00_ciudad_atardecer.png"
-  ],
-  "overlays": [
-   {
-    "p": 1,
-    "en": "noventa millones",
-    "tipo": "cifra",
-    "texto": "90 MILLONES",
-    "sub": "de visitas en YouTube en 24 horas · récord Guinness"
    },
    {
     "p": 2,
-    "en": "cuatrocientos setenta y cinco",
-    "tipo": "barras",
-    "titulo": "Visitas en las primeras 24 horas",
-    "hasta_p": 3,
-    "barras": [
-     [
-      "GTA 6 · Tráiler 2 (todas las redes)",
-      475,
-      "475 M"
-     ],
-     [
-      "Deadpool y Lobezno (récord anterior)",
-      365,
-      "365 M"
-     ],
-     [
-      "GTA 6 · Tráiler 1 (YouTube)",
-      90,
-      "90 M"
-     ],
-     [
-      "GTA 6 · Tráiler 2 (solo YouTube)",
-      76,
-      "76 M"
-     ]
-    ],
-    "nota": "Datos de Rockstar, Guinness y recuentos públicos de YouTube"
-   },
-   {
-    "p": 4,
-    "en": "mil millones",
-    "tipo": "cifra",
-    "texto": "1.000 MILLONES $",
-    "sub": "GTA 5 en solo 3 días (2013)",
-    "hasta": "récord Guinness"
-   },
-   {
-    "p": 4,
-    "en": "doscientos millones",
-    "tipo": "cifra",
-    "texto": "+200 MILLONES",
-    "sub": "de copias vendidas de GTA 5",
-    "color": "cian"
-   },
-   {
-    "p": 5,
-    "en": "GTA 6 no se ha vivido",
+    "en": "las teorías más locas",
     "tipo": "etiqueta",
-    "texto": "SE HA VIVIDO EN EL MÓVIL",
-    "sub": "TikTok · Instagram · Shorts"
+    "texto": "+7 TEORÍAS DE LOS FANS",
+    "sub": "algunas con mucho sentido…"
    }
   ]
  },
- "02_reservas": {
+ "01_protas": {
   "musica": "chill",
   "fondos": [
-   "img:imagenes/largo/17_marina.png",
-   "h:videos/largo/14_medianoche.mp4",
-   "v:videos/doce/05_salon.mp4",
+   "h:videos/largo/12_pareja_huida.mp4",
+   "img:imagenes/largo/12_pareja_huida.png",
+   "h:videos/largo/07_cayos.mp4",
    "h:videos/largo/01_neon_noche.mp4",
-   "img:imagenes/largo/13_quedada.png",
-   "h:videos/largo/02_movil_cama.mp4"
+   "img:imagenes/largo/26_abrazo.png",
+   "v:videos/doce/x_ciudad_noche.mp4",
+   "h:videos/largo/17_marina.mp4",
+   "h:videos/largo/16_persecucion.mp4"
   ],
   "overlays": [
    {
     "p": 0,
-    "en": "ochenta dólares",
-    "tipo": "precio",
-    "titulo": "El precio de GTA 6",
-    "precios": [
-     [
-      "Normal",
-      "80 $"
-     ],
-     [
-      "Ultimate",
-      "100 $"
-     ]
-    ],
-    "porcentaje": 89,
-    "sub": "de las reservas digitales son de la Ultimate. Lo normal: entre el 10 y el 20 %.",
-    "nota": "Estimación de Sensor Tower",
-    "hasta_p": 1
-   },
-   {
-    "p": 2,
-    "en": "casi diez millones",
-    "tipo": "cifra",
-    "texto": "~10 MILLONES",
-    "sub": "de reservas digitales · más de 900 M$ (estimación)"
-   },
-   {
-    "p": 3,
-    "en": "el juego más reservado",
+    "en": "Jason y Lucía",
     "tipo": "etiqueta",
-    "texto": "Nº 1 EN RESERVAS",
-    "sub": "PlayStation Store y Microsoft Store"
+    "texto": "JASON Y LUCÍA",
+    "sub": "dos protagonistas… y pareja"
    },
-   {
-    "p": 4,
-    "en": "se quejaron todos",
-    "tipo": "etiqueta",
-    "texto": "SE QUEJARON TODOS…",
-    "sub": "…y lo compraron todos"
-   }
-  ]
- },
- "03_retrasos": {
-  "musica": "chill",
-  "fondos": [
-   "h:videos/largo/04_calendario.mp4",
-   "h:videos/largo/14_medianoche.mp4",
-   "v:videos/gta5/01_consolas.mp4",
-   "h:videos/largo/02_movil_cama.mp4",
-   "img:imagenes/largo/04_calendario.png",
-   "v:videos/doce/01_amanecer.mp4",
-   "h:videos/largo/05_nostalgia.mp4"
-  ],
-  "overlays": [
    {
     "p": 1,
-    "en": "Al principio",
-    "tipo": "linea",
-    "titulo": "Los retrasos de GTA 6",
-    "hitos": [
-     [
-      "2025",
-      "Fecha inicial",
-      true
-     ],
-     [
-      "26 MAY 2026",
-      "1.er retraso (mayo 2025)",
-      true
-     ],
-     [
-      "19 NOV 2026",
-      "2.º retraso (nov. 2025)",
-      false
-     ]
-    ]
+    "en": "Lucía Caminos",
+    "tipo": "cifra",
+    "texto": "LUCÍA CAMINOS",
+    "sub": "aprendió a pelear antes que a andar · salió de la cárcel «por suerte»"
    },
    {
     "p": 2,
-    "en": "Con",
+    "en": "pulsera",
     "tipo": "etiqueta",
-    "texto": "RED DEAD REDEMPTION 2",
-    "sub": "también se retrasó dos veces"
+    "texto": "LIBERTAD CONDICIONAL",
+    "sub": "con pulsera de localización en el tobillo"
    },
    {
     "p": 3,
-    "en": "cosas que pasaron antes",
-    "tipo": "etiqueta",
-    "texto": "«ESTO PASÓ ANTES DE GTA 6»",
-    "sub": "el meme más repetido"
+    "en": "Jason Duval",
+    "tipo": "cifra",
+    "texto": "JASON DUVAL",
+    "sub": "exmilitar · trabaja para traficantes en los cayos",
+    "color": "cian"
    },
    {
     "p": 4,
-    "en": "cuentas atrás",
-    "tipo": "cifra",
-    "texto": "«QUEDAN X DÍAS»",
-    "sub": "una cuenta atrás diaria crea un ritual"
+    "en": "lo mejor",
+    "tipo": "etiqueta",
+    "texto": "«LO MEJOR… O LO PEOR»",
+    "sub": "lo que dice Rockstar de su relación"
    },
    {
     "p": 5,
-    "en": "decenas de miles",
-    "tipo": "cifra",
-    "texto": "DECENAS DE MILES",
-    "sub": "de TikToks con la música del tráiler",
-    "color": "cian"
-   }
-  ]
- },
- "04_novio": {
-  "musica": "chill",
-  "fondos": [
-   "h:videos/largo/03_pareja.mp4",
-   "v:videos/doce/05_salon.mp4",
-   "img:imagenes/largo/03_pareja.png",
-   "h:videos/largo/02_movil_cama.mp4",
-   "h:videos/largo/04_calendario.mp4",
-   "img:imagenes/largo/14_medianoche.png"
-  ],
-  "overlays": [
-   {
-    "p": 1,
-    "en": "su novio no va a jugar",
+    "en": "al estilo",
     "tipo": "etiqueta",
-    "texto": "«MI NOVIO NO VA A JUGAR A GTA 6»",
-    "sub": "la polémica viral de TikTok"
+    "texto": "BONNIE Y CLYDE",
+    "sub": "un golpe que sale mal y una conspiración"
    },
    {
-    "p": 2,
-    "en": "Los motivos",
+    "p": 6,
+    "en": "Cal Hampton",
     "tipo": "lista",
-    "titulo": "Los motivos que dan",
+    "titulo": "Los secundarios",
     "items": [
-     "Lucia es «demasiado guapa»",
-     "Hay clubes de striptease",
-     "Horas y horas sin hacerles caso"
+     "Cal Hampton · el amigo conspiranoico",
+     "Brian Heder · el traficante veterano",
+     "Raul Bautista · el atracador",
+     "Boobie Ike · la leyenda local"
     ],
     "marcas": [
-     "Lucia",
-     "clubes",
-     "van a pasar"
-    ],
-    "hasta": "hacer caso"
-   },
-   {
-    "p": 2,
-    "en": "cientos de miles",
-    "tipo": "cifra",
-    "texto": "CIENTOS DE MILES",
-    "sub": "de visitas en algunos de estos vídeos"
-   },
-   {
-    "p": 3,
-    "en": "un comentario es un comentario",
-    "tipo": "etiqueta",
-    "texto": "COMENTARIO = ALGORITMO",
-    "sub": "da igual si es a favor o en contra"
-   },
-   {
-    "p": 4,
-    "en": "La respuesta de internet",
-    "tipo": "etiqueta",
-    "texto": "LA RESPUESTA DE ELLOS",
-    "sub": "despedidas y calendarios tachados"
-   },
-   {
-    "p": 5,
-    "en": "te pregunto",
-    "tipo": "pregunta",
-    "texto": "¿En tu casa te dejan jugar a GTA 6?"
-   }
-  ]
- },
- "05_adios": {
-  "musica": "nostalgia",
-  "fondos": [
-   "h:videos/largo/05_nostalgia.mp4",
-   "v:videos/gta5/00_atardecer.mp4",
-   "v:videos/gta5/03_caravana.mp4",
-   "img:imagenes/largo/00_ciudad_atardecer.png",
-   "v:videos/gta5/02_museo.mp4",
-   "v:videos/gta5/04_amanecer.mp4",
-   "img:imagenes/largo/05_nostalgia.png"
-  ],
-  "fondos_cambios": [
-   {
-    "p": 4,
-    "fondos": [
-     "reel:salida/gta5_adios/reel.mp4"
+     "Cal Hampton",
+     "Brian Heder",
+     "Raul Bautista",
+     "Boobie Ike"
     ]
-   }
-  ],
-  "overlays": [
-   {
-    "p": 1,
-    "en": "trece años",
-    "tipo": "cifra",
-    "texto": "13 AÑOS",
-    "sub": "de GTA 5 (septiembre de 2013)"
    },
    {
-    "p": 2,
-    "en": "Michael",
+    "p": 7,
+    "en": "las teorías",
     "tipo": "etiqueta",
-    "texto": "MICHAEL · FRANKLIN · TREVOR",
-    "sub": "le pasan el testigo a Jason y Lucia"
-   },
-   {
-    "p": 3,
-    "en": "inteligencia artificial",
-    "tipo": "etiqueta",
-    "texto": "HECHOS CON IA",
-    "sub": "escenas que nunca existieron en el juego"
-   },
-   {
-    "p": 4,
-    "en": "Nosotros también",
-    "tipo": "etiqueta",
-    "texto": "NUESTRO ADIÓS A GTA 5",
-    "sub": "ya está en el canal"
+    "texto": "AHORA, LAS TEORÍAS"
    }
   ]
  },
- "06_ia": {
+ "02_teorias": {
   "musica": "trap",
   "fondos": [
-   "h:videos/largo/06_surf.mp4",
-   "h:videos/largo/02_movil_cama.mp4",
-   "img:imagenes/largo/06_surf.png",
-   "h:videos/largo/15_creador.mp4",
-   "v:videos/online/02_amigos.mp4",
-   "img:imagenes/largo/02_movil_cama.png"
+   "img:imagenes/largo/26_abrazo.png",
+   "h:videos/largo/12_pareja_huida.mp4",
+   "h:videos/largo/16_persecucion.mp4",
+   "v:videos/doce/02_atraco.mp4",
+   "img:imagenes/largo/16_persecucion.png",
+   "h:videos/largo/05_nostalgia.mp4",
+   "v:videos/doce/00_persecucion.mp4",
+   "h:videos/largo/01_neon_noche.mp4",
+   "h:videos/largo/14_medianoche.mp4",
+   "img:imagenes/largo/12_pareja_huida.png"
   ],
   "overlays": [
    {
-    "p": 2,
-    "en": "superó el millón",
-    "tipo": "cifra",
-    "texto": "1,2 MILLONES",
-    "sub": "de visitas en Instagram… y era falso"
+    "p": 0,
+    "en": "ninguna de estas teorías",
+    "tipo": "etiqueta",
+    "texto": "NADA CONFIRMADO",
+    "sub": "ideas de los fans, con pistas curiosas"
    },
    {
-    "p": 2,
-    "en": "Era inteligencia artificial",
-    "tipo": "etiqueta",
-    "texto": "HECHO CON IA",
-    "sub": "no era del juego"
+    "p": 1,
+    "en": "Teoría número uno",
+    "tipo": "cifra",
+    "texto": "TEORÍA #1",
+    "sub": "Lucía traiciona a Jason",
+    "color": "cian",
+    "hasta_p": 2
    },
    {
     "p": 3,
-    "en": "Te doy cuatro pistas",
-    "tipo": "lista",
-    "titulo": "Cómo detectar un clip falso",
-    "items": [
-     "Sin interfaz del juego (ni mapa ni vida)",
-     "Fallos en manos, caras y textos",
-     "Menos de 10 s y sin cortes de cámara",
-     "Cuenta desconocida que promete «filtraciones»"
-    ],
-    "marcas": [
-     "Primera",
-     "Segunda",
-     "Tercera",
-     "Y cuarta"
-    ]
+    "en": "Teoría número dos",
+    "tipo": "cifra",
+    "texto": "TEORÍA #2",
+    "sub": "Jason es policía encubierto",
+    "color": "cian"
    },
    {
     "p": 4,
-    "en": "desde hoy",
+    "en": "Teoría número tres",
+    "tipo": "cifra",
+    "texto": "TEORÍA #3",
+    "sub": "Hay un tercer protagonista (¿Raul Bautista? ¿un poli?)",
+    "color": "cian",
+    "hasta_p": 6
+   },
+   {
+    "p": 7,
+    "en": "teoría número cuatro",
+    "tipo": "cifra",
+    "texto": "TEORÍA #4",
+    "sub": "El final trágico",
+    "color": "cian"
+   },
+   {
+    "p": 8,
+    "en": "la teoría número cinco",
+    "tipo": "cifra",
+    "texto": "TEORÍA #5",
+    "sub": "Los GTA antiguos son películas",
+    "color": "cian"
+   },
+   {
+    "p": 9,
+    "en": "dos más",
     "tipo": "etiqueta",
-    "texto": "A PARTIR DE AHORA: GAMEPLAY REAL",
-    "sub": "cuidado con lo que compartes"
+    "texto": "+2 DE REGALO"
+   },
+   {
+    "p": 10,
+    "en": "Teoría número seis",
+    "tipo": "cifra",
+    "texto": "TEORÍA #6",
+    "sub": "La verdadera protagonista es Lucía",
+    "color": "cian"
+   },
+   {
+    "p": 11,
+    "en": "la teoría número siete",
+    "tipo": "cifra",
+    "texto": "TEORÍA #7",
+    "sub": "La de GNews: Brian se lo acabará cobrando",
+    "color": "cian"
+   },
+   {
+    "p": 12,
+    "en": "Ahora te toca",
+    "tipo": "pregunta",
+    "texto": "¿Cuál te crees? Comenta el número"
    }
   ]
  },
- "07_mapa": {
+ "03_mapa": {
   "musica": "chill",
   "fondos": [
    "reel:salida/mapa/reel.mp4",
@@ -436,7 +251,7 @@
     "fondos": [
      "h:videos/largo/07_cayos.mp4",
      "v:videos/mapa/01_cayos.mp4",
-     "img:imagenes/largo/17_marina.png"
+     "h:videos/largo/17_marina.mp4"
     ]
    },
    {
@@ -472,9 +287,9 @@
    {
     "p": 6,
     "fondos": [
-     "img:imagenes/largo/00_ciudad_atardecer.png",
-     "h:videos/largo/01_neon_noche.mp4",
-     "img:imagenes/largo/07_cayos.png"
+     "img:imagenes/largo/07_cayos.png",
+     "h:videos/largo/07_cayos.mp4",
+     "img:imagenes/largo/17_marina.png"
     ]
    },
    {
@@ -495,9 +310,9 @@
    },
    {
     "p": 2,
-    "en": "Leonida",
+    "en": "Leónida",
     "tipo": "etiqueta",
-    "texto": "LEONIDA",
+    "texto": "LEÓNIDA",
     "sub": "un estado inspirado en Florida",
     "hasta": "Florida"
    },
@@ -512,7 +327,7 @@
     "p": 3,
     "en": "los cayos",
     "tipo": "etiqueta",
-    "texto": "CAYOS DE LEONIDA",
+    "texto": "CAYOS DE LEÓNIDA",
     "sub": "islas, barcos y aguas cristalinas"
    },
    {
@@ -547,10 +362,11 @@
    },
    {
     "p": 6,
-    "en": "comparaciones",
-    "tipo": "etiqueta",
-    "texto": "MIAMI VS VICE CITY",
-    "sub": "la tendencia de comparar juego y realidad"
+    "en": "aquí también hay teoría",
+    "tipo": "cifra",
+    "texto": "TEORÍA",
+    "sub": "Zonas que se desbloquean con la historia",
+    "color": "cian"
    },
    {
     "p": 7,
@@ -560,55 +376,239 @@
    }
   ]
  },
- "07b_historia": {
+ "04_actividades": {
   "musica": "chill",
   "fondos": [
-   "h:videos/largo/12_pareja_huida.mp4",
-   "img:imagenes/largo/12_pareja_huida.png",
-   "h:videos/largo/16_persecucion.mp4",
-   "h:videos/largo/07_cayos.mp4",
-   "img:imagenes/largo/16_persecucion.png",
-   "h:videos/largo/01_neon_noche.mp4"
+   "h:videos/largo/00_ciudad_atardecer.mp4",
+   "h:videos/largo/13_quedada.mp4"
+  ],
+  "fondos_cambios": [
+   {
+    "p": 1,
+    "fondos": [
+     "h:videos/largo/20_buceo.mp4",
+     "h:videos/largo/21_moto_agua.mp4",
+     "h:videos/largo/08_pantano.mp4",
+     "img:imagenes/largo/20_buceo.png"
+    ]
+   },
+   {
+    "p": 2,
+    "fondos": [
+     "h:videos/largo/08_pantano.mp4",
+     "v:videos/mapa/02_pantano.mp4"
+    ]
+   },
+   {
+    "p": 3,
+    "fondos": [
+     "img:imagenes/largo/22_caza.png",
+     "h:videos/largo/09_montana.mp4",
+     "v:videos/mapa/03_montana.mp4"
+    ]
+   },
+   {
+    "p": 4,
+    "fondos": [
+     "img:imagenes/largo/24_gimnasio.png"
+    ]
+   },
+   {
+    "p": 5,
+    "fondos": [
+     "h:videos/largo/23_carrera.mp4",
+     "img:imagenes/largo/23_carrera.png",
+     "img:imagenes/largo/25_bar.png"
+    ]
+   },
+   {
+    "p": 6,
+    "fondos": [
+     "h:videos/largo/01_neon_noche.mp4",
+     "img:imagenes/largo/25_bar.png",
+     "h:videos/largo/13_quedada.mp4"
+    ]
+   },
+   {
+    "p": 7,
+    "fondos": [
+     "h:videos/largo/16_persecucion.mp4",
+     "v:videos/doce/03_helicoptero.mp4",
+     "img:imagenes/largo/16_persecucion.png"
+    ]
+   },
+   {
+    "p": 8,
+    "fondos": [
+     "h:videos/largo/17_marina.mp4",
+     "img:imagenes/largo/14_medianoche.png",
+     "h:videos/largo/00_ciudad_atardecer.mp4"
+    ]
+   }
+  ],
+  "overlays": [
+   {
+    "p": 1,
+    "en": "bucear",
+    "tipo": "lista",
+    "titulo": "En el agua",
+    "items": [
+     "Buceo (con oxígeno)",
+     "Kayak y motos de agua",
+     "Barcos de todo tipo",
+     "Aerobotes en los pantanos"
+    ],
+    "marcas": [
+     "bucear",
+     "kayaks",
+     "barcos",
+     "aerobotes"
+    ]
+   },
+   {
+    "p": 2,
+    "en": "caimanes",
+    "tipo": "etiqueta",
+    "texto": "CUIDADO CON LOS CAIMANES"
+   },
+   {
+    "p": 3,
+    "en": "pescar y cazar",
+    "tipo": "lista",
+    "titulo": "Naturaleza",
+    "items": [
+     "Pesca (captura y suelta)",
+     "Caza en Mount Kalaga",
+     "Todoterrenos"
+    ],
+    "marcas": [
+     "pescar y cazar",
+     "La caza",
+     "todoterrenos"
+    ]
+   },
+   {
+    "p": 4,
+    "en": "Vuelven los gimnasios",
+    "tipo": "etiqueta",
+    "texto": "GIMNASIO",
+    "sub": "forma física al estilo San Andreas",
+    "hasta": "se va a notar"
+   },
+   {
+    "p": 4,
+    "en": "canchas de baloncesto",
+    "tipo": "etiqueta",
+    "texto": "BALONCESTO",
+    "sub": "una cancha junto a la casa de Jason"
+   },
+   {
+    "p": 5,
+    "en": "carreras callejeras",
+    "tipo": "etiqueta",
+    "texto": "CARRERAS CON NITRO",
+    "hasta": "nitro"
+   },
+   {
+    "p": 5,
+    "en": "billar",
+    "tipo": "etiqueta",
+    "texto": "BILLAR Y DARDOS"
+   },
+   {
+    "p": 6,
+    "en": "discotecas",
+    "tipo": "lista",
+    "titulo": "La noche en Vice City",
+    "items": [
+     "Discotecas",
+     "Apuestas",
+     "Minigolf",
+     "Zoo"
+    ],
+    "marcas": [
+     "discotecas",
+     "apuestas",
+     "minigolf",
+     "zoo"
+    ]
+   },
+   {
+    "p": 7,
+    "en": "Y luego está la policía",
+    "tipo": "cifra",
+    "texto": "POLICÍA",
+    "sub": "más realista: coches, helicópteros y barcos"
+   },
+   {
+    "p": 8,
+    "en": "negocios propios",
+    "tipo": "lista",
+    "titulo": "Lo que creen los fans",
+    "items": [
+     "Negocios propios",
+     "Cambiar de físico, como CJ",
+     "Comprar y decorar casas",
+     "Mascotas"
+    ],
+    "marcas": [
+     "negocios propios",
+     "cambiar de peso",
+     "comprar casas",
+     "mascotas"
+    ],
+    "hasta": "mascotas"
+   },
+   {
+    "p": 8,
+    "en": "Cuál de estas",
+    "tipo": "pregunta",
+    "texto": "¿Cuál te gustaría que fuera verdad?"
+   }
+  ]
+ },
+ "05_redes": {
+  "musica": "chill",
+  "fondos": [
+   "h:videos/largo/02_movil_cama.mp4",
+   "v:videos/doce/05_salon.mp4",
+   "img:imagenes/largo/02_movil_cama.png",
+   "h:videos/largo/15_creador.mp4",
+   "v:videos/online/02_amigos.mp4",
+   "img:imagenes/largo/15_creador.png"
   ],
   "overlays": [
    {
     "p": 0,
-    "en": "no hay spoilers",
+    "en": "sus propias redes",
     "tipo": "etiqueta",
-    "texto": "SIN SPOILERS",
-    "sub": "solo lo que ha enseñado Rockstar"
+    "texto": "REDES SOCIALES DENTRO DEL JUEGO"
    },
    {
     "p": 1,
-    "en": "Jason y Lucia",
+    "en": "en vertical",
     "tipo": "etiqueta",
-    "texto": "JASON Y LUCIA",
-    "sub": "una pareja criminal, al estilo Bonnie y Clyde"
+    "texto": "VÍDEOS EN VERTICAL",
+    "sub": "la parodia de los vídeos virales de Florida"
    },
    {
     "p": 2,
-    "en": "Lucia aparece",
-    "tipo": "etiqueta",
-    "texto": "LUCIA",
-    "sub": "sale de la cárcel buscando una vida mejor"
+    "en": "Y esto abre una teoría",
+    "tipo": "cifra",
+    "texto": "TEORÍA",
+    "sub": "Si la lías, alguien te graba… y la policía te reconoce",
+    "color": "cian"
    },
    {
     "p": 3,
-    "en": "Jason, por su parte",
+    "en": "las emisoras",
     "tipo": "etiqueta",
-    "texto": "JASON",
-    "sub": "exmilitar que trabaja para traficantes en los cayos"
-   },
-   {
-    "p": 4,
-    "en": "un golpe sencillo",
-    "tipo": "etiqueta",
-    "texto": "UN GOLPE QUE SALE MAL",
-    "sub": "y una conspiración por todo Leonida"
+    "texto": "RADIO Y SÁTIRA",
+    "sub": "influencers y postureo en el punto de mira"
    }
   ]
  },
- "08_online": {
+ "06_online": {
   "musica": "trap",
   "fondos": [
    "h:videos/largo/13_quedada.mp4",
@@ -619,66 +619,87 @@
    "v:videos/online/03_motos.mp4",
    "h:videos/largo/11_moteros.mp4",
    "v:videos/online/04_carrera.mp4",
-   "h:videos/largo/16_persecucion.mp4",
    "img:imagenes/largo/13_quedada.png"
   ],
   "overlays": [
    {
     "p": 1,
+    "en": "sale solo con el modo historia",
+    "tipo": "cifra",
+    "texto": "SOLO HISTORIA",
+    "sub": "el nuevo online aún no tiene fecha ni nombre"
+   },
+   {
+    "p": 2,
     "en": "once años",
     "tipo": "cifra",
     "texto": "+11 AÑOS",
     "sub": "lleva GTA Online en marcha"
    },
    {
-    "p": 2,
+    "p": 3,
     "en": "La primera",
     "tipo": "cifra",
-    "texto": "TEORÍA 1",
+    "texto": "TEORÍA #1",
     "sub": "¿El online gratis, como Warzone?",
     "color": "cian"
    },
    {
-    "p": 3,
-    "en": "La segunda",
+    "p": 4,
+    "en": "La segunda teoría",
     "tipo": "cifra",
-    "texto": "TEORÍA 2",
+    "texto": "TEORÍA #2",
     "sub": "Te mudas a Vice City… y empiezas de cero",
     "color": "cian"
    },
    {
-    "p": 4,
+    "p": 5,
     "en": "La tercera",
     "tipo": "cifra",
-    "texto": "TEORÍA 3",
+    "texto": "TEORÍA #3",
     "sub": "El mapa crecerá con cada actualización",
     "color": "cian"
    },
    {
-    "p": 5,
+    "p": 6,
     "en": "Y la cuarta",
     "tipo": "cifra",
-    "texto": "TEORÍA 4",
+    "texto": "TEORÍA #4",
     "sub": "Salas de hasta 96 jugadores (ahora unos 30)",
     "color": "cian"
    },
    {
-    "p": 6,
+    "p": 7,
     "en": "Tú por cuál apuestas",
     "tipo": "pregunta",
-    "texto": "¿Por cuál apuestas tú?"
+    "texto": "¿Por cuál apuestas tú? ¿Y cuándo llegará?"
    }
   ]
  },
- "09_horas": {
+ "07_antes": {
   "musica": "chill",
   "fondos": [
    "h:videos/largo/14_medianoche.mp4",
    "reel:salida/doce_horas/reel.mp4",
    "img:imagenes/largo/14_medianoche.png",
    "v:videos/doce/01_amanecer.mp4",
-   "h:videos/largo/01_neon_noche.mp4",
-   "h:videos/largo/16_persecucion.mp4"
+   "h:videos/largo/01_neon_noche.mp4"
+  ],
+  "fondos_cambios": [
+   {
+    "p": 4,
+    "fondos": [
+     "h:videos/largo/17_marina.mp4",
+     "img:imagenes/largo/17_marina.png"
+    ]
+   },
+   {
+    "p": 5,
+    "fondos": [
+     "reel:salida/kick_sorteo/reel.mp4",
+     "img:imagenes/largo/17_marina.png"
+    ]
+   }
   ],
   "overlays": [
    {
@@ -716,7 +737,7 @@
    },
    {
     "p": 2,
-    "en": "En Xbox",
+    "en": "Y aquí viene el truco",
     "tipo": "etiqueta",
     "texto": "TRUCO DE XBOX",
     "sub": "región: Nueva Zelanda · no garantizado · en PS5 no"
@@ -727,98 +748,36 @@
     "tipo": "cifra",
     "texto": "30 FPS",
     "sub": "confirmado en consolas · se nota en los giros bruscos"
-   }
-  ]
- },
- "10_kick": {
-  "musica": "trap",
-  "fondos": [
-   "reel:salida/kick_sorteo/reel.mp4",
-   "img:imagenes/largo/17_marina.png"
-  ],
-  "overlays": [
+   },
    {
-    "p": 1,
+    "p": 4,
+    "en": "ochenta dólares",
+    "tipo": "precio",
+    "titulo": "El precio de GTA 6",
+    "precios": [
+     [
+      "Normal",
+      "80 $"
+     ],
+     [
+      "Ultimate",
+      "100 $"
+     ]
+    ],
+    "porcentaje": 89,
+    "sub": "de las reservas digitales son de la Ultimate (estimación)",
+    "nota": "Estimación de Sensor Tower"
+   },
+   {
+    "p": 5,
     "en": "diez mil copias",
     "tipo": "cifra",
-    "texto": "10.000 COPIAS",
+    "texto": "10.000 COPIAS GRATIS",
     "sub": "de la Ultimate · 3 horas de directos en Kick · hasta el 7 de diciembre"
-   },
-   {
-    "p": 2,
-    "en": "Un detalle importante",
-    "tipo": "cifra",
-    "texto": "OJO",
-    "sub": "Xbox: todo el mundo · PS5: solo algunos países",
-    "color": "cian"
    }
   ]
  },
- "11_creadores": {
-  "musica": "chill",
-  "fondos": [
-   "h:videos/largo/15_creador.mp4",
-   "img:imagenes/largo/15_creador.png",
-   "h:videos/largo/02_movil_cama.mp4",
-   "v:videos/online/02_amigos.mp4",
-   "h:videos/largo/13_quedada.mp4",
-   "img:imagenes/largo/02_movil_cama.png",
-   "h:videos/largo/00_ciudad_atardecer.mp4"
-  ],
-  "overlays": [
-   {
-    "p": 1,
-    "en": "La polémica",
-    "tipo": "lista",
-    "titulo": "Lo que mejor ha funcionado",
-    "items": [
-     "Polémica",
-     "Nostalgia",
-     "Comparaciones",
-     "Urgencia (cuentas atrás)"
-    ],
-    "marcas": [
-     "La polémica",
-     "La nostalgia",
-     "Las comparaciones",
-     "Y la urgencia"
-    ]
-   },
-   {
-    "p": 2,
-    "en": "Lo primero",
-    "tipo": "lista",
-    "titulo": "4 consejos si haces vídeos",
-    "items": [
-     "Velocidad: sube en las primeras horas",
-     "Un formato que se reconozca",
-     "El mismo vídeo en las 3 redes",
-     "Radio apagada y nada de tráileres"
-    ],
-    "marcas": [
-     "Lo primero",
-     "Lo segundo",
-     "Lo tercero",
-     "Y lo cuarto"
-    ],
-    "p_items": [
-     2,
-     3,
-     4,
-     5
-    ],
-    "hasta_p": 5
-   },
-   {
-    "p": 6,
-    "en": "Un último dato",
-    "tipo": "cifra",
-    "texto": "TIKTOK > SHORTS",
-    "sub": "TikTok paga más, pero solo en vídeos de más de 1 minuto"
-   }
-  ]
- },
- "12_cierre": {
+ "08_cierre": {
   "musica": "chill",
   "fondos": [
    "h:videos/largo/00_ciudad_atardecer.mp4",
@@ -829,14 +788,14 @@
   ],
   "overlays": [
    {
-    "p": 2,
+    "p": 1,
     "en": "gameplay real",
     "tipo": "etiqueta",
-    "texto": "LO PRÓXIMO: GAMEPLAY REAL",
-    "sub": "teorías, ajustes y detalles locos"
+    "texto": "PRÓXIMAMENTE: GAMEPLAY REAL",
+    "sub": "¿se cumplirán las teorías?"
    },
    {
-    "p": 3,
+    "p": 2,
     "en": "suscríbete",
     "tipo": "etiqueta",
     "texto": "SUSCRÍBETE",
@@ -844,14 +803,14 @@
     "hasta": "suscríbete"
    },
    {
-    "p": 3,
-    "en": "cuántas horas",
+    "p": 2,
+    "en": "qué es lo primero",
     "tipo": "pregunta",
-    "texto": "¿Cuántas horas le vas a meter el primer día?",
-    "hasta": "primer día"
+    "texto": "¿Qué es lo primero que vas a hacer en GTA 6?",
+    "dur": 4.5
    },
    {
-    "p": 3,
+    "p": 2,
     "en": "Nos vemos",
     "tipo": "etiqueta",
     "texto": "NOS VEMOS EN VICE CITY",

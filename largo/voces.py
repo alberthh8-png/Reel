@@ -8,7 +8,7 @@ VOZ = "9F4C8ztpNUmXkdDDbz3J"
 PRON = {"MrBeast": "Mister Bist", "Sensor Tower": "Sénsor Táuer", "Cyberpunk 2077": "Cyberpunk dos mil setenta y siete",
         "Grassrivers": "Grass Rívers", "Port Gellhorn": "Port Guélhorn", "Bonnie y Clyde": "Boni y Claid",
         "Red Dead Redemption 2": "Red Ded Redémpshon dos", " X,": " equis,", "GTA Online": "GTA Online",
-        "Kick": "Kik", "GNews": "Yi Nius", "Brian,": "Bráian,", "Brian ": "Bráian ", "Warzone": "Guórsoun", "Deadpool y Lobezno": "Dédpul y Lobezno", "Boobie Ike": "Búbi Áik", "Brian Heder": "Bráian Jéder", "Phil Cassidy": "Fil Cásidi", "Take-Two": "Teik Tú", "Cal Hampton": "Cal Jámpton", "CJ": "Ci Yei"}
+        "Kick": "Kik", "Leonida": "Leónida", "GNews": "Yi Nius", "Brian,": "Bráian,", "Brian ": "Bráian ", "Warzone": "Guórsoun", "Deadpool y Lobezno": "Dédpul y Lobezno", "Boobie Ike": "Búbi Áik", "Brian Heder": "Bráian Jéder", "Phil Cassidy": "Fil Cásidi", "Take-Two": "Teik Tú", "Cal Hampton": "Cal Jámpton", "CJ": "Ci Yei"}
 def pron(t):
     for a, b in PRON.items(): t = t.replace(a, b)
     return t
@@ -20,7 +20,7 @@ def gen(args):
     PRE = "... "   # arranque natural: sin esto Dan empieza la frase de golpe (se oye entrecortado)
     body = {"text": PRE + pron(txt), "model_id": "eleven_multilingual_v2",
             "voice_settings": {"stability": 0.5, "similarity_boost": 0.8, "style": 0.35, "use_speaker_boost": True, "speed": 0.96},
-            "previous_text": pron(prev), "next_text": pron(nxt)}
+            "previous_text": pron(prev)}   # sin next_text: con él, Dan alarga el final y se cuela la frase siguiente
     for _ in range(4):
         r = S.post(f"https://api.elevenlabs.io/v1/text-to-speech/{VOZ}/with-timestamps", json=body,
                    headers={"xi-api-key": "proxy-injected"}, timeout=180)

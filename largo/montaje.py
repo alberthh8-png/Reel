@@ -122,7 +122,7 @@ def construir(cid):
         d = duracion(base + ".wav")
         pars.append({"t0": t, "t1": t + d, "wav": base + ".wav", "ws": palabras(base + ".json", t), "texto": txt})
         t += d + PAUSA
-    total = t - PAUSA + (0.9 if cid != "12_cierre" else 2.5)
+    total = t - PAUSA + (0.9 if cid != GUION["capitulos"][-1]["id"] else 2.5)
     n = int(round(total * FPS))
     return {"cap": cap, "lead": lead, "pars": pars, "total": n / FPS, "n": n}
 
@@ -375,6 +375,7 @@ def g_linea(ov, p, ancho=1000, alto=700):
 
 def g_lista(ov, p, ancho=1000, alto=700, tvis=None):
     """Lista numerada: cada punto aparece cuando se nombra (tvis = cuántos visibles)."""
+    alto = 150 + sum(max(120, 46 * len(envolver(it, fuente(38), ancho - 200)) + 50) for it in ov["items"]) + 10
     im = caja(ancho, alto)
     texto(im, (50, 44), ov["titulo"], 44, BLANCO)
     y = 140
@@ -716,7 +717,7 @@ def audio(capitulos, ruta_):
         a = int(max(0, info["lead"] - 0.2) * SR)
         nivel[:a] = 0.09
         nivel[a:a + int(0.6 * SR)] = np.linspace(0.09, 0.028, len(nivel[a:a + int(0.6 * SR)]))
-        if cid == "12_cierre":
+        if cid == GUION["capitulos"][-1]["id"]:
             fin = int(info["pars"][-1]["t1"] * SR)
             nivel[fin:] = np.linspace(0.028, 0.09, max(1, L - fin))
         reel.pegar(mus, (off - 0.3) * SR, m * env * nivel)
