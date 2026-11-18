@@ -400,6 +400,10 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
   4. Grabar en la mayor calidad posible (en PS5 y Xbox, la función de capturar/compartir) y pasarme el clip original, sin recomprimir por WhatsApp.
 - Su política está pensada para uso "no comercial": cuando el canal se monetice, revisar la política vigente.
 
+## Arranque de las frases de Dan (18 nov, queja de Albert)
+- Si se genera la frase tal cual, Dan arranca "de golpe" (voz a los 10-30 ms, sin aire) y se oye entrecortado al principio ("Según los datos", "Las estimaciones", "GTA 5 salió").
+- **Solución fija:** enviar el texto con "... " delante, cortar el audio 120 ms antes de la primera letra (según la alineación) y fundido de entrada de 15 ms. Ya está en `largo/voces.py`.
+
 ## Qué funciona sobre GTA 6 en TikTok e Instagram (investigación del 18 nov)
 Fuentes: artículos y blogs de creadores. No hay datos públicos fiables por plataforma; tomarlo como tendencias, no como cifras exactas.
 1. **Rapidez en la semana de lanzamiento.** El pico de búsquedas es el día de salida. Gana quien sube primeras impresiones y gameplay propio en horas, no en días.
