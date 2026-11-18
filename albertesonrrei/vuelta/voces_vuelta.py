@@ -9,25 +9,23 @@ TW = "/tmp/claude-0/-home-user-Reel/3efe04a8-bc52-519f-9bff-2b639dd9ba8e/scratch
 DAN, LEO = "9F4C8ztpNUmXkdDDbz3J", "YKrm0N1EAM9Bw27j8kuD"
 S = requests.Session(); S.verify = "/root/.ccr/ca-bundle.crt"
 LINEAS = [
- ("d1", DAN, "Atención, pelotuditos."),
- ("d2", DAN, "Desapareció sin avisar. Pero hay cosas que no se olvidan."),
- ("d3", DAN, "El hombre que pidió que le secuestraran..."),
- ("d4", DAN, "El que fue humillado por un tal Hugo..."),
- ("d5", DAN, "Y el que juró dejar este juego para siempre..."),
- ("b1", LEO, "¡¡El pedazo de mierda de Albértesonrréi... ha vuelto!!"),
- ("b2", LEO, "¡¡Hoy a medianoche... el planeta explota!!"),
- ("d6", DAN, "Directo en Twitch, jugando a GTA 6, a las once y media de la noche, hora española."),
- ("d7", DAN, "¿Os venís, pelotuditos?"),
+ ("l1", LEO, "¡Atención... pelotuditos!"),
+ ("l2", LEO, "Desapareció sin avisar... pero hay cosas que no se olvidan."),
+ ("l3", LEO, "¡¡El pedazo de mierda de Alberte sonrreí... ha vuelto!!"),
+ ("l4", LEO, "¡¡Hoy a medianoche... el planeta explota!!"),
+ ("l5", LEO, "Directo en Twitch, jugando a GTA 6, a las once y media de la noche, hora española."),
+ ("l6", LEO, "¿Os venís, pelotuditos?"),
 ]
-FRAG = [("f1", "m8787.wav", 8786.0, 8788.82, 8790.50), ("f2", "m7410.wav", 7410.0, 7459.30, 7462.05),
-        ("f3", "m4092.wav", 4092.0, 4099.74, 4101.50)]
+# fragmentos de Albert con SU voz normal (sin voz grave): (clave, wav, inicio_wav, [(desde, hasta), ...])
+FRAG = [("a_hugo", "m7410.wav", 7410.0, [(7459.30, 7462.05)]),
+        ("a_joaquin", "m4092.wav", 4092.0, [(4094.18, 4094.75), (4099.74, 4101.50)])]
 
 def tts(clave, voz, txt):
     out = f"{OUT}/{clave}"
     if os.path.exists(out + ".mp3"): return
     PRE = "... "
-    vs = {"stability": 0.45, "similarity_boost": 0.8, "style": 0.45, "use_speaker_boost": True, "speed": 1.0} if voz == DAN \
-        else {"stability": 0.3, "similarity_boost": 0.85, "style": 0.8, "use_speaker_boost": True}
+    grito = txt.startswith("¡¡")
+    vs = {"stability": 0.3 if grito else 0.4, "similarity_boost": 0.85, "style": 0.8 if grito else 0.6, "use_speaker_boost": True}
     r = S.post(f"https://api.elevenlabs.io/v1/text-to-speech/{voz}/with-timestamps", headers={"xi-api-key": "proxy-injected"},
                json={"text": PRE + txt, "model_id": "eleven_multilingual_v2", "voice_settings": vs}, timeout=120)
     r.raise_for_status(); d = r.json(); al = d["alignment"]
@@ -44,15 +42,18 @@ def tts(clave, voz, txt):
     json.dump({"texto": txt, "alineacion": al}, open(out + ".json", "w"), ensure_ascii=False)
     recortar(out)
 
-def fragmento(clave, wav, ini, a, b):
+def fragmento(clave, wav, ini, tramos):
     import wave
     w = wave.open(TW + wav); sr = w.getframerate(); n = w.getnframes()
     y = np.frombuffer(w.readframes(n), np.int16).astype(np.float32) / 32768
     if w.getnchannels() == 2: y = y.reshape(-1, 2).mean(1)
-    seg = y[int((a - ini) * sr):int((b - ini) * sr)]
-    g = voz_grave(seg, sr)
-    f = np.ones(len(g)); k = int(0.03 * sr); f[:k] = np.linspace(0, 1, k); f[-k:] = np.linspace(1, 0, k)
-    tmp = f"{OUT}/{clave}.raw"; (g * f).astype(np.float32).tofile(tmp)
+    partes = []
+    for a, b in tramos:
+        seg = y[int((a - ini) * sr):int((b - ini) * sr)].copy()
+        k = int(0.02 * sr); seg[:k] *= np.linspace(0, 1, k); seg[-k:] *= np.linspace(1, 0, k)
+        partes.append(seg)
+    g = np.concatenate(partes)
+    tmp = f"{OUT}/{clave}.raw"; g.astype(np.float32).tofile(tmp)
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "f32le", "-ar", str(sr), "-ac", "1", "-i", tmp, "-af", "loudnorm=I=-16", "-ar", "44100", f"{OUT}/{clave}.wav"], check=True)
     os.remove(tmp)
 
