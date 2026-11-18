@@ -6,15 +6,15 @@ from recortar_finales import recortar
 from efectos import voz_grave
 OUT = "/home/user/Reel/voz/vuelta"; os.makedirs(OUT, exist_ok=True)
 TW = "/tmp/claude-0/-home-user-Reel/3efe04a8-bc52-519f-9bff-2b639dd9ba8e/scratchpad/twitch/"
-DAN, LEO = "9F4C8ztpNUmXkdDDbz3J", "YKrm0N1EAM9Bw27j8kuD"
+DAN, LEO = "9F4C8ztpNUmXkdDDbz3J", "OLmSqlYzB06EIKJRy5b0"   # LEO = Murdock (villano), elegido por Albert
 S = requests.Session(); S.verify = "/root/.ccr/ca-bundle.crt"
 LINEAS = [
- ("l0", LEO, "[shouting] ¡¡EEEEEH, TÚ!!"),
+ ("l0", LEO, "¡¡Eeeh, TÚ!!"),
  ("l1", LEO, "Hace tiempo, un viejo amigo desapareció sin avisar."),
  ("l2", LEO, "Pero hay cosas que no se olvidan."),
  ("l3", LEO, "¡¡El pedazo de mierda de Alberte sonrreí... ha vuelto!!"),
  ("l4", LEO, "¡¡Hoy a medianoche... la luna... [inhales deeply] ¡impacta contra la Tierra! ...como los huevos de este hombre!!"),
- ("l5", LEO, "Directo en Twitch, jugando a GTA 6, a las once y media de la noche, hora española."),
+ ("l5", LEO, "Va a coger el GTA 6... y se lo va a meter... por donde no llega la luz."),
  ("l6", LEO, "¿Os venís, pelotuditos?"),
  ("l7", LEO, "¡¡Quien no venga... come miembros!!"),
 ]
@@ -37,7 +37,8 @@ def tts(clave, voz, txt):
     t_al = al["character_start_times_seconds"][len(PRE)]
     i0 = int(max(0.0, t_al - 0.25) * 44100); s = np.nonzero(env[i0:] > 0.004)[0]
     onset = (i0 + s[0]) / 44100 if len(s) else t_al
-    corte = max(0.0, min(onset, t_al) - 0.13)
+    # si antes de la primera letra hay un ruido (Murdock vocaliza los puntos), se corta pegado a la letra
+    corte = max(0.0, t_al - 0.07) if onset < t_al - 0.12 else max(0.0, min(onset, t_al) - 0.13)
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", crudo, "-af", f"atrim=start={corte:.3f},asetpts=N/SR/TB,afade=t=in:d=0.015", "-b:a", "192k", out + ".mp3"], check=True)
     os.remove(crudo)
     al = {k: (v[len(PRE):] if k == "characters" else [max(0.0, t - corte) for t in v[len(PRE):]]) for k, v in al.items()}

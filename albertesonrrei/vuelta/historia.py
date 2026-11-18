@@ -41,7 +41,7 @@ PLANOS = {
 INICIO_ARCHIVO = {"m3110.mp4": 3110.0, "m4092.mp4": 4092.0, "m7410.mp4": 7410.0, "m8430.mp4": 8430.0,
                   "m8705.mp4": 8705.0, "m8787.mp4": 8786.0}
 TITULOS = {"l0": ("¡EH, TÚ!", AMARILLO), "l1": ("UN VIEJO AMIGO…", BLANCO), "l2": ("RECUERDOS", CIAN),
-           "l3": ("HA VUELTO", AMARILLO), "l4": ("HOY · 00:00", AMARILLO), "l5": ("DIRECTO EN TWITCH", CIAN),
+           "l3": ("HA VUELTO", AMARILLO), "l4": ("HOY · 00:00", AMARILLO), "l5": ("HOY · 23:30 · TWITCH", CIAN),
            "l6": ("¿OS VENÍS?", AMARILLO), "l7": ("QUIEN NO VENGA…", ROSA)}
 
 
