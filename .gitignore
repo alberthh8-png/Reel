@@ -9,3 +9,5 @@ salida/_fotogramas/
 salida/largo/segmentos/
 voz/largo/*.wav
 salida/largo/video.mp4
+salida/largo/video_youtube.mp4
+salida/largo/audio.wav
