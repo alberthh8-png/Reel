@@ -6,3 +6,5 @@ __pycache__/
 salida/**/*.wav
 salida/**/preview/
 salida/_fotogramas/
+salida/largo/segmentos/
+voz/largo/*.wav
