@@ -400,6 +400,19 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
   4. Grabar en la mayor calidad posible (en PS5 y Xbox, la función de capturar/compartir) y pasarme el clip original, sin recomprimir por WhatsApp.
 - Su política está pensada para uso "no comercial": cuando el canal se monetice, revisar la política vigente.
 
+## Qué funciona sobre GTA 6 en TikTok e Instagram (investigación del 18 nov)
+Fuentes: artículos y blogs de creadores. No hay datos públicos fiables por plataforma; tomarlo como tendencias, no como cifras exactas.
+1. **Rapidez en la semana de lanzamiento.** El pico de búsquedas es el día de salida. Gana quien sube primeras impresiones y gameplay propio en horas, no en días.
+2. **Formato reconocible.** La mayoría resubirá clips; la gente se queda con quien tiene un formato que se reconoce en el primer segundo (en nuestro caso: estilo GNews + voz de Dan + sello).
+3. **Polémica y pique** ("mi pareja no me deja jugar a GTA 6": cientos de miles de vistas). Encaja con la regla 22: se comparte por pique o por utilidad.
+4. **Nostalgia o relevo** ("adiós a Los Santos", de GTA 5 a GTA 6) con audio melancólico. Ya lo validamos con "Adiós, GTA 5".
+5. **Comparaciones** "vida real vs juego" y GTA 5 vs GTA 6 (detalles, físicas, policía, mapa).
+6. **Cuenta atrás con número exacto** ("Mañana", "24 h") para crear urgencia; ojo, caduca el día 19.
+7. **Clips de directos.** Trocear los directos en vídeos cortos durante los primeros días (para Albertesonrrei).
+8. **Mismo vídeo en las 3 redes**: uno que muere en una puede funcionar en otra.
+9. **Lo que NO hacemos:** clips de IA que se hacen pasar por gameplay real (generan rechazo y denuncias), "filtraciones" falsas, música del tráiler (Content ID).
+- **Dinero:** los Shorts pagan muy poco; el programa de recompensas de TikTok paga más, pero solo en vídeos de más de 1 minuto. Cuando haya gameplay, probar algún TikTok de más de 1 minuto.
+
 ## Marca GNews
 
 - **Archivos** (`marca/`): `gnews_perfil_1080.png` (foto de perfil apta para recorte circular), `gnews_banner_youtube_2560x1440.jpg` (todo dentro de la zona segura de 1546×423) y `gnews_logo_transparente.png`.
