@@ -462,3 +462,9 @@ Fuentes: artículos y blogs de creadores. No hay datos públicos fiables por pla
 3. **19 nov:** **GTA Parte 3, "¿Se cumplieron las teorías?"**, con todas las reglas (sin "Parte 3" en pantalla ni en el título de YouTube).
 4. Albert cambia la foto de perfil, el banner y las biografías en las 3 redes; falta la **bio de Instagram** (≤150 caracteres).
 5. Ofrecido y aún sin respuesta: calendario de contenido de 2 semanas, firma o animación del logo en los reels y plantilla de miniatura de YouTube.
+
+## Enviar archivos grandes a Albert (18 nov)
+- Por el chat el límite es **400 MB**. Para más: **Google Drive** con subida reanudable (`curl` a `www.googleapis.com/upload/drive/v3/files?uploadType=resumable`).
+- El conector de Drive no sirve para archivos enormes. Albert pega un **Access token temporal** (OAuth Playground, permiso `drive.file`, empieza por `ya29.`, dura 1 hora) en el formulario seguro; nunca en el chat.
+- Carpeta del vídeo largo: "GNews – Vídeo largo GTA 6" (id `1rIxPOCGfe_pgiRMw1X_Qazvt8lcgzyD6`).
+- Albert NO quiere versiones comprimidas: siempre el original.
