@@ -52,7 +52,7 @@ PANEL = (840, 150, 1840, 880)            # zona libre a la derecha del teléfono
 PRON_INV = {"Mister Bist": "MrBeast", "Sénsor Táuer": "Sensor Tower", "Cyberpunk dos mil setenta y siete": "Cyberpunk 2077",
             "Grass Rívers": "Grassrivers", "Port Guélhorn": "Port Gellhorn", "Boni y Claid": "Bonnie y Clyde",
             "Red Ded Redémpshon dos": "Red Dead Redemption 2", "Kik": "Kick", "Guórsoun": "Warzone",
-            "Dédpul y Lobezno": "Deadpool y Lobezno"}
+            "Dédpul y Lobezno": "Deadpool y Lobezno", "Búbi Áik": "Boobie Ike", "Bráian Jéder": "Brian Heder", "Fil Cásidi": "Phil Cassidy", "Teik Tú": "Take-Two", "Cal Jámpton": "Cal Hampton", "Ci Yei": "CJ", "Bráian": "Brian", "Yi Nius": "GNews"}
 
 
 # --------------------------------------------------------------------------

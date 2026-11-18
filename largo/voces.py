@@ -1,11 +1,12 @@
 """Genera la voz de Dan párrafo a párrafo (con marcas de tiempo por carácter)."""
 import json, base64, sys, os, subprocess, requests
+import numpy as np
 from concurrent.futures import ThreadPoolExecutor
 VOZ = "9F4C8ztpNUmXkdDDbz3J"
 PRON = {"MrBeast": "Mister Bist", "Sensor Tower": "Sénsor Táuer", "Cyberpunk 2077": "Cyberpunk dos mil setenta y siete",
         "Grassrivers": "Grass Rívers", "Port Gellhorn": "Port Guélhorn", "Bonnie y Clyde": "Boni y Claid",
         "Red Dead Redemption 2": "Red Ded Redémpshon dos", " X,": " equis,", "GTA Online": "GTA Online",
-        "Kick": "Kik", "Warzone": "Guórsoun", "Deadpool y Lobezno": "Dédpul y Lobezno"}
+        "Kick": "Kik", "GNews": "Yi Nius", "Brian,": "Bráian,", "Brian ": "Bráian ", "Warzone": "Guórsoun", "Deadpool y Lobezno": "Dédpul y Lobezno", "Boobie Ike": "Búbi Áik", "Brian Heder": "Bráian Jéder", "Phil Cassidy": "Fil Cásidi", "Take-Two": "Teik Tú", "Cal Hampton": "Cal Jámpton", "CJ": "Ci Yei"}
 def pron(t):
     for a, b in PRON.items(): t = t.replace(a, b)
     return t
@@ -25,9 +26,16 @@ def gen(args):
         print("reintento", out, r.status_code, r.text[:200])
     r.raise_for_status(); d = r.json()
     al = d["alignment"]
-    corte = max(0.0, al["character_start_times_seconds"][len(PRE)] - 0.12)   # 120 ms de aire antes de la voz
     crudo = out + "_crudo.mp3"
     open(crudo, "wb").write(base64.b64decode(d["audio_base64"]))
+    # arranque real de la voz medido en el audio (la alineación a veces va adelantada)
+    x = np.frombuffer(subprocess.check_output(["ffmpeg", "-v", "error", "-i", crudo, "-f", "f32le", "-ac", "1", "-ar", "44100", "-"]), np.float32)
+    env = np.convolve(np.abs(x), np.ones(220) / 220, mode="same")
+    t_al = al["character_start_times_seconds"][len(PRE)]
+    i0 = int(max(0.0, t_al - 0.25) * 44100)
+    sobre = np.nonzero(env[i0:] > 0.004)[0]
+    onset = (i0 + sobre[0]) / 44100 if len(sobre) else t_al
+    corte = max(0.0, min(onset, t_al) - 0.13)   # 130 ms de aire antes de la voz
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", crudo, "-af", f"atrim=start={corte:.3f},asetpts=N/SR/TB,afade=t=in:d=0.015",
                     "-b:a", "192k", out + ".mp3"], check=True)
     os.remove(crudo)
