@@ -1,6 +1,8 @@
 """Genera la voz de Dan párrafo a párrafo (con marcas de tiempo por carácter)."""
 import json, base64, sys, os, subprocess, requests
 import numpy as np
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from recortar_finales import recortar
 from concurrent.futures import ThreadPoolExecutor
 VOZ = "9F4C8ztpNUmXkdDDbz3J"
 PRON = {"MrBeast": "Mister Bist", "Sensor Tower": "Sénsor Táuer", "Cyberpunk 2077": "Cyberpunk dos mil setenta y siete",
@@ -36,11 +38,14 @@ def gen(args):
     sobre = np.nonzero(env[i0:] > 0.004)[0]
     onset = (i0 + sobre[0]) / 44100 if len(sobre) else t_al
     corte = max(0.0, min(onset, t_al) - 0.13)   # 130 ms de aire antes de la voz
-    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", crudo, "-af", f"atrim=start={corte:.3f},asetpts=N/SR/TB,afade=t=in:d=0.015",
+    # final: cortar justo después de la última letra (si no, se cuela el arranque de la frase siguiente)
+    fin = al["character_end_times_seconds"][-1] + 0.18
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", crudo, "-af", f"atrim=start={corte:.3f}:end={fin:.3f},asetpts=N/SR/TB,afade=t=in:d=0.015,areverse,afade=t=in:d=0.06,areverse",
                     "-b:a", "192k", out + ".mp3"], check=True)
     os.remove(crudo)
     al = {k: (v[len(PRE):] if k == "characters" else [max(0.0, x - corte) for x in v[len(PRE):]]) for k, v in al.items()}
     json.dump({"texto": txt, "alineacion": al}, open(out + ".json", "w"), ensure_ascii=False)
+    recortar(out)   # quita el trozo de la frase siguiente que se cuela al final
     return out
 g = json.load(open(sys.argv[1]))
 solo = [a for a in sys.argv[2:] if not a.startswith("--")]

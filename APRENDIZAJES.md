@@ -402,6 +402,8 @@ python3 drift2.py --guion guion_X.json --salida salida/X      # vídeos con foto
 
 ## Arranque de las frases de Dan (18 nov, queja de Albert)
 - Si se genera la frase tal cual, Dan arranca "de golpe" (voz a los 10-30 ms, sin aire) y se oye entrecortado al principio ("Según los datos", "Las estimaciones", "GTA 5 salió").
+- **Final de cada audio:** ElevenLabs cuela el arranque de la frase siguiente (por el `next_text`) y queda un corte feo antes del siguiente párrafo. **Solución fija:** cortar en el primer silencio tras la última letra + fundido de salida (`largo/recortar_finales.py`), y comprobar con Scribe que no falta ninguna palabra.
+- **Tildes:** escribir siempre "Lucía" con tilde o Dan la pronuncia mal.
 - **Solución fija:** enviar el texto con "... " delante, cortar el audio 120 ms antes de la primera letra (según la alineación) y fundido de entrada de 15 ms. Ya está en `largo/voces.py`.
 
 ## Qué funciona sobre GTA 6 en TikTok e Instagram (investigación del 18 nov)
