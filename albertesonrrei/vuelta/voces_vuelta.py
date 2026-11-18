@@ -9,7 +9,8 @@ TW = "/tmp/claude-0/-home-user-Reel/3efe04a8-bc52-519f-9bff-2b639dd9ba8e/scratch
 DAN, LEO = "9F4C8ztpNUmXkdDDbz3J", "YKrm0N1EAM9Bw27j8kuD"
 S = requests.Session(); S.verify = "/root/.ccr/ca-bundle.crt"
 LINEAS = [
- ("l1", LEO, "¡¡Eh, tú!! Hace tiempo, un viejo amigo desapareció sin avisar."),
+ ("l0", LEO, "[shouting] ¡¡EEEEEH, TÚ!!"),
+ ("l1", LEO, "Hace tiempo, un viejo amigo desapareció sin avisar."),
  ("l2", LEO, "Pero hay cosas que no se olvidan."),
  ("l3", LEO, "¡¡El pedazo de mierda de Alberte sonrreí... ha vuelto!!"),
  ("l4", LEO, "¡¡Hoy a medianoche... la luna... [inhales deeply] ¡impacta contra la Tierra! ...como los huevos de este hombre!!"),
