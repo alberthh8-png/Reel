@@ -45,3 +45,18 @@ He dejado la mala vida, por favor 🙏😂 #gta6 #gtavi #albertesonrrei #humor #
 - Comentario fijado: `Directos de GTA 6 en Twitch: twitch.tv/albertesonrrei 🎮 ¿Os venís, pelotuditos?`
 - En TikTok, marca el clip como "contenido de videojuego" si te lo pide.
 - Ojo: en los clips 4 y 5 se oye un poco de música de la radio del juego. Si TikTok o Instagram silencian el audio, avísame y hago una versión con el juego más bajo.
+
+---
+
+## 6. La excavadora 🚜 (`gta6_excavadora/clip.mp4`, ~50 s) — Reels, Shorts y TikTok
+**TikTok / Reels:**
+```
+Robo una excavadora en GTA 6 y la lío 🚜💥 "lo tengo en la sangre" #gta6 #gtavi #albertesonrrei #gta6gameplay #humor #twitch
+```
+**YouTube Shorts:** `Robo una EXCAVADORA en GTA 6 y la lío 🚜 #shorts #gta6`
+
+## 6b. La excavadora — versión larga (`gta6_excavadora_largo/clip.mp4`, 1:25) — SOLO TikTok
+Más de 1 minuto: entra en el programa de recompensas de TikTok. Súbela unos días después de la corta o en lugar de ella en TikTok.
+```
+La saga completa de la excavadora en GTA 6 🚜 de obrero a enemigo público nº1 #gta6 #gtavi #albertesonrrei #gta6gameplay #humor
+```

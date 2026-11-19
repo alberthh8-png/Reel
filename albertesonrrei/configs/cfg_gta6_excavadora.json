@@ -1,0 +1,161 @@
+{
+ "titulos": [
+  "ROBO UNA EXCAVADORA",
+  "Y LA LÍO EN GTA 6"
+ ],
+ "momentos": [
+  {
+   "id": "e1",
+   "frames": "p_e1",
+   "s_frames": 7466.6,
+   "wav": "ex1.wav",
+   "wav_inicio": 7450.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7466.9,
+   "s1": 7475.2,
+   "stickers": [],
+   "zooms": [
+    7468.4
+   ]
+  },
+  {
+   "id": "e2",
+   "frames": "p_e2",
+   "s_frames": 7491.1,
+   "wav": "ex1.wav",
+   "wav_inicio": 7450.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7491.4,
+   "s1": 7497.9,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 7494.1,
+     "hasta": 7497.9,
+     "lineas": [
+      "TENGO UNA",
+      "EXCAVADORA"
+     ]
+    }
+   ],
+   "zooms": [
+    7496.6
+   ]
+  },
+  {
+   "id": "e3",
+   "frames": "p_e3",
+   "s_frames": 7501.4,
+   "wav": "ex1.wav",
+   "wav_inicio": 7450.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7501.7,
+   "s1": 7506.95,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "e4",
+   "frames": "p_e4",
+   "s_frames": 7568.4,
+   "wav": "ex2.wav",
+   "wav_inicio": 7560.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7568.7,
+   "s1": 7578.0,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 7575.9,
+     "hasta": 7578.0,
+     "lineas": [
+      "PAPI ESTÁ",
+      "EN CASA"
+     ]
+    }
+   ],
+   "zooms": [
+    7577.4
+   ],
+   "golpes": [
+    7569.8
+   ]
+  },
+  {
+   "id": "e5",
+   "frames": "p_e5",
+   "s_frames": 7616.1,
+   "wav": "ex2.wav",
+   "wav_inicio": 7560.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7616.4,
+   "s1": 7621.0,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "e6",
+   "frames": "p_e6",
+   "s_frames": 7633.8,
+   "wav": "ex2.wav",
+   "wav_inicio": 7560.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7634.1,
+   "s1": 7635.6,
+   "stickers": [],
+   "zooms": [],
+   "golpes": [
+    7634.8
+   ]
+  },
+  {
+   "id": "e7",
+   "frames": "p_e7",
+   "s_frames": 7703.8,
+   "wav": "ex3.wav",
+   "wav_inicio": 7700.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7704.1,
+   "s1": 7706.9,
+   "stickers": [],
+   "zooms": [
+    7705.9
+   ]
+  },
+  {
+   "id": "e8",
+   "frames": "p_e8",
+   "s_frames": 8313.9,
+   "wav": "ex5.wav",
+   "wav_inicio": 8300.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8314.2,
+   "s1": 8320.6,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "e9",
+   "frames": "p_e9",
+   "s_frames": 8330.8,
+   "wav": "ex5.wav",
+   "wav_inicio": 8300.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8331.1,
+   "s1": 8335.4,
+   "stickers": [],
+   "zooms": [
+    8334.9
+   ]
+  }
+ ]
+}
