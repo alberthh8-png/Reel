@@ -1,0 +1,43 @@
+{
+ "titulos": [
+  "EL 19 DE NOVIEMBRE",
+  "NO SE TRABAJA"
+ ],
+ "momentos": [
+  {
+   "id": "cl1",
+   "frames": "p_cl1",
+   "s_frames": 2151.9,
+   "wav": "clase.wav",
+   "wav_inicio": 2140.0,
+   "palabras": "ventanas/w2127.json",
+   "stt": 2127.0,
+   "s0": 2152.2,
+   "s1": 2161.4,
+   "stickers": [
+    {
+     "tipo": "chat",
+     "s": 2152.3,
+     "hasta": 2155.6,
+     "texto": "capi: Peñe, no juego que tengo clase"
+    }
+   ],
+   "zooms": []
+  },
+  {
+   "id": "cl2",
+   "frames": "p_cl2",
+   "s_frames": 2169.7,
+   "wav": "clase.wav",
+   "wav_inicio": 2140.0,
+   "palabras": "ventanas/w2127.json",
+   "stt": 2127.0,
+   "s0": 2170.0,
+   "s1": 2173.6,
+   "stickers": [],
+   "zooms": [
+    2172.1
+   ]
+  }
+ ]
+}

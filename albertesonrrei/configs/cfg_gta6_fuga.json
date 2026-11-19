@@ -1,0 +1,85 @@
+{
+ "titulos": [
+  "LA FUGA MÁS ÉPICA",
+  "DE GTA 6"
+ ],
+ "momentos": [
+  {
+   "id": "fg1",
+   "frames": "p_fg1",
+   "s_frames": 10667.0,
+   "wav": "fuga.wav",
+   "wav_inicio": 10660.0,
+   "palabras": "ventanas/w10648.json",
+   "stt": 10648.0,
+   "s0": 10667.3,
+   "s1": 10670.0,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "fg2",
+   "frames": "p_fg2",
+   "s_frames": 10687.8,
+   "wav": "fuga.wav",
+   "wav_inicio": 10660.0,
+   "palabras": "ventanas/w10648.json",
+   "stt": 10648.0,
+   "s0": 10688.1,
+   "s1": 10697.1,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "fg3",
+   "frames": "p_fg3",
+   "s_frames": 10719.1,
+   "wav": "fuga.wav",
+   "wav_inicio": 10660.0,
+   "palabras": "ventanas/w10648.json",
+   "stt": 10648.0,
+   "s0": 10719.4,
+   "s1": 10721.4,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "fg4",
+   "frames": "p_fg4",
+   "s_frames": 11395.7,
+   "wav": "fuga2.wav",
+   "wav_inicio": 11390.0,
+   "palabras": "ventanas/w11355.json",
+   "stt": 11355.0,
+   "s0": 11396.0,
+   "s1": 11403.8,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 11397.4,
+     "hasta": 11403.6,
+     "lineas": [
+      "MAESTRO",
+      "ESCAPISTA"
+     ]
+    }
+   ],
+   "zooms": [
+    11402.0
+   ]
+  },
+  {
+   "id": "fg5",
+   "frames": "p_fg5",
+   "s_frames": 11408.5,
+   "wav": "fuga2.wav",
+   "wav_inicio": 11390.0,
+   "palabras": "ventanas/w11355.json",
+   "stt": 11355.0,
+   "s0": 11408.8,
+   "s1": 11414.4,
+   "stickers": [],
+   "zooms": []
+  }
+ ]
+}

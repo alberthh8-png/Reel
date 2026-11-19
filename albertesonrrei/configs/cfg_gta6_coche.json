@@ -1,0 +1,49 @@
+{
+ "titulos": [
+  "HUNDE UN COCHE",
+  "Y PIDE PERDÓN"
+ ],
+ "momentos": [
+  {
+   "id": "co1",
+   "frames": "p_co1",
+   "s_frames": 5188.0,
+   "wav": "coche.wav",
+   "wav_inicio": 5180.0,
+   "palabras": "ventanas/w5168.json",
+   "stt": 5168.5,
+   "s0": 5188.3,
+   "s1": 5193.1,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "co2",
+   "frames": "p_co2",
+   "s_frames": 5195.8,
+   "wav": "coche.wav",
+   "wav_inicio": 5180.0,
+   "palabras": "ventanas/w5168.json",
+   "stt": 5168.5,
+   "s0": 5196.1,
+   "s1": 5204.4,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "co3",
+   "frames": "p_co3",
+   "s_frames": 5210.3,
+   "wav": "coche.wav",
+   "wav_inicio": 5180.0,
+   "palabras": "ventanas/w5168.json",
+   "stt": 5168.5,
+   "s0": 5210.6,
+   "s1": 5222.3,
+   "stickers": [],
+   "zooms": [
+    5219.4
+   ]
+  }
+ ]
+}

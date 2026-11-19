@@ -1,0 +1,51 @@
+{
+ "titulos": [
+  "HUYE DE LA POLI…",
+  "Y SE LLEVA UN PAVO"
+ ],
+ "momentos": [
+  {
+   "id": "pv1",
+   "frames": "p_pv1",
+   "s_frames": 10815.1,
+   "wav": "pavo.wav",
+   "wav_inicio": 10810.0,
+   "palabras": "ventanas/w10811.json",
+   "stt": 10811.0,
+   "s0": 10815.4,
+   "s1": 10826.6,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "pv2",
+   "frames": "p_pv2",
+   "s_frames": 10830.4,
+   "wav": "pavo.wav",
+   "wav_inicio": 10810.0,
+   "palabras": "ventanas/w10811.json",
+   "stt": 10811.0,
+   "s0": 10830.7,
+   "s1": 10833.3,
+   "stickers": [],
+   "zooms": [
+    10831.8
+   ]
+  },
+  {
+   "id": "pv3",
+   "frames": "p_pv3",
+   "s_frames": 10836.2,
+   "wav": "pavo.wav",
+   "wav_inicio": 10810.0,
+   "palabras": "ventanas/w10811.json",
+   "stt": 10811.0,
+   "s0": 10836.5,
+   "s1": 10847.6,
+   "stickers": [],
+   "zooms": [
+    10846.6
+   ]
+  }
+ ]
+}

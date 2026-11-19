@@ -1,0 +1,49 @@
+{
+ "titulos": [
+  "HE DEJADO",
+  "LA MALA VIDA"
+ ],
+ "momentos": [
+  {
+   "id": "pi1",
+   "frames": "p_pi1",
+   "s_frames": 10240.2,
+   "wav": "pito.wav",
+   "wav_inicio": 10230.0,
+   "palabras": "ventanas/w10228.json",
+   "stt": 10228.0,
+   "s0": 10240.5,
+   "s1": 10247.3,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "pi2",
+   "frames": "p_pi2",
+   "s_frames": 10255.9,
+   "wav": "pito.wav",
+   "wav_inicio": 10230.0,
+   "palabras": "ventanas/w10228.json",
+   "stt": 10228.0,
+   "s0": 10256.2,
+   "s1": 10259.1,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "pi3",
+   "frames": "p_pi3",
+   "s_frames": 10266.8,
+   "wav": "pito.wav",
+   "wav_inicio": 10230.0,
+   "palabras": "ventanas/w10228.json",
+   "stt": 10228.0,
+   "s0": 10267.1,
+   "s1": 10276.5,
+   "stickers": [],
+   "zooms": [
+    10275.0
+   ]
+  }
+ ]
+}
