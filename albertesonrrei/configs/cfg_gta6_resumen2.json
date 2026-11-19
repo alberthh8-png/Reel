@@ -1,0 +1,178 @@
+{
+ "titulos": [
+  "RESUMEN GTA 6 · DÍA 1",
+  "PARTE 2"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "e2",
+   "frames": "p_e2",
+   "s_frames": 7491.1,
+   "wav": "ex1.wav",
+   "wav_inicio": 7450.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7491.4,
+   "s1": 7497.9,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 7494.1,
+     "hasta": 7497.9,
+     "lineas": [
+      "TENGO UNA",
+      "EXCAVADORA"
+     ]
+    }
+   ],
+   "zooms": [
+    7496.6
+   ]
+  },
+  {
+   "id": "e3",
+   "frames": "p_e3",
+   "s_frames": 7501.4,
+   "wav": "ex1.wav",
+   "wav_inicio": 7450.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7501.7,
+   "s1": 7506.95,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "e4",
+   "frames": "p_e4",
+   "s_frames": 7568.4,
+   "wav": "ex2.wav",
+   "wav_inicio": 7560.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7568.7,
+   "s1": 7578.0,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 7575.9,
+     "hasta": 7578.0,
+     "lineas": [
+      "PAPI ESTÁ",
+      "EN CASA"
+     ]
+    }
+   ],
+   "zooms": [
+    7577.4
+   ],
+   "golpes": [
+    7569.8
+   ]
+  },
+  {
+   "id": "fg2",
+   "frames": "p_fg2",
+   "s_frames": 10687.8,
+   "wav": "fuga.wav",
+   "wav_inicio": 10660.0,
+   "palabras": "ventanas/w10648.json",
+   "stt": 10648.0,
+   "s0": 10688.1,
+   "s1": 10697.1,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "fg4",
+   "frames": "p_fg4",
+   "s_frames": 11395.7,
+   "wav": "fuga2.wav",
+   "wav_inicio": 11390.0,
+   "palabras": "ventanas/w11355.json",
+   "stt": 11355.0,
+   "s0": 11396.0,
+   "s1": 11403.8,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 11397.4,
+     "hasta": 11403.6,
+     "lineas": [
+      "MAESTRO",
+      "ESCAPISTA"
+     ]
+    }
+   ],
+   "zooms": [
+    11402.0
+   ]
+  },
+  {
+   "id": "cl1",
+   "frames": "p_cl1",
+   "s_frames": 2151.9,
+   "wav": "clase.wav",
+   "wav_inicio": 2140.0,
+   "palabras": "ventanas/w2127.json",
+   "stt": 2127.0,
+   "s0": 2152.2,
+   "s1": 2161.4,
+   "stickers": [
+    {
+     "tipo": "chat",
+     "s": 2152.3,
+     "hasta": 2155.6,
+     "texto": "capi: Peñe, no juego que tengo clase"
+    }
+   ],
+   "zooms": []
+  },
+  {
+   "id": "cl2",
+   "frames": "p_cl2",
+   "s_frames": 2169.7,
+   "wav": "clase.wav",
+   "wav_inicio": 2140.0,
+   "palabras": "ventanas/w2127.json",
+   "stt": 2127.0,
+   "s0": 2170.0,
+   "s1": 2173.6,
+   "stickers": [],
+   "zooms": [
+    2172.1
+   ]
+  },
+  {
+   "id": "co3",
+   "frames": "p_co3",
+   "s_frames": 5210.3,
+   "wav": "coche.wav",
+   "wav_inicio": 5180.0,
+   "palabras": "ventanas/w5168.json",
+   "stt": 5168.5,
+   "s0": 5210.6,
+   "s1": 5222.3,
+   "stickers": [],
+   "zooms": [
+    5219.4
+   ]
+  },
+  {
+   "id": "pi3",
+   "frames": "p_pi3",
+   "s_frames": 10266.8,
+   "wav": "pito.wav",
+   "wav_inicio": 10230.0,
+   "palabras": "ventanas/w10228.json",
+   "stt": 10228.0,
+   "s0": 10267.1,
+   "s1": 10276.5,
+   "stickers": [],
+   "zooms": [
+    10275.0
+   ]
+  }
+ ]
+}

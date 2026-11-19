@@ -60,3 +60,24 @@ Más de 1 minuto: entra en el programa de recompensas de TikTok. Súbela unos d�
 ```
 La saga completa de la excavadora en GTA 6 🚜 de obrero a enemigo público nº1 #gta6 #gtavi #albertesonrrei #gta6gameplay #humor
 ```
+
+---
+
+# RESUMEN DEL DIRECTO · GTA 6 DÍA 1 (formato nuevo: partida grande)
+
+## Parte 1 (`gta6_resumen1/clip.mp4`, 1:13) — el pavo + la excavadora hasta el ELIMINADO
+**TikTok / Reels:**
+```
+Resumen de mi primer día en GTA 6 (parte 1) 🦃🚜💥 chuto un pavo, robo una excavadora y acabo ELIMINADO #gta6 #gtavi #albertesonrrei #gta6gameplay #humor #twitch
+```
+**YouTube Shorts:** `Mi primer día en GTA 6 fue un caos 🦃🚜 (Parte 1) #shorts #gta6`
+
+## Parte 2 (`gta6_resumen2/clip.mp4`, 1:13) — excavadora, fuga, clase, coche y mala vida
+Súbela **al día siguiente** de la Parte 1 (la Parte 1 acaba con "PARTE 2 EN MI PERFIL").
+**TikTok / Reels:**
+```
+Resumen de mi primer día en GTA 6 (parte 2) 🚜🏃‍♂️ maestro escapista y obrero profesional #gta6 #gtavi #albertesonrrei #gta6gameplay #humor #twitch
+```
+**YouTube Shorts:** `Mi primer día en GTA 6 fue un caos (Parte 2) 😂 #shorts #gta6`
+
+**Orden recomendado de publicación:** Parte 1 → Parte 2 → y después, cada día, un clip suelto que no salga entero en el resumen (excavadora larga en TikTok, pavo completo, fuga completa…).

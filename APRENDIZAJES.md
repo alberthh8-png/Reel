@@ -17,6 +17,9 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 - **Momento clave:** GTA 6 sale el **19 nov 2026** (PS5 y Xbox Series). Esa semana, contenido diario de GTA.
 
 ## Cuenta principal de Albert: "Albertesonrrei" (17 nov)
+- **Formato fijo de los clips de directo (20 nov):** formato "juego" (`"formato": "juego"` en la config de `compilacion.py`): partida 4:5 a todo el ancho, cámara en miniatura arriba a la derecha (crece en las reacciones) y subtítulos en la franja de abajo. A Albert le gusta más que la cámara grande.
+- Si hay mucho material, **dividir en partes** (~70 s cada una), la parte 1 acaba con el sello "PARTE 2 EN MI PERFIL".
+- VOD de 3 h: transcribir el directo **entero** con Scribe en trozos de 30 min, **de uno en uno** (en paralelo da error 429), para poder buscar momentos por palabra (p. ej. "excavadora").
 - Es su cuenta **principal de creador**: lleva **~1 año y medio** haciendo directos en **Twitch y TikTok** y subiendo gameplays y clips de **Rocket League, GTA 5, Overwatch, Minecraft** y un poco de todo.
 - **Plan nuevo:** seguir con los reels de **GNews** (noticias y curiosidades, crecer la cuenta) **y además editar los clips y gameplays** que Albert pase **para Albertesonrrei**.
 - Son **dos marcas distintas**: GNews = noticias con la voz de Dan y animaciones; Albertesonrrei = Albert jugando (su voz, su cara y su humor). No mezclar estilos sin hablarlo.

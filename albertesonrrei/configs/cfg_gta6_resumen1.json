@@ -1,0 +1,150 @@
+{
+ "titulos": [
+  "RESUMEN GTA 6 · DÍA 1",
+  "PARTE 1"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "pv2",
+   "frames": "p_pv2",
+   "s_frames": 10830.4,
+   "wav": "pavo.wav",
+   "wav_inicio": 10810.0,
+   "palabras": "ventanas/w10811.json",
+   "stt": 10811.0,
+   "s0": 10830.7,
+   "s1": 10833.3,
+   "stickers": [],
+   "zooms": [
+    10831.8
+   ]
+  },
+  {
+   "id": "pv3",
+   "frames": "p_pv3",
+   "s_frames": 10836.2,
+   "wav": "pavo.wav",
+   "wav_inicio": 10810.0,
+   "palabras": "ventanas/w10811.json",
+   "stt": 10811.0,
+   "s0": 10836.5,
+   "s1": 10847.6,
+   "stickers": [],
+   "zooms": [
+    10846.6
+   ]
+  },
+  {
+   "id": "e8",
+   "frames": "p_e8",
+   "s_frames": 8313.9,
+   "wav": "ex5.wav",
+   "wav_inicio": 8300.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8314.2,
+   "s1": 8320.6,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "e9",
+   "frames": "p_e9",
+   "s_frames": 8330.8,
+   "wav": "ex5.wav",
+   "wav_inicio": 8300.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8331.1,
+   "s1": 8335.4,
+   "stickers": [],
+   "zooms": [
+    8334.9
+   ]
+  },
+  {
+   "id": "x3",
+   "frames": "p_x3",
+   "s_frames": 8339.2,
+   "wav": "ex6.wav",
+   "wav_inicio": 8330.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8339.5,
+   "s1": 8344.6,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "x4",
+   "frames": "p_x4",
+   "s_frames": 8350.2,
+   "wav": "ex6.wav",
+   "wav_inicio": 8330.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8350.5,
+   "s1": 8358.4,
+   "stickers": [],
+   "zooms": [
+    8357.0
+   ]
+  },
+  {
+   "id": "x5",
+   "frames": "p_x5",
+   "s_frames": 8373.5,
+   "wav": "ex6.wav",
+   "wav_inicio": 8330.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8373.8,
+   "s1": 8383.7,
+   "stickers": [],
+   "zooms": [
+    8382.4
+   ]
+  },
+  {
+   "id": "x6",
+   "frames": "p_x6",
+   "s_frames": 8389.3,
+   "wav": "ex6.wav",
+   "wav_inicio": 8330.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8389.6,
+   "s1": 8393.5,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "x7",
+   "frames": "p_x7",
+   "s_frames": 8399.5,
+   "wav": "ex6.wav",
+   "wav_inicio": 8330.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8399.8,
+   "s1": 8420.7,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 8418.5,
+     "hasta": 8420.7,
+     "lineas": [
+      "PARTE 2",
+      "EN MI PERFIL"
+     ]
+    }
+   ],
+   "zooms": [],
+   "golpes": [
+    8402.4,
+    8404.7
+   ]
+  }
+ ]
+}
