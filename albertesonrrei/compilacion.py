@@ -58,12 +58,21 @@ MOMENTOS = [
 TITULOS = ("EL DIRECTO MÁS POBRE", "DE TWITCH")
 
 
+FORMATO = "camara"   # "camara": cámara grande arriba · "juego": la partida ocupa casi todo y la cámara va pequeña
+# formato "juego" (pedido por Albert el 20 nov): partida 4:5 a todo el ancho, cámara en miniatura y subtítulos debajo
+Y_J2, H_J2 = 290, 1350
+JUEGO2 = (352, 0, 928, 720)          # 576x720 del centro de la partida (sin el chat de la izquierda)
+PIP_W, PIP_H, PIP_X, PIP_Y = 330, 186, 1080 - 330 - 28, 290 + 26
+Y_SUBS2 = 1785
+
+
 def cargar_config(ruta):
     """Lee momentos y títulos de un JSON (si no, se usan los de "El directo más pobre")."""
-    global MOMENTOS, TITULOS
+    global MOMENTOS, TITULOS, FORMATO
     cfg = json.load(open(ruta))
     MOMENTOS = cfg["momentos"]
     TITULOS = tuple(cfg["titulos"])
+    FORMATO = cfg.get("formato", "camara")
 
 
 def limpia(txt):
@@ -132,8 +141,15 @@ class Editor:
         self.titulo2 = texto_con_estilo(TITULOS[1], fuente(64), BLANCO + (255,), borde=8, color_borde=OSCURO)
         self.fondo = Image.new("RGB", (W, H), (13, 9, 24))
         d = ImageDraw.Draw(self.fondo)
-        d.rectangle((0, Y_CAM - 6, W, Y_CAM - 1), fill=ROSA)
-        d.rectangle((0, Y_JUEGO - 3, W, Y_JUEGO + 2), fill=ROSA)
+        if FORMATO == "juego":
+            d.rectangle((0, Y_J2 - 6, W, Y_J2 - 1), fill=ROSA)
+            d.rectangle((0, Y_J2 + H_J2, W, Y_J2 + H_J2 + 5), fill=ROSA)
+        else:
+            d.rectangle((0, Y_CAM - 6, W, Y_CAM - 1), fill=ROSA)
+            d.rectangle((0, Y_JUEGO - 3, W, Y_JUEGO + 2), fill=ROSA)
+        mask = Image.new("L", (PIP_W, PIP_H), 0)
+        ImageDraw.Draw(mask).rounded_rectangle((0, 0, PIP_W - 1, PIP_H - 1), 22, fill=255)
+        self.pip_mask = mask
         self.st = {"var": self._var(), "ventilador": self._ventilador()}
         self.chat = {}
         self.bloques = self._bloques()
@@ -247,7 +263,8 @@ class Editor:
         for (p, a, b), txt, w in zip(bloque, palabras, anchos):
             ac = a <= u < b + 0.05
             capa = texto_con_estilo(txt, f, (AMARILLO if ac else BLANCO) + (255,), borde=9, color_borde=(0, 0, 0))
-            pegar_centrado(frame, capa, x + w * esc / 2, 1400 - (6 if ac else 0), escala=esc * (1.1 if ac else 1.0))
+            ys = Y_SUBS2 if FORMATO == "juego" else 1400
+            pegar_centrado(frame, capa, x + w * esc / 2, ys - (6 if ac else 0), escala=esc * (1.1 if ac else 1.0))
             x += (w + esp) * esc
 
     # --- fotograma ---
@@ -274,9 +291,25 @@ class Editor:
         cx, cy = (x0 + x1) / 2 + 10 * (zoom - 1) / 0.22, (y0 + y1) / 2 - 8 * (zoom - 1) / 0.22
         cam = src.resize((W, H_CAM), Image.LANCZOS, box=(cx - cw / 2, cy - ch / 2, cx + cw / 2, cy + ch / 2))
         frame = self.fondo.copy()
-        frame.paste(cam.filter(ImageFilter.UnsharpMask(radius=2.2, percent=90, threshold=2)), (0, Y_CAM))
-        juego = src.resize((W, H_JUEGO), Image.LANCZOS, box=JUEGO)
-        frame.paste(juego.filter(ImageFilter.UnsharpMask(radius=1.4, percent=50, threshold=2)), (0, Y_JUEGO))
+        if FORMATO == "juego":
+            juego = src.resize((W, H_J2), Image.LANCZOS, box=JUEGO2)
+            frame.paste(juego.filter(ImageFilter.UnsharpMask(radius=1.6, percent=60, threshold=2)), (0, Y_J2))
+            # cámara en miniatura; crece un poco en las reacciones (voz grave / zoom)
+            esc = 1 + 0.45 * min(1.0, (zoom - 1) / 0.22)
+            pw, ph = int(PIP_W * esc), int(PIP_H * esc)
+            x0, y0, x1, y1 = CAM
+            pip = src.resize((pw, ph), Image.LANCZOS, box=(x0, y0 + (y1 - y0 - (x1 - x0) * PIP_H / PIP_W) / 2,
+                                                         x1, y0 + (y1 - y0 + (x1 - x0) * PIP_H / PIP_W) / 2))
+            borde = Image.new("RGB", (pw + 12, ph + 12), ROSA)
+            mk = self.pip_mask.resize((pw + 12, ph + 12))
+            px, py = W - pw - 28 - 6, Y_J2 + 20
+            frame.paste(borde, (px, py), mk)
+            frame.paste(pip.filter(ImageFilter.UnsharpMask(radius=2, percent=80, threshold=2)), (px + 6, py + 6),
+                        self.pip_mask.resize((pw, ph)))
+        else:
+            frame.paste(cam.filter(ImageFilter.UnsharpMask(radius=2.2, percent=90, threshold=2)), (0, Y_CAM))
+            juego = src.resize((W, H_JUEGO), Image.LANCZOS, box=JUEGO)
+            frame.paste(juego.filter(ImageFilter.UnsharpMask(radius=1.4, percent=50, threshold=2)), (0, Y_JUEGO))
         frame = frame.convert("RGBA")
         pegar_centrado(frame, self.titulo1, W / 2, 125, escala=1 + 0.03 * max(0, math.sin(u * 5)), angulo=-2)
         pegar_centrado(frame, self.titulo2, W / 2, 222)
