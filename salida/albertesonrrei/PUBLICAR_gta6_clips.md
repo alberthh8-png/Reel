@@ -81,3 +81,14 @@ Resumen de mi primer día en GTA 6 (parte 2) 🚜🏃‍♂️ maestro escapista
 **YouTube Shorts:** `Mi primer día en GTA 6 fue un caos (Parte 2) 😂 #shorts #gta6`
 
 **Orden recomendado de publicación:** Parte 1 → Parte 2 → y después, cada día, un clip suelto que no salga entero en el resumen (excavadora larga en TikTok, pavo completo, fuga completa…).
+
+---
+
+# EL MUNDO ABIERTO DE GTA 6 ES UNA LOCURA (`gta6_mundo/clip.mp4`, 1:24, formato nuevo)
+Avioneta en la tormenta → nubes → aterrizaje en el agua → lancha → pavo → autopista → atención al detalle → excavadora → muro → ELIMINADO → "es asombroso, panita".
+**TikTok / Reels:**
+```
+El mundo abierto de GTA 6 es una LOCURA 🌍✈️🌊🚜 avioneta, lancha, un pavo y una excavadora… ¿qué es lo primero que vas a hacer tú? #gta6 #gtavi #albertesonrrei #gta6gameplay #mundoabierto #twitch
+```
+**YouTube Shorts:** `El mundo abierto de GTA 6 es una LOCURA 🌍 #shorts #gta6`
+**Comentario fijado:** `¿Qué es lo primero que vas a hacer en GTA 6? 👇 Directos en twitch.tv/albertesonrrei`

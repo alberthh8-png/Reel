@@ -22,7 +22,7 @@ from PIL import Image, ImageDraw, ImageFilter
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from albertesonrrei.efectos import VEL_GRAVE, frase_lenta, voz_grave  # noqa: E402
-from reel import clamp, ease_out_back, ease_out_cubic, fuente, pegar_centrado, texto_con_estilo  # noqa: E402
+from reel import ajustar_fuente, clamp, ease_out_back, ease_out_cubic, fuente, pegar_centrado, texto_con_estilo  # noqa: E402
 
 W, H, FPS = 1080, 1920, 60
 CAM = (46, 230, 314, 378)
@@ -136,9 +136,9 @@ class Editor:
     def __init__(self, dir_):
         self.dir = dir_
         self.L = Linea(dir_)
-        self.titulo1 = texto_con_estilo(TITULOS[0], fuente(78), AMARILLO + (255,), borde=10,
+        self.titulo1 = texto_con_estilo(TITULOS[0], ajustar_fuente(TITULOS[0], 940, 78, tam_min=48, borde=10), AMARILLO + (255,), borde=10,
                                         color_borde=OSCURO, brillo=ROSA)
-        self.titulo2 = texto_con_estilo(TITULOS[1], fuente(64), BLANCO + (255,), borde=8, color_borde=OSCURO)
+        self.titulo2 = texto_con_estilo(TITULOS[1], ajustar_fuente(TITULOS[1], 940, 64, tam_min=40, borde=8), BLANCO + (255,), borde=8, color_borde=OSCURO)
         self.fondo = Image.new("RGB", (W, H), (13, 9, 24))
         d = ImageDraw.Draw(self.fondo)
         if FORMATO == "juego":

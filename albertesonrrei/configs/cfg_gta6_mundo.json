@@ -1,0 +1,227 @@
+{
+ "titulos": [
+  "EL MUNDO ABIERTO DE GTA 6",
+  "ES UNA LOCURA"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "m1",
+   "frames": "p_m1",
+   "s_frames": 3767.2,
+   "wav": "mn_avion.wav",
+   "wav_inicio": 3760.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3767.5,
+   "s1": 3777.8,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 3776.2,
+     "hasta": 3777.8,
+     "lineas": [
+      "¡EL MAPA ES",
+      "INMENSO!"
+     ]
+    }
+   ],
+   "zooms": []
+  },
+  {
+   "id": "m2",
+   "frames": "p_m2",
+   "s_frames": 3826.8,
+   "wav": "mn_avion.wav",
+   "wav_inicio": 3760.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3827.1,
+   "s1": 3831.3,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "m3",
+   "frames": "p_m3",
+   "s_frames": 3925.9,
+   "wav": "mn_aterr.wav",
+   "wav_inicio": 3920.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3926.2,
+   "s1": 3934.5,
+   "stickers": [],
+   "zooms": [
+    3933.7
+   ]
+  },
+  {
+   "id": "m4",
+   "frames": "p_m4",
+   "s_frames": 2770.1,
+   "wav": "mn_lancha.wav",
+   "wav_inicio": 2760.0,
+   "palabras": "completo/c1.json",
+   "stt": 1800.0,
+   "s0": 2770.4,
+   "s1": 2771.7,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "m5",
+   "frames": "p_m5",
+   "s_frames": 2791.7,
+   "wav": "mn_lancha.wav",
+   "wav_inicio": 2760.0,
+   "palabras": "completo/c1.json",
+   "stt": 1800.0,
+   "s0": 2792.0,
+   "s1": 2798.6,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "pv2",
+   "frames": "p_pv2",
+   "s_frames": 10830.4,
+   "wav": "pavo.wav",
+   "wav_inicio": 10810.0,
+   "palabras": "ventanas/w10811.json",
+   "stt": 10811.0,
+   "s0": 10830.7,
+   "s1": 10833.3,
+   "stickers": [],
+   "zooms": [
+    10831.8
+   ]
+  },
+  {
+   "id": "pv3",
+   "frames": "p_pv3",
+   "s_frames": 10836.2,
+   "wav": "pavo.wav",
+   "wav_inicio": 10810.0,
+   "palabras": "ventanas/w10811.json",
+   "stt": 10811.0,
+   "s0": 10840.3,
+   "s1": 10847.6,
+   "stickers": [],
+   "zooms": [
+    10846.6
+   ]
+  },
+  {
+   "id": "m6",
+   "frames": "p_m6",
+   "s_frames": 5558.8,
+   "wav": "mn_autop.wav",
+   "wav_inicio": 5550.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 5559.1,
+   "s1": 5568.6,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "m7",
+   "frames": "p_m7",
+   "s_frames": 6157.1,
+   "wav": "mn_detalle.wav",
+   "wav_inicio": 6150.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 6157.4,
+   "s1": 6162.3,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "e2",
+   "frames": "p_e2",
+   "s_frames": 7491.1,
+   "wav": "ex1.wav",
+   "wav_inicio": 7450.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7491.4,
+   "s1": 7497.9,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 7494.1,
+     "hasta": 7497.9,
+     "lineas": [
+      "TENGO UNA",
+      "EXCAVADORA"
+     ]
+    }
+   ],
+   "zooms": [
+    7496.6
+   ]
+  },
+  {
+   "id": "e4",
+   "frames": "p_e4",
+   "s_frames": 7568.4,
+   "wav": "ex2.wav",
+   "wav_inicio": 7560.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7568.7,
+   "s1": 7578.0,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 7575.9,
+     "hasta": 7578.0,
+     "lineas": [
+      "PAPI ESTÁ",
+      "EN CASA"
+     ]
+    }
+   ],
+   "zooms": [
+    7577.4
+   ],
+   "golpes": [
+    7569.8
+   ]
+  },
+  {
+   "id": "x7m",
+   "frames": "p_x7",
+   "s_frames": 8399.5,
+   "wav": "ex6.wav",
+   "wav_inicio": 8330.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8399.8,
+   "s1": 8408.4,
+   "stickers": [],
+   "zooms": [],
+   "golpes": [
+    8402.4,
+    8404.7
+   ]
+  },
+  {
+   "id": "m8",
+   "frames": "p_m8",
+   "s_frames": 11667.4,
+   "wav": "mn_fin.wav",
+   "wav_inicio": 11660.0,
+   "palabras": "completo/c6.json",
+   "stt": 10800.0,
+   "s0": 11667.7,
+   "s1": 11670.1,
+   "stickers": [],
+   "zooms": [
+    11668.0
+   ]
+  }
+ ]
+}
