@@ -1,0 +1,36 @@
+{
+ "titulos": [
+  "HUYE DE LA POLI…",
+  "Y SE LLEVA UN PAVO"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "pavo_entero",
+   "frames": "p_pavo_entero",
+   "s_frames": 10815.1,
+   "wav": "pavo_l.wav",
+   "wav_inicio": 10810.0,
+   "palabras": "ventanas/w10811.json",
+   "stt": 10811.0,
+   "s0": 10815.4,
+   "s1": 10860.4,
+   "zooms": [
+    10831.8,
+    10846.6,
+    10858.4
+   ],
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 10840.3,
+     "hasta": 10844.2,
+     "lineas": [
+      "CAZO UN PAVO",
+      "Y ME LO CENO"
+     ]
+    }
+   ]
+  }
+ ]
+}

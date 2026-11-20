@@ -107,3 +107,12 @@ El mundo abierto de GTA 6 es una LOCURA (parte 1) ✈️🌊🦃 vuelo entre una
 El mundo abierto de GTA 6 es una LOCURA (parte 2) 🚜💥 robo una excavadora y acabo ELIMINADO en la autopista #gta6 #gtavi #albertesonrrei #gta6gameplay #mundoabierto #twitch
 ```
 **Shorts:** `El mundo abierto de GTA 6 es una LOCURA (Parte 2) 🚜 #shorts #gta6`
+
+---
+
+# EL PAVO ENTERO, SIN CORTES (`gta6_pavo_entero/clip.mp4`, 46 s)
+```
+Huyo de la policía por el bosque… y acabo robándole un pavo a la naturaleza 🦃🚔 "esta noche me lo ceno, chaval" #gta6 #gtavi #albertesonrrei #gta6gameplay #humor #twitch
+```
+**Shorts:** `Huye de la policía en GTA 6… y se lleva un PAVO 🦃 #shorts #gta6`
+**Comentario fijado:** `¿Qué haríais vosotros con el pavo? 🦃👇`
