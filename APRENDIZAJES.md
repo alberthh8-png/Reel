@@ -473,3 +473,4 @@ Fuentes: artículos y blogs de creadores. No hay datos públicos fiables por pla
 - El conector de Drive no sirve para archivos enormes. Albert pega un **Access token temporal** (OAuth Playground, permiso `drive.file`, empieza por `ya29.`, dura 1 hora) en el formulario seguro; nunca en el chat.
 - Carpeta del vídeo largo: "GNews – Vídeo largo GTA 6" (id `1rIxPOCGfe_pgiRMw1X_Qazvt8lcgzyD6`).
 - Albert NO quiere versiones comprimidas: siempre el original.
+- **Para que Albert me pase vídeos grandes (permanente, 20 nov):** enlace de Drive con "Cualquier persona con el enlace". En el entorno "Reel" están permitidos `drive.google.com` y `drive.usercontent.google.com`. Descarga: `https://drive.usercontent.google.com/download?id=ID&export=download&confirm=t` con curl. Para directos, mejor el enlace de Twitch.
