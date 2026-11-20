@@ -29,6 +29,8 @@ TRAMOS = [
     (22.80, 24.40, 0.5, 1.12),   # el remolque sale volando
     (24.40, 27.60, 1.0, 1.00),   # se queda de pie
 ]
+if os.environ.get("SOLO_GANCHO"):          # solo el gancho + rebobinado (para pegarlo delante del clip original)
+    TRAMOS = TRAMOS[:2]
 GOLPES_SRC = [17.75, 23.20]      # momentos del original con golpe de sonido
 
 
@@ -93,7 +95,7 @@ def render(video, salida):
     tl = linea_tiempo()
     cab = cabecera()
     st_normal = caja_texto(["Todo normal…", "de momento 🙂".replace("🙂", "")], [(20, 12, 30), (230, 40, 70)])
-    st_antes = caja_texto(["⏪ 10 SEGUNDOS ANTES".replace("⏪ ", "")], [(230, 40, 70)])
+    st_antes = caja_texto([os.environ.get("TEXTO_ANTES", "10 SEGUNDOS ANTES")], [(230, 40, 70)])
     st_loco = caja_texto(["EL CAMIÓN SE", "VOLVIÓ LOCO"], [(20, 12, 30), (230, 40, 70)])
     pie = Image.new("RGB", (W, H - Y_J - H_J), OSCURO)
     ImageDraw.Draw(pie).rectangle((0, 0, W, 5), fill=ROSA)
