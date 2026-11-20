@@ -116,3 +116,12 @@ Huyo de la policía por el bosque… y acabo robándole un pavo a la naturaleza 
 ```
 **Shorts:** `Huye de la policía en GTA 6… y se lleva un PAVO 🦃 #shorts #gta6`
 **Comentario fijado:** `¿Qué haríais vosotros con el pavo? 🦃👇`
+
+---
+
+# POV: INTENTAS ROBAR UN CAMIÓN PARA IR A VER A LUCÍA (`gta6_pov_camion/clip.mp4`, 25 s)
+```
+POV: intentas robar un camión para ir a ver a Lucía 🚛💀 ¿bug o característica? #gta6 #gtavi #gta6bug #albertesonrrei #gta6gameplay #humor
+```
+**Shorts:** `POV: intentas robar un camión en GTA 6 para ir a ver a Lucía 💀 #shorts #gta6`
+**Comentario fijado:** `¿Bug o característica? 👇 Yo digo que el camión también quería ver a Lucía`
