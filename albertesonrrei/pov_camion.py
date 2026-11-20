@@ -94,7 +94,6 @@ def render(video, salida):
     cab = cabecera()
     st_normal = caja_texto(["Todo normal…", "de momento 🙂".replace("🙂", "")], [(20, 12, 30), (230, 40, 70)])
     st_antes = caja_texto(["⏪ 10 SEGUNDOS ANTES".replace("⏪ ", "")], [(230, 40, 70)])
-    st_bug = caja_texto(["¿BUG O", "CARACTERÍSTICA?"], [(20, 12, 30), (230, 40, 70)])
     st_loco = caja_texto(["EL CAMIÓN SE", "VOLVIÓ LOCO"], [(20, 12, 30), (230, 40, 70)])
     pie = Image.new("RGB", (W, H - Y_J - H_J), OSCURO)
     ImageDraw.Draw(pie).rectangle((0, 0, W, 5), fill=ROSA)
@@ -143,9 +142,6 @@ def render(video, salida):
         elif tipo == "normal" and 10.0 <= t < 13.0:
             q = reel.ease_out_back(reel.clamp((t - 10.0) / 0.3), 2.0)
             reel.pegar_centrado(frame, st_normal, W / 2, Y_J + H_J + 140 - 40, escala=0.85 * q, angulo=-3)
-        elif t >= 24.6 and tipo == "normal" and i > n_rebob:
-            q = reel.ease_out_back(reel.clamp((t - 24.6) / 0.3), 2.0)
-            reel.pegar_centrado(frame, st_bug, W / 2, Y_J + H_J + 140 - 40, escala=0.85 * q, angulo=-3)
         if tipo == "lento":
             d = ImageDraw.Draw(frame)
             d.rounded_rectangle((40, Y_J + 30, 300, Y_J + 100), 20, fill=(0, 0, 0, 170))
@@ -180,7 +176,7 @@ def audio(total, golpes_u, t_rebob, salida):
         w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
         w.writeframes((mezcla * 32767).astype(np.int16).tobytes())
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", os.path.join(salida, "_video.mp4"), "-i", tmp, "-af",
-                    "loudnorm=I=-14:TP=-1.5", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest",
+                    "loudnorm=I=-14:TP=-1.5,volume=6.8dB,alimiter=limit=0.75:level=false", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-shortest",
                     "-movflags", "+faststart", os.path.join(salida, "clip.mp4")], check=True)
     os.remove(tmp)
     os.remove(os.path.join(salida, "_video.mp4"))
