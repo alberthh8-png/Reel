@@ -92,3 +92,18 @@ El mundo abierto de GTA 6 es una LOCURA 🌍✈️🌊🚜 avioneta, lancha, un 
 ```
 **YouTube Shorts:** `El mundo abierto de GTA 6 es una LOCURA 🌍 #shorts #gta6`
 **Comentario fijado:** `¿Qué es lo primero que vas a hacer en GTA 6? 👇 Directos en twitch.tv/albertesonrrei`
+
+---
+
+# EL MUNDO ABIERTO DE GTA 6 · 2 PARTES (voz bass boost, pocos cortes) — sustituye al de 1:24
+## Parte 1 (`gta6_mundo1/clip.mp4`, 1:58): avioneta → nubes → aterrizaje en el agua → lancha → el pavo
+```
+El mundo abierto de GTA 6 es una LOCURA (parte 1) ✈️🌊🦃 vuelo entre una tormenta, aterrizo en el agua y le robo un pavo a la naturaleza #gta6 #gtavi #albertesonrrei #gta6gameplay #mundoabierto #twitch
+```
+**Shorts:** `El mundo abierto de GTA 6 es una LOCURA (Parte 1) ✈️ #shorts #gta6`
+
+## Parte 2 (`gta6_mundo2/clip.mp4`, 2:02): la excavadora → el muro → la autopista → la atención al detalle → la explosión
+```
+El mundo abierto de GTA 6 es una LOCURA (parte 2) 🚜💥 robo una excavadora y acabo ELIMINADO en la autopista #gta6 #gtavi #albertesonrrei #gta6gameplay #mundoabierto #twitch
+```
+**Shorts:** `El mundo abierto de GTA 6 es una LOCURA (Parte 2) 🚜 #shorts #gta6`

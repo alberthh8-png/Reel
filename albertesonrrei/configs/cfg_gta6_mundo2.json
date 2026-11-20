@@ -1,0 +1,107 @@
+{
+ "titulos": [
+  "EL MUNDO ABIERTO DE GTA 6",
+  "PARTE 2"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "w_exca",
+   "frames": "p_w_exca",
+   "s_frames": 7466.6,
+   "wav": "ex1.wav",
+   "wav_inicio": 7450.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7466.9,
+   "s1": 7506.9,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 7494.1,
+     "hasta": 7498.0,
+     "lineas": [
+      "TENGO UNA",
+      "EXCAVADORA"
+     ]
+    }
+   ],
+   "zooms": [
+    7496.6
+   ]
+  },
+  {
+   "id": "w_muro",
+   "frames": "p_w_muro",
+   "s_frames": 7564.3,
+   "wav": "ex2.wav",
+   "wav_inicio": 7560.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7564.6,
+   "s1": 7582.2,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 7575.9,
+     "hasta": 7578.4,
+     "lineas": [
+      "PAPI ESTÁ",
+      "EN CASA"
+     ]
+    }
+   ],
+   "zooms": [
+    7577.4
+   ],
+   "golpes": [
+    7569.8
+   ]
+  },
+  {
+   "id": "w_autop",
+   "frames": "p_w_autop",
+   "s_frames": 5553.5,
+   "wav": "mn_autop.wav",
+   "wav_inicio": 5550.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 5553.8,
+   "s1": 5568.6,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "w_detalle",
+   "frames": "p_w_detalle",
+   "s_frames": 6155.1,
+   "wav": "mn_detalle.wav",
+   "wav_inicio": 6150.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 6155.4,
+   "s1": 6168.0,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "w_explo",
+   "frames": "p_w_explo",
+   "s_frames": 8389.3,
+   "wav": "ex6.wav",
+   "wav_inicio": 8330.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8389.6,
+   "s1": 8422.5,
+   "stickers": [],
+   "zooms": [
+    8420.0
+   ],
+   "golpes": [
+    8402.4,
+    8404.7
+   ]
+  }
+ ]
+}

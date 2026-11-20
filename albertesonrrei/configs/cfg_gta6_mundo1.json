@@ -1,0 +1,101 @@
+{
+ "titulos": [
+  "EL MUNDO ABIERTO DE GTA 6",
+  "PARTE 1"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "w_avion",
+   "frames": "p_w_avion",
+   "s_frames": 3766.1,
+   "wav": "mn_avion.wav",
+   "wav_inicio": 3760.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3766.4,
+   "s1": 3780.0,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 3776.2,
+     "hasta": 3780.0,
+     "lineas": [
+      "¡EL MAPA ES",
+      "INMENSO!"
+     ]
+    }
+   ],
+   "zooms": []
+  },
+  {
+   "id": "w_nubes",
+   "frames": "p_w_nubes",
+   "s_frames": 3817.7,
+   "wav": "mn_avion.wav",
+   "wav_inicio": 3760.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3818.0,
+   "s1": 3834.0,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "w_aterr",
+   "frames": "p_w_aterr",
+   "s_frames": 3922.2,
+   "wav": "mn_aterr.wav",
+   "wav_inicio": 3920.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3922.5,
+   "s1": 3935.5,
+   "stickers": [],
+   "zooms": [
+    3933.7
+   ]
+  },
+  {
+   "id": "w_lancha",
+   "frames": "p_w_lancha",
+   "s_frames": 2770.1,
+   "wav": "mn_lancha.wav",
+   "wav_inicio": 2760.0,
+   "palabras": "completo/c1.json",
+   "stt": 1800.0,
+   "s0": 2770.4,
+   "s1": 2806.2,
+   "stickers": [],
+   "zooms": [
+    2805.0
+   ]
+  },
+  {
+   "id": "w_pavo",
+   "frames": "p_w_pavo",
+   "s_frames": 10815.1,
+   "wav": "pavo.wav",
+   "wav_inicio": 10810.0,
+   "palabras": "ventanas/w10811.json",
+   "stt": 10811.0,
+   "s0": 10815.4,
+   "s1": 10847.6,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 10845.6,
+     "hasta": 10847.6,
+     "lineas": [
+      "PARTE 2",
+      "EN MI PERFIL"
+     ]
+    }
+   ],
+   "zooms": [
+    10831.8,
+    10846.6
+   ]
+  }
+ ]
+}

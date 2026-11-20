@@ -26,7 +26,9 @@ def frase_lenta(ws, k, max_antes=2.0, max_despues=2.4, pausa=1.0):
     return ws[i]["start"], ws[j]["end"], i, j
 
 
-VEL_GRAVE, TONO_GRAVE = 0.89, 0.66  # voz grave: 89 % de velocidad y tono 0,66 (elegida por Albert el 17 nov)
+VEL_GRAVE, TONO_GRAVE = 0.78, 0.78  # voz grave "bass boost" (opción E, elegida por Albert el 20 nov):
+# cinta lenta al 78 % (más lenta y más grave a la vez, como los virales) + graves a tope + un poco de saturación
+# (antes, 17 nov: rubberband tempo 0,89 y tono 0,66)
 
 
 def voz_grave(seg, sr, vel=VEL_GRAVE, tono=TONO_GRAVE):
@@ -45,10 +47,11 @@ def voz_grave(seg, sr, vel=VEL_GRAVE, tono=TONO_GRAVE):
             w.setsampwidth(2)
             w.setframerate(sr)
             w.writeframes((np.clip(seg, -1, 1) * 32767).astype(np.int16).tobytes())
-        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", a, "-af", f"rubberband=tempo={vel}:pitch={tono},equalizer=f=2500:t=q:w=1.2:g=4",
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", a, "-af",
+                        f"asetrate={int(sr * vel)},aresample={sr},bass=g=14:f=90,acrusher=bits=10:mix=0.25,alimiter",
                         "-ar", str(sr), "-ac", "1", b], check=True)
         with wave.open(b) as w:
             out = np.frombuffer(w.readframes(w.getnframes()), np.int16).astype(np.float32) / 32768
     if len(out) < n:
         out = np.pad(out, (0, n - len(out)))
-    return out[:n] * 1.6  # más volumen: al bajar el tono la voz pierde presencia
+    return out[:n] * 1.3  # algo más de volumen: al bajar el tono la voz pierde presencia
