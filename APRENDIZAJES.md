@@ -19,6 +19,7 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 ## Cuenta principal de Albert: "Albertesonrrei" (17 nov)
 - **Formato fijo de los clips de directo (20 nov):** formato "juego" (`"formato": "juego"` en la config de `compilacion.py`): partida 4:5 a todo el ancho, cámara en miniatura arriba a la derecha (crece en las reacciones) y subtítulos en la franja de abajo. A Albert le gusta más que la cámara grande.
 - **Voz grave (20 nov, cambio de Albert): opción E "bass boost"**: cinta lenta al 78 % (asetrate, más lenta y grave a la vez como los virales) + graves +14 dB + algo de saturación. Sustituye a la de rubberband 0,89/0,66. Está en `albertesonrrei/efectos.py`.
+- **Clips de gameplay sin voz de Albert (20 nov):** dejar el **sonido original del juego**, sin música ni efectos por encima (pedido de Albert en el clip del camión).
 - **Pocos cortes (20 nov):** a Albert no le gustan los vídeos "solo de cortes". Momentos largos y seguidos (15-40 s) dejando ver la partida entre frase y frase; máximo ~4-5 cortes por vídeo.
 - Si hay mucho material, **dividir en partes** (~70 s cada una), la parte 1 acaba con el sello "PARTE 2 EN MI PERFIL".
 - VOD de 3 h: transcribir el directo **entero** con Scribe en trozos de 30 min, **de uno en uno** (en paralelo da error 429), para poder buscar momentos por palabra (p. ej. "excavadora").

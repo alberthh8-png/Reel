@@ -182,9 +182,38 @@ def audio(total, golpes_u, t_rebob, salida):
     os.remove(os.path.join(salida, "_video.mp4"))
 
 
+def audio_juego(video, salida):
+    """Solo el sonido original del juego, siguiendo los tramos (sin música ni efectos añadidos).
+    Tramos lentos: el audio va a la mitad de velocidad (atempo, mismo tono). Rebobinado: el audio al revés y rápido."""
+    partes, filtros = [], []
+    for k, tr in enumerate(TRAMOS):
+        if tr[0] == "rebobinar":
+            f = f"[0:a]atrim=18.8:20.0,asetpts=PTS-STARTPTS,areverse,atempo=2.0,afade=t=in:d=0.02,afade=t=out:st=0.56:d=0.04[p{k}]"
+        else:
+            a, b, v, _ = tr
+            d = (b - a) / v
+            lento = ",atempo=0.5" if v < 1 else ""
+            f = (f"[0:a]atrim={a}:{b},asetpts=PTS-STARTPTS{lento},afade=t=in:d=0.02,"
+                 f"afade=t=out:st={max(0.0, d - 0.03):.3f}:d=0.03[p{k}]")
+        filtros.append(f)
+        partes.append(f"[p{k}]")
+    fc = ";".join(filtros) + ";" + "".join(partes) + f"concat=n={len(partes)}:v=0:a=1[mez];[mez]loudnorm=I=-14:TP=-1.5[out]"
+    tmp = os.path.join(salida, "_audio.m4a")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", video, "-filter_complex", fc, "-map", "[out]", "-ar", "48000",
+                    "-c:a", "aac", "-b:a", "192k", tmp], check=True)
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", os.path.join(salida, "_video.mp4"), "-i", tmp, "-map", "0:v",
+                    "-map", "1:a", "-c", "copy", "-shortest", "-movflags", "+faststart", os.path.join(salida, "clip.mp4")],
+                   check=True)
+    os.remove(tmp)
+    os.remove(os.path.join(salida, "_video.mp4"))
+
+
 if __name__ == "__main__":
     video, salida = sys.argv[1], sys.argv[2]
     os.makedirs(salida, exist_ok=True)
     total, golpes_u, t_rebob = render(video, salida)
-    audio(total, golpes_u, t_rebob, salida)
+    if os.environ.get("AUDIO") == "musica":
+        audio(total, golpes_u, t_rebob, salida)
+    else:   # por defecto: sonido original del juego (pedido por Albert)
+        audio_juego(video, salida)
     print("ok", round(total, 2), "s · golpes", [round(g, 2) for g in golpes_u])
