@@ -128,6 +128,10 @@ def render_tramo(args):
     else:
         fc.append(f"[vc]scale={W}:{H}:flags=lanczos[vz]")
         vlast = "[vz]"
+    if nombre in extras.get("tapar_chat", []):
+        # chat difuminado (p. ej. si se queda fijo un mensaje ofensivo de un espectador)
+        fc.append(f"{vlast}split[tc0][tc1];[tc1]crop=500:500:15:572,boxblur=18:3[tcb];[tc0][tcb]overlay=15:572[vtc]")
+        vlast = "[vtc]"
     dur = sum((s1 - s0) / (VEL_GRAVE if l else 1) for s0, s1, l in trozos)
     entradas = ["-i", src]
     if titulo and not es_avance:
