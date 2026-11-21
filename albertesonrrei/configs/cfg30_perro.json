@@ -1,0 +1,44 @@
+{
+ "titulos": [
+  "EL PERRO ME MUERDE",
+  "EL CUELLO"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "q_r1",
+   "frames": "p_q_r1",
+   "s_frames": 6012.9,
+   "wav": "n_perro.wav",
+   "wav_inicio": 6000.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 6013.2,
+   "s1": 6034.5,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    6030.0
+   ]
+  },
+  {
+   "id": "q_r2",
+   "frames": "p_q_r2",
+   "s_frames": 6045.8,
+   "wav": "n_perro.wav",
+   "wav_inicio": 6000.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 6046.1,
+   "s1": 6053.6,
+   "graves": [
+    [
+     6046.18,
+     6048.63
+    ]
+   ],
+   "stickers": [],
+   "zooms": []
+  }
+ ]
+}

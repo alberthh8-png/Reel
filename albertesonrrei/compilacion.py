@@ -103,6 +103,8 @@ class Linea:
                         feas[-1] = (feas[-1][0], max(b, feas[-1][1]))
                     else:
                         feas.append((a, b))
+            if "graves" in m:  # frases elegidas a mano: solo esas van con voz grave
+                feas = [(max(a, m["s0"]), min(b, m["s1"])) for a, b in m["graves"] if m["s0"] <= a < m["s1"]]
             if self.tramos and not m.get("suave"):
                 self.cortes.append(u)
             s = m["s0"]

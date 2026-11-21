@@ -1,0 +1,30 @@
+{
+ "titulos": [
+  "ME TIROTEAN COMO",
+  "A PABLO ESCOBAR"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "q_e1",
+   "frames": "p_q_e1",
+   "s_frames": 4596.4,
+   "wav": "n_tirotear.wav",
+   "wav_inicio": 4580.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 4596.7,
+   "s1": 4625.0,
+   "graves": [
+    [
+     4618.32,
+     4620.57
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    4608.5
+   ]
+  }
+ ]
+}

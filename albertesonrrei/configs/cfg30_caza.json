@@ -1,0 +1,46 @@
+{
+ "titulos": [
+  "SACA EL TREN",
+  "DE ATERRIZAJE"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "q_c1",
+   "frames": "p_q_c1",
+   "s_frames": 4422.6,
+   "wav": "n_caza.wav",
+   "wav_inicio": 4410.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 4422.9,
+   "s1": 4448.6,
+   "graves": [
+    [
+     4443.5,
+     4446.07
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    4434.2
+   ]
+  },
+  {
+   "id": "q_c2",
+   "frames": "p_q_c2",
+   "s_frames": 4453.1,
+   "wav": "n_caza.wav",
+   "wav_inicio": 4410.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 4453.4,
+   "s1": 4456.8,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    4454.3
+   ]
+  }
+ ]
+}

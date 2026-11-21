@@ -1,0 +1,68 @@
+{
+ "titulos": [
+  "\"NO VOY A DURAR",
+  "NI 2 MINUTOS\""
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "q_l1",
+   "frames": "p_q_l1",
+   "s_frames": 3639.7,
+   "wav": "n_coche.wav",
+   "wav_inicio": 3630.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3640.0,
+   "s1": 3656.1,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    3649.5
+   ]
+  },
+  {
+   "id": "q_l2",
+   "frames": "p_q_l2",
+   "s_frames": 3662.0,
+   "wav": "n_coche.wav",
+   "wav_inicio": 3630.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3662.3,
+   "s1": 3665.2,
+   "graves": [],
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "q_l3",
+   "frames": "p_q_l3",
+   "s_frames": 3693.6,
+   "wav": "n_coche.wav",
+   "wav_inicio": 3630.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3693.9,
+   "s1": 3702.6,
+   "graves": [
+    [
+     3698.41,
+     3699.96
+    ]
+   ],
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 3700.4,
+     "hasta": 3702.6,
+     "lineas": [
+      "HE DURADO LO QUE",
+      "HE PODIDO DURAR"
+     ]
+    }
+   ],
+   "zooms": []
+  }
+ ]
+}

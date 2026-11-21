@@ -1,0 +1,39 @@
+{
+ "titulos": [
+  "ROBO UN COCHE DE POLICÍA",
+  "PARA COLARME"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "q_y1",
+   "frames": "p_q_y1",
+   "s_frames": 4722.2,
+   "wav": "n_ley.wav",
+   "wav_inicio": 4710.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 4722.5,
+   "s1": 4751.0,
+   "graves": [
+    [
+     4747.06,
+     4748.95
+    ]
+   ],
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 4736.9,
+     "hasta": 4740.0,
+     "lineas": [
+      "SOY LA LEY"
+     ]
+    }
+   ],
+   "zooms": [
+    4742.6
+   ]
+  }
+ ]
+}

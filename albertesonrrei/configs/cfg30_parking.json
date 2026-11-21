@@ -1,0 +1,46 @@
+{
+ "titulos": [
+  "ATRAPADO",
+  "EN UN PARKING"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "q_p1",
+   "frames": "p_q_p1",
+   "s_frames": 3744.6,
+   "wav": "n_parking.wav",
+   "wav_inicio": 3730.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3744.9,
+   "s1": 3758.4,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    3748.5
+   ]
+  },
+  {
+   "id": "q_p2",
+   "frames": "p_q_p2",
+   "s_frames": 3784.6,
+   "wav": "n_parking.wav",
+   "wav_inicio": 3730.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 3784.9,
+   "s1": 3800.6,
+   "graves": [
+    [
+     3792.57,
+     3794.48
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    3796.5
+   ]
+  }
+ ]
+}
