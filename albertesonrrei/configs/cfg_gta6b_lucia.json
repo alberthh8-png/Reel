@@ -1,0 +1,49 @@
+{
+ "titulos": [
+  "LUCÍA, CÁMBIATE",
+  "QUE SOY UN HOMBRE CASADO"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "l1",
+   "frames": "p_l1",
+   "s_frames": 8158.7,
+   "wav": "lucia1.wav",
+   "wav_inicio": 8150.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8159.0,
+   "s1": 8192.0,
+   "stickers": [],
+   "zooms": [
+    8169.5
+   ]
+  },
+  {
+   "id": "l2",
+   "frames": "p_l2",
+   "s_frames": 8254.1,
+   "wav": "lucia2.wav",
+   "wav_inicio": 8250.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8254.4,
+   "s1": 8305.0,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 8284.0,
+     "hasta": 8288.6,
+     "lineas": [
+      "ME VAN A PROHIBIR",
+      "JUGAR A GTA 6"
+     ]
+    }
+   ],
+   "zooms": [
+    8285.0
+   ]
+  }
+ ]
+}

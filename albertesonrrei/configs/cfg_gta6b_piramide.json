@@ -1,0 +1,70 @@
+{
+ "titulos": [
+  "LE MONTO UNA PIRÁMIDE",
+  "DE COCHES"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "p1",
+   "frames": "p_p1",
+   "s_frames": 10549.7,
+   "wav": "piramide1.wav",
+   "wav_inicio": 10540.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 10550.0,
+   "s1": 10587.6,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "p2",
+   "frames": "p_p2",
+   "s_frames": 10653.3,
+   "wav": "piramide2.wav",
+   "wav_inicio": 10650.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 10653.6,
+   "s1": 10686.4,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 10668.8,
+     "hasta": 10671.0,
+     "lineas": [
+      "UNA ESCULTURA,",
+      "CHAVAL"
+     ]
+    }
+   ],
+   "zooms": []
+  },
+  {
+   "id": "p3",
+   "frames": "p_p3",
+   "s_frames": 10726.7,
+   "wav": "piramide3.wav",
+   "wav_inicio": 10720.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 10727.0,
+   "s1": 10756.0,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 10744.0,
+     "hasta": 10746.5,
+     "lineas": [
+      "¿NO ERES OBRERO?",
+      "DEMUÉSTRALO"
+     ]
+    }
+   ],
+   "zooms": [
+    10745.0
+   ]
+  }
+ ]
+}

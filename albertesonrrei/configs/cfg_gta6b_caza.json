@@ -1,0 +1,27 @@
+{
+ "titulos": [
+  "FUI DERRIBADO",
+  "COMO UN PUERCO"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "z1",
+   "frames": "p_z1",
+   "s_frames": 4417.7,
+   "wav": "caza.wav",
+   "wav_inicio": 4410.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 4418.0,
+   "s1": 4455.0,
+   "stickers": [],
+   "zooms": [
+    4444.5
+   ],
+   "golpes": [
+    4435.0
+   ]
+  }
+ ]
+}

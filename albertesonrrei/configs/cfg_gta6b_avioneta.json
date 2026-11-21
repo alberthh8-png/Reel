@@ -1,0 +1,62 @@
+{
+ "titulos": [
+  "ME QUEDO SIN MOTOR",
+  "Y CAIGO AL AGUA"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "a1",
+   "frames": "p_a1",
+   "s_frames": 5030.5,
+   "wav": "avion1.wav",
+   "wav_inicio": 5020.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 5030.8,
+   "s1": 5062.3,
+   "stickers": [],
+   "zooms": [
+    5040.0
+   ]
+  },
+  {
+   "id": "a2",
+   "frames": "p_a2",
+   "s_frames": 5067.7,
+   "wav": "avion1.wav",
+   "wav_inicio": 5020.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 5068.0,
+   "s1": 5079.0,
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "a3",
+   "frames": "p_a3",
+   "s_frames": 5095.7,
+   "wav": "avion2.wav",
+   "wav_inicio": 5080.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 5096.0,
+   "s1": 5146.0,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 5108.8,
+     "hasta": 5111.6,
+     "lineas": [
+      "PREFIERO",
+      "AHOGARME"
+     ]
+    }
+   ],
+   "zooms": [
+    5109.6
+   ]
+  }
+ ]
+}

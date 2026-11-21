@@ -1,0 +1,34 @@
+{
+ "titulos": [
+  "¡PARAD AL OSO!",
+  "GTA 6"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "o1",
+   "frames": "p_o1",
+   "s_frames": 5559.7,
+   "wav": "oso.wav",
+   "wav_inicio": 5550.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 5560.0,
+   "s1": 5610.0,
+   "stickers": [
+    {
+     "tipo": "texto",
+     "s": 5597.0,
+     "hasta": 5600.5,
+     "lineas": [
+      "¡PARAD",
+      "AL OSO!"
+     ]
+    }
+   ],
+   "zooms": [
+    5591.0
+   ]
+  }
+ ]
+}
