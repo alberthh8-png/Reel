@@ -34,6 +34,22 @@ Este archivo recoge **todo lo aprendido**: quién es la cuenta, las preferencias
 - **Análisis de sus 3 clips antiguos:** tiene personalidad y gracia (el mejor concepto es el del cocinero italiano en directo). Fallos: arranque flojo (ajustando el audio o una captura del chat), 50 s sin un pico, pantalla saturada de overlays, marca de agua de TikTok y baja resolución, y audio bajo (-25/-29 dB de media).
 - Pendiente de definir con Albert: formato de sus clips (¿cámara?, ¿vertical u horizontal?), estilo de edición y si se promocionan entre sí.
 
+### Métricas de Albertesonrrei (capturas del 22 nov, 16:00)
+| Vídeo | YouTube Shorts | Instagram Reels | TikTok |
+|---|---|---|---|
+| **Pavo** ("Huye de la poli… y se lleva un pavo", 30 s, publicado 20 nov 22:06, ~41 h) | **1,2 K** (+33 % sobre sus Shorts), **+2 subs**, media 0:17 (**57,7 %**), arranca por encima del 100 % (se repite) y cae fuerte hacia el s 4-6; 1,2 K del feed de Shorts | 1.634 reprod., 1.347 personas, media 12 s, 18 me gusta, 1 republicación, omisión 33 % (mejor que su media), 77,7 % desde la pestaña Reels | 97 visual., 1 me gusta, media 3,9 s (13 %), 1,6 % lo terminan, **la mayoría se va en el s 2** |
+| **Camión** ("POV: intentas robar un camión…", 33 s, publicado 21 nov 16:51, ~23 h) | **1,0 K** (+11 %), **+2 subs**, 481 interesadas: 45,4 % se quedan / 54,6 % deslizan; retención aún sin datos | 329 reprod., 256 personas, media 7 s, 6 me gusta, omisión 44,3 %; 37 % Reels / 36 % historias | 109 visual., 5 me gusta, **4 comentarios, 1 guardado**, media 5,8 s (18 %), 4,1 % lo terminan, se van en el s 2 |
+| **Vídeo largo 1** ("Mi PRIMER DÍA en GTA 6", 29:51) | 22 visualizaciones en 35 h, 0,8 h de visualización (≈2 min de media); retención aún sin datos | – | – |
+
+**Conclusiones (22 nov):**
+1. **YouTube Shorts es su mejor plataforma** (como en GNews): 1-1,2 K y +2 subs por clip; Instagram, segundo; TikTok, casi muerto (~100 visual.).
+2. **TikTok corta en el segundo 2** en los dos clips: allí el primer fotograma tiene que ser YA el clímax (el golpe, el bug, la caída), no alguien andando. El pavo arrancaba corriendo por el campo (YouTube también cae en el s 4-6) → empezar con el momento del pavo y luego "unos segundos antes".
+3. El formato **POV** saca más conversación (4 comentarios y 1 guardado en TikTok) aunque retenga menos: seguir usando POV en los títulos.
+4. **0 compartidos en todo**: falta un motivo para mandarlo ("etiqueta al que haría esto", pique). Probar una llamada a compartir con destinatario (como en GNews, regla 12).
+5. Instagram: el camión vino un 36 % de historias y casi no salió en Reels (omisión 44 %); el pavo, con mejor gancho, salió en Reels (77,7 %). El gancho decide si Instagram lo reparte.
+6. Vídeo largo: muy pocas visualizaciones (canal pequeño); empujarlo desde los Shorts con "vídeo relacionado" y un comentario fijado con el enlace. Pedir impresiones, CTR y retención a los 3 días.
+7. Pendiente: segundo vídeo largo, los clips de 30 s del 21 nov y estas métricas a los 3 y 7 días.
+
 ### Albertesonrrei: primer clip editado, "Le está revisando el VAR" (17 nov)
 - Fuente: VOD de Twitch (2 h 47 min). **Cómo se sacó:** solo el audio con yt-dlp → picos de energía (gritos y risas) → transcripción **solo de esos tramos** con ElevenLabs Scribe (para no gastar créditos) → descarga de los trozos .ts del 720p60 con curl (ffmpeg no pasa por el proxy). En el entorno "Reel" se permitieron gql.twitch.tv, usher.ttvnw.net y d3stzm2eumvgb4.cloudfront.net (el servidor de los VOD puede cambiar).
 - Montaje (`albertesonrrei/clip_var.py`): 1080×1920 a **60 fps**; gancho arriba ("EMPATE A 3 Y QUEDAN 24 SEGUNDOS…"), cámara arriba (recorte 268×148 → ancho completo, con enfoque), partida en el centro (recorte sin chat ni turbo), **arranque en frío con el gol**, rebobinado de "20 SEGUNDOS ANTES", karaoke con su voz y censura con puntitos, zoom a la cara en la reacción, golpe en el gol, sticker "VAR REVISANDO" y audio a -14 LUFS.
