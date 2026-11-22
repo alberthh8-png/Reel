@@ -233,6 +233,8 @@ class Editor:
                     continue
                 txt = w["text"].strip()
                 base = limpia(txt)
+                if not base:  # signos sueltos de la transcripción (".", "¿") fuera
+                    continue
                 if base in CENSURA:
                     txt = txt.lower().replace(base, CENSURA[base])
                 u0 = self.L.u_de(m["id"], max(s0, m["s0"]))

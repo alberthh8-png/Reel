@@ -50,26 +50,19 @@
    ]
   },
   {
-   "id": "c_p2b",
-   "frames": "p_c_p2b",
-   "s_frames": 12727.5,
+   "id": "c_p2c",
+   "frames": "p_c_p2c",
+   "s_frames": 12689.2,
    "wav": "porsche.wav",
    "wav_inicio": 12600.0,
    "palabras": "completo/c7.json",
    "stt": 12600.0,
-   "s0": 12727.8,
-   "s1": 12736.4,
+   "s0": 12689.5,
+   "s1": 12700.0,
    "graves": [],
-   "stickers": [
-    {
-     "tipo": "chat",
-     "s": 12731.5,
-     "hasta": 12736.3,
-     "texto": "Te vas a quedar sin combustible encima"
-    }
-   ],
+   "stickers": [],
    "zooms": [
-    12728.0
+    12697.5
    ]
   },
   {
