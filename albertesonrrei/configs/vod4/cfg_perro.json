@@ -1,0 +1,31 @@
+{
+ "titulos": [
+  "POV: ATROPELLAS AL PERRO",
+  "E INTENTAS LLEVARLO AL VETERINARIO"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_r1",
+   "frames": "p_c_r1",
+   "s_frames": 8407.3,
+   "wav": "perro.wav",
+   "wav_inicio": 8390.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8407.6,
+   "s1": 8436.0,
+   "graves": [
+    [
+     8431.01,
+     8435.54
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    8412.8,
+    8426.5
+   ]
+  }
+ ]
+}

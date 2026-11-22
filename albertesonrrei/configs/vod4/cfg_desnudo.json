@@ -1,0 +1,60 @@
+{
+ "titulos": [
+  "POV: PERSIGUES",
+  "A UN HOMBRE DESNUDO"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_d1",
+   "frames": "p_c_d1",
+   "s_frames": 7137.3,
+   "wav": "neandertal.wav",
+   "wav_inicio": 7100.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 7137.6,
+   "s1": 7146.2,
+   "graves": [],
+   "stickers": [],
+   "zooms": []
+  },
+  {
+   "id": "c_d2",
+   "frames": "p_c_d2",
+   "s_frames": 7181.7,
+   "wav": "neandertal.wav",
+   "wav_inicio": 7100.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 7182.0,
+   "s1": 7190.0,
+   "graves": [
+    [
+     7186.33,
+     7188.12
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    7185.5
+   ]
+  },
+  {
+   "id": "c_d3",
+   "frames": "p_c_d3",
+   "s_frames": 7553.7,
+   "wav": "bici.wav",
+   "wav_inicio": 7420.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 7554.0,
+   "s1": 7566.4,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    7563.9
+   ]
+  }
+ ]
+}

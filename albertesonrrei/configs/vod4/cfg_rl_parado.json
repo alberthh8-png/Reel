@@ -1,0 +1,30 @@
+{
+ "titulos": [
+  "\"¿CÓMO QUE NO",
+  "LA HE PARADO?\""
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_q2",
+   "frames": "p_c_q2",
+   "s_frames": 4398.9,
+   "wav": "rl2.wav",
+   "wav_inicio": 4390.0,
+   "palabras": "completo/c2.json",
+   "stt": 3600.0,
+   "s0": 4399.2,
+   "s1": 4428.6,
+   "graves": [
+    [
+     4402.32,
+     4403.47
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    4425.0
+   ]
+  }
+ ]
+}

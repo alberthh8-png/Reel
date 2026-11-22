@@ -1,0 +1,25 @@
+{
+ "titulos": [
+  "\"LA NUCLEAR…",
+  "AH, QUE TENÍAS UN CUCHILLO\""
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_n1",
+   "frames": "p_c_n1",
+   "s_frames": 9599.2,
+   "wav": "nuclear.wav",
+   "wav_inicio": 9590.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 9599.5,
+   "s1": 9623.6,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    9619.0
+   ]
+  }
+ ]
+}

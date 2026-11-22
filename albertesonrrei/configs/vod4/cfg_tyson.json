@@ -1,0 +1,30 @@
+{
+ "titulos": [
+  "\"¿TÚ QUIÉN ERES,",
+  "MIKE TYSON?\""
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_t1",
+   "frames": "p_c_t1",
+   "s_frames": 8841.2,
+   "wav": "tyson.wav",
+   "wav_inicio": 8830.0,
+   "palabras": "completo/c4.json",
+   "stt": 7200.0,
+   "s0": 8841.5,
+   "s1": 8869.6,
+   "graves": [
+    [
+     8851.39,
+     8853.0
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    8866.6
+   ]
+  }
+ ]
+}

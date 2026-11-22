@@ -1,0 +1,46 @@
+{
+ "titulos": [
+  "POV: HUYES DE LA POLI Y UN RANDOM",
+  "TE ESCONDE EN SU CONTENEDOR"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_c1",
+   "frames": "p_c_c1",
+   "s_frames": 9310.0,
+   "wav": "contenedor.wav",
+   "wav_inicio": 9290.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 9310.3,
+   "s1": 9335.0,
+   "graves": [
+    [
+     9310.63,
+     9311.9
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    9325.5
+   ]
+  },
+  {
+   "id": "c_c2",
+   "frames": "p_c_c2",
+   "s_frames": 9351.1,
+   "wav": "contenedor.wav",
+   "wav_inicio": 9290.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 9351.4,
+   "s1": 9356.0,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    9351.6
+   ]
+  }
+ ]
+}

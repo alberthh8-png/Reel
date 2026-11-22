@@ -1,0 +1,31 @@
+{
+ "titulos": [
+  "\"AL DE LA MOTO NO QUERÍA",
+  "HACERLE NADA, TE LO JURO\""
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_m1",
+   "frames": "p_c_m1",
+   "s_frames": 12474.3,
+   "wav": "moto.wav",
+   "wav_inicio": 12450.0,
+   "palabras": "completo/c6.json",
+   "stt": 10800.0,
+   "s0": 12474.6,
+   "s1": 12502.6,
+   "graves": [
+    [
+     12478.09,
+     12479.86
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    12486.3,
+    12497.5
+   ]
+  }
+ ]
+}

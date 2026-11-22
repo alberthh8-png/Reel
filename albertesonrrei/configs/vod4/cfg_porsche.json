@@ -1,0 +1,76 @@
+{
+ "titulos": [
+  "POV: EL CHAT TE DICE",
+  "QUE PERSIGAS UNOS COCHES"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_p1",
+   "frames": "p_c_p1",
+   "s_frames": 12645.7,
+   "wav": "porsche.wav",
+   "wav_inicio": 12600.0,
+   "palabras": "completo/c7.json",
+   "stt": 12600.0,
+   "s0": 12646.0,
+   "s1": 12661.4,
+   "graves": [
+    [
+     12657.39,
+     12660.36
+    ]
+   ],
+   "stickers": [
+    {
+     "tipo": "chat",
+     "s": 12646.2,
+     "hasta": 12651.0,
+     "texto": "UN PORSHE GRATIS SI LOS SIGUES"
+    }
+   ],
+   "zooms": [
+    12658.0
+   ]
+  },
+  {
+   "id": "c_p2",
+   "frames": "p_c_p2",
+   "s_frames": 12727.0,
+   "wav": "porsche.wav",
+   "wav_inicio": 12600.0,
+   "palabras": "completo/c7.json",
+   "stt": 12600.0,
+   "s0": 12727.3,
+   "s1": 12736.4,
+   "graves": [],
+   "stickers": [
+    {
+     "tipo": "chat",
+     "s": 12731.5,
+     "hasta": 12736.5,
+     "texto": "Te vas a quedar sin combustible encima"
+    }
+   ],
+   "zooms": [
+    12727.4
+   ]
+  },
+  {
+   "id": "c_p3",
+   "frames": "p_c_p3",
+   "s_frames": 12776.7,
+   "wav": "porsche.wav",
+   "wav_inicio": 12600.0,
+   "palabras": "completo/c7.json",
+   "stt": 12600.0,
+   "s0": 12777.0,
+   "s1": 12781.2,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    12777.6
+   ]
+  }
+ ]
+}

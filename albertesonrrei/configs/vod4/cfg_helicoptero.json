@@ -1,0 +1,30 @@
+{
+ "titulos": [
+  "\"YO SOLO QUERÍA",
+  "COGER UN HELICÓPTERO\""
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_h1",
+   "frames": "p_c_h1",
+   "s_frames": 9136.7,
+   "wav": "helicoptero.wav",
+   "wav_inicio": 9030.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 9137.0,
+   "s1": 9164.4,
+   "graves": [
+    [
+     9147.63,
+     9148.6
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    9161.0
+   ]
+  }
+ ]
+}

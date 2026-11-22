@@ -1,0 +1,25 @@
+{
+ "titulos": [
+  "POV: LE DAS BESITOS A LUCÍA",
+  "Y CADA VEZ TE QUIERE MENOS"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_l1",
+   "frames": "p_c_l1",
+   "s_frames": 11879.5,
+   "wav": "citas.wav",
+   "wav_inicio": 11870.0,
+   "palabras": "completo/c6.json",
+   "stt": 10800.0,
+   "s0": 11879.8,
+   "s1": 11909.0,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    11903.3
+   ]
+  }
+ ]
+}

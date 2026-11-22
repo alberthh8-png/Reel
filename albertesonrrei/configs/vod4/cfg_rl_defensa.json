@@ -1,0 +1,25 @@
+{
+ "titulos": [
+  "\"GUAU, ALBERT,",
+  "QUÉ DEFENSA\""
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "c_q1",
+   "frames": "p_c_q1",
+   "s_frames": 1334.9,
+   "wav": "rl1.wav",
+   "wav_inicio": 1320.0,
+   "palabras": "completo/c0.json",
+   "stt": 0.0,
+   "s0": 1335.2,
+   "s1": 1358.6,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    1346.8
+   ]
+  }
+ ]
+}
