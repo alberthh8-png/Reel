@@ -1,8 +1,8 @@
 # Tercer directo de GTA 6: vídeo de YouTube (24:16)
 
 **Título (elige uno):**
-1. `El CHAT me obligó a robar un PORSCHE en GTA 6 😂`
-2. `Un ABOGADO me esconde en un CONTENEDOR en GTA 6 💀 (mi tercer día)`
+1. `Llevando GTA 6 al LÍMITE 🔥 (el chat me obliga a robar un Porsche)`
+2. `El CHAT me obligó a robar un PORSCHE en GTA 6 😂`
 
 **Descripción:**
 ```
@@ -37,7 +37,7 @@ Tercer directo de GTA 6 y el chat ya me controla 💀 Persigo unos coches porque
 **Etiquetas:** `GTA 6, GTA VI, GTA 6 gameplay, GTA 6 español, GTA 6 momentos graciosos, GTA 6 funny moments, GTA 6 Porsche, Albertesonrrei, Twitch`
 
 **Al subirlo:**
-- Miniatura: `miniatura.jpg` ("EL CHAT ME OBLIGÓ A ROBAR UN PORSCHE").
+- Miniatura: `miniatura.jpg` ("LLEVANDO GTA 6 AL LÍMITE", el Porsche amarillo saliendo en plena ciudad).
 - "No es para niños" y contenido alterado: No.
 - Pantalla final con "Suscribirse" y el vídeo anterior; añádelo a la lista "GTA 6".
 - Comentario fijado: `¿Momento favorito? Yo voy con el abogado del contenedor 🗑️👇`
