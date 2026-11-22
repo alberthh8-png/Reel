@@ -27,9 +27,10 @@ T=lambda s,h,l: dict(tipo="texto",s=s,hasta=h,lineas=l)
 C=lambda s,h,t: dict(tipo="chat",s=s,hasta=h,texto=t)
 clips={
  "porsche":(["POV: EL CHAT TE DICE","QUE PERSIGAS UNOS COCHES"],[
-    M("c_p1","porsche",12646.0,12661.4,[fr(12657,"ese","coche")],stickers=[C(12646.2,12651.0,"UN PORSHE GRATIS SI LOS SIGUES")],zooms=[12658.0]),
-    M("c_p2","porsche",12727.3,12736.4,stickers=[C(12731.5,12736.5,"Te vas a quedar sin combustible encima")],zooms=[12727.4]),
-    M("c_p3","porsche",12777.0,12781.2,zooms=[12777.6])]),
+    M("c_p0b","porsche",12617.5,12620.2,zooms=[12618.3]),
+    M("c_p1b","porsche",12645.2,12660.4,[fr(12657,"ese","coche")],stickers=[C(12645.3,12650.5,"UN PORSHE GRATIS SI LOS SIGUES")],zooms=[12658.0]),
+    M("c_p2b","porsche",12727.8,12736.4,stickers=[C(12731.5,12736.3,"Te vas a quedar sin combustible encima")],zooms=[12728.0]),
+    M("c_p3b","porsche",12777.4,12778.5,zooms=[12777.6])]),
  "contenedor":(["POV: HUYES DE LA POLI Y UN RANDOM","TE ESCONDE EN SU CONTENEDOR"],[
     M("c_c1","contenedor",9310.3,9335.0,[fr(9310,"tú","eres")],zooms=[9325.5]),M("c_c2","contenedor",9351.4,9356.0,zooms=[9351.6])]),
  "perro":(["POV: ATROPELLAS AL PERRO","E INTENTAS LLEVARLO AL VETERINARIO"],[

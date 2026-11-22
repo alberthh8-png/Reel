@@ -6,15 +6,31 @@
  "formato": "juego",
  "momentos": [
   {
-   "id": "c_p1",
-   "frames": "p_c_p1",
-   "s_frames": 12645.7,
+   "id": "c_p0b",
+   "frames": "p_c_p0b",
+   "s_frames": 12617.2,
    "wav": "porsche.wav",
    "wav_inicio": 12600.0,
    "palabras": "completo/c7.json",
    "stt": 12600.0,
-   "s0": 12646.0,
-   "s1": 12661.4,
+   "s0": 12617.5,
+   "s1": 12620.2,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    12618.3
+   ]
+  },
+  {
+   "id": "c_p1b",
+   "frames": "p_c_p1b",
+   "s_frames": 12644.9,
+   "wav": "porsche.wav",
+   "wav_inicio": 12600.0,
+   "palabras": "completo/c7.json",
+   "stt": 12600.0,
+   "s0": 12645.2,
+   "s1": 12660.4,
    "graves": [
     [
      12657.39,
@@ -24,8 +40,8 @@
    "stickers": [
     {
      "tipo": "chat",
-     "s": 12646.2,
-     "hasta": 12651.0,
+     "s": 12645.3,
+     "hasta": 12650.5,
      "texto": "UN PORSHE GRATIS SI LOS SIGUES"
     }
    ],
@@ -34,38 +50,38 @@
    ]
   },
   {
-   "id": "c_p2",
-   "frames": "p_c_p2",
-   "s_frames": 12727.0,
+   "id": "c_p2b",
+   "frames": "p_c_p2b",
+   "s_frames": 12727.5,
    "wav": "porsche.wav",
    "wav_inicio": 12600.0,
    "palabras": "completo/c7.json",
    "stt": 12600.0,
-   "s0": 12727.3,
+   "s0": 12727.8,
    "s1": 12736.4,
    "graves": [],
    "stickers": [
     {
      "tipo": "chat",
      "s": 12731.5,
-     "hasta": 12736.5,
+     "hasta": 12736.3,
      "texto": "Te vas a quedar sin combustible encima"
     }
    ],
    "zooms": [
-    12727.4
+    12728.0
    ]
   },
   {
-   "id": "c_p3",
-   "frames": "p_c_p3",
-   "s_frames": 12776.7,
+   "id": "c_p3b",
+   "frames": "p_c_p3b",
+   "s_frames": 12777.1,
    "wav": "porsche.wav",
    "wav_inicio": 12600.0,
    "palabras": "completo/c7.json",
    "stt": 12600.0,
-   "s0": 12777.0,
-   "s1": 12781.2,
+   "s0": 12777.4,
+   "s1": 12778.5,
    "graves": [],
    "stickers": [],
    "zooms": [
