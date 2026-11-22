@@ -1,0 +1,78 @@
+{
+ "titulos": [
+  "POV: LUCÍA TE PIDE QUE LA RECOJAS",
+  "Y TÚ TE TIRAS A LA CASCADA"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "xc1",
+   "frames": "f_c",
+   "s_frames": 0.0,
+   "wav": "c_juego.wav",
+   "wav_inicio": 0.0,
+   "palabras": "vacio.json",
+   "stt": 0.0,
+   "s0": 12.0,
+   "s1": 24.0,
+   "graves": [],
+   "stickers": [],
+   "zooms": [],
+   "sin_cam": true,
+   "crop_x": [
+    [
+     12,
+     620
+    ]
+   ]
+  },
+  {
+   "id": "xc2",
+   "frames": "f_c",
+   "s_frames": 0.0,
+   "wav": "c_juego.wav",
+   "wav_inicio": 0.0,
+   "palabras": "vacio.json",
+   "stt": 0.0,
+   "s0": 38.5,
+   "s1": 55.5,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    47.5
+   ],
+   "sin_cam": true,
+   "crop_x": [
+    [
+     38.5,
+     480
+    ],
+    [
+     39.4,
+     480
+    ],
+    [
+     40,
+     880
+    ],
+    [
+     42.6,
+     880
+    ],
+    [
+     43.4,
+     560
+    ],
+    [
+     46,
+     620
+    ],
+    [
+     50,
+     540
+    ]
+   ],
+   "suave": true
+  }
+ ]
+}
