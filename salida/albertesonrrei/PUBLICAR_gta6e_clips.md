@@ -4,9 +4,11 @@ Primero en **YouTube Shorts** (tu mejor red), después Instagram y TikTok. Uno o
 En cada Short pon el vídeo largo como **"Vídeo relacionado"**.
 Comentario fijado en todos: `Directos de GTA 6 en Twitch: twitch.tv/albertesonrrei 🎮 ¿Os venís, pelotuditos?`
 
-## 1. 🏎️ La persecución de los Porsche (`gta6e_porsche`), el primero
-- **TikTok / Reels:** `POV: el chat te dice que persigas unos coches 🏎️💨 y acabas con un Porsche gratis. Etiqueta al que te haría caso #gta6 #gtavi #albertesonrrei #gta6gameplay #humor #twitch`
-- **Shorts:** `El CHAT me obligó a robar un PORSCHE en GTA 6 🏎️ #shorts #gta6`
+## 1. 🏎️ La persecución de los Porsche (`gta6e_porsche`, 47 s), el primero
+- **TikTok:** `POV: el chat te dice que persigas unos Porsche 🏎️💨 y acabas quedándote uno gratis 😂 Etiqueta al amigo que te haría caso #gta6 #gtavi #albertesonrrei #gta6gameplay #porsche #humor #twitch #gaming`
+- **Instagram Reels:** `POV: el chat te dice que persigas unos Porsche… y acabas quedándote uno 🏎️💨😂 ¿Le habrías hecho caso al chat? 👇 Etiqueta al que lo haría #gta6 #gtavi #albertesonrrei #gta6gameplay #porsche #humor #gaming #twitch`
+- **YouTube Shorts:** título `El CHAT me obligó a robar un PORSCHE en GTA 6 🏎️ #shorts #gta6`; descripción `Salen unos Porsche de un concesionario, el chat me dice que los persiga… y este es mío ya 😂 Directos en twitch.tv/albertesonrrei #gta6 #gtavi #porsche`
+- **Comentario fijado:** `¿Le habrías hecho caso al chat? 🏎️👇 Directos de GTA 6 en twitch.tv/albertesonrrei`
 
 ## 2. 🗑️ El abogado del contenedor (`gta6e_contenedor`)
 - **TikTok / Reels:** `POV: huyes de la poli y un random te esconde en su contenedor 🗑️⚖️ "esta es mi oficina" #gta6 #gtavi #albertesonrrei #gta6gameplay #humor`
