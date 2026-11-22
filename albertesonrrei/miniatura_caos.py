@@ -5,7 +5,7 @@ from reel import ajustar_fuente, texto_con_estilo
 V='/tmp/claude-0/-home-user-Reel/3efe04a8-bc52-519f-9bff-2b639dd9ba8e/scratchpad/vod4/'
 W,H=1280,720
 rng=np.random.default_rng(11)
-img=np.asarray(Image.open(V+'base_mini.png').convert('RGB')).astype(np.float32)/255
+img=np.asarray(Image.open(V+'base_pol.png').convert('RGB')).astype(np.float32)/255
 yy,xx=np.mgrid[0:H,0:W].astype(np.float32)
 def fbm(esc,oct=6):
     n=np.zeros((H,W),np.float32); a=1; t=0
@@ -34,25 +34,25 @@ def explosion(cx,cy,r):
     gl=np.exp(-((xx-cx)**2+(yy-cy)**2)/(2*(r*1.8)**2))*0.28
     img=img+np.stack([gl,gl*0.42,gl*0.08],-1)
 img=img*np.array([0.9,0.82,0.78])
-explosion(1110,210,150)   # detrás, a la derecha
-explosion(250,260,115)    # izquierda, junto al hotel
-explosion(640,330,70)     # al fondo de la calle
-for cx,cy,c in [(462,390,(1,0.08,0.08)),(492,391,(0.1,0.3,1))]:  # luces del coche del fondo
+explosion(1120,200,150)
+explosion(170,220,120)
+explosion(760,300,80)
+for cx,cy,c in [(330,435,(1,0.08,0.08)),(470,450,(0.1,0.3,1)),(905,358,(1,0.08,0.08)),(975,362,(0.1,0.3,1))]:  # luces del coche del fondo
     g=np.exp(-((xx-cx)**2+(yy-cy)**2)/(2*14**2)); img=img+np.array(c)*g[...,None]*1.3
 img=np.clip(img,0,1)
 im=Image.fromarray((img*255).astype(np.uint8))
 d=ImageDraw.Draw(im)
 for _ in range(90):  # chispas cortas
-    cx,cy=[(1110,210),(250,260),(640,330)][rng.integers(3)]
+    cx,cy=[(1120,200),(170,220),(760,300)][rng.integers(3)]
     ang=rng.random()*2*np.pi; r0=60+rng.random()*120; L=6+rng.random()*22
     x0,y0=cx+np.cos(ang)*r0,cy+np.sin(ang)*r0*0.8
     d.line((x0,y0,x0+np.cos(ang)*L,y0+np.sin(ang)*L),fill=(255,200,90),width=2)
 im=ImageEnhance.Contrast(ImageEnhance.Color(im).enhance(1.25)).enhance(1.12).filter(ImageFilter.UnsharpMask(2,60,2))
 v=np.clip(1-(((xx-W/2)/(W*0.8))**2+((yy-H/2)/(H*0.85))**2)*0.55,0.45,1)
 im=Image.fromarray((np.asarray(im,np.float32)*v[...,None]).astype(np.uint8)).convert('RGBA')
-cara=Image.open(V+'cara_12501.png').convert('RGB').resize((400,224),Image.LANCZOS)
-marco=Image.new('RGBA',(412,236),(255,61,139,255)); marco.paste(cara,(6,6))
-im.alpha_composite(marco.rotate(-4,expand=True,resample=Image.BICUBIC),(24,462))
+cara=Image.open(V+'cara_sorpresa.png').convert('RGB').crop((40,0,240,112)).resize((470,263),Image.LANCZOS)
+marco=Image.new('RGBA',(482,275),(255,61,139,255)); marco.paste(cara,(6,6))
+im.alpha_composite(marco.rotate(4,expand=True,resample=Image.BICUBIC),(790,428))
 AM,BL=(255,210,63,255),(255,255,255,255)
 for txt,y,c,tam in [("LLEVANDO GTA 6",22,BL,110),("AL LÍMITE",142,AM,150)]:
     t=texto_con_estilo(txt,ajustar_fuente(txt,1180,tam,tam_min=60,borde=12),c,borde=12,color_borde=(0,0,0))
