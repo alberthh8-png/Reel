@@ -306,7 +306,7 @@ class Editor:
                         cx = xa + (xb - xa) * (1 - math.cos(math.pi * k)) / 2
                 cx = min(max(cx, 288), 1280 - 288)
                 box = (cx - 288, 0, cx + 288, 720)
-            if m.get("sin_cam") and zoom > 1:  # sin cámara, el zoom de las reacciones se hace sobre la partida
+            if (m.get("sin_cam") or m.get("zoom_juego")) and zoom > 1:  # zoom sobre la partida (sin cámara, o pedido)
                 bx0, by0, bx1, by1 = box
                 mx, my, hw, hh = (bx0 + bx1) / 2, (by0 + by1) / 2 - 40 * (zoom - 1), (bx1 - bx0) / 2 / zoom, (by1 - by0) / 2 / zoom
                 box = (mx - hw, my - hh, mx + hw, my + hh)

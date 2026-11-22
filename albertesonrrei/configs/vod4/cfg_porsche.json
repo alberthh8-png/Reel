@@ -6,20 +6,39 @@
  "formato": "juego",
  "momentos": [
   {
-   "id": "c_p0b",
-   "frames": "p_c_p0b",
-   "s_frames": 12617.2,
+   "id": "c_p0c",
+   "frames": "p_c_p0c",
+   "s_frames": 12615.9,
    "wav": "porsche.wav",
    "wav_inicio": 12600.0,
    "palabras": "completo/c7.json",
    "stt": 12600.0,
-   "s0": 12617.5,
+   "s0": 12616.2,
    "s1": 12620.2,
    "graves": [],
    "stickers": [],
    "zooms": [
-    12618.3
-   ]
+    12616.7
+   ],
+   "crop_x": [
+    [
+     12616.2,
+     640
+    ],
+    [
+     12616.8,
+     606
+    ],
+    [
+     12617.9,
+     606
+    ],
+    [
+     12618.8,
+     640
+    ]
+   ],
+   "zoom_juego": true
   },
   {
    "id": "c_p1b",

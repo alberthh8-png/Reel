@@ -27,7 +27,7 @@ T=lambda s,h,l: dict(tipo="texto",s=s,hasta=h,lineas=l)
 C=lambda s,h,t: dict(tipo="chat",s=s,hasta=h,texto=t)
 clips={
  "porsche":(["POV: EL CHAT TE DICE","QUE PERSIGAS UNOS COCHES"],[
-    M("c_p0b","porsche",12617.5,12620.2,zooms=[12618.3]),
+    dict(M("c_p0c","porsche",12616.2,12620.2,zooms=[12616.7]),crop_x=[[12616.2,640],[12616.8,606],[12617.9,606],[12618.8,640]],zoom_juego=True),
     M("c_p1b","porsche",12645.2,12660.4,[fr(12657,"ese","coche")],stickers=[C(12645.3,12650.5,"UN PORSHE GRATIS SI LOS SIGUES")],zooms=[12658.0]),
     M("c_p2c","porsche",12689.5,12700.0,zooms=[12697.5]),
     M("c_p3d","porsche",12766.5,12784.2,zooms=[12777.8])]),
