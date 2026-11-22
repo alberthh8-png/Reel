@@ -73,19 +73,19 @@
    ]
   },
   {
-   "id": "c_p3b",
-   "frames": "p_c_p3b",
-   "s_frames": 12777.1,
+   "id": "c_p3d",
+   "frames": "p_c_p3d",
+   "s_frames": 12766.2,
    "wav": "porsche.wav",
    "wav_inicio": 12600.0,
    "palabras": "completo/c7.json",
    "stt": 12600.0,
-   "s0": 12777.4,
-   "s1": 12778.5,
+   "s0": 12766.5,
+   "s1": 12784.2,
    "graves": [],
    "stickers": [],
    "zooms": [
-    12777.6
+    12777.8
    ]
   }
  ]
