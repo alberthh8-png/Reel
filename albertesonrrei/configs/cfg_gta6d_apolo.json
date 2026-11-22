@@ -1,0 +1,77 @@
+{
+ "titulos": [
+  "POV: INTENTAS RELAJARTE EN GTA 6",
+  "Y TU PERRO NO SE QUIERE SENTAR"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "xc",
+   "frames": "f_c",
+   "s_frames": 0.0,
+   "wav": "c.wav",
+   "wav_inicio": 0.0,
+   "palabras": "c.json",
+   "stt": 0.0,
+   "s0": 24.9,
+   "s1": 54.2,
+   "graves": [
+    [
+     49.2,
+     50.6
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    46.5
+   ],
+   "sin_cam": true,
+   "crop_x": [
+    [
+     24,
+     560
+    ],
+    [
+     27.5,
+     560
+    ],
+    [
+     28.5,
+     640
+    ],
+    [
+     35,
+     640
+    ],
+    [
+     36,
+     480
+    ],
+    [
+     39.4,
+     480
+    ],
+    [
+     40,
+     880
+    ],
+    [
+     42.6,
+     880
+    ],
+    [
+     43.4,
+     560
+    ],
+    [
+     46,
+     620
+    ],
+    [
+     50,
+     540
+    ]
+   ]
+  }
+ ]
+}

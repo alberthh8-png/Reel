@@ -294,8 +294,23 @@ class Editor:
         cam = src.resize((W, H_CAM), Image.LANCZOS, box=(cx - cw / 2, cy - ch / 2, cx + cw / 2, cy + ch / 2))
         frame = self.fondo.copy()
         if FORMATO == "juego":
-            juego = src.resize((W, H_J2), Image.LANCZOS, box=JUEGO2)
+            box = JUEGO2
+            if "crop_x" in m:  # clips de consola: el encuadre 4:5 sigue al personaje ([[t, x_centro], ...] en 1280x720)
+                kx = m["crop_x"]
+                cx = kx[0][1] if s <= kx[0][0] else kx[-1][1]
+                for (ta, xa), (tb, xb) in zip(kx, kx[1:]):
+                    if ta <= s < tb:
+                        k = (s - ta) / (tb - ta)
+                        cx = xa + (xb - xa) * (1 - math.cos(math.pi * k)) / 2
+                cx = min(max(cx, 288), 1280 - 288)
+                box = (cx - 288, 0, cx + 288, 720)
+            if m.get("sin_cam") and zoom > 1:  # sin cámara, el zoom de las reacciones se hace sobre la partida
+                bx0, by0, bx1, by1 = box
+                mx, my, hw, hh = (bx0 + bx1) / 2, (by0 + by1) / 2 - 40 * (zoom - 1), (bx1 - bx0) / 2 / zoom, (by1 - by0) / 2 / zoom
+                box = (mx - hw, my - hh, mx + hw, my + hh)
+            juego = src.resize((W, H_J2), Image.LANCZOS, box=box)
             frame.paste(juego.filter(ImageFilter.UnsharpMask(radius=1.6, percent=60, threshold=2)), (0, Y_J2))
+        if FORMATO == "juego" and not m.get("sin_cam"):
             # cámara en miniatura; crece un poco en las reacciones (voz grave / zoom)
             esc = 1 + 0.45 * min(1.0, (zoom - 1) / 0.22)
             pw, ph = int(PIP_W * esc), int(PIP_H * esc)
@@ -308,7 +323,7 @@ class Editor:
             frame.paste(borde, (px, py), mk)
             frame.paste(pip.filter(ImageFilter.UnsharpMask(radius=2, percent=80, threshold=2)), (px + 6, py + 6),
                         self.pip_mask.resize((pw, ph)))
-        else:
+        elif FORMATO != "juego":
             frame.paste(cam.filter(ImageFilter.UnsharpMask(radius=2.2, percent=90, threshold=2)), (0, Y_CAM))
             juego = src.resize((W, H_JUEGO), Image.LANCZOS, box=JUEGO)
             frame.paste(juego.filter(ImageFilter.UnsharpMask(radius=1.4, percent=50, threshold=2)), (0, Y_JUEGO))

@@ -1,0 +1,48 @@
+{
+ "titulos": [
+  "POV: LA POLICÍA ENTRA EN CASA",
+  "Y TE ESCONDES DETRÁS DE LA PUERTA"
+ ],
+ "formato": "juego",
+ "momentos": [
+  {
+   "id": "xa",
+   "frames": "f_a",
+   "s_frames": 0.0,
+   "wav": "a.wav",
+   "wav_inicio": 0.0,
+   "palabras": "a.json",
+   "stt": 0.0,
+   "s0": 6.0,
+   "s1": 29.8,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    25.9
+   ],
+   "sin_cam": true,
+   "crop_x": [
+    [
+     6,
+     560
+    ],
+    [
+     9.5,
+     560
+    ],
+    [
+     11,
+     820
+    ],
+    [
+     12.2,
+     820
+    ],
+    [
+     13.5,
+     560
+    ]
+   ]
+  }
+ ]
+}
