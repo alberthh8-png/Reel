@@ -10,10 +10,10 @@ Comentario fijado en todos: `Directos de GTA 6 en Twitch: twitch.tv/albertesonrr
 - **YouTube Shorts:** título `El CHAT me obligó a robar un PORSCHE en GTA 6 🏎️ #shorts #gta6`; descripción `Salen unos Porsche de un concesionario, el chat me dice que los persiga… y este es mío ya 😂 Directos en twitch.tv/albertesonrrei #gta6 #gtavi #porsche`
 - **Comentario fijado:** `¿Le habrías hecho caso al chat? 🏎️👇 Directos de GTA 6 en twitch.tv/albertesonrrei`
 
-## 2. 🗑️ El abogado del contenedor (`gta6e_contenedor`, 1:06): desde el robo hasta que aparece el abogado
-- **TikTok** (más de 1 min: entra en el programa de recompensas): `Robo una tienda, me persigue la poli… y un random me esconde en su contenedor 🗑️⚖️ "vente a mi oficina" 😂 Etiqueta al que te escondería así #gta6 #gtavi #albertesonrrei #gta6gameplay #humor #twitch #gaming`
+## 2. 🗑️ El abogado del contenedor (`gta6e_contenedor`, 30 s): el robo, la salida de la tienda y el abogado
+- **TikTok:** `Robo una tienda, me persigue la poli… y un random me esconde en su contenedor 🗑️⚖️ "vente a mi oficina" 😂 Etiqueta al que te escondería así #gta6 #gtavi #albertesonrrei #gta6gameplay #humor #twitch #gaming`
 - **Instagram Reels:** `POV: huyes de la poli y un random te esconde en su contenedor 🗑️⚖️ Solo pasa en GTA 6 😂 ¿Qué habrías hecho tú? 👇 #gta6 #gtavi #albertesonrrei #gta6gameplay #humor #gaming`
-- **YouTube Shorts:** título `Huyo de la poli y un ABOGADO me esconde en su CONTENEDOR 🗑️ #shorts #gta6` (Shorts admite hasta 3 min)
+- **YouTube Shorts:** título `Huyo de la poli y un ABOGADO me esconde en su CONTENEDOR 🗑️ #shorts #gta6`
 - **Comentario fijado:** `El mejor abogado de Leonida 🗑️⚖️👇 Directos en twitch.tv/albertesonrrei`
 
 ## 3. 🐕 El perro (`gta6e_perro`)

@@ -6,15 +6,47 @@
  "formato": "juego",
  "momentos": [
   {
-   "id": "c_c3",
-   "frames": "p_c_c3",
-   "s_frames": 9255.7,
+   "id": "c_c4",
+   "frames": "p_c_c4",
+   "s_frames": 9255.6,
    "wav": "cont2.wav",
    "wav_inicio": 9250.0,
    "palabras": "completo/c5.json",
    "stt": 9000.0,
-   "s0": 9256.0,
-   "s1": 9321.8,
+   "s0": 9255.9,
+   "s1": 9265.6,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    9263.4
+   ]
+  },
+  {
+   "id": "c_c5",
+   "frames": "p_c_c5",
+   "s_frames": 9277.6,
+   "wav": "cont2.wav",
+   "wav_inicio": 9250.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 9277.9,
+   "s1": 9286.0,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    9280.4
+   ]
+  },
+  {
+   "id": "c_c6",
+   "frames": "p_c_c6",
+   "s_frames": 9309.6,
+   "wav": "cont2.wav",
+   "wav_inicio": 9250.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 9309.9,
+   "s1": 9321.5,
    "graves": [
     [
      9310.63,
@@ -23,8 +55,6 @@
    ],
    "stickers": [],
    "zooms": [
-    9262.0,
-    9279.6,
     9310.8,
     9319.5
    ]
