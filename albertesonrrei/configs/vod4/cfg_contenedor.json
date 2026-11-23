@@ -6,15 +6,15 @@
  "formato": "juego",
  "momentos": [
   {
-   "id": "c_c7",
-   "frames": "p_c_c7",
-   "s_frames": 9247.7,
+   "id": "c_c9",
+   "frames": "p_c_c9",
+   "s_frames": 9253.7,
    "wav": "huida2.wav",
    "wav_inicio": 9220.0,
    "palabras": "completo/c5.json",
    "stt": 9000.0,
-   "s0": 9248.0,
-   "s1": 9291.5,
+   "s0": 9254.0,
+   "s1": 9288.0,
    "graves": [],
    "stickers": [],
    "zooms": [
@@ -23,14 +23,14 @@
    ]
   },
   {
-   "id": "c_c8",
-   "frames": "p_c_c8",
-   "s_frames": 9302.5,
+   "id": "c_c10",
+   "frames": "p_c_c10",
+   "s_frames": 9307.0,
    "wav": "cont2.wav",
    "wav_inicio": 9250.0,
    "palabras": "completo/c5.json",
    "stt": 9000.0,
-   "s0": 9302.8,
+   "s0": 9307.3,
    "s1": 9321.8,
    "graves": [
     [
