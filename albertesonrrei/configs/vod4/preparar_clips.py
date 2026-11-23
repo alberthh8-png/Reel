@@ -32,7 +32,8 @@ clips={
     M("c_p2c","porsche",12689.5,12700.0,zooms=[12697.5]),
     M("c_p3d","porsche",12766.5,12784.2,zooms=[12777.8])]),
  "contenedor":(["POV: HUYES DE LA POLI Y UN RANDOM","TE ESCONDE EN SU CONTENEDOR"],[
-    M("c_c3","cont2",9256.0,9321.8,[fr(9310,"tú","eres")],zooms=[9262.0,9279.6,9310.8,9319.5])]),
+    M("c_c7","huida2",9248.0,9291.5,zooms=[9262.0,9279.6]),
+    M("c_c8","cont2",9302.8,9321.8,[fr(9310,"tú","eres")],zooms=[9310.8,9319.5])]),
  "perro":(["POV: ATROPELLAS AL PERRO","E INTENTAS LLEVARLO AL VETERINARIO"],[
     M("c_r1","perro",8407.6,8436.0,[fr(8431,"mira","perro")],zooms=[8412.8,8426.5])]),
  "helicoptero":(["\"YO SOLO QUERÍA","COGER UN HELICÓPTERO\""],[
