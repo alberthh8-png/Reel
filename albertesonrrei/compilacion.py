@@ -68,8 +68,10 @@ Y_SUBS2 = 1785
 
 def cargar_config(ruta):
     """Lee momentos y títulos de un JSON (si no, se usan los de "El directo más pobre")."""
-    global MOMENTOS, TITULOS, FORMATO
+    global MOMENTOS, TITULOS, FORMATO, CAM
     cfg = json.load(open(ruta))
+    if cfg.get("cam"):  # posición de la cámara en el 1280x720 (cambia según la escena del directo)
+        CAM = tuple(cfg["cam"])
     MOMENTOS = cfg["momentos"]
     TITULOS = tuple(cfg["titulos"])
     FORMATO = cfg.get("formato", "camara")
