@@ -1,0 +1,52 @@
+{
+ "titulos": [
+  "POV: TE CUELAS EN UNA FIESTA",
+  "EN HELICÓPTERO"
+ ],
+ "formato": "juego",
+ "cam": [
+  45,
+  221,
+  261,
+  384
+ ],
+ "momentos": [
+  {
+   "id": "k_f1",
+   "frames": "p_k_f1",
+   "s_frames": 13105.2,
+   "wav": "fiesta.wav",
+   "wav_inicio": 13020.0,
+   "palabras": "completo/c7.json",
+   "stt": 12600.0,
+   "s0": 13105.5,
+   "s1": 13121.0,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    13109.2
+   ]
+  },
+  {
+   "id": "k_f2",
+   "frames": "p_k_f2",
+   "s_frames": 13283.7,
+   "wav": "cripto.wav",
+   "wav_inicio": 13250.0,
+   "palabras": "completo/c7.json",
+   "stt": 12600.0,
+   "s0": 13284.0,
+   "s1": 13294.5,
+   "graves": [
+    [
+     13290.96,
+     13293.51
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    13289.1
+   ]
+  }
+ ]
+}

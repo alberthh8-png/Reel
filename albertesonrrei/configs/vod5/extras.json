@@ -1,0 +1,96 @@
+{
+ "titulo": "MI CUARTO DÍA EN GTA 6",
+ "subtitulo": "Un borracho con cervezas, Mike Tyson en el aeropuerto y una fiesta en la piscina",
+ "graves": [
+  [
+   "camioneta",
+   10480.29,
+   10482.16
+  ],
+  [
+   "casa",
+   10804.35,
+   10806.98
+  ],
+  [
+   "borracho",
+   10926.05,
+   10927.82
+  ],
+  [
+   "aeropuerto",
+   12080.04,
+   12081.73
+  ],
+  [
+   "yonqui",
+   12194.1,
+   12196.19
+  ],
+  [
+   "morro",
+   12528.57,
+   12530.64
+  ],
+  [
+   "cripto",
+   13290.96,
+   13293.51
+  ],
+  [
+   "lucia",
+   13534.79,
+   13536.02
+  ],
+  [
+   "final",
+   13878.7,
+   13880.89
+  ]
+ ],
+ "avance": [
+  [
+   "borracho",
+   10978.0,
+   10986.0
+  ],
+  [
+   "aeropuerto",
+   12074.0,
+   12083.0
+  ],
+  [
+   "cripto",
+   13284.0,
+   13293.5
+  ],
+  [
+   "lucia",
+   13530.0,
+   13537.0
+  ],
+  [
+   "fiesta",
+   13108.5,
+   13116.0
+  ],
+  [
+   "camioneta",
+   10475.0,
+   10482.0
+  ]
+ ],
+ "chat": [
+  [
+   "casa",
+   10807.0,
+   3.5
+  ],
+  [
+   "borracho",
+   10926.0,
+   3.5
+  ]
+ ],
+ "tapar_chat": []
+}

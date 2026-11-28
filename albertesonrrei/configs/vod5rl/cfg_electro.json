@@ -1,0 +1,36 @@
+{
+ "titulos": [
+  "EL TIRO ELECTRO",
+  "PATRIARCAL DE LA MUERTE"
+ ],
+ "formato": "juego",
+ "cam": [
+  45,
+  221,
+  261,
+  384
+ ],
+ "momentos": [
+  {
+   "id": "k_e1",
+   "frames": "p_k_e1",
+   "s_frames": 5821.7,
+   "wav": "electro.wav",
+   "wav_inicio": 5810.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 5822.0,
+   "s1": 5845.0,
+   "graves": [
+    [
+     5837.95,
+     5840.9
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    5831.0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "titulos": [
+  "ME BANEAN POR CULPA",
+  "DE MI AMIGO"
+ ],
+ "formato": "juego",
+ "cam": [
+  45,
+  221,
+  261,
+  384
+ ],
+ "momentos": [
+  {
+   "id": "k_n1",
+   "frames": "p_k_n1",
+   "s_frames": 1715.7,
+   "wav": "baneo.wav",
+   "wav_inicio": 1710.0,
+   "palabras": "completo/c0.json",
+   "stt": 0.0,
+   "s0": 1716.0,
+   "s1": 1745.0,
+   "graves": [
+    [
+     1740.66,
+     1742.33
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    1724.3,
+    1743.3
+   ]
+  }
+ ]
+}

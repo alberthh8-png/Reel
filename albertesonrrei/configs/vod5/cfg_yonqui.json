@@ -1,0 +1,36 @@
+{
+ "titulos": [
+  "\"A LO MEJOR",
+  "SE LO MERECÍA\""
+ ],
+ "formato": "juego",
+ "cam": [
+  45,
+  221,
+  261,
+  384
+ ],
+ "momentos": [
+  {
+   "id": "k_y1",
+   "frames": "p_k_y1",
+   "s_frames": 12179.7,
+   "wav": "yonqui.wav",
+   "wav_inicio": 12170.0,
+   "palabras": "completo/c6.json",
+   "stt": 10800.0,
+   "s0": 12180.0,
+   "s1": 12208.0,
+   "graves": [
+    [
+     12194.1,
+     12196.19
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    12189.4
+   ]
+  }
+ ]
+}

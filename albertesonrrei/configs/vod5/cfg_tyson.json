@@ -1,0 +1,36 @@
+{
+ "titulos": [
+  "\"LLAMA A SEGURIDAD…",
+  "ES MIKE TYSON\""
+ ],
+ "formato": "juego",
+ "cam": [
+  45,
+  221,
+  261,
+  384
+ ],
+ "momentos": [
+  {
+   "id": "k_t1",
+   "frames": "p_k_t1",
+   "s_frames": 12063.7,
+   "wav": "aeropuerto.wav",
+   "wav_inicio": 12000.0,
+   "palabras": "completo/c6.json",
+   "stt": 10800.0,
+   "s0": 12064.0,
+   "s1": 12090.0,
+   "graves": [
+    [
+     12080.04,
+     12081.73
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    12080.1
+   ]
+  }
+ ]
+}

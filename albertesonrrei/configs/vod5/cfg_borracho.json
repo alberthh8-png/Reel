@@ -1,0 +1,52 @@
+{
+ "titulos": [
+  "POV: TE PERSIGUE LA POLI",
+  "POR BEBER CERVEZA EN LA CALLE"
+ ],
+ "formato": "juego",
+ "cam": [
+  45,
+  221,
+  261,
+  384
+ ],
+ "momentos": [
+  {
+   "id": "k_b1",
+   "frames": "p_k_b1",
+   "s_frames": 10921.7,
+   "wav": "borracho.wav",
+   "wav_inicio": 10910.0,
+   "palabras": "completo/c6.json",
+   "stt": 10800.0,
+   "s0": 10922.0,
+   "s1": 10941.0,
+   "graves": [
+    [
+     10926.05,
+     10927.82
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    10934.8
+   ]
+  },
+  {
+   "id": "k_b2",
+   "frames": "p_k_b2",
+   "s_frames": 10977.5,
+   "wav": "borracho.wav",
+   "wav_inicio": 10910.0,
+   "palabras": "completo/c6.json",
+   "stt": 10800.0,
+   "s0": 10977.8,
+   "s1": 10986.2,
+   "graves": [],
+   "stickers": [],
+   "zooms": [
+    10981.0
+   ]
+  }
+ ]
+}

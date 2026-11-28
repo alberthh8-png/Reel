@@ -1,0 +1,37 @@
+{
+ "titulos": [
+  "EL MEJOR TIRO DE MI VIDA…",
+  "Y ME LO PARAN"
+ ],
+ "formato": "juego",
+ "cam": [
+  45,
+  221,
+  261,
+  384
+ ],
+ "momentos": [
+  {
+   "id": "k_h1",
+   "frames": "p_k_h1",
+   "s_frames": 6880.2,
+   "wav": "hidra.wav",
+   "wav_inicio": 6860.0,
+   "palabras": "completo/c3.json",
+   "stt": 5400.0,
+   "s0": 6880.5,
+   "s1": 6909.0,
+   "graves": [
+    [
+     6892.8,
+     6895.05
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    6886.0,
+    6896.7
+   ]
+  }
+ ]
+}

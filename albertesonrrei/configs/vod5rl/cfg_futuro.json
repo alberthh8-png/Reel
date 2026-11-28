@@ -1,0 +1,36 @@
+{
+ "titulos": [
+  "\"DEJA DE VER EL FUTURO,",
+  "HIJO DE…\""
+ ],
+ "formato": "juego",
+ "cam": [
+  45,
+  221,
+  261,
+  384
+ ],
+ "momentos": [
+  {
+   "id": "k_u1",
+   "frames": "p_k_u1",
+   "s_frames": 3041.2,
+   "wav": "futuro.wav",
+   "wav_inicio": 3030.0,
+   "palabras": "completo/c1.json",
+   "stt": 1800.0,
+   "s0": 3041.5,
+   "s1": 3069.0,
+   "graves": [
+    [
+     3066.45,
+     3068.48
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    3046.0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "titulos": [
+  "\"NO HAY CALMA, SOLO HAY",
+  "UN PELÍCANO CON RABIA\""
+ ],
+ "formato": "juego",
+ "cam": [
+  45,
+  221,
+  261,
+  384
+ ],
+ "momentos": [
+  {
+   "id": "k_p2",
+   "frames": "p_k_p2",
+   "s_frames": 9499.9,
+   "wav": "pelicano.wav",
+   "wav_inicio": 9420.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 9500.2,
+   "s1": 9529.0,
+   "graves": [
+    [
+     9524.65,
+     9527.34
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    9500.7
+   ]
+  }
+ ]
+}

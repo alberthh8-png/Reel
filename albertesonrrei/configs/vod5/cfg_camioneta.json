@@ -1,0 +1,36 @@
+{
+ "titulos": [
+  "LE METO NITRO",
+  "A LA CAMIONETA"
+ ],
+ "formato": "juego",
+ "cam": [
+  45,
+  221,
+  261,
+  384
+ ],
+ "momentos": [
+  {
+   "id": "k_c1",
+   "frames": "p_k_c1",
+   "s_frames": 10466.7,
+   "wav": "camioneta.wav",
+   "wav_inicio": 10460.0,
+   "palabras": "completo/c5.json",
+   "stt": 9000.0,
+   "s0": 10467.0,
+   "s1": 10496.0,
+   "graves": [
+    [
+     10480.29,
+     10482.16
+    ]
+   ],
+   "stickers": [],
+   "zooms": [
+    10480.3
+   ]
+  }
+ ]
+}
