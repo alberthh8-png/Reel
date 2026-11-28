@@ -310,7 +310,21 @@ class Editor:
                 bx0, by0, bx1, by1 = box
                 mx, my, hw, hh = (bx0 + bx1) / 2, (by0 + by1) / 2 - 40 * (zoom - 1), (bx1 - bx0) / 2 / zoom, (by1 - by0) / 2 / zoom
                 box = (mx - hw, my - hh, mx + hw, my + hh)
-            juego = src.resize((W, H_J2), Image.LANCZOS, box=box)
+            if m.get("alejar"):  # se ve más de la partida: recorte más ancho y relleno arriba/abajo con la misma imagen desenfocada
+                f = m["alejar"]
+                bx0, by0, bx1, by1 = box
+                cx, cy = (bx0 + bx1) / 2, (by0 + by1) / 2
+                bw, bh = min(1280, (bx1 - bx0) * f), min(720, (by1 - by0) * f)
+                bx0 = min(max(cx - bw / 2, 0), 1280 - bw)
+                by0 = min(max(cy - bh / 2, 0), 720 - bh)
+                region = (bx0, by0, bx0 + bw, by0 + bh)
+                fondo_j = src.resize((W, H_J2), Image.BILINEAR, box=box).filter(ImageFilter.GaussianBlur(28))
+                fondo_j = Image.eval(fondo_j, lambda v: int(v * 0.55))
+                hh = min(H_J2, int(round(W * bh / bw)))
+                fondo_j.paste(src.resize((W, hh), Image.LANCZOS, box=region), (0, (H_J2 - hh) // 2))
+                juego = fondo_j
+            else:
+                juego = src.resize((W, H_J2), Image.LANCZOS, box=box)
             frame.paste(juego.filter(ImageFilter.UnsharpMask(radius=1.6, percent=60, threshold=2)), (0, Y_J2))
         if FORMATO == "juego" and not m.get("sin_cam"):
             # cámara en miniatura; crece un poco en las reacciones (voz grave / zoom)

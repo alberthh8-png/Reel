@@ -1,12 +1,12 @@
 import json, os, subprocess, sys
 D=sys.argv[1]; os.chdir(D)
 # (id, video, s0, s1, extras)
-T=[("r1","v1",5.5,14.0,dict(box=[360,40,680,440])),
-   ("r2","v2",10.0,21.0,{}),
-   ("r3","v6",2.0,22.0,{}),
-   ("r4","v3",0.0,18.0,{}),
-   ("r5","v4",51.0,70.0,{}),
-   ("r6","v5",16.0,28.0,dict(crop_x=[[16,770]]))]
+T=[("r3b","v6",5.0,25.0,dict(alejar=1.25)),
+   ("r1b","v1",1.0,16.0,dict(box=[320,0,720,500],alejar=1.25)),
+   ("r2b","v2",12.8,19.8,dict(alejar=1.25)),
+   ("r4","v3",0.0,18.0,dict(alejar=1.25)),
+   ("r5","v4",51.0,70.0,dict(alejar=1.25)),
+   ("r6","v5",16.0,28.0,dict(crop_x=[[16,770]],alejar=1.25))]
 moms=[]
 for i,v,a,b,ex in T:
     fd=f"f_{i}"
