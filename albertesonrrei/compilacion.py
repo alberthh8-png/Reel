@@ -296,7 +296,7 @@ class Editor:
         cam = src.resize((W, H_CAM), Image.LANCZOS, box=(cx - cw / 2, cy - ch / 2, cx + cw / 2, cy + ch / 2))
         frame = self.fondo.copy()
         if FORMATO == "juego":
-            box = JUEGO2
+            box = tuple(m["box"]) if "box" in m else JUEGO2  # recorte fijo (x0, y0, x1, y1) en 1280x720
             if "crop_x" in m:  # clips de consola: el encuadre 4:5 sigue al personaje ([[t, x_centro], ...] en 1280x720)
                 kx = m["crop_x"]
                 cx = kx[0][1] if s <= kx[0][0] else kx[-1][1]
